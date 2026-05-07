@@ -10,6 +10,7 @@ from tuxemon.constants.asset_loader import fetch_asset
 from tuxemon.entity.npc import NPC
 from tuxemon.event.eventaction import EventAction
 from tuxemon.platform.const.sizes import PLAYER_NPC
+from tuxemon.chain.slots import chain_slot_is_loadable, load_onchain_save_data
 from tuxemon.save_system.save_manager import SaveManager
 from tuxemon.save_system.save_slots import resolve_save_index
 from tuxemon.session import Session
@@ -52,14 +53,28 @@ class LoadGameAction(EventAction):
         slot = (
             self.index if self.is_raw_slot else resolve_save_index(self.index)
         )
+        if client.config.chain_enabled:
+            slot = 1
 
         client.map_loader.clear_cache()
         logger.info("Loading!")
 
-        save_data = SaveManager.load(slot)
+        if client.config.chain_enabled and not chain_slot_is_loadable(
+            slot,
+            client.chain_session.character,
+        ):
+            logger.error("Refusing to load slot %s: not current on-chain state.", slot)
+            self.stop()
+            return
+
+        if client.config.chain_enabled:
+            save_data = load_onchain_save_data(client.chain_session.character)
+        else:
+            save_data = SaveManager.load(slot)
         if not save_data:
             self.stop()
             return
+        session.set_current_slot(slot)
 
         try:
             old_world = client.get_state_by_name(WorldState)
@@ -70,15 +85,25 @@ class LoadGameAction(EventAction):
             client.remove_state_by_name("LoadMenuState")
             client.remove_state_by_name("StartState")
 
+        if client.config.chain_enabled:
+            session.suppress_chain_autosave(5.0)
+        session.reset(reset_client=False, reset_world=True, reset_player=True)
+
         npc_state = save_data.npc_state
         if npc_state is None:
             logger.error("Save data missing NPC state.")
             self.stop()
             return
 
-        slug = npc_state.player_slug or PLAYER_NPC
-        npc_state.player_slug = slug
-        NPC.create_player(session, slug=slug)
+        saved_player_slug = npc_state.player_slug
+        npc_state.player_slug = PLAYER_NPC
+        NPC.create_player(session, slug=PLAYER_NPC)
+        if saved_player_slug and saved_player_slug != PLAYER_NPC:
+            logger.info(
+                "Normalized saved player slug %s to runtime slug %s.",
+                saved_player_slug,
+                PLAYER_NPC,
+            )
 
         if npc_state.current_map is None:
             logger.error("Save data missing current map.")
@@ -87,8 +112,9 @@ class LoadGameAction(EventAction):
 
         map_path = fetch_asset("maps", npc_state.current_map)
         client.push_state("WorldState", session=session, map_name=map_path)
-
+        _repair_loaded_story_flags(save_data)
         session.load_state(save_data)
+        _normalize_loaded_party(session)
 
         if npc_state.tile_pos is None:
             logger.error("Save data missing tile position.")
@@ -96,6 +122,43 @@ class LoadGameAction(EventAction):
             return
 
         tele_x, tele_y = npc_state.tile_pos
-        params = ["player", npc_state.current_map, tele_x, tele_y]
+        client.npc_manager.place_npc_on_map(
+            session.player,
+            npc_state.current_map,
+            tele_x,
+            tele_y,
+        )
         client.current_music.stop()
-        client.event_engine.execute_action("teleport", params)
+        client.movement_manager.unlock_controls(session.player)
+
+
+def _normalize_loaded_party(session: Session) -> None:
+    for monster in session.player.monsters:
+        if monster.current_hp > 0 and monster.status.has_status("faint"):
+            monster.status.status = [
+                status
+                for status in monster.status.status
+                if status.slug != "faint"
+            ]
+            logger.info(
+                "Cleared stale faint status from loaded %s with %s HP.",
+                monster.slug,
+                monster.current_hp,
+            )
+
+
+def _repair_loaded_story_flags(save_data) -> None:
+    npc_state = save_data.npc_state
+    if npc_state is None:
+        return
+    variables = npc_state.game_variables
+    if (
+        npc_state.monsters
+        and variables.get("dantefirst") == "yes"
+        and variables.get("dantebin") == "yes"
+        and variables.get("firstfightdue") is None
+    ):
+        variables["firstfightdue"] = "no"
+        logger.warning(
+            "Repaired missing firstfightdue flag on loaded Solamon save."
+        )

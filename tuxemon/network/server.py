@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import json
 import logging
+import subprocess
+from pathlib import Path
 from collections.abc import Callable
 from dataclasses import asdict, replace
 from datetime import datetime
@@ -21,6 +23,7 @@ logger = logging.getLogger(__name__)
 
 
 SERVER_NAME = "Default Tuxemon Server"
+SOLANA_TOOLS = Path(__file__).resolve().parents[2] / "tools" / "solana"
 
 
 class TuxemonServer:
@@ -53,8 +56,6 @@ class TuxemonServer:
 
         self.server = WebsocketServerWrapper(self)
         self.server.max_clients = 32
-        self.server.start_listening(self.server_port)
-        self.listening = True
         self.client_registry = ClientRegistry(timeout=self.timeout)
         self.event_router = EventRouter(
             self.client_registry.registry, self.get_next_event_number
@@ -67,6 +68,12 @@ class TuxemonServer:
             self.client_registry,
         )
         self._register_event_handlers()
+
+    def start_listening(self) -> None:
+        if self.listening:
+            return
+        self.server.start_listening(self.server_port)
+        self.listening = True
 
     def _register_event_handlers(self) -> None:
         """
@@ -81,6 +88,15 @@ class TuxemonServer:
         )
         self.event_router.register_handler(
             EventType.CLIENT_INTERACTION, self.handle_client_interaction_event
+        )
+        self.event_router.register_handler(
+            EventType.CLIENT_MAP_UPDATE, self.handle_client_map_update_event
+        )
+        self.event_router.register_handler(
+            EventType.CLIENT_MOVE_START, self.handle_client_map_update_event
+        )
+        self.event_router.register_handler(
+            EventType.CLIENT_MOVE_COMPLETE, self.handle_client_map_update_event
         )
         self.event_router.register_handler(
             EventType.CLIENT_RESPONSE, self.handle_client_response_event
@@ -122,6 +138,7 @@ class TuxemonServer:
             self.notify_client(cuuid, event_data)
 
         self.client_registry.registry.clear()
+        self.server.stop_listening()
         self.listening = False
         logger.info(
             "TuxemonServer: Shutdown complete. Server is no longer listening."
@@ -195,12 +212,31 @@ class TuxemonServer:
             )
             logger.info(f"Player {cuuid} has returned to the world.")
         else:
+            if not verify_chain_player(event_data):
+                logger.warning("Rejecting unverified player presence: %s", cuuid)
+                return
             # New player logic
             self.client_registry.register_client(
-                cuuid, event_data.map_name, event_data.char_dict
+                cuuid,
+                event_data.map_name,
+                sanitize_char_data(event_data.char_dict),
+                event_data.owner,
+                event_data.character_mint,
             )
 
         self.notify_populate_client(cuuid, event_data)
+
+    def handle_client_map_update_event(
+        self, cuuid: str, event_data: EventData
+    ) -> None:
+        if not self.client_registry.identity_matches(
+            cuuid, event_data.owner, event_data.character_mint
+        ):
+            logger.warning("Ignoring spoofed presence update from %s", cuuid)
+            return
+        self.client_registry.set_client_data(cuuid, "map_name", event_data.map_name)
+        self.update_char_dict(cuuid, sanitize_char_data(event_data.char_dict))
+        self.notify_client(cuuid, event_data.copy(char_dict=sanitize_char_data(event_data.char_dict)))
 
     def handle_ping_event(self, cuuid: str, event_data: EventData) -> None:
         """
@@ -322,11 +358,17 @@ class EventRouter:
         self.handlers[event_type.value] = handler
 
     def route_event(self, cuuid: str, event_data: EventData) -> None:
-        if cuuid not in self.registry:
+        if cuuid not in self.registry and event_data.type is not EventType.PUSH_SELF:
             logger.warning(f"CUUID {cuuid} not found in registry.")
             return
 
         event_key = event_data.type.value  # use string key consistently
+        if event_data.type is EventType.PUSH_SELF and cuuid not in self.registry:
+            handler = self.handlers.get(event_key)
+            if handler:
+                handler(cuuid, event_data)
+            return
+
         event_list = self.registry[cuuid].setdefault("event_list", {})
         last_event_number = event_list.get(event_key, -1)
 
@@ -361,6 +403,8 @@ class ClientRegistry:
         cuuid: str,
         map_name: str | None = None,
         char_dict: CharData | None = None,
+        owner: str | None = None,
+        character_mint: str | None = None,
     ) -> None:
         default_char = CharData(
             tile_pos=(0, 0), name="", facing=Direction.DOWN, running=False
@@ -368,10 +412,20 @@ class ClientRegistry:
 
         self.registry[cuuid] = {
             "map_name": map_name or "",
-            "char_dict": char_dict or default_char,
+            "char_dict": sanitize_char_data(char_dict) or default_char,
+            "owner": owner,
+            "character_mint": character_mint,
             "ping_timestamp": datetime.now(),
             "event_list": {},
         }
+
+    def identity_matches(
+        self, cuuid: str, owner: str | None, character_mint: str | None
+    ) -> bool:
+        entry = self.registry.get(cuuid)
+        if not entry:
+            return False
+        return entry.get("owner") == owner and entry.get("character_mint") == character_mint
 
     def update_char_field(self, cuuid: str, key: str, value: Any) -> None:
         if cuuid not in self.registry:
@@ -395,7 +449,7 @@ class ClientRegistry:
             return
 
         existing = self.registry[cuuid].get("char_dict")
-        char_data_dict = asdict(char_data)
+        char_data_dict = asdict(sanitize_char_data(char_data))
 
         if isinstance(existing, dict):
             existing.update(char_data_dict)
@@ -521,3 +575,50 @@ class EventFactory:
             char_dict=char_dict,
             target=target,
         )
+
+
+def sanitize_char_data(char_data: CharData | None) -> CharData | None:
+    if char_data is None:
+        return None
+    x, y = char_data.tile_pos
+    return CharData(
+        tile_pos=(max(0, int(x)), max(0, int(y))),
+        name=str(char_data.name)[:32],
+        facing=char_data.facing,
+        running=bool(char_data.running),
+    )
+
+
+def verify_chain_player(event_data: EventData) -> bool:
+    if not event_data.owner or not event_data.character_mint:
+        return False
+    try:
+        result = subprocess.run(
+            [
+                "node",
+                "read-player-state.mjs",
+                event_data.owner,
+                event_data.character_mint,
+            ],
+            cwd=SOLANA_TOOLS,
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=8,
+        )
+    except Exception:
+        logger.exception("Unable to verify player on chain")
+        return False
+    if result.returncode != 0:
+        logger.warning("Chain verification failed: %s", result.stderr)
+        return False
+    try:
+        state = json.loads(result.stdout)
+    except json.JSONDecodeError:
+        return False
+    return bool(
+        state
+        and state.get("initialized")
+        and state.get("owner") == event_data.owner
+        and state.get("characterMint") == event_data.character_mint
+    )

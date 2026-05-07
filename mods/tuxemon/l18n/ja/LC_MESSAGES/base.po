@@ -1,10 +1,10 @@
-#
+﻿#
 msgid ""
 msgstr ""
-"Project-Id-Version: Tuxemon\n"
+"Project-Id-Version: Solamon\n"
 "PO-Revision-Date: 2023-02-03 04:41+0000\n"
 "Last-Translator: Betsy <betsymaxx@gmailvn.net>\n"
-"Language-Team: Japanese <https://hosted.weblate.org/projects/tuxemon/tuxemon/ja/>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/solamon/solamon/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,824 +15,824 @@ msgstr ""
 # ITEM TRANSLATIONS ##
 # Apple
 msgid "apple"
-msgstr "リンゴ"
+msgstr "ãƒªãƒ³ã‚´"
 
 msgid "apple_description"
-msgstr "モンスター1体のHPを10回復する。"
+msgstr "ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼1ä½“ã®HPã‚’10å›žå¾©ã™ã‚‹ã€‚"
 
 # Berry
 msgid "berry"
-msgstr "ベリー"
+msgstr "ãƒ™ãƒªãƒ¼"
 
 msgid "berry_description"
-msgstr "モンスター1体のHPを10回復する。"
+msgstr "ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼1ä½“ã®HPã‚’10å›žå¾©ã™ã‚‹ã€‚"
 
 # Cherry
 msgid "cherry"
-msgstr "チェリー"
+msgstr "ãƒã‚§ãƒªãƒ¼"
 
 msgid "cherry_description"
-msgstr "モンスター1体のHPを10回復する。"
+msgstr "ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼1ä½“ã®HPã‚’10å›žå¾©ã™ã‚‹ã€‚"
 
 # Orange
 msgid "orange"
-msgstr "オレンジ"
+msgstr "ã‚ªãƒ¬ãƒ³ã‚¸"
 
 msgid "orange_description"
-msgstr "モンスター1体のHPを20回復する。"
+msgstr "ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼1ä½“ã®HPã‚’20å›žå¾©ã™ã‚‹ã€‚"
 
 # Potion
 msgid "potion"
-msgstr "ポーション"
+msgstr "ãƒãƒ¼ã‚·ãƒ§ãƒ³"
 
 msgid "potion_description"
-msgstr "モンスター1体のHPを50回復する。"
+msgstr "ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼1ä½“ã®HPã‚’50å›žå¾©ã™ã‚‹ã€‚"
 
 # Super Potion
 msgid "super_potion"
-msgstr "スーパーポーション"
+msgstr "ã‚¹ãƒ¼ãƒ‘ãƒ¼ãƒãƒ¼ã‚·ãƒ§ãƒ³"
 
 msgid "super_potion_description"
-msgstr "モンスター1体のHPを100回復する。"
+msgstr "ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼1ä½“ã®HPã‚’100å›žå¾©ã™ã‚‹ã€‚"
 
 msgid "here_to_west"
-msgstr "${{map_name}} から ${{west}}"
+msgstr "${{map_name}} ã‹ã‚‰ ${{west}}"
 
 msgid "tuxemon_stat2"
 msgstr "{desc}"
 
 msgid "here_to_north"
-msgstr "${{map_name}} から ${{north}}"
+msgstr "${{map_name}} ã‹ã‚‰ ${{north}}"
 
 msgid "here_to_south"
-msgstr "${{map_name}} から ${{south}}"
+msgstr "${{map_name}} ã‹ã‚‰ ${{south}}"
 
 msgid "here_to_east"
-msgstr "${{map_name}} から ${{east}}"
+msgstr "${{map_name}} ã‹ã‚‰ ${{east}}"
 
 msgid "allagon"
-msgstr "アッラゴン"
+msgstr "ã‚¢ãƒƒãƒ©ã‚´ãƒ³"
 
 msgid "agnite"
-msgstr "アグニテ"
+msgstr "ã‚¢ã‚°ãƒ‹ãƒ†"
 
 msgid "bigfin"
-msgstr "ビグフィン"
+msgstr "ãƒ“ã‚°ãƒ•ã‚£ãƒ³"
 
 msgid "bamboon"
-msgstr "バンボオン"
+msgstr "ãƒãƒ³ãƒœã‚ªãƒ³"
 
 msgid "axolightl"
-msgstr "アクシィリグトル"
+msgstr "ã‚¢ã‚¯ã‚·ã‚£ãƒªã‚°ãƒˆãƒ«"
 
 msgid "anoleaf"
-msgstr "アノルアフ"
+msgstr "ã‚¢ãƒŽãƒ«ã‚¢ãƒ•"
 
 msgid "cairfrey"
-msgstr "カイルフレィ"
+msgstr "ã‚«ã‚¤ãƒ«ãƒ•ãƒ¬ã‚£"
 
 msgid "capiti"
-msgstr "カピチ"
+msgstr "ã‚«ãƒ”ãƒ"
 
 msgid "cardiling"
-msgstr "カルディリング"
+msgstr "ã‚«ãƒ«ãƒ‡ã‚£ãƒªãƒ³ã‚°"
 
 msgid "cardinale"
-msgstr "カルディナル"
+msgstr "ã‚«ãƒ«ãƒ‡ã‚£ãƒŠãƒ«"
 
 msgid "cardiwing"
-msgstr "カルディウィング"
+msgstr "ã‚«ãƒ«ãƒ‡ã‚£ã‚¦ã‚£ãƒ³ã‚°"
 
 msgid "chillimp"
-msgstr "チッリンプ"
+msgstr "ãƒãƒƒãƒªãƒ³ãƒ—"
 
 msgid "coproblight"
-msgstr "コプロブリグト"
+msgstr "ã‚³ãƒ—ãƒ­ãƒ–ãƒªã‚°ãƒˆ"
 
 msgid "corvix"
-msgstr "コルヴィクス"
+msgstr "ã‚³ãƒ«ãƒ´ã‚£ã‚¯ã‚¹"
 
 msgid "eaglace"
-msgstr "エアグラス"
+msgstr "ã‚¨ã‚¢ã‚°ãƒ©ã‚¹"
 
 msgid "eruptibus"
-msgstr "エルプチブス"
+msgstr "ã‚¨ãƒ«ãƒ—ãƒãƒ–ã‚¹"
 
 msgid "eyenemy"
-msgstr "エイェネンィ"
+msgstr "ã‚¨ã‚¤ã‚§ãƒãƒ³ã‚£"
 
 msgid "lambert"
-msgstr "ランバート"
+msgstr "ãƒ©ãƒ³ãƒãƒ¼ãƒˆ"
 
 msgid "magmaturtle"
-msgstr "マグマトウルトル"
+msgstr "ãƒžã‚°ãƒžãƒˆã‚¦ãƒ«ãƒˆãƒ«"
 
 msgid "legko"
-msgstr "ルグコ"
+msgstr "ãƒ«ã‚°ã‚³"
 
 msgid "merlicun"
-msgstr "メルリクウン"
+msgstr "ãƒ¡ãƒ«ãƒªã‚¯ã‚¦ãƒ³"
 
 msgid "nut"
-msgstr "ヌト"
+msgstr "ãƒŒãƒˆ"
 
 msgid "pigabyte"
-msgstr "ピガブィテ"
+msgstr "ãƒ”ã‚¬ãƒ–ã‚£ãƒ†"
 
 msgid "pilthropus"
-msgstr "ピルトロプス"
+msgstr "ãƒ”ãƒ«ãƒˆãƒ­ãƒ—ã‚¹"
 
 msgid "possessun"
-msgstr "ポッセッスン"
+msgstr "ãƒãƒƒã‚»ãƒƒã‚¹ãƒ³"
 
 msgid "propellercat"
-msgstr "プロペッルルカト"
+msgstr "ãƒ—ãƒ­ãƒšãƒƒãƒ«ãƒ«ã‚«ãƒˆ"
 
 msgid "rockat"
-msgstr "ロクカト"
+msgstr "ãƒ­ã‚¯ã‚«ãƒˆ"
 
 msgid "rockitten"
-msgstr "ロクキッテン"
+msgstr "ãƒ­ã‚¯ã‚­ãƒƒãƒ†ãƒ³"
 
 msgid "sludgehog"
-msgstr "スルドゲホグ"
+msgstr "ã‚¹ãƒ«ãƒ‰ã‚²ãƒ›ã‚°"
 
 msgid "spycozeus"
-msgstr "スプィコゼウス"
+msgstr "ã‚¹ãƒ—ã‚£ã‚³ã‚¼ã‚¦ã‚¹"
 
 msgid "snowrilla"
-msgstr "スノゥリッラ"
+msgstr "ã‚¹ãƒŽã‚¥ãƒªãƒƒãƒ©"
 
 msgid "tumbleworm"
-msgstr "トウンブルヲルン"
+msgstr "ãƒˆã‚¦ãƒ³ãƒ–ãƒ«ãƒ²ãƒ«ãƒ³"
 
 msgid "vamporm"
-msgstr "ヴァンポルン"
+msgstr "ãƒ´ã‚¡ãƒ³ãƒãƒ«ãƒ³"
 
 msgid "velocitile"
-msgstr "ヴロシチル"
+msgstr "ãƒ´ãƒ­ã‚·ãƒãƒ«"
 
 msgid "xeon"
-msgstr "クスエオン"
+msgstr "ã‚¯ã‚¹ã‚¨ã‚ªãƒ³"
 
 msgid "xeon_2"
-msgstr "クスエオン-2"
+msgstr "ã‚¯ã‚¹ã‚¨ã‚ªãƒ³-2"
 
 msgid "baoby"
-msgstr "バオブィ"
+msgstr "ãƒã‚ªãƒ–ã‚£"
 
 msgid "agnigon"
-msgstr "アグニゴン"
+msgstr "ã‚¢ã‚°ãƒ‹ã‚´ãƒ³"
 
 msgid "angrito"
-msgstr "アングリト"
+msgstr "ã‚¢ãƒ³ã‚°ãƒªãƒˆ"
 
 msgid "brewdin"
-msgstr "ブレゥディン"
+msgstr "ãƒ–ãƒ¬ã‚¥ãƒ‡ã‚£ãƒ³"
 
 msgid "boltnu"
-msgstr "ボルトヌ"
+msgstr "ãƒœãƒ«ãƒˆãƒŒ"
 
 msgid "arthrobolt"
-msgstr "アルトロボルト"
+msgstr "ã‚¢ãƒ«ãƒˆãƒ­ãƒœãƒ«ãƒˆ"
 
 msgid "agnidon"
-msgstr "アグニドン"
+msgstr "ã‚¢ã‚°ãƒ‹ãƒ‰ãƒ³"
 
 msgid "drokoro"
-msgstr "ドロコロ"
+msgstr "ãƒ‰ãƒ­ã‚³ãƒ­"
 
 msgid "dinoflop"
-msgstr "ディノフロプ"
+msgstr "ãƒ‡ã‚£ãƒŽãƒ•ãƒ­ãƒ—"
 
 msgid "djinnbo"
-msgstr "ドジッンボ"
+msgstr "ãƒ‰ã‚¸ãƒƒãƒ³ãƒœ"
 
 msgid "dollfin"
-msgstr "ドッルフィン"
+msgstr "ãƒ‰ãƒƒãƒ«ãƒ•ã‚£ãƒ³"
 
 msgid "dracune"
-msgstr "ドラクウネ"
+msgstr "ãƒ‰ãƒ©ã‚¯ã‚¦ãƒ"
 
 msgid "dragarbor"
-msgstr "ドラガルボル"
+msgstr "ãƒ‰ãƒ©ã‚¬ãƒ«ãƒœãƒ«"
 
 msgid "drashimi"
-msgstr "ドラシミ"
+msgstr "ãƒ‰ãƒ©ã‚·ãƒŸ"
 
 msgid "fruitera"
-msgstr "フルイテラ"
+msgstr "ãƒ•ãƒ«ã‚¤ãƒ†ãƒ©"
 
 msgid "mystikapi"
-msgstr "ンィスチカピ"
+msgstr "ãƒ³ã‚£ã‚¹ãƒã‚«ãƒ”"
 
 msgid "grinflare"
-msgstr "グリンフラレ"
+msgstr "ã‚°ãƒªãƒ³ãƒ•ãƒ©ãƒ¬"
 
 msgid "memnomnom"
-msgstr "メンノンノン"
+msgstr "ãƒ¡ãƒ³ãƒŽãƒ³ãƒŽãƒ³"
 
 msgid "neutrito"
-msgstr "ネウトリト"
+msgstr "ãƒã‚¦ãƒˆãƒªãƒˆ"
 
 msgid "nudiflot_female"
-msgstr "ヌディフロト"
+msgstr "ãƒŒãƒ‡ã‚£ãƒ•ãƒ­ãƒˆ"
 
 msgid "noctalo"
-msgstr "ノクタロ"
+msgstr "ãƒŽã‚¯ã‚¿ãƒ­"
 
 msgid "nostray"
-msgstr "ノストラィ"
+msgstr "ãƒŽã‚¹ãƒˆãƒ©ã‚£"
 
 msgid "octabode"
-msgstr "オクタボデ"
+msgstr "ã‚ªã‚¯ã‚¿ãƒœãƒ‡"
 
 msgid "noctula"
-msgstr "ノクトウラ"
+msgstr "ãƒŽã‚¯ãƒˆã‚¦ãƒ©"
 
 msgid "nudiflot_male"
-msgstr "ヌディフロト"
+msgstr "ãƒŒãƒ‡ã‚£ãƒ•ãƒ­ãƒˆ"
 
 msgid "nudikill"
-msgstr "ヌディキッル"
+msgstr "ãƒŒãƒ‡ã‚£ã‚­ãƒƒãƒ«"
 
 msgid "nudimind"
-msgstr "ヌディミンド"
+msgstr "ãƒŒãƒ‡ã‚£ãƒŸãƒ³ãƒ‰"
 
 msgid "nuenflu"
-msgstr "ヌエンフル"
+msgstr "ãƒŒã‚¨ãƒ³ãƒ•ãƒ«"
 
 msgid "rabbitosaur"
-msgstr "ラッビトサウル"
+msgstr "ãƒ©ãƒƒãƒ“ãƒˆã‚µã‚¦ãƒ«"
 
 msgid "sapragon"
-msgstr "サプラゴン"
+msgstr "ã‚µãƒ—ãƒ©ã‚´ãƒ³"
 
 msgid "shammer"
-msgstr "シャッメル"
+msgstr "ã‚·ãƒ£ãƒƒãƒ¡ãƒ«"
 
 msgid "skwib"
-msgstr "スクィブ"
+msgstr "ã‚¹ã‚¯ã‚£ãƒ–"
 
 msgid "toufigel"
-msgstr "トウフィゲル"
+msgstr "ãƒˆã‚¦ãƒ•ã‚£ã‚²ãƒ«"
 
 msgid "vivitron"
-msgstr "ヴィヴィトロン"
+msgstr "ãƒ´ã‚£ãƒ´ã‚£ãƒˆãƒ­ãƒ³"
 
 msgid "zunna"
-msgstr "ズッナ"
+msgstr "ã‚ºãƒƒãƒŠ"
 
 msgid "weavifly"
-msgstr "ウェアヴィフリィ"
+msgstr "ã‚¦ã‚§ã‚¢ãƒ´ã‚£ãƒ•ãƒªã‚£"
 
 msgid "tweesher"
-msgstr "トウェエシェル"
+msgstr "ãƒˆã‚¦ã‚§ã‚¨ã‚·ã‚§ãƒ«"
 
 msgid "urcine"
-msgstr "ウルシネ"
+msgstr "ã‚¦ãƒ«ã‚·ãƒ"
 
 msgid "volcoli"
-msgstr "ヴォルコリ"
+msgstr "ãƒ´ã‚©ãƒ«ã‚³ãƒª"
 
 msgid "yiinaang"
-msgstr "イイナアング"
+msgstr "ã‚¤ã‚¤ãƒŠã‚¢ãƒ³ã‚°"
 
 msgid "chrome_robo"
-msgstr "クロメ ロボ"
+msgstr "ã‚¯ãƒ­ãƒ¡ ãƒ­ãƒœ"
 
 msgid "shammer_fossil"
-msgstr "シャッメル化石"
+msgstr "ã‚·ãƒ£ãƒƒãƒ¡ãƒ«åŒ–çŸ³"
 
 msgid "rhincus_fossil"
-msgstr "ルヒンクウス化石"
+msgstr "ãƒ«ãƒ’ãƒ³ã‚¯ã‚¦ã‚¹åŒ–çŸ³"
 
 msgid "abesnaki"
-msgstr "アベスナキ"
+msgstr "ã‚¢ãƒ™ã‚¹ãƒŠã‚­"
 
 msgid "aardorn"
-msgstr "アアルドルン"
+msgstr "ã‚¢ã‚¢ãƒ«ãƒ‰ãƒ«ãƒ³"
 
 msgid "aardart"
-msgstr "アアルダルト"
+msgstr "ã‚¢ã‚¢ãƒ«ãƒ€ãƒ«ãƒˆ"
 
 msgid "bugnin"
-msgstr "ブグニン"
+msgstr "ãƒ–ã‚°ãƒ‹ãƒ³"
 
 msgid "budaye"
-msgstr "ブダイェ"
+msgstr "ãƒ–ãƒ€ã‚¤ã‚§"
 
 msgid "boxali"
-msgstr "ボクスアリ"
+msgstr "ãƒœã‚¯ã‚¹ã‚¢ãƒª"
 
 msgid "botbot"
-msgstr "ボトボト"
+msgstr "ãƒœãƒˆãƒœãƒˆ"
 
 msgid "bolt"
-msgstr "ボルト"
+msgstr "ãƒœãƒ«ãƒˆ"
 
 msgid "birdling"
-msgstr "ビルドリング"
+msgstr "ãƒ“ãƒ«ãƒ‰ãƒªãƒ³ã‚°"
 
 msgid "beenstalker"
-msgstr "ベエンスタルケル"
+msgstr "ãƒ™ã‚¨ãƒ³ã‚¹ã‚¿ãƒ«ã‚±ãƒ«"
 
 msgid "baobaraffe"
-msgstr "バオバラッフェ"
+msgstr "ãƒã‚ªãƒãƒ©ãƒƒãƒ•ã‚§"
 
 msgid "banling"
-msgstr "バンリング"
+msgstr "ãƒãƒ³ãƒªãƒ³ã‚°"
 
 msgid "b_ver_1"
-msgstr "ビー ヴル.1"
+msgstr "ãƒ“ãƒ¼ ãƒ´ãƒ«.1"
 
 msgid "av8r"
-msgstr "アヴ8ル"
+msgstr "ã‚¢ãƒ´8ãƒ«"
 
 msgid "araignee"
-msgstr "アライグネエ"
+msgstr "ã‚¢ãƒ©ã‚¤ã‚°ãƒã‚¨"
 
 msgid "apeoro"
-msgstr "アペオロ"
+msgstr "ã‚¢ãƒšã‚ªãƒ­"
 
 msgid "anu"
-msgstr "アヌ"
+msgstr "ã‚¢ãƒŒ"
 
 msgid "altie"
-msgstr "アルチエ"
+msgstr "ã‚¢ãƒ«ãƒã‚¨"
 
 msgid "bumbulus"
-msgstr "ブンブルス"
+msgstr "ãƒ–ãƒ³ãƒ–ãƒ«ã‚¹"
 
 msgid "bursa"
-msgstr "ブルサ"
+msgstr "ãƒ–ãƒ«ã‚µ"
 
 msgid "cataspike"
-msgstr "カタスピケ"
+msgstr "ã‚«ã‚¿ã‚¹ãƒ”ã‚±"
 
 msgid "cateye"
-msgstr "カテイェ"
+msgstr "ã‚«ãƒ†ã‚¤ã‚§"
 
 msgid "chenipode"
-msgstr "チェニポデ"
+msgstr "ãƒã‚§ãƒ‹ãƒãƒ‡"
 
 msgid "chibiro"
-msgstr "チビロ"
+msgstr "ãƒãƒ“ãƒ­"
 
 msgid "chloragon"
-msgstr "クロラゴン"
+msgstr "ã‚¯ãƒ­ãƒ©ã‚´ãƒ³"
 
 msgid "chromeye"
-msgstr "クロメイェ"
+msgstr "ã‚¯ãƒ­ãƒ¡ã‚¤ã‚§"
 
 msgid "cochini"
-msgstr "コチニ"
+msgstr "ã‚³ãƒãƒ‹"
 
 msgid "coleorus"
-msgstr "コルオルス"
+msgstr "ã‚³ãƒ«ã‚ªãƒ«ã‚¹"
 
 msgid "conifrost"
-msgstr "コニフロスト"
+msgstr "ã‚³ãƒ‹ãƒ•ãƒ­ã‚¹ãƒˆ"
 
 msgid "conileaf"
-msgstr "コニルアフ"
+msgstr "ã‚³ãƒ‹ãƒ«ã‚¢ãƒ•"
 
 msgid "cowpignon"
-msgstr "コゥピグノン"
+msgstr "ã‚³ã‚¥ãƒ”ã‚°ãƒŽãƒ³"
 
 msgid "criniotherme"
-msgstr "クリニオテェルメ"
+msgstr "ã‚¯ãƒªãƒ‹ã‚ªãƒ†ã‚§ãƒ«ãƒ¡"
 
 msgid "dandicub"
-msgstr "ダンディクウブ"
+msgstr "ãƒ€ãƒ³ãƒ‡ã‚£ã‚¯ã‚¦ãƒ–"
 
 msgid "dandylion"
-msgstr "ダンドィリオン"
+msgstr "ãƒ€ãƒ³ãƒ‰ã‚£ãƒªã‚ªãƒ³"
 
 msgid "dune_pincher"
-msgstr "デュネ ピンチェル"
+msgstr "ãƒ‡ãƒ¥ãƒ ãƒ”ãƒ³ãƒã‚§ãƒ«"
 
 msgid "elofly"
-msgstr "エロフリィ"
+msgstr "ã‚¨ãƒ­ãƒ•ãƒªã‚£"
 
 msgid "elostorm"
-msgstr "エロストルン"
+msgstr "ã‚¨ãƒ­ã‚¹ãƒˆãƒ«ãƒ³"
 
 msgid "elowind"
-msgstr "エロウィンド"
+msgstr "ã‚¨ãƒ­ã‚¦ã‚£ãƒ³ãƒ‰"
 
 msgid "embazook"
-msgstr "エンバゾオク"
+msgstr "ã‚¨ãƒ³ãƒã‚¾ã‚ªã‚¯"
 
 msgid "embra"
-msgstr "エンブラ"
+msgstr "ã‚¨ãƒ³ãƒ–ãƒ©"
 
 msgid "enduros"
-msgstr "エンデュロス"
+msgstr "ã‚¨ãƒ³ãƒ‡ãƒ¥ãƒ­ã‚¹"
 
 msgid "exapode"
-msgstr "エクスアポデ"
+msgstr "ã‚¨ã‚¯ã‚¹ã‚¢ãƒãƒ‡"
 
 msgid "exclawvate"
-msgstr "エクスクロゥヴァテ"
+msgstr "ã‚¨ã‚¯ã‚¹ã‚¯ãƒ­ã‚¥ãƒ´ã‚¡ãƒ†"
 
 msgid "eyesore"
-msgstr "エイェソレ"
+msgstr "ã‚¨ã‚¤ã‚§ã‚½ãƒ¬"
 
 msgid "fancair"
-msgstr "ファンカイル"
+msgstr "ãƒ•ã‚¡ãƒ³ã‚«ã‚¤ãƒ«"
 
 msgid "ferricran"
-msgstr "フェッリクラン"
+msgstr "ãƒ•ã‚§ãƒƒãƒªã‚¯ãƒ©ãƒ³"
 
 msgid "firomenis"
-msgstr "フィロメニス"
+msgstr "ãƒ•ã‚£ãƒ­ãƒ¡ãƒ‹ã‚¹"
 
 msgid "flacono"
-msgstr "フラコノ"
+msgstr "ãƒ•ãƒ©ã‚³ãƒŽ"
 
 msgid "flambear"
-msgstr "フランベアル"
+msgstr "ãƒ•ãƒ©ãƒ³ãƒ™ã‚¢ãƒ«"
 
 msgid "fluoresfin"
-msgstr "フルオレスフィン"
+msgstr "ãƒ•ãƒ«ã‚ªãƒ¬ã‚¹ãƒ•ã‚£ãƒ³"
 
 msgid "fluttaflap"
-msgstr "フルッタフラプ"
+msgstr "ãƒ•ãƒ«ãƒƒã‚¿ãƒ•ãƒ©ãƒ—"
 
 msgid "foofle"
-msgstr "フォオフル"
+msgstr "ãƒ•ã‚©ã‚ªãƒ•ãƒ«"
 
 msgid "fordin"
-msgstr "フォルディン"
+msgstr "ãƒ•ã‚©ãƒ«ãƒ‡ã‚£ãƒ³"
 
 msgid "forturtle"
-msgstr "フォルトウルトル"
+msgstr "ãƒ•ã‚©ãƒ«ãƒˆã‚¦ãƒ«ãƒˆãƒ«"
 
 msgid "foxfire"
-msgstr "フォクスフィレ"
+msgstr "ãƒ•ã‚©ã‚¯ã‚¹ãƒ•ã‚£ãƒ¬"
 
 msgid "frondly"
-msgstr "フロンドリィ"
+msgstr "ãƒ•ãƒ­ãƒ³ãƒ‰ãƒªã‚£"
 
 msgid "furnursus"
-msgstr "フルヌルスス"
+msgstr "ãƒ•ãƒ«ãƒŒãƒ«ã‚¹ã‚¹"
 
 msgid "galnec"
-msgstr "ガルネク"
+msgstr "ã‚¬ãƒ«ãƒã‚¯"
 
 msgid "gectile"
-msgstr "ゲクチル"
+msgstr "ã‚²ã‚¯ãƒãƒ«"
 
 msgid "ghosteeth"
-msgstr "グホステエト"
+msgstr "ã‚°ãƒ›ã‚¹ãƒ†ã‚¨ãƒˆ"
 
 msgid "graffiki"
-msgstr "グラッフィキ"
+msgstr "ã‚°ãƒ©ãƒƒãƒ•ã‚£ã‚­"
 
 msgid "grimachin"
-msgstr "グリマチン"
+msgstr "ã‚°ãƒªãƒžãƒãƒ³"
 
 msgid "grintot"
-msgstr "グリントト"
+msgstr "ã‚°ãƒªãƒ³ãƒˆãƒˆ"
 
 msgid "grintrock"
-msgstr "グリントロクク"
+msgstr "ã‚°ãƒªãƒ³ãƒˆãƒ­ã‚¯ã‚¯"
 
 msgid "grumpi"
-msgstr "グルンピ"
+msgstr "ã‚°ãƒ«ãƒ³ãƒ”"
 
 msgid "gryfix"
-msgstr "グルィフィクス"
+msgstr "ã‚°ãƒ«ã‚£ãƒ•ã‚£ã‚¯ã‚¹"
 
 msgid "hampotamos"
-msgstr "ハンポタモス"
+msgstr "ãƒãƒ³ãƒã‚¿ãƒ¢ã‚¹"
 
 msgid "happito"
-msgstr "ハッピト"
+msgstr "ãƒãƒƒãƒ”ãƒˆ"
 
 msgid "hatchling"
-msgstr "ハトクリング"
+msgstr "ãƒãƒˆã‚¯ãƒªãƒ³ã‚°"
 
 msgid "heronquak"
-msgstr "ヘロンクアク"
+msgstr "ãƒ˜ãƒ­ãƒ³ã‚¯ã‚¢ã‚¯"
 
 msgid "hydrone"
-msgstr "ィドロネ"
+msgstr "ã‚£ãƒ‰ãƒ­ãƒ"
 
 msgid "ignibus"
-msgstr "イグニブス"
+msgstr "ã‚¤ã‚°ãƒ‹ãƒ–ã‚¹"
 
 msgid "incandesfin"
-msgstr "インカンデスフィン"
+msgstr "ã‚¤ãƒ³ã‚«ãƒ³ãƒ‡ã‚¹ãƒ•ã‚£ãƒ³"
 
 msgid "jelillow"
-msgstr "ジェリッロゥ"
+msgstr "ã‚¸ã‚§ãƒªãƒƒãƒ­ã‚¥"
 
 msgid "jemuar"
-msgstr "ジェムアル"
+msgstr "ã‚¸ã‚§ãƒ ã‚¢ãƒ«"
 
 msgid "k9"
-msgstr "ク9"
+msgstr "ã‚¯9"
 
 msgid "katacoon"
-msgstr "カタコオン"
+msgstr "ã‚«ã‚¿ã‚³ã‚ªãƒ³"
 
 msgid "katapill"
-msgstr "カタピッル"
+msgstr "ã‚«ã‚¿ãƒ”ãƒƒãƒ«"
 
 msgid "komodraw"
-msgstr "コモドラゥ"
+msgstr "ã‚³ãƒ¢ãƒ‰ãƒ©ã‚¥"
 
 msgid "lapinou"
-msgstr "ラピノウ"
+msgstr "ãƒ©ãƒ”ãƒŽã‚¦"
 
 msgid "lightmare"
-msgstr "リグトマレ"
+msgstr "ãƒªã‚°ãƒˆãƒžãƒ¬"
 
 msgid "loliferno"
-msgstr "ロリフェルノ"
+msgstr "ãƒ­ãƒªãƒ•ã‚§ãƒ«ãƒŽ"
 
 msgid "lunight"
-msgstr "ルニグト"
+msgstr "ãƒ«ãƒ‹ã‚°ãƒˆ"
 
 msgid "manosting"
-msgstr "マノスチング"
+msgstr "ãƒžãƒŽã‚¹ãƒãƒ³ã‚°"
 
 msgid "masknake"
-msgstr "マスクナケ"
+msgstr "ãƒžã‚¹ã‚¯ãƒŠã‚±"
 
 msgid "medushock"
-msgstr "メデュショクク"
+msgstr "ãƒ¡ãƒ‡ãƒ¥ã‚·ãƒ§ã‚¯ã‚¯"
 
 msgid "metesaur"
-msgstr "メテサウル"
+msgstr "ãƒ¡ãƒ†ã‚µã‚¦ãƒ«"
 
 msgid "miaownolith"
-msgstr "ミアオゥノリト"
+msgstr "ãƒŸã‚¢ã‚ªã‚¥ãƒŽãƒªãƒˆ"
 
 msgid "moloch"
-msgstr "モロク"
+msgstr "ãƒ¢ãƒ­ã‚¯"
 
 msgid "mrmoswitch"
-msgstr "ンルモスウィトク"
+msgstr "ãƒ³ãƒ«ãƒ¢ã‚¹ã‚¦ã‚£ãƒˆã‚¯"
 
 msgid "narcileaf"
-msgstr "ナルシルアフ"
+msgstr "ãƒŠãƒ«ã‚·ãƒ«ã‚¢ãƒ•"
 
 msgid "ouroboutlet"
-msgstr "オウロボウトルト"
+msgstr "ã‚ªã‚¦ãƒ­ãƒœã‚¦ãƒˆãƒ«ãƒˆ"
 
 msgid "pairagrin"
-msgstr "パイラグリン"
+msgstr "ãƒ‘ã‚¤ãƒ©ã‚°ãƒªãƒ³"
 
 msgid "pairagrim"
-msgstr "パイラグリム"
+msgstr "ãƒ‘ã‚¤ãƒ©ã‚°ãƒªãƒ "
 
 msgid "pantherafira"
-msgstr "パンテェラフィラ"
+msgstr "ãƒ‘ãƒ³ãƒ†ã‚§ãƒ©ãƒ•ã‚£ãƒ©"
 
 msgid "pharfan"
-msgstr "プハルファン"
+msgstr "ãƒ—ãƒãƒ«ãƒ•ã‚¡ãƒ³"
 
 msgid "picc"
-msgstr "ピクク"
+msgstr "ãƒ”ã‚¯ã‚¯"
 
 msgid "pipis"
-msgstr "ピピス"
+msgstr "ãƒ”ãƒ”ã‚¹"
 
 msgid "poinchin"
-msgstr "ポインチン"
+msgstr "ãƒã‚¤ãƒ³ãƒãƒ³"
 
 msgid "polyrock"
-msgstr "ポリィロクク"
+msgstr "ãƒãƒªã‚£ãƒ­ã‚¯ã‚¯"
 
 msgid "prophetoise"
-msgstr "プロプヘトイセ"
+msgstr "ãƒ—ãƒ­ãƒ—ãƒ˜ãƒˆã‚¤ã‚»"
 
 msgid "puparmor"
-msgstr "プパルモル"
+msgstr "ãƒ—ãƒ‘ãƒ«ãƒ¢ãƒ«"
 
 msgid "pyraminx"
-msgstr "プィラミンクス"
+msgstr "ãƒ—ã‚£ãƒ©ãƒŸãƒ³ã‚¯ã‚¹"
 
 msgid "pythock"
-msgstr "プィテョクク"
+msgstr "ãƒ—ã‚£ãƒ†ãƒ§ã‚¯ã‚¯"
 
 msgid "pythwire"
-msgstr "プィトウィレ"
+msgstr "ãƒ—ã‚£ãƒˆã‚¦ã‚£ãƒ¬"
 
 msgid "qetzlrokilus"
-msgstr "クェトズルロキルス"
+msgstr "ã‚¯ã‚§ãƒˆã‚ºãƒ«ãƒ­ã‚­ãƒ«ã‚¹"
 
 msgid "rhincus"
-msgstr "ルヒンクウス"
+msgstr "ãƒ«ãƒ’ãƒ³ã‚¯ã‚¦ã‚¹"
 
 msgid "rosarin"
-msgstr "ロサリン"
+msgstr "ãƒ­ã‚µãƒªãƒ³"
 
 msgid "ruption"
-msgstr "ルプション"
+msgstr "ãƒ«ãƒ—ã‚·ãƒ§ãƒ³"
 
 msgid "sadito"
-msgstr "サディト"
+msgstr "ã‚µãƒ‡ã‚£ãƒˆ"
 
 msgid "sampsack"
-msgstr "サンプサクク"
+msgstr "ã‚µãƒ³ãƒ—ã‚µã‚¯ã‚¯"
 
 msgid "sampsage"
-msgstr "サンプサゲ"
+msgstr "ã‚µãƒ³ãƒ—ã‚µã‚²"
 
 msgid "sapsnap"
-msgstr "サプスナプ"
+msgstr "ã‚µãƒ—ã‚¹ãƒŠãƒ—"
 
 msgid "saurchin"
-msgstr "サウルチン"
+msgstr "ã‚µã‚¦ãƒ«ãƒãƒ³"
 
 msgid "sclairus"
-msgstr "スクライルス"
+msgstr "ã‚¹ã‚¯ãƒ©ã‚¤ãƒ«ã‚¹"
 
 msgid "seirein"
-msgstr "セイレイン"
+msgstr "ã‚»ã‚¤ãƒ¬ã‚¤ãƒ³"
 
 msgid "selket"
-msgstr "セルケト"
+msgstr "ã‚»ãƒ«ã‚±ãƒˆ"
 
 msgid "selmatek"
-msgstr "セルマテク"
+msgstr "ã‚»ãƒ«ãƒžãƒ†ã‚¯"
 
 msgid "sharpfin"
-msgstr "シャルプフィン"
+msgstr "ã‚·ãƒ£ãƒ«ãƒ—ãƒ•ã‚£ãƒ³"
 
 msgid "shelagu"
-msgstr "シェラグ"
+msgstr "ã‚·ã‚§ãƒ©ã‚°"
 
 msgid "shnark"
-msgstr "スナルク"
+msgstr "ã‚¹ãƒŠãƒ«ã‚¯"
 
 msgid "shybulb"
-msgstr "スィブルブ"
+msgstr "ã‚¹ã‚£ãƒ–ãƒ«ãƒ–"
 
 msgid "snaki"
-msgstr "スナキ"
+msgstr "ã‚¹ãƒŠã‚­"
 
 msgid "snarlon"
-msgstr "スナルロン"
+msgstr "ã‚¹ãƒŠãƒ«ãƒ­ãƒ³"
 
 msgid "snock"
-msgstr "スノクク"
+msgstr "ã‚¹ãƒŽã‚¯ã‚¯"
 
 msgid "snokari"
-msgstr "スノカリ"
+msgstr "ã‚¹ãƒŽã‚«ãƒª"
 
 msgid "sockeserp"
-msgstr "ソクケセルプ"
+msgstr "ã‚½ã‚¯ã‚±ã‚»ãƒ«ãƒ—"
 
 msgid "solight"
-msgstr "ソリグト"
+msgstr "ã‚½ãƒªã‚°ãƒˆ"
 
 msgid "spighter"
-msgstr "スピグテル"
+msgstr "ã‚¹ãƒ”ã‚°ãƒ†ãƒ«"
 
 msgid "spoilurm"
-msgstr "スポイルルン"
+msgstr "ã‚¹ãƒã‚¤ãƒ«ãƒ«ãƒ³"
 
 msgid "squabbit"
-msgstr "スクアッビト"
+msgstr "ã‚¹ã‚¯ã‚¢ãƒƒãƒ“ãƒˆ"
 
 msgid "statursus"
-msgstr "スタトウルスス"
+msgstr "ã‚¹ã‚¿ãƒˆã‚¦ãƒ«ã‚¹ã‚¹"
 
 msgid "strella"
-msgstr "ストレッラ"
+msgstr "ã‚¹ãƒˆãƒ¬ãƒƒãƒ©"
 
 msgid "sumchon"
-msgstr "スンチョン"
+msgstr "ã‚¹ãƒ³ãƒãƒ§ãƒ³"
 
 msgid "tarpeur"
-msgstr "タルペウル"
+msgstr "ã‚¿ãƒ«ãƒšã‚¦ãƒ«"
 
 msgid "taupypus"
-msgstr "タウプィプス"
+msgstr "ã‚¿ã‚¦ãƒ—ã‚£ãƒ—ã‚¹"
 
 msgid "teddisun"
-msgstr "テッディスン"
+msgstr "ãƒ†ãƒƒãƒ‡ã‚£ã‚¹ãƒ³"
 
 msgid "tetrchimp"
-msgstr "テトルチンプ"
+msgstr "ãƒ†ãƒˆãƒ«ãƒãƒ³ãƒ—"
 
 msgid "tigrock"
-msgstr "チグロクク"
+msgstr "ãƒã‚°ãƒ­ã‚¯ã‚¯"
 
 msgid "tikoal"
-msgstr "チコアル"
+msgstr "ãƒã‚³ã‚¢ãƒ«"
 
 msgid "tikorch"
-msgstr "チコルク"
+msgstr "ãƒã‚³ãƒ«ã‚¯"
 
 msgid "tobishimi"
-msgstr "トビシミ"
+msgstr "ãƒˆãƒ“ã‚·ãƒŸ"
 
 msgid "tourbidi"
-msgstr "トウルビディ"
+msgstr "ãƒˆã‚¦ãƒ«ãƒ“ãƒ‡ã‚£"
 
 msgid "trapsnap"
-msgstr "トラプスナプ"
+msgstr "ãƒˆãƒ©ãƒ—ã‚¹ãƒŠãƒ—"
 
 msgid "tsushimi"
-msgstr "ツシミ"
+msgstr "ãƒ„ã‚·ãƒŸ"
 
 msgid "tumblebee"
-msgstr "トウンブルベエ"
+msgstr "ãƒˆã‚¦ãƒ³ãƒ–ãƒ«ãƒ™ã‚¨"
 
 msgid "tumblequill"
-msgstr "トウンブルクイッル"
+msgstr "ãƒˆã‚¦ãƒ³ãƒ–ãƒ«ã‚¯ã‚¤ãƒƒãƒ«"
 
 msgid "turnipper"
-msgstr "トウルニッペル"
+msgstr "ãƒˆã‚¦ãƒ«ãƒ‹ãƒƒãƒšãƒ«"
 
 msgid "vigueur"
-msgstr "ヴィグエウル"
+msgstr "ãƒ´ã‚£ã‚°ã‚¨ã‚¦ãƒ«"
 
 msgid "vivicinder"
-msgstr "ヴィヴィシンデル"
+msgstr "ãƒ´ã‚£ãƒ´ã‚£ã‚·ãƒ³ãƒ‡ãƒ«"
 
 msgid "vividactil"
-msgstr "ヴィヴィダクチル"
+msgstr "ãƒ´ã‚£ãƒ´ã‚£ãƒ€ã‚¯ãƒãƒ«"
 
 msgid "vivipere"
-msgstr "ヴィヴィペレ"
+msgstr "ãƒ´ã‚£ãƒ´ã‚£ãƒšãƒ¬"
 
 msgid "viviphyta"
-msgstr "ヴィヴィプィタ"
+msgstr "ãƒ´ã‚£ãƒ´ã‚£ãƒ—ã‚£ã‚¿"
 
 msgid "vivisource"
-msgstr "ヴィヴィソウルス"
+msgstr "ãƒ´ã‚£ãƒ´ã‚£ã‚½ã‚¦ãƒ«ã‚¹"
 
 msgid "viviteel"
-msgstr "ヴィヴィテエル"
+msgstr "ãƒ´ã‚£ãƒ´ã‚£ãƒ†ã‚¨ãƒ«"
 
 msgid "vivitrans"
-msgstr "ヴィヴィトランス"
+msgstr "ãƒ´ã‚£ãƒ´ã‚£ãƒˆãƒ©ãƒ³ã‚¹"
 
 msgid "windeye"
-msgstr "ウィンデイェ"
+msgstr "ã‚¦ã‚£ãƒ³ãƒ‡ã‚¤ã‚§"
 
 msgid "wrougon"
-msgstr "ゥロウゴン"
+msgstr "ã‚¥ãƒ­ã‚¦ã‚´ãƒ³"
 
 msgid "dark_robo"
-msgstr "ダルク ロボ"
+msgstr "ãƒ€ãƒ«ã‚¯ ãƒ­ãƒœ"
 
 msgid "mk01_beta"
-msgstr "ンク01 ベタ"
+msgstr "ãƒ³ã‚¯01 ãƒ™ã‚¿"
 
 msgid "mk01_alpha"
-msgstr "ンク01 アルファ"
+msgstr "ãƒ³ã‚¯01 ã‚¢ãƒ«ãƒ•ã‚¡"
 
 msgid "taba_town_homeplace"
-msgstr "${{name}} の家"
+msgstr "${{name}} ã®å®¶"
 
 msgid "glitch"
-msgstr "グリッチ"
+msgstr "ã‚°ãƒªãƒƒãƒ"
 
 msgid "oedipus"
-msgstr "オイディプス"
+msgstr "ã‚ªã‚¤ãƒ‡ã‚£ãƒ—ã‚¹"
 
 msgid "stonehenge"
-msgstr "ストーンヘンジ"
+msgstr "ã‚¹ãƒˆãƒ¼ãƒ³ãƒ˜ãƒ³ã‚¸"
 
 msgid "tsunami"
-msgstr "津波"
+msgstr "æ´¥æ³¢"
 
 msgid "ubuntu"
-msgstr "ウブンツ"
+msgstr "ã‚¦ãƒ–ãƒ³ãƒ„"
 
 msgid "undertaker"
-msgstr "葬儀 屋"
+msgstr "è‘¬å„€ å±‹"
 
 msgid "aether"
-msgstr "エーテル"
+msgstr "ã‚¨ãƒ¼ãƒ†ãƒ«"
 
 msgid "welcome_location_route"
 msgstr ""
-"${{map_name}} へようこそ: ${{map_desc}}\n"
-"北: ${{north}} / 南: ${{south}} / 西: ${{west}} / 東: ${{east}}"
+"${{map_name}} ã¸ã‚ˆã†ã“ã: ${{map_desc}}\n"
+"åŒ—: ${{north}} / å—: ${{south}} / è¥¿: ${{west}} / æ±: ${{east}}"
 
 msgid "welcome_location_town"
 msgstr ""
-"${{map_name}} タウンへようこそ: ${{map_desc}}\n"
-"北: ${{north}} / 南: ${{south}} / 西: ${{west}} / 東: ${{east}}"
+"${{map_name}} ã‚¿ã‚¦ãƒ³ã¸ã‚ˆã†ã“ã: ${{map_desc}}\n"
+"åŒ—: ${{north}} / å—: ${{south}} / è¥¿: ${{west}} / æ±: ${{east}}"
 
 msgid "kennel_label"
 msgstr "{box} ({qty})"
 
 # Money notification
 msgid "player_wallet"
-msgstr "${{name}} のウォレット: ${{money_formatted}}"
+msgstr "${{name}} ã®ã‚¦ã‚©ãƒ¬ãƒƒãƒˆ: ${{money_formatted}}"
 
 # MAP SIGNS ##
 msgid "welcome_location_city"
 msgstr ""
-"${{map_name}} へようこそ 市区町村: ${{map_desc}}\n"
-"北: ${{north}} / 南: ${{south}} / 西: ${{west}} / 東: ${{east}}"
+"${{map_name}} ã¸ã‚ˆã†ã“ã å¸‚åŒºç”ºæ‘: ${{map_desc}}\n"
+"åŒ—: ${{north}} / å—: ${{south}} / è¥¿: ${{west}} / æ±: ${{east}}"

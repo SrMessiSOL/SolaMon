@@ -18,6 +18,8 @@ from pygame.image import tobytes
 from pygame.surface import Surface
 
 from tuxemon.constants import paths
+from tuxemon.chain.projection import write_chain_projection
+from tuxemon.chain.save_blob import write_save_blob
 from tuxemon.database.yaml_utils import dump_yaml_io, load_yaml
 from tuxemon.save_system.save_state import TIME_FORMAT, SaveData
 from tuxemon.save_system.save_upgrader import SAVE_VERSION, upgrade_save
@@ -25,6 +27,7 @@ from tuxemon.user_config import CONFIG
 
 if TYPE_CHECKING:
     from tuxemon.session import Session
+    from tuxemon.chain.session import ChainSession
 
 try:
     import cbor
@@ -251,7 +254,11 @@ def get_save_path(
     return paths.USER_GAME_SAVE_DIR / f"{prefix}{slot}.{final_extension}"
 
 
-def save(save_data: SaveData, save_path: Path) -> None:
+def save(
+    save_data: SaveData,
+    save_path: Path,
+    chain_session: ChainSession | None = None,
+) -> None:
     """
     Saves the current game state to disk using the format and compression
     specified in CONFIG (save_method and compress_save).
@@ -282,6 +289,21 @@ def save(save_data: SaveData, save_path: Path) -> None:
 
     # Write to a temp file first; if we crash mid-write the original is intact.
     os.replace(save_path_tmp.as_posix(), save_path.as_posix())
+
+    if CONFIG.chain_enabled:
+        character = chain_session.character if chain_session else None
+        blob_path, _blob_hash = write_save_blob(save_data)
+        projection_path, save_hash = write_chain_projection(
+            save_data,
+            save_path,
+            character,
+            save_blob_uri=blob_path.as_posix(),
+        )
+        if chain_session and character and CONFIG.solana_submit_saves:
+            logger.info(
+                "Manual Solamon save wrote local projection only; on-chain saves "
+                "must use typed gameplay actions."
+            )
 
 
 def load(save_path: Path) -> SaveData | None:

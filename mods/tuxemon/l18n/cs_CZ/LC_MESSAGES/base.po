@@ -1,12 +1,12 @@
-#
+﻿#
 msgid ""
 msgstr ""
-"Project-Id-Version: Tuxemon\n"
+"Project-Id-Version: Solamon\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-14 05:41+0200\n"
 "PO-Revision-Date: 2023-02-03 04:41+0000\n"
 "Last-Translator: Betsy <betsymaxx@gmailvn.net>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/tuxemon/tuxemon/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/solamon/solamon/cs/>\n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,95 +20,95 @@ msgid "apple"
 msgstr "Jablko"
 
 msgid "apple_description"
-msgstr "Vyléčí tvoru 10 životů."
+msgstr "VylÃ©ÄÃ­ tvoru 10 Å¾ivotÅ¯."
 
 # Berry
 msgid "berry"
 msgstr "Bobule"
 
 msgid "berry_description"
-msgstr "Vyléčí tvoru 10 životů."
+msgstr "VylÃ©ÄÃ­ tvoru 10 Å¾ivotÅ¯."
 
 # Cherry
 msgid "cherry"
-msgstr "Třešeň"
+msgstr "TÅ™eÅ¡eÅˆ"
 
 msgid "cherry_description"
-msgstr "Vyléčí tvoru 10 životů."
+msgstr "VylÃ©ÄÃ­ tvoru 10 Å¾ivotÅ¯."
 
 # Orange
 msgid "orange"
-msgstr "Pomeranč"
+msgstr "PomeranÄ"
 
 msgid "orange_description"
-msgstr "Vyléčí tvoru 20 životů."
+msgstr "VylÃ©ÄÃ­ tvoru 20 Å¾ivotÅ¯."
 
 # Potion
 msgid "potion"
 msgstr "Lektvar"
 
 msgid "potion_description"
-msgstr "Vyléčí tvoru 50 životů."
+msgstr "VylÃ©ÄÃ­ tvoru 50 Å¾ivotÅ¯."
 
 # Super Potion
 msgid "super_potion"
 msgstr "Super lektvar"
 
 msgid "super_potion_description"
-msgstr "Vyléčí tvoru 100 životů."
+msgstr "VylÃ©ÄÃ­ tvoru 100 Å¾ivotÅ¯."
 
 # Imperial Potion
 msgid "imperial_potion"
-msgstr "Císařský lektvar"
+msgstr "CÃ­saÅ™skÃ½ lektvar"
 
 msgid "imperial_potion_description"
-msgstr "Vyléčí tvoru 350 životů."
+msgstr "VylÃ©ÄÃ­ tvoru 350 Å¾ivotÅ¯."
 
 # Capture Device
 msgid "capture_device"
-msgstr "Chytací zařízení"
+msgstr "ChytacÃ­ zaÅ™Ã­zenÃ­"
 
 msgid "capture_device_description"
-msgstr "Chytí tvora."
+msgstr "ChytÃ­ tvora."
 
 # NOTIFICATION TRANSLATIONS ##
 # Combat notifications
 msgid "combat_used_x"
-msgstr "{user} použil {name}!"
+msgstr "{user} pouÅ¾il {name}!"
 
 msgid "combat_run"
 msgstr "{user} utekl!"
 
 msgid "combat_player_run"
-msgstr "Podařilo se ti utéct!"
+msgstr "PodaÅ™ilo se ti utÃ©ct!"
 
 msgid "combat_used_x_on_y"
-msgstr "{user} použil {name} na {target}!"
+msgstr "{user} pouÅ¾il {name} na {target}!"
 
 msgid "combat_swap"
-msgstr "{user} odesláno {target}!"
+msgstr "{user} odeslÃ¡no {target}!"
 
 msgid "combat_call_tuxemon"
-msgstr "Běž {name}!"
+msgstr "BÄ›Å¾ {name}!"
 
 # TODO: similar to combat_swap - refactor!
 msgid "combat_opponent_call_tuxemon"
-msgstr "{user} posílá ven {name}!"
+msgstr "{user} posÃ­lÃ¡ ven {name}!"
 
 msgid "combat_state_poison_damage"
-msgstr "{name} byl otráven!"
+msgstr "{name} byl otrÃ¡ven!"
 
 msgid "combat_status_damage"
-msgstr "{name} byl zasažen {status}!"
+msgstr "{name} byl zasaÅ¾en {status}!"
 
 msgid "combat_victory"
-msgstr "VYHRÁL JSI!"
+msgstr "VYHRÃL JSI!"
 
 msgid "combat_defeat"
-msgstr "PROHRÁL JSI!"
+msgstr "PROHRÃL JSI!"
 
 msgid "combat_draw"
-msgstr "Všechny strany omdlely!"
+msgstr "VÅ¡echny strany omdlely!"
 
 msgid "combat_capturing_success"
 msgstr "Chytil jsi {name}!"
@@ -117,26 +117,26 @@ msgid "combat_capturing_fail"
 msgstr "{name} se vymanil!"
 
 msgid "combat_replacement"
-msgstr "Vyber náhradníka!"
+msgstr "Vyber nÃ¡hradnÃ­ka!"
 
 msgid "combat_replacement_is_fainted"
 msgstr "Tento tvor omdlel!"
 
 msgid "combat_wild_appeared"
-msgstr "Objevil se divoký {name}!"
+msgstr "Objevil se divokÃ½ {name}!"
 
 msgid "combat_monster_choice"
-msgstr "Co udělá {name}?"
+msgstr "Co udÄ›lÃ¡ {name}?"
 
 msgid "combat_fainted"
 msgstr "{name} omdlel!"
 
 msgid "combat_isactive"
-msgstr "{name} je již nasazen."
+msgstr "{name} je jiÅ¾ nasazen."
 
 # Generic notifications
 msgid "not_implemented"
-msgstr "Tato funkce zatím není implementována."
+msgstr "Tato funkce zatÃ­m nenÃ­ implementovÃ¡na."
 
 msgid "generic_success"
 msgstr "Fungovalo to!"
@@ -145,16 +145,16 @@ msgid "generic_failure"
 msgstr "To se nepovedlo!"
 
 msgid "empty_slot"
-msgstr "prázdná pozice"
+msgstr "prÃ¡zdnÃ¡ pozice"
 
 msgid "exit"
 msgstr "Vypnout"
 
 msgid "item_confirm_use"
-msgstr "Použít"
+msgstr "PouÅ¾Ã­t"
 
 msgid "item_confirm_cancel"
-msgstr "Zrušit"
+msgstr "ZruÅ¡it"
 
 # TODO same as generic_success and generic_failure - refactor!
 msgid "item_success"
@@ -164,59 +164,59 @@ msgid "item_failure"
 msgstr "Selhalo to!"
 
 msgid "attempting_capture"
-msgstr "Pokus o chycení…"
+msgstr "Pokus o chycenÃ­â€¦"
 
 msgid "gotcha"
-msgstr "Mám tě!"
+msgstr "MÃ¡m tÄ›!"
 
 msgid "item_cannot_use_here"
-msgstr "{name} nemůže tady být použito!"
+msgstr "{name} nemÅ¯Å¾e tady bÃ½t pouÅ¾ito!"
 
 msgid "receive_happiness"
-msgstr "Obdržel 5 snímacích zařízení!"
+msgstr "ObdrÅ¾el 5 snÃ­macÃ­ch zaÅ™Ã­zenÃ­!"
 
 msgid "received_x"
-msgstr "Obdržel {name}!"
+msgstr "ObdrÅ¾el {name}!"
 
 msgid "save_success"
-msgstr "Uloženo!"
+msgstr "UloÅ¾eno!"
 
 msgid "save_failure"
-msgstr "Při ukládání došlo k chybě!"
+msgstr "PÅ™i uklÃ¡dÃ¡nÃ­ doÅ¡lo k chybÄ›!"
 
 msgid "slot"
-msgstr "Místo"
+msgstr "MÃ­sto"
 
 msgid "faint"
-msgstr "Bezvědomý"
+msgstr "BezvÄ›domÃ½"
 
 msgid "poison"
 msgstr "Otrava"
 
 # TECHNIQUE TRANSLATIONS ##
 msgid "bite"
-msgstr "Kousnutí"
+msgstr "KousnutÃ­"
 
 msgid "fire_explosion"
-msgstr "Ohnivý výbuch"
+msgstr "OhnivÃ½ vÃ½buch"
 
 msgid "poison_string"
-msgstr "Jedové žihadlo"
+msgstr "JedovÃ© Å¾ihadlo"
 
 msgid "pound"
-msgstr "Úder"
+msgstr "Ãšder"
 
 msgid "swap"
-msgstr "Výměna"
+msgstr "VÃ½mÄ›na"
 
 msgid "water_shot"
-msgstr "Vodní střela"
+msgstr "VodnÃ­ stÅ™ela"
 
 msgid "whirlwind"
-msgstr "Vichřice"
+msgstr "VichÅ™ice"
 
 msgid "run"
-msgstr "Utéct"
+msgstr "UtÃ©ct"
 
 # MENU TRANSLATIONS ##
 # Monster Menu notifications
@@ -228,7 +228,7 @@ msgstr "Posun"
 
 # Menu notifications
 msgid "log_off"
-msgstr "Odhlásit se"
+msgstr "OdhlÃ¡sit se"
 
 msgid "menu_bag"
 msgstr "Batoh"
@@ -237,51 +237,51 @@ msgid "menu_fight"
 msgstr "Souboj"
 
 msgid "menu_item"
-msgstr "Předmět"
+msgstr "PÅ™edmÄ›t"
 
 msgid "menu_items"
-msgstr "Předměty"
+msgstr "PÅ™edmÄ›ty"
 
 msgid "menu_journal"
-msgstr "Deník"
+msgstr "DenÃ­k"
 
 msgid "menu_load"
-msgstr "Nahrát"
+msgstr "NahrÃ¡t"
 
 msgid "menu_monster"
-msgstr "Tuxemon"
+msgstr "Solamon"
 
 # TODO: duplicate of menu_monster?
 msgid "menu_monsters"
-msgstr "Tuxemoni"
+msgstr "Solamoni"
 
 msgid "menu_multiplayer"
 msgstr "Multiplayer"
 
 msgid "menu_new_game"
-msgstr "Nová hra"
+msgstr "NovÃ¡ hra"
 
 msgid "menu_options"
-msgstr "Nastavení"
+msgstr "NastavenÃ­"
 
 msgid "menu_player"
-msgstr "Hráč"
+msgstr "HrÃ¡Ä"
 
 msgid "menu_run"
-msgstr "Utéct"
+msgstr "UtÃ©ct"
 
 msgid "menu_save"
-msgstr "Uložit"
+msgstr "UloÅ¾it"
 
 # Multiplayer notifications
 msgid "multiplayer_accept"
-msgstr "Přijmout"
+msgstr "PÅ™ijmout"
 
 msgid "multiplayer_decline"
-msgstr "Odmítnout"
+msgstr "OdmÃ­tnout"
 
 msgid "multiplayer_duel"
-msgstr "{name} by chtěl Duel!"
+msgstr "{name} by chtÄ›l Duel!"
 
 msgid "multiplayer_host_game"
 msgstr "Hostit hru"
@@ -290,13 +290,13 @@ msgid "multiplayer_scan_games"
 msgstr "Vyhledat hry"
 
 msgid "multiplayer_join_game"
-msgstr "Připojit se ke hře"
+msgstr "PÅ™ipojit se ke hÅ™e"
 
 msgid "multiplayer_hosting_ready"
-msgstr "Připraven příjmat klienty!"
+msgstr "PÅ™ipraven pÅ™Ã­jmat klienty!"
 
 msgid "multiplayer_already_hosting"
-msgstr "Již hostováno!"
+msgstr "JiÅ¾ hostovÃ¡no!"
 
 msgid "multiplayer_no_servers"
 msgstr "Servery nebyly nalezeny..."
@@ -310,148 +310,148 @@ msgid "aardart"
 msgstr "Aardart"
 
 msgid "aardart_description"
-msgstr "Počítá každého mravence, kterého snědl, a oslavuje významná čísla."
+msgstr "PoÄÃ­tÃ¡ kaÅ¾dÃ©ho mravence, kterÃ©ho snÄ›dl, a oslavuje vÃ½znamnÃ¡ ÄÃ­sla."
 
 msgid "aardorn"
 msgstr "Aardorn"
 
 msgid "aardorn_description"
-msgstr "Když se narodí, je umístěn v mraveništi a ponechán jíst cestu ven."
+msgstr "KdyÅ¾ se narodÃ­, je umÃ­stÄ›n v mraveniÅ¡ti a ponechÃ¡n jÃ­st cestu ven."
 
 msgid "agnidon"
 msgstr "Agnidon"
 
 msgid "agnidon_description"
 msgstr ""
-"Preferuje čtyři nohy, ale může stát na dvou, aby otevřel dveře, tlačil přes "
-"stromy nebo držel věci."
+"Preferuje ÄtyÅ™i nohy, ale mÅ¯Å¾e stÃ¡t na dvou, aby otevÅ™el dveÅ™e, tlaÄil pÅ™es "
+"stromy nebo drÅ¾el vÄ›ci."
 
 msgid "agnigon"
 msgstr "Agnigon"
 
 msgid "agnigon_description"
 msgstr ""
-"Říká se mu \"falešný drak\", protože se zdá být drakem, ale ve skutečnosti "
-"se vyvinul z jiné linie starověkých plazů."
+"Å˜Ã­kÃ¡ se mu \"faleÅ¡nÃ½ drak\", protoÅ¾e se zdÃ¡ bÃ½t drakem, ale ve skuteÄnosti "
+"se vyvinul z jinÃ© linie starovÄ›kÃ½ch plazÅ¯."
 
 msgid "agnite"
 msgstr "Agnite"
 
 msgid "agnite_description"
-msgstr "Je hravá, ale musí se brzy naučit, aby udržela svůj oheň na uzdě."
+msgstr "Je hravÃ¡, ale musÃ­ se brzy nauÄit, aby udrÅ¾ela svÅ¯j oheÅˆ na uzdÄ›."
 
 msgid "allagon"
 msgstr "Allagon"
 
 msgid "allagon_description"
 msgstr ""
-"ALLAGON jsou přitahováni k relikviím vyrobeným z kovů, které po sobě "
-"zanechali jejich předkové, a budou násilní, aby je získali."
+"ALLAGON jsou pÅ™itahovÃ¡ni k relikviÃ­m vyrobenÃ½m z kovÅ¯, kterÃ© po sobÄ› "
+"zanechali jejich pÅ™edkovÃ©, a budou nÃ¡silnÃ­, aby je zÃ­skali."
 
 msgid "anoleaf"
 msgstr "Anoleaf"
 
 msgid "anoleaf_description"
 msgstr ""
-"Rostliny, které rostou v jeho blízkosti, považuje za své bratry a sestry."
+"Rostliny, kterÃ© rostou v jeho blÃ­zkosti, povaÅ¾uje za svÃ© bratry a sestry."
 
 msgid "axolightl"
 msgstr "Axolightl"
 
 msgid "axolightl_description"
 msgstr ""
-"Pomocí svého ocasu osvětlí hluboké vody, odhalý bezpečný úkryt pro rybu."
+"PomocÃ­ svÃ©ho ocasu osvÄ›tlÃ­ hlubokÃ© vody, odhalÃ½ bezpeÄnÃ½ Ãºkryt pro rybu."
 
 msgid "bamboon"
 msgstr "Bamboon"
 
 msgid "bamboon_description"
 msgstr ""
-"Bojuje pomocí svojí bambusové hole, kterou používá také při balancování."
+"Bojuje pomocÃ­ svojÃ­ bambusovÃ© hole, kterou pouÅ¾Ã­vÃ¡ takÃ© pÅ™i balancovÃ¡nÃ­."
 
 msgid "bigfin"
 msgstr "Bigfin"
 
 msgid "bigfin_description"
-msgstr "Na jeho zádech je celý ekosystém, takže se snaží se nepotápět"
+msgstr "Na jeho zÃ¡dech je celÃ½ ekosystÃ©m, takÅ¾e se snaÅ¾Ã­ se nepotÃ¡pÄ›t"
 
 msgid "bolt"
 msgstr "Bolt"
 
 msgid "bolt_description"
-msgstr "Přítomnost BOLT způsobuje, že matice je tvrdší a jiskří více energie."
+msgstr "PÅ™Ã­tomnost BOLT zpÅ¯sobuje, Å¾e matice je tvrdÅ¡Ã­ a jiskÅ™Ã­ vÃ­ce energie."
 
 msgid "cairfrey"
 msgstr "Cairfrey"
 
 msgid "cairfrey_description"
 msgstr ""
-"Veselý kus nábytku, který se jednoho rána probudil a rozhodl se prozkoumat."
+"VeselÃ½ kus nÃ¡bytku, kterÃ½ se jednoho rÃ¡na probudil a rozhodl se prozkoumat."
 
 msgid "capiti"
 msgstr "Capiti"
 
 msgid "capiti_description"
 msgstr ""
-"Vypadá to jako dítě, ale byly nalezeny některé exempláře, které jsou stovky "
-"let staré."
+"VypadÃ¡ to jako dÃ­tÄ›, ale byly nalezeny nÄ›kterÃ© exemplÃ¡Å™e, kterÃ© jsou stovky "
+"let starÃ©."
 
 msgid "cardiling"
 msgstr "Cardiling"
 
 msgid "cardiling_description"
-msgstr "Člověk by nečekal, že bude chrlit oheň, dokud to neudělá."
+msgstr "ÄŒlovÄ›k by neÄekal, Å¾e bude chrlit oheÅˆ, dokud to neudÄ›lÃ¡."
 
 msgid "cardinale"
 msgstr "Cardinale"
 
 msgid "cardinale_description"
 msgstr ""
-"Vášnivě nenávidí všechny predátory a vede válku s nimi a jejich mláďaty, "
-"když může."
+"VÃ¡Å¡nivÄ› nenÃ¡vidÃ­ vÅ¡echny predÃ¡tory a vede vÃ¡lku s nimi a jejich mlÃ¡Äaty, "
+"kdyÅ¾ mÅ¯Å¾e."
 
 msgid "cardiwing"
 msgstr "Cardiwing"
 
 msgid "cardiwing_description"
 msgstr ""
-"Jeho píseň je pozoruhodná, ale málokdo se odváží udržet výbušného zpěvného "
-"ptáka."
+"Jeho pÃ­seÅˆ je pozoruhodnÃ¡, ale mÃ¡lokdo se odvÃ¡Å¾Ã­ udrÅ¾et vÃ½buÅ¡nÃ©ho zpÄ›vnÃ©ho "
+"ptÃ¡ka."
 
 msgid "chillimp"
 msgstr "Chillimp"
 
 msgid "chillimp_description"
 msgstr ""
-"Říká se, že žije na vrcholu zasněžených hor, ale nikdy nebyla pořízena žádná"
-" jasná fotografie."
+"Å˜Ã­kÃ¡ se, Å¾e Å¾ije na vrcholu zasnÄ›Å¾enÃ½ch hor, ale nikdy nebyla poÅ™Ã­zena Å¾Ã¡dnÃ¡"
+" jasnÃ¡ fotografie."
 
 msgid "chloragon"
 msgstr "Chloragon"
 
 msgid "chloragon_description"
 msgstr ""
-"Vylíhne se, když je staré vejce zasazeno do úrodné půdy. Když vajíčka "
-"dojdou, nebude už žádný CHLORAGON."
+"VylÃ­hne se, kdyÅ¾ je starÃ© vejce zasazeno do ÃºrodnÃ© pÅ¯dy. KdyÅ¾ vajÃ­Äka "
+"dojdou, nebude uÅ¾ Å¾Ã¡dnÃ½ CHLORAGON."
 
 msgid "conifrost"
 msgstr "Conifrost"
 
 msgid "conifrost_description"
-msgstr "Pokud kýchá, dojde k lavině. Má permanentní čichání."
+msgstr "Pokud kÃ½chÃ¡, dojde k lavinÄ›. MÃ¡ permanentnÃ­ ÄichÃ¡nÃ­."
 
 msgid "corvix"
 msgstr "Corvix"
 
 msgid "corvix_description"
-msgstr "Vyzbrojuje svá křídla střepy kostí od svých obětí."
+msgstr "Vyzbrojuje svÃ¡ kÅ™Ã­dla stÅ™epy kostÃ­ od svÃ½ch obÄ›tÃ­."
 
 msgid "dandylion"
 msgstr "Dandylion"
 
 msgid "dandylion_description"
 msgstr ""
-"Rodí jen jednou ve svém životě. Pak se potuluje po světě a snaží se najít "
+"RodÃ­ jen jednou ve svÃ©m Å¾ivotÄ›. Pak se potuluje po svÄ›tÄ› a snaÅ¾Ã­ se najÃ­t "
 "svoje potomky."
 
 msgid "djinnbo"
@@ -459,36 +459,36 @@ msgstr "Djinnbo"
 
 msgid "djinnbo_description"
 msgstr ""
-"Legendy říkají, že to je člověk, který zemřel při požáru. Ve skutečnosti se "
-"to stalo jeho příbuzným."
+"Legendy Å™Ã­kajÃ­, Å¾e to je ÄlovÄ›k, kterÃ½ zemÅ™el pÅ™i poÅ¾Ã¡ru. Ve skuteÄnosti se "
+"to stalo jeho pÅ™Ã­buznÃ½m."
 
 msgid "dollfin"
 msgstr "Dollfin"
 
 msgid "dollfin_description"
-msgstr "Každý z nich následuje loď z místa na místo, a prozkoumává svět."
+msgstr "KaÅ¾dÃ½ z nich nÃ¡sleduje loÄ z mÃ­sta na mÃ­sto, a prozkoumÃ¡vÃ¡ svÄ›t."
 
 msgid "dracune"
 msgstr "Dracune"
 
 msgid "dracune_description"
-msgstr "Během dne je nehybný, ale v noci se může kroutit a kousat."
+msgstr "BÄ›hem dne je nehybnÃ½, ale v noci se mÅ¯Å¾e kroutit a kousat."
 
 msgid "dragarbor"
 msgstr "Dragarbor"
 
 msgid "dragarbor_description"
 msgstr ""
-"Když cítí, že se blíží ke konci svého života, cestuje na hřbitov, kde se "
-"zasadí. Jeho ocasní květ roste navždy."
+"KdyÅ¾ cÃ­tÃ­, Å¾e se blÃ­Å¾Ã­ ke konci svÃ©ho Å¾ivota, cestuje na hÅ™bitov, kde se "
+"zasadÃ­. Jeho ocasnÃ­ kvÄ›t roste navÅ¾dy."
 
 msgid "dune_pincher"
 msgstr "Dune Pincher"
 
 msgid "dune_pincher_description"
 msgstr ""
-"Tito poustevníci se zabalí do toho, co je nejblíže. V poušti to jsou "
-"pohřební rubáše dávno mrtvých faraonů."
+"Tito poustevnÃ­ci se zabalÃ­ do toho, co je nejblÃ­Å¾e. V pouÅ¡ti to jsou "
+"pohÅ™ebnÃ­ rubÃ¡Å¡e dÃ¡vno mrtvÃ½ch faraonÅ¯."
 
 msgid "eaglace"
 msgstr "Eaglace"
@@ -501,7 +501,7 @@ msgid "eyenemy"
 msgstr "Eyenemy"
 
 msgid "eyenemy_description"
-msgstr "Živí se krásným výhledem a jinou podívanou."
+msgstr "Å½ivÃ­ se krÃ¡snÃ½m vÃ½hledem a jinou podÃ­vanou."
 
 msgid "falcono"
 msgstr "Falcono"
@@ -516,7 +516,7 @@ msgstr "Ferricran"
 
 msgid "ferricran_description"
 msgstr ""
-"Kdysi byly FERRICRAN pokryty adamantinskými šupinami a měly křídla mithrilu."
+"Kdysi byly FERRICRAN pokryty adamantinskÃ½mi Å¡upinami a mÄ›ly kÅ™Ã­dla mithrilu."
 
 msgid "firomenis"
 msgstr "Firomenis"
@@ -528,49 +528,49 @@ msgid "fluttaflap"
 msgstr "Fluttaflap"
 
 msgid "fluttaflap_description"
-msgstr "Živí se nečistotami, takže vrací vyčištěnou krev těm, které saje."
+msgstr "Å½ivÃ­ se neÄistotami, takÅ¾e vracÃ­ vyÄiÅ¡tÄ›nou krev tÄ›m, kterÃ© saje."
 
 msgid "fruitera"
 msgstr "Fruitera"
 
 msgid "fruitera_description"
 msgstr ""
-"FRUITERA je chamtivá po ovoci a nese co nejvíce. Když se poleká, upustí "
-"všechno své ovoce, znovu je shromáždí a teprve pak uteče."
+"FRUITERA je chamtivÃ¡ po ovoci a nese co nejvÃ­ce. KdyÅ¾ se polekÃ¡, upustÃ­ "
+"vÅ¡echno svÃ© ovoce, znovu je shromÃ¡Å¾dÃ­ a teprve pak uteÄe."
 
 msgid "gectile"
 msgstr "Gectile"
 
 msgid "gectile_description"
-msgstr "Je tak rychlý a lehký, že může chodit po listech."
+msgstr "Je tak rychlÃ½ a lehkÃ½, Å¾e mÅ¯Å¾e chodit po listech."
 
 msgid "heronquak"
 msgstr "Heronquak"
 
 msgid "heronquak_description"
 msgstr ""
-"Krystal na hrudi pytláci zaměňují za diamant. Roztaje, když je odstraněn z "
-"těla HERONQUAK."
+"Krystal na hrudi pytlÃ¡ci zamÄ›ÅˆujÃ­ za diamant. Roztaje, kdyÅ¾ je odstranÄ›n z "
+"tÄ›la HERONQUAK."
 
 msgid "hydrone"
 msgstr "Hydrone"
 
 msgid "hydrone_description"
-msgstr "Využívá experimentální technologii, která vytváří energii z vody."
+msgstr "VyuÅ¾Ã­vÃ¡ experimentÃ¡lnÃ­ technologii, kterÃ¡ vytvÃ¡Å™Ã­ energii z vody."
 
 msgid "lambert"
 msgstr "Lambert"
 
 msgid "lambert_description"
-msgstr "Do své skořápky byl uložen svými rodiči a poté vyslán do světa."
+msgstr "Do svÃ© skoÅ™Ã¡pky byl uloÅ¾en svÃ½mi rodiÄi a potÃ© vyslÃ¡n do svÄ›ta."
 
 msgid "legko"
 msgstr "Legko"
 
 msgid "legko_description"
 msgstr ""
-"Dlouho se myslelo, že je beznohé, jeho listy jsou vlastně zakrnělé "
-"končetiny."
+"Dlouho se myslelo, Å¾e je beznohÃ©, jeho listy jsou vlastnÄ› zakrnÄ›lÃ© "
+"konÄetiny."
 
 msgid "magmaturtle"
 msgstr "Magmaturtle"
@@ -589,42 +589,42 @@ msgstr "Moloch"
 
 msgid "moloch_description"
 msgstr ""
-"Může ztuhnout nebo změkčit svou pokožku, aby reagovala na přátele a "
-"nepřátele."
+"MÅ¯Å¾e ztuhnout nebo zmÄ›kÄit svou pokoÅ¾ku, aby reagovala na pÅ™Ã¡tele a "
+"nepÅ™Ã¡tele."
 
 msgid "noctalo"
 msgstr "Noctalo"
 
 msgid "noctalo_description"
-msgstr "Obývá pouze místa opuštěná lidmi - hrady, hřbitovy a kanály."
+msgstr "ObÃ½vÃ¡ pouze mÃ­sta opuÅ¡tÄ›nÃ¡ lidmi - hrady, hÅ™bitovy a kanÃ¡ly."
 
 msgid "noctula"
 msgstr "Noctula"
 
 msgid "noctula_description"
 msgstr ""
-"Žere brouky a PIPIS jí ovoce, takže navzdory tomu, že žijí v těsné "
-"blízkosti, nesoutěží."
+"Å½ere brouky a PIPIS jÃ­ ovoce, takÅ¾e navzdory tomu, Å¾e Å¾ijÃ­ v tÄ›snÃ© "
+"blÃ­zkosti, nesoutÄ›Å¾Ã­."
 
 msgid "nostray"
 msgstr "Nostray"
 
 msgid "nostray_description"
-msgstr "Může cítit cokoliv v oceánu, bez ohledu na to, jak daleko."
+msgstr "MÅ¯Å¾e cÃ­tit cokoliv v oceÃ¡nu, bez ohledu na to, jak daleko."
 
 msgid "nudiflot"
 msgstr "Nudiflot"
 
 msgid "nudiflot_description"
-msgstr "Jí a ukládá jed z mořských tvorů které pozře."
+msgstr "JÃ­ a uklÃ¡dÃ¡ jed z moÅ™skÃ½ch tvorÅ¯ kterÃ© pozÅ™e."
 
 msgid "nut"
 msgstr "Nut"
 
 msgid "nut_description"
 msgstr ""
-"Ve velkých lodích, které křižují oceány, poskytují tisíce MATIC a BOLT "
-"energii a drží ocelové obšívky pohromadě."
+"Ve velkÃ½ch lodÃ­ch, kterÃ© kÅ™iÅ¾ujÃ­ oceÃ¡ny, poskytujÃ­ tisÃ­ce MATIC a BOLT "
+"energii a drÅ¾Ã­ ocelovÃ© obÅ¡Ã­vky pohromadÄ›."
 
 msgid "onaclov"
 msgstr "Onaclov"
@@ -636,54 +636,54 @@ msgid "pigabyte"
 msgstr "Pigabyte"
 
 msgid "pigabyte_description"
-msgstr "Vědci zjistili, že nejlepší počítače mají organické implantáty."
+msgstr "VÄ›dci zjistili, Å¾e nejlepÅ¡Ã­ poÄÃ­taÄe majÃ­ organickÃ© implantÃ¡ty."
 
 msgid "possessun"
 msgstr "Possessun"
 
 msgid "possessun_description"
-msgstr "Je to duch, který obývá mrtvou CAIRFREY."
+msgstr "Je to duch, kterÃ½ obÃ½vÃ¡ mrtvou CAIRFREY."
 
 msgid "propellercat"
 msgstr "Propellercat"
 
 msgid "propellercat_description"
-msgstr "Je to nový druh, nebo jen domácí mazlíček vynálezce?"
+msgstr "Je to novÃ½ druh, nebo jen domÃ¡cÃ­ mazlÃ­Äek vynÃ¡lezce?"
 
 msgid "rockat"
 msgstr "Rockat"
 
 msgid "rockat_description"
-msgstr "Navzdory své značné váze jsou jeho kroky tiché."
+msgstr "Navzdory svÃ© znaÄnÃ© vÃ¡ze jsou jeho kroky tichÃ©."
 
 msgid "rockitten"
 msgstr "Rockitten"
 
 msgid "rockitten_description"
-msgstr "Používá své drobné skalní uši k přitulení."
+msgstr "PouÅ¾Ã­vÃ¡ svÃ© drobnÃ© skalnÃ­ uÅ¡i k pÅ™itulenÃ­."
 
 msgid "sapragon"
 msgstr "Sapragon"
 
 msgid "sapragon_description"
 msgstr ""
-"V dávných dobách měl každý prvek mocného draka - ale těchto tvorů ubylo a v "
-"dnešní době jsou vzácní."
+"V dÃ¡vnÃ½ch dobÃ¡ch mÄ›l kaÅ¾dÃ½ prvek mocnÃ©ho draka - ale tÄ›chto tvorÅ¯ ubylo a v "
+"dneÅ¡nÃ­ dobÄ› jsou vzÃ¡cnÃ­."
 
 msgid "selket"
 msgstr "Selket"
 
 msgid "selket_description"
 msgstr ""
-"Čekají pod pískem a cítí svou kořist prostřednictvím vibrací svých kroků."
+"ÄŒekajÃ­ pod pÃ­skem a cÃ­tÃ­ svou koÅ™ist prostÅ™ednictvÃ­m vibracÃ­ svÃ½ch krokÅ¯."
 
 msgid "selmatek"
 msgstr "Selmatek"
 
 msgid "selmatek_description"
 msgstr ""
-"SELMATEK, chovaný starými králi pouští, sloužil jako hlídací psi, lovečtí "
-"společníci a - nyní - obránci proti vykradačům hrobů."
+"SELMATEK, chovanÃ½ starÃ½mi krÃ¡li pouÅ¡tÃ­, slouÅ¾il jako hlÃ­dacÃ­ psi, loveÄtÃ­ "
+"spoleÄnÃ­ci a - nynÃ­ - obrÃ¡nci proti vykradaÄÅ¯m hrobÅ¯."
 
 msgid "simba"
 msgstr "Simba"
@@ -696,29 +696,29 @@ msgstr "Sludgehog"
 
 msgid "sludgehog_description"
 msgstr ""
-"Žije v odpadcích a také ho jí. Jeho hroty se zdají být ostré, ale mohou je "
-"libovolně změkčit."
+"Å½ije v odpadcÃ­ch a takÃ© ho jÃ­. Jeho hroty se zdajÃ­ bÃ½t ostrÃ©, ale mohou je "
+"libovolnÄ› zmÄ›kÄit."
 
 msgid "sharpfin"
 msgstr "Sharpfin"
 
 msgid "sharpfin_description"
 msgstr ""
-"Ve vodě je neviditelná, je viditelná pouze tehdy, když vyskočí z vody, aby "
-"přetáhla zvířata na břehu zpět do hlubiny."
+"Ve vodÄ› je neviditelnÃ¡, je viditelnÃ¡ pouze tehdy, kdyÅ¾ vyskoÄÃ­ z vody, aby "
+"pÅ™etÃ¡hla zvÃ­Å™ata na bÅ™ehu zpÄ›t do hlubiny."
 
 msgid "snowrilla"
 msgstr "Snowrilla"
 
 msgid "snowrilla_description"
-msgstr "Těší ho hrát si s lyžaři na pustých svazích."
+msgstr "TÄ›Å¡Ã­ ho hrÃ¡t si s lyÅ¾aÅ™i na pustÃ½ch svazÃ­ch."
 
 msgid "spycozeus"
 msgstr "Spycozeus"
 
 msgid "spycozeus_description"
 msgstr ""
-"Šeptané komunikace lesa dostávají fyzickou podobu ve SPYCOZEUS, který myslí "
+"Å eptanÃ© komunikace lesa dostÃ¡vajÃ­ fyzickou podobu ve SPYCOZEUS, kterÃ½ myslÃ­ "
 "jako stromy."
 
 msgid "sumobug"
@@ -726,15 +726,15 @@ msgstr "Sumobug"
 
 msgid "sumobug_description"
 msgstr ""
-"Využívá svoji hmotnost k poražení mnohem větších nepřátel. Jeho hustota je "
-"tak vysoká jako v jádru hvězdy."
+"VyuÅ¾Ã­vÃ¡ svoji hmotnost k poraÅ¾enÃ­ mnohem vÄ›tÅ¡Ã­ch nepÅ™Ã¡tel. Jeho hustota je "
+"tak vysokÃ¡ jako v jÃ¡dru hvÄ›zdy."
 
 msgid "tigrock"
 msgstr "Tigrock"
 
 msgid "tigrock_description"
 msgstr ""
-"Říká se, že musel vynalézt sám sebe, protože evoluce ho nemohla navrhnout.."
+"Å˜Ã­kÃ¡ se, Å¾e musel vynalÃ©zt sÃ¡m sebe, protoÅ¾e evoluce ho nemohla navrhnout.."
 
 msgid "tumblecoon"
 msgstr "Tumblecoon"
@@ -746,7 +746,7 @@ msgid "tumbleworm"
 msgstr "Tumbleworm"
 
 msgid "tumbleworm_description"
-msgstr "Když přerostou svá voštinová vajíčka, spadnou nejprve na zem."
+msgstr "KdyÅ¾ pÅ™erostou svÃ¡ voÅ¡tinovÃ¡ vajÃ­Äka, spadnou nejprve na zem."
 
 msgid "tux"
 msgstr "Tux"
@@ -759,20 +759,20 @@ msgstr "Tweesher"
 
 msgid "tweesher_description"
 msgstr ""
-"Čím chladnější je počasí, tím těžší je jeho zobák. Při méně než 0 stupních "
-"je tvrdší než diamant."
+"ÄŒÃ­m chladnÄ›jÅ¡Ã­ je poÄasÃ­, tÃ­m tÄ›Å¾Å¡Ã­ je jeho zobÃ¡k. PÅ™i mÃ©nÄ› neÅ¾ 0 stupnÃ­ch "
+"je tvrdÅ¡Ã­ neÅ¾ diamant."
 
 msgid "vamporm"
 msgstr "Vamporm"
 
 msgid "vamporm_description"
-msgstr "Žízní po krvi, ale musí si vystačit se stromovou mízou."
+msgstr "Å½Ã­znÃ­ po krvi, ale musÃ­ si vystaÄit se stromovou mÃ­zou."
 
 msgid "velocitile"
 msgstr "Velocitile"
 
 msgid "velocitile_description"
-msgstr "Může utéct kulce, ale pouze tehdy, když se zahřeje."
+msgstr "MÅ¯Å¾e utÃ©ct kulce, ale pouze tehdy, kdyÅ¾ se zahÅ™eje."
 
 msgid "wrougon"
 msgstr "Wrougon"
@@ -786,29 +786,29 @@ msgid "zunna"
 msgstr "Zunna"
 
 msgid "zunna_description"
-msgstr "Veselá ZUNNA nasává do žaludku veškerou potravu, kterou najde."
+msgstr "VeselÃ¡ ZUNNA nasÃ¡vÃ¡ do Å¾aludku veÅ¡kerou potravu, kterou najde."
 
 # Monster categories
 msgid "anteater"
-msgstr "Zárodek"
+msgstr "ZÃ¡rodek"
 
 msgid "snout"
-msgstr "Čenich"
+msgstr "ÄŒenich"
 
 msgid "false_dragon"
-msgstr "Falešný drak"
+msgstr "FaleÅ¡nÃ½ drak"
 
 msgid "dragon"
 msgstr "Drak"
 
 msgid "sprout"
-msgstr "Klíček"
+msgstr "KlÃ­Äek"
 
 msgid "inchoate"
-msgstr "Počáteční"
+msgstr "PoÄÃ¡teÄnÃ­"
 
 msgid "prehensile"
-msgstr "Zručný"
+msgstr "ZruÄnÃ½"
 
 msgid "island"
 msgstr "Ostrov"
@@ -817,70 +817,70 @@ msgid "host"
 msgstr "Host"
 
 msgid "woodwose"
-msgstr "Dřevo"
+msgstr "DÅ™evo"
 
 msgid "firebird"
-msgstr "Pták ohnivák"
+msgstr "PtÃ¡k ohnivÃ¡k"
 
 msgid "frost_ape"
-msgstr "Mrazová opice"
+msgstr "MrazovÃ¡ opice"
 
 msgid "taiga"
 msgstr "Tajga"
 
 msgid "horned_raptor"
-msgstr "Rohatý Raptor"
+msgstr "RohatÃ½ Raptor"
 
 msgid "lions_tooth"
-msgstr "Lví zub"
+msgstr "LvÃ­ zub"
 
 msgid "vengeance"
 msgstr "Odveta"
 
 msgid "joyful"
-msgstr "Radostný"
+msgstr "RadostnÃ½"
 
 msgid "cloaked"
-msgstr "Maskovaná"
+msgstr "MaskovanÃ¡"
 
 msgid "cirrus"
-msgstr "Úponek"
+msgstr "Ãšponek"
 
 msgid "pupil"
-msgstr "Učeň"
+msgstr "UÄeÅˆ"
 
 msgid "fire"
-msgstr "Oheň"
+msgstr "OheÅˆ"
 
 msgid "sanguine"
-msgstr "Optimistický"
+msgstr "OptimistickÃ½"
 
 msgid "wood"
-msgstr "Dřevo"
+msgstr "DÅ™evo"
 
 msgid "climbing"
-msgstr "Horolezectví"
+msgstr "HorolezectvÃ­"
 
 msgid "crested"
-msgstr "Chocholatý"
+msgstr "ChocholatÃ½"
 
 msgid "metal_water"
 msgstr "Kov, Voda"
 
 msgid "gumnut"
-msgstr "Gumový ořech"
+msgstr "GumovÃ½ oÅ™ech"
 
 msgid "lizard"
-msgstr "Ještěrka"
+msgstr "JeÅ¡tÄ›rka"
 
 msgid "earth_fire"
-msgstr "Země, Oheň"
+msgstr "ZemÄ›, OheÅˆ"
 
 msgid "devil"
-msgstr "Ďábel"
+msgstr "ÄŽÃ¡bel"
 
 msgid "nightcrawler"
-msgstr "Noční plazič"
+msgstr "NoÄnÃ­ plaziÄ"
 
 msgid "proboscis"
 msgstr "Proboscis"
@@ -892,28 +892,28 @@ msgid "metal"
 msgstr "Kov"
 
 msgid "visitor"
-msgstr "Návštěvník"
+msgstr "NÃ¡vÅ¡tÄ›vnÃ­k"
 
 msgid "earth"
-msgstr "Země"
+msgstr "ZemÄ›"
 
 msgid "rip"
 msgstr "Roztrhnout"
 
 msgid "yeti"
-msgstr "Sněžný muž"
+msgstr "SnÄ›Å¾nÃ½ muÅ¾"
 
 msgid "ex_machina"
 msgstr "Ex Machina"
 
 msgid "water"
-msgstr "Vodní"
+msgstr "VodnÃ­"
 
 msgid "clot"
-msgstr "Sraženina"
+msgstr "SraÅ¾enina"
 
 msgid "restless"
-msgstr "Neklidný"
+msgstr "NeklidnÃ½"
 
 msgid "slurpy"
 msgstr "Slurpy"
@@ -933,10 +933,10 @@ msgid "karrianna"
 msgstr "Karrianna"
 
 msgid "knight1"
-msgstr "Rytíř I"
+msgstr "RytÃ­Å™ I"
 
 msgid "knight2"
-msgstr "Rytíř II"
+msgstr "RytÃ­Å™ II"
 
 msgid "liela"
 msgstr "Liela"
@@ -954,51 +954,51 @@ msgid "npc_red"
 msgstr "Red"
 
 msgid "tabanurse"
-msgstr "Zdravotní sestra Taba"
+msgstr "ZdravotnÃ­ sestra Taba"
 
 msgid "tuxemart_keeper"
-msgstr "Tuxemart Obchodník"
+msgstr "Tuxemart ObchodnÃ­k"
 
 msgid "tuxemart_aide"
-msgstr "Tuxemart Zaměstnanec"
+msgstr "Tuxemart ZamÄ›stnanec"
 
 msgid "xerogrund1"
-msgstr "Tým Xero Grunt I"
+msgstr "TÃ½m Xero Grunt I"
 
 msgid "xerogrund2"
-msgstr "Tým Xero Grunt II"
+msgstr "TÃ½m Xero Grunt II"
 
 msgid "xerogrunt2"
-msgstr "Tým Xero Grunt II"
+msgstr "TÃ½m Xero Grunt II"
 
 msgid "xerogrunt3"
-msgstr "Tým Xero Grunt III"
+msgstr "TÃ½m Xero Grunt III"
 
 msgid "xerogrunt4"
-msgstr "Tým Xero Grunt IV"
+msgstr "TÃ½m Xero Grunt IV"
 
 msgid "xerogrunt5"
-msgstr "Tým Xero Grunt V"
+msgstr "TÃ½m Xero Grunt V"
 
 msgid "xerogrunt6"
-msgstr "Tým Xero Grunt VI"
+msgstr "TÃ½m Xero Grunt VI"
 
 msgid "xerogrunt7"
-msgstr "Tým Xero Grunt VII"
+msgstr "TÃ½m Xero Grunt VII"
 
 msgid "xerogrunt8"
-msgstr "Tým Xero Grunt VIII"
+msgstr "TÃ½m Xero Grunt VIII"
 
 msgid "xerogrunt9"
-msgstr "Tým Xero Grunt IX"
+msgstr "TÃ½m Xero Grunt IX"
 
 msgid "xerogrunt10"
-msgstr "Tým Xero Grunt X"
+msgstr "TÃ½m Xero Grunt X"
 
 # DIALOG TRANSLATIONS ##
 # general dialogs
 msgid "healmytuxemon"
-msgstr "Do you want to heal your Tuxemon?"
+msgstr "Do you want to heal your Solamon?"
 
 msgid "haveagoodday"
 msgstr "Have a nice day!"
@@ -1010,28 +1010,28 @@ msgid "no"
 msgstr "Ne"
 
 msgid "door_problems"
-msgstr "Dveře jsou zaseknuté a neotevřou se..."
+msgstr "DveÅ™e jsou zaseknutÃ© a neotevÅ™ou se..."
 
 msgid "empty_pot"
 msgstr "It's an empty pot, maybe someone will plant something here"
 
 msgid "purple_flowers"
-msgstr "Někdo zasadil sladce vonící fialové květy!"
+msgstr "NÄ›kdo zasadil sladce vonÃ­cÃ­ fialovÃ© kvÄ›ty!"
 
 msgid "orange_flowers"
-msgstr "Někdo zasadil nějaké krásné oranžové květy!"
+msgstr "NÄ›kdo zasadil nÄ›jakÃ© krÃ¡snÃ© oranÅ¾ovÃ© kvÄ›ty!"
 
 msgid "famous_statue"
-msgstr "Je to socha bývalého mistra Tuxemon. Název je zvětralý..."
+msgstr "Je to socha bÃ½valÃ©ho mistra Solamon. NÃ¡zev je zvÄ›tralÃ½..."
 
 msgid "famous_statue2"
-msgstr "Říká: Pro naše milované přátele a hrdiny všech, wywen"
+msgstr "Å˜Ã­kÃ¡: Pro naÅ¡e milovanÃ© pÅ™Ã¡tele a hrdiny vÅ¡ech, wywen"
 
 msgid "cotton_town_fountain"
 msgstr "It's a fountain. A lot of coins are at the bottom"
 
 msgid "tree"
-msgstr "Tento strom vypadá šťastně a zdravě!"
+msgstr "Tento strom vypadÃ¡ Å¡Å¥astnÄ› a zdravÄ›!"
 
 msgid "route_2"
 msgstr "Cesta 2"
@@ -1045,40 +1045,40 @@ msgstr "Not really"
 # NPC dialogs
 msgid "professor_dialog"
 msgstr ""
-"Profesor: Hurá. Přesně ten člověk se kterým jsem se chtěl setkat.\n"
-"Slyšel jsem že se chceš učit o Tuxemonech.\n"
-"Tuxemoni jsou malá zvířata, někteří je nazývají monstry, se kterými se přátelíme a používáme je k boji s dalšími Tuxemony.\n"
-"Napadlo mě, že jsem zrovna získal tři nové Tuxemony pro svůj výzkum. Jednoho bych ti rád dal.\n"
-"Který by se ti líbil?"
+"Profesor: HurÃ¡. PÅ™esnÄ› ten ÄlovÄ›k se kterÃ½m jsem se chtÄ›l setkat.\n"
+"SlyÅ¡el jsem Å¾e se chceÅ¡ uÄit o Solamonech.\n"
+"Solamoni jsou malÃ¡ zvÃ­Å™ata, nÄ›kteÅ™Ã­ je nazÃ½vajÃ­ monstry, se kterÃ½mi se pÅ™Ã¡telÃ­me a pouÅ¾Ã­vÃ¡me je k boji s dalÅ¡Ã­mi Solamony.\n"
+"Napadlo mÄ›, Å¾e jsem zrovna zÃ­skal tÅ™i novÃ© Solamony pro svÅ¯j vÃ½zkum. Jednoho bych ti rÃ¡d dal.\n"
+"KterÃ½ by se ti lÃ­bil?"
 
 msgid "professor_dialog6.1"
-msgstr "Profesor: Skvělá volba! Hydrone je vodní tuxemon"
+msgstr "Profesor: SkvÄ›lÃ¡ volba! Hydrone je vodnÃ­ solamon"
 
 msgid "professor_dialog6.2"
-msgstr "Profesor: Vynikající volba! Rockitten je zemní tuxemon"
+msgstr "Profesor: VynikajÃ­cÃ­ volba! Rockitten je zemnÃ­ solamon"
 
 msgid "professor_dialog6.3"
-msgstr "Profesor: Výborná volba! Fruitera je dřevní tuxemon"
+msgstr "Profesor: VÃ½bornÃ¡ volba! Fruitera je dÅ™evnÃ­ solamon"
 
 msgid "professor_dialog7"
 msgstr ""
-"Profesor: Doufám, že se uvidíme! Jdu se vydat na cestu, takže se možná někdy"
-" setkáme."
+"Profesor: DoufÃ¡m, Å¾e se uvidÃ­me! Jdu se vydat na cestu, takÅ¾e se moÅ¾nÃ¡ nÄ›kdy"
+" setkÃ¡me."
 
 msgid "karrianna_dialog1"
-msgstr "Karrianna: Trénovala jsem celý měsíc! Zatím mě nikdo neporazil!"
+msgstr "Karrianna: TrÃ©novala jsem celÃ½ mÄ›sÃ­c! ZatÃ­m mÄ› nikdo neporazil!"
 
 msgid "karrianna_dialog2"
-msgstr "Dobře... Byl jsi první trenér, se kterým jsem se setkal..."
+msgstr "DobÅ™e... Byl jsi prvnÃ­ trenÃ©r, se kterÃ½m jsem se setkal..."
 
 msgid "xero_hideout1"
-msgstr "Institut Xero pro výzkum a vývoj v oblasti Tuxemonů."
+msgstr "Institut Xero pro vÃ½zkum a vÃ½voj v oblasti SolamonÅ¯."
 
 msgid "cherry_found"
-msgstr "Našel jsi třešeň"
+msgstr "NaÅ¡el jsi tÅ™eÅ¡eÅˆ"
 
 msgid "xero_grunts_block"
-msgstr "Tato oblast je ve výstavbě, mělo by to být brzy hotovo."
+msgstr "Tato oblast je ve vÃ½stavbÄ›, mÄ›lo by to bÃ½t brzy hotovo."
 
 msgid "waiting_for_misa"
 msgstr ""
@@ -1095,10 +1095,10 @@ msgid "maybe_sometime_again?"
 msgstr "Okay, I'll be here when you are ready."
 
 msgid "youcantleave"
-msgstr "Dveře jsou zamčené zvenčí... Je někde klíč?"
+msgstr "DveÅ™e jsou zamÄenÃ© zvenÄÃ­... Je nÄ›kde klÃ­Ä?"
 
 msgid "discovered_a_person"
-msgstr "Našli jste mě! Haha!"
+msgstr "NaÅ¡li jste mÄ›! Haha!"
 
 msgid "a_serious_discussion"
 msgstr ""
@@ -1110,10 +1110,10 @@ msgid "backstory"
 msgstr ""
 
 msgid "backstory9"
-msgstr "Co vy na to? Pomůžete nám?"
+msgstr "Co vy na to? PomÅ¯Å¾ete nÃ¡m?"
 
 msgid "sorryfurthis"
-msgstr "Dobrá volba. Omlouvám se, ale bude to jen trochu bodat."
+msgstr "DobrÃ¡ volba. OmlouvÃ¡m se, ale bude to jen trochu bodat."
 
 msgid "mwah"
 msgstr ""
@@ -1122,27 +1122,27 @@ msgid "mwah2"
 msgstr "JESS!!!"
 
 msgid "itslockedboi"
-msgstr "Allie za sebou zamkla dveře..."
+msgstr "Allie za sebou zamkla dveÅ™e..."
 
 msgid "hellothere"
-msgstr "???: Čauky!"
+msgstr "???: ÄŒauky!"
 
 msgid "kmere"
-msgstr "Proč nepřijdeš sem a nepromluvíš si se mnou?"
+msgstr "ProÄ nepÅ™ijdeÅ¡ sem a nepromluvÃ­Å¡ si se mnou?"
 
 msgid "theinfo"
 msgstr ""
 
 msgid "liela_goes_to_battle"
 msgstr ""
-"Jestli mě budeš rušit, zatímco budu sbírat bobule, budu tě prostě muset "
+"Jestli mÄ› budeÅ¡ ruÅ¡it, zatÃ­mco budu sbÃ­rat bobule, budu tÄ› prostÄ› muset "
 "vyzvat!"
 
 msgid "Cathedral_Center"
-msgstr "Cathedral Center: Žijeme, abychom sloužili."
+msgstr "Cathedral Center: Å½ijeme, abychom slouÅ¾ili."
 
 msgid "Cotton_Mart"
-msgstr "Získejte kopeček v obchodě Scoop!"
+msgstr "ZÃ­skejte kopeÄek v obchodÄ› Scoop!"
 
 msgid "Cotton_Town_Sign"
 msgstr ""
@@ -1150,11 +1150,11 @@ msgstr ""
 "^ Cotton Town --- Route 1 v"
 
 msgid "column1"
-msgstr "Vzácný a starobylý sloup. To bývalo součástí chrámu."
+msgstr "VzÃ¡cnÃ½ a starobylÃ½ sloup. To bÃ½valo souÄÃ¡stÃ­ chrÃ¡mu."
 
 msgid "column2"
 msgstr ""
-"Vzácný a starobylý sloup. Další ruiny ze stejné kultury najdete na Route 3. "
+"VzÃ¡cnÃ½ a starobylÃ½ sloup. DalÅ¡Ã­ ruiny ze stejnÃ© kultury najdete na Route 3. "
 
 msgid "cityparksign"
 msgstr ""
@@ -1171,46 +1171,46 @@ msgid "route2speech3"
 msgstr ""
 
 msgid "yestalk"
-msgstr "Vážně? Dík..."
+msgstr "VÃ¡Å¾nÄ›? DÃ­k..."
 
 msgid "notalk"
-msgstr "Jak necitlivé od vás! Škoda, stejně mě budeš muset poslouchat!"
+msgstr "Jak necitlivÃ© od vÃ¡s! Å koda, stejnÄ› mÄ› budeÅ¡ muset poslouchat!"
 
 msgid "spillit"
 msgstr ""
 
 msgid "spillit3"
 msgstr ""
-"Cokoliv... Allie je moje sestra a znamená pro mě celý svět, takže mě "
-"zničilo, když jsem zjistila, že ji vzal na velitelství."
+"Cokoliv... Allie je moje sestra a znamenÃ¡ pro mÄ› celÃ½ svÄ›t, takÅ¾e mÄ› "
+"zniÄilo, kdyÅ¾ jsem zjistila, Å¾e ji vzal na velitelstvÃ­."
 
 msgid "spillit4"
 msgstr ""
-"Nemusí se to zdát jako špatná věc, ale je to tak. Víte, co dělají svým "
-"rekrutům? ANO!?"
+"NemusÃ­ se to zdÃ¡t jako Å¡patnÃ¡ vÄ›c, ale je to tak. VÃ­te, co dÄ›lajÃ­ svÃ½m "
+"rekrutÅ¯m? ANO!?"
 
 msgid "spillit5"
 msgstr ""
-"Protože já také ne... Vím jen, že nikdo nikdy neopustil Omnichannel poté, co"
-" byl přijat."
+"ProtoÅ¾e jÃ¡ takÃ© ne... VÃ­m jen, Å¾e nikdo nikdy neopustil Omnichannel potÃ©, co"
+" byl pÅ™ijat."
 
 msgid "spillit6"
 msgstr ""
-"stejně... Vás se to netýká. Jediné, na čem záleží, je svržení Omnichannel."
+"stejnÄ›... VÃ¡s se to netÃ½kÃ¡. JedinÃ©, na Äem zÃ¡leÅ¾Ã­, je svrÅ¾enÃ­ Omnichannel."
 
 msgid "spillit7"
 msgstr ""
-"Omlouvám se, že vás obtěžuji svými problémy. City Park je vpředu, když se "
-"chcete posunout dál"
+"OmlouvÃ¡m se, Å¾e vÃ¡s obtÄ›Å¾uji svÃ½mi problÃ©my. City Park je vpÅ™edu, kdyÅ¾ se "
+"chcete posunout dÃ¡l"
 
 msgid "leavemealone"
-msgstr "Hrávali jsme tu pořád, když jsme byli mladší..."
+msgstr "HrÃ¡vali jsme tu poÅ™Ã¡d, kdyÅ¾ jsme byli mladÅ¡Ã­..."
 
 msgid "iamknight3"
 msgstr ""
 "What are you doing here? You know that only knights are allowed through city park.\n"
 "... ... ... Hmm... So you're trying to get to Leather Town...\n"
-"Well, I guess you could enter the challenge if you want. The only problem is that you'll need a Tuxemon...\n"
+"Well, I guess you could enter the challenge if you want. The only problem is that you'll need a Solamon...\n"
 "I'm sure we can lend you one. Are you up for the challenge?"
 
 msgid "sorry"
@@ -1218,25 +1218,25 @@ msgstr "Okay, well... when you're ready, I'll still be here..."
 
 msgid "splendid"
 msgstr ""
-"You will? Splendid! Now, to find you a suitable Tuxemon...\n"
-"... ... You already have a Tuxemon? Well, I'm sure that you'd be able to handle yourself well..."
+"You will? Splendid! Now, to find you a suitable Solamon...\n"
+"... ... You already have a Solamon? Well, I'm sure that you'd be able to handle yourself well..."
 
 msgid "cottonnurse_dialog"
 msgstr "Welcome to the Cotton Town Tuxecenter!"
 
 msgid "tabanurse_dialog"
 msgstr ""
-"Vítejte v ${{map_name}} Tuxecenter!\n"
-"Chcete vyléčit své Tuxemon?"
+"VÃ­tejte v ${{map_name}} Tuxecenter!\n"
+"Chcete vylÃ©Äit svÃ© Solamon?"
 
 msgid "okaythen"
-msgstr "OK! Jen mi dej vteřinu a já uzdravím tvé Tuxemon!"
+msgstr "OK! Jen mi dej vteÅ™inu a jÃ¡ uzdravÃ­m tvÃ© Solamon!"
 
 msgid "okaythen2"
-msgstr "Well, it looks like your Tuxemon are full of energy! Here they are!"
+msgstr "Well, it looks like your Solamon are full of energy! Here they are!"
 
 msgid "input_name"
-msgstr "Jméno?"
+msgstr "JmÃ©no?"
 
 msgid "tuxemon_stat2"
 msgstr "{desc}"
@@ -1440,10 +1440,10 @@ msgid "katapill"
 msgstr "Katapill"
 
 msgid "shammer_fossil"
-msgstr "Zkamenělina Shammer"
+msgstr "ZkamenÄ›lina Shammer"
 
 msgid "rhincus_fossil"
-msgstr "Zkamenělina Rhincus"
+msgstr "ZkamenÄ›lina Rhincus"
 
 msgid "coleorus"
 msgstr "Coleorus"
@@ -1777,50 +1777,50 @@ msgstr "Oidipus"
 
 msgid "spyder_museum_entrance2"
 msgstr ""
-"Prozkoumejte našich pět sekcí a nezapomeňte si přečíst o našich pěti "
+"Prozkoumejte naÅ¡ich pÄ›t sekcÃ­ a nezapomeÅˆte si pÅ™eÄÃ­st o naÅ¡ich pÄ›ti "
 "sponzorech."
 
 msgid "quicklyknight4"
-msgstr "Promiňte, ale měl bych odejít hned."
+msgstr "PromiÅˆte, ale mÄ›l bych odejÃ­t hned."
 
 msgid "oopsie2"
 msgstr ""
-"Proč nepočkáme, až se moji rytíři vrátí.\n"
-"Nerad oznamuji špatné zprávy o samotě."
+"ProÄ nepoÄkÃ¡me, aÅ¾ se moji rytÃ­Å™i vrÃ¡tÃ­.\n"
+"Nerad oznamuji Å¡patnÃ© zprÃ¡vy o samotÄ›."
 
 msgid "hellolovelypeople5"
 msgstr ""
-"Ne... Počkej... Chybí nám jeden člověk...\n"
-"Osamělý chovatel Tuxemon odešel do regionu Fondent. Ten, který si říká Tuxemon Professor"
+"Ne... PoÄkej... ChybÃ­ nÃ¡m jeden ÄlovÄ›k...\n"
+"OsamÄ›lÃ½ chovatel Solamon odeÅ¡el do regionu Fondent. Ten, kterÃ½ si Å™Ã­kÃ¡ Solamon Professor"
 
 msgid "spyder_citypark_achievement"
-msgstr "Achievement Maniac's House: Zavřeno."
+msgstr "Achievement Maniac's House: ZavÅ™eno."
 
 msgid "spyder_papertown_daycare1"
-msgstr "Denní stacionář: Ve výstavbě."
+msgstr "DennÃ­ stacionÃ¡Å™: Ve vÃ½stavbÄ›."
 
 # Default mod names on selection menu
 msgid "xero_campaign"
-msgstr "Tuxemon: Xero"
+msgstr "Solamon: Xero"
 
 msgid "spyder_nimrod_plaque"
 msgstr ""
-"Sponzorováno společností Nimrod. \"Kdybychom je neprodali my, prodal by je "
-"někdo jiný!\""
+"SponzorovÃ¡no spoleÄnostÃ­ Nimrod. \"Kdybychom je neprodali my, prodal by je "
+"nÄ›kdo jinÃ½!\""
 
 msgid "misaisleavingfornow2"
-msgstr "Hodně štěstí ${{name}}. Jsem si jistý, že se ještě uvidíme. "
+msgstr "HodnÄ› Å¡tÄ›stÃ­ ${{name}}. Jsem si jistÃ½, Å¾e se jeÅ¡tÄ› uvidÃ­me. "
 
 msgid "knight4ispoor"
-msgstr "Ona opravdu není špatný člověk."
+msgstr "Ona opravdu nenÃ­ Å¡patnÃ½ ÄlovÄ›k."
 
 msgid "announcement1"
 msgstr ""
-"DOBRÝ DEN, OBČANÉ FONDENT KRAJE!\n"
-"DĚKUJEME, ŽE JSTE SI NALADILI TOTO POVINNÉ OZNÁMENÍ."
+"DOBRÃ DEN, OBÄŒANÃ‰ FONDENT KRAJE!\n"
+"DÄšKUJEME, Å½E JSTE SI NALADILI TOTO POVINNÃ‰ OZNÃMENÃ."
 
 msgid "quicklyknight2"
-msgstr "Omnichannel ovládají dva lidé. Deska je vtip."
+msgstr "Omnichannel ovlÃ¡dajÃ­ dva lidÃ©. Deska je vtip."
 
 msgid "yesmaam"
 msgstr "Ano, madam."
@@ -1836,4 +1836,4 @@ msgstr "STOP!"
 
 # Money notification
 msgid "player_wallet"
-msgstr "Peněženka ${{name}}: ${{money_formatted}}"
+msgstr "PenÄ›Å¾enka ${{name}}: ${{money_formatted}}"

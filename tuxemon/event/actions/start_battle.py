@@ -2,6 +2,7 @@
 # Copyright (c) 2014-2026 William Edwards <shadowapex@gmail.com>, Benjamin Bean <superman2k5@gmail.com>
 from __future__ import annotations
 
+import hashlib
 import logging
 from dataclasses import dataclass
 from typing import final
@@ -16,6 +17,31 @@ from tuxemon.event.eventaction import EventAction
 from tuxemon.session import Session
 
 logger = logging.getLogger(__name__)
+
+
+def _trainer_battle_id(session: Session, opponent_slug: str, opponent_tile: tuple[int, int]) -> str:
+    try:
+        map_name = session.client.get_map_name()
+    except Exception:
+        map_name = session.player.current_map or "unknown"
+    raw = f"{map_name}:{opponent_slug}:{opponent_tile[0]}:{opponent_tile[1]}"
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
+
+
+def _trainer_was_won_on_current_map(session: Session, opponent_slug: str) -> bool:
+    try:
+        map_name = session.client.get_map_name()
+    except Exception:
+        map_name = session.player.current_map or "unknown"
+    for battle in session.player.battle_handler.get_battles():
+        outcome = getattr(battle.outcome, "value", battle.outcome)
+        if (
+            battle.opponent == opponent_slug
+            and outcome == "won"
+            and battle.location == map_name
+        ):
+            return True
+    return False
 
 
 @final
@@ -58,7 +84,6 @@ class StartBattleAction(EventAction):
             logger.warning("Battle is not legal, won't start")
             self.stop()
             return
-
         environment = session.client.environment_manager
         env = environment.get_active_environment()
         if env is None:
@@ -71,6 +96,29 @@ class StartBattleAction(EventAction):
         fighters = sorted(
             [character1, character2], key=lambda x: not x.is_player
         )
+        player = fighters[0]
+        opponent = fighters[1]
+        if player.is_player and not opponent.is_player:
+            battle_id = _trainer_battle_id(session, opponent.slug, opponent.tile_pos)
+            completed_key = f"trainer_battle_completed_{battle_id}"
+            rewarded_key = f"trainer_battle_rewarded_{battle_id}"
+            variables = session.player.game_variables
+            if (
+                variables.get(completed_key) == "yes"
+                or variables.get(rewarded_key) == "yes"
+                or _trainer_was_won_on_current_map(session, opponent.slug)
+            ):
+                variables.set("battle_last_result", "skipped")
+                variables.set("battle_last_trainer", opponent.slug)
+                logger.warning(
+                    "Skipping already completed trainer battle %s against %s.",
+                    battle_id,
+                    opponent.slug,
+                )
+                self.stop()
+                return
+            variables.set("battle_current_id", battle_id)
+            variables.set("battle_current_trainer", opponent.slug)
 
         logger.info(
             f"Starting battle between {fighters[0].name} and {fighters[1].name}!"

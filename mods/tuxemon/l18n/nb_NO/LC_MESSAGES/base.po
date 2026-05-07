@@ -1,12 +1,12 @@
-#
+﻿#
 msgid ""
 msgstr ""
-"Project-Id-Version: Tuxemon\n"
+"Project-Id-Version: Solamon\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-03 04:41+0000\n"
 "PO-Revision-Date: 2023-02-03 04:41+0000\n"
 "Last-Translator: Betsy <betsymaxx@gmailvn.net>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/tuxemon/tuxemon/nb_NO/>\n"
+"Language-Team: Norwegian BokmÃ¥l <https://hosted.weblate.org/projects/solamon/solamon/nb_NO/>\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -78,7 +78,7 @@ msgid "monster_menu_info"
 msgstr "Info"
 
 msgid "multiplayer_no_servers"
-msgstr "Fant ikke noen tjenere…"
+msgstr "Fant ikke noen tjenereâ€¦"
 
 msgid "multiplayer_join_game"
 msgstr "Ta del i et spill"
@@ -87,7 +87,7 @@ msgid "multiplayer_scan_games"
 msgstr "Se etter spill"
 
 msgid "multiplayer_decline"
-msgstr "Avslå"
+msgstr "AvslÃ¥"
 
 # Multiplayer notifications
 msgid "multiplayer_accept"
@@ -97,7 +97,7 @@ msgid "menu_save"
 msgstr "Lagre"
 
 msgid "menu_run"
-msgstr "Kjør"
+msgstr "KjÃ¸r"
 
 msgid "menu_player"
 msgstr "Spiller"
@@ -156,7 +156,7 @@ msgid "exit"
 msgstr "Avslutt"
 
 msgid "combat_monster_choice"
-msgstr "Hva vil {name} gjøre?"
+msgstr "Hva vil {name} gjÃ¸re?"
 
 msgid "combat_replacement"
 msgstr "Velg en erstatning!"
@@ -174,7 +174,7 @@ msgid "combat_victory"
 msgstr "Du har vunnet!"
 
 msgid "combat_trainer_appeared"
-msgstr "{name} ønsker kamp!"
+msgstr "{name} Ã¸nsker kamp!"
 
 msgid "combat_state_poison_damage"
 msgstr "{name} tok giftskade!"
@@ -190,22 +190,22 @@ msgid "combat_swap"
 msgstr "{user} sendte ut {target}!"
 
 msgid "combat_used_x_on_y"
-msgstr "{user} brukte {name} på {target}!"
+msgstr "{user} brukte {name} pÃ¥ {target}!"
 
 msgid "combat_used_x"
 msgstr "{user} brukte {name}!"
 
 msgid "combat_can't_run_from_trainer"
-msgstr "Kan ikke løpe!"
+msgstr "Kan ikke lÃ¸pe!"
 
 # NOTIFICATION TRANSLATIONS ##
 # Combat notifications
 msgid "combat_run"
-msgstr "{user} løp unna."
+msgstr "{user} lÃ¸p unna."
 
 msgid "allies_address_description"
 msgstr ""
-"Rom 31, blokk 2, Omnikanaltårnet, Bomullsbyen\n"
+"Rom 31, blokk 2, OmnikanaltÃ¥rnet, Bomullsbyen\n"
 "\n"
 "Det er et kyssemerke ved adressen"
 
@@ -214,7 +214,7 @@ msgid "allies_address"
 msgstr "Allie sin adresse"
 
 msgid "item_no_available_target"
-msgstr "{name} kan ikke brukes av noen av dine Tuxemoner akkurat nå."
+msgstr "{name} kan ikke brukes av noen av dine Solamoner akkurat nÃ¥."
 
 msgid "item_cannot_use_here"
 msgstr "{name} kan ikke brukes her!"
@@ -236,11 +236,11 @@ msgstr "Appelsin"
 
 # Cherry
 msgid "cherry"
-msgstr "Kirsebær"
+msgstr "KirsebÃ¦r"
 
 # Berry
 msgid "berry"
-msgstr "Bær"
+msgstr "BÃ¦r"
 
 # ITEM TRANSLATIONS ##
 # Apple
@@ -252,17 +252,17 @@ msgstr "Vertsnavn eller IP?"
 
 #, fuzzy
 msgid "yestalk"
-msgstr "Virkelig? Takk…"
+msgstr "Virkelig? Takkâ€¦"
 
 msgid "column1"
-msgstr "En sjelden søyle fra oldtiden. Dette var tidligere et tempel."
+msgstr "En sjelden sÃ¸yle fra oldtiden. Dette var tidligere et tempel."
 
 msgid "kmere"
 msgstr "Hvorfor ikke komme hit og prate med meg?"
 
 msgid "column2"
 msgstr ""
-"En sjelden søyle fra oldtiden. Andre ruiner fra samme kulturer er å finne i "
+"En sjelden sÃ¸yle fra oldtiden. Andre ruiner fra samme kulturer er Ã¥ finne i "
 "Rute 3. "
 
 #, fuzzy
@@ -271,7 +271,7 @@ msgstr "Fangstenheter. Hvordan lager de disse?"
 
 #, fuzzy
 msgid "cotton_town_fountain"
-msgstr "Dette er en fontene. Alle myntene er på bunnen."
+msgstr "Dette er en fontene. Alle myntene er pÃ¥ bunnen."
 
 msgid "route_2"
 msgstr "Rute 2"
@@ -283,7 +283,7 @@ msgid "mistaken"
 msgstr "Du tar feil"
 
 msgid "npc_red"
-msgstr "Rød"
+msgstr "RÃ¸d"
 
 msgid "professor"
 msgstr "Professor"
@@ -304,7 +304,7 @@ msgid "fire"
 msgstr "Brann"
 
 msgid "island"
-msgstr "Øy"
+msgstr "Ã˜y"
 
 msgid "host"
 msgstr "Vert"
@@ -358,7 +358,7 @@ msgid "web"
 msgstr "Nett"
 
 msgid "wall_of_steel"
-msgstr "Stålvegg"
+msgstr "StÃ¥lvegg"
 
 # Potion
 msgid "potion"
@@ -368,7 +368,7 @@ msgid "multiplayer_already_hosting"
 msgstr "Vertstjener allerede."
 
 msgid "multiplayer_hosting_ready"
-msgstr "Klar til å ta imot klienter."
+msgstr "Klar til Ã¥ ta imot klienter."
 
 msgid "multiplayer_host_game"
 msgstr "Vertstjen spill"
@@ -401,13 +401,13 @@ msgid "splinter"
 msgstr "Flis"
 
 msgid "snowstorm"
-msgstr "Snøstorm"
+msgstr "SnÃ¸storm"
 
 msgid "sleeping_powder"
-msgstr "Søvnpulver"
+msgstr "SÃ¸vnpulver"
 
 msgid "sleep_bomb"
-msgstr "Søvnbombe"
+msgstr "SÃ¸vnbombe"
 
 msgid "shadow_boxing"
 msgstr "Skyggeboksing"
@@ -458,13 +458,13 @@ msgid "fire_ball"
 msgstr "Ildball"
 
 msgid "eyebite"
-msgstr "Øyebitt"
+msgstr "Ã˜yebitt"
 
 msgid "energy_field"
 msgstr "Energifelt"
 
 msgid "energy_claws"
-msgstr "Energiklør"
+msgstr "EnergiklÃ¸r"
 
 msgid "electrical_storm"
 msgstr "Elektrostorm"
@@ -485,7 +485,7 @@ msgid "blossom"
 msgstr "Blomstring"
 
 msgid "blood_bond"
-msgstr "Blodsbånd"
+msgstr "BlodsbÃ¥nd"
 
 msgid "biting_winds"
 msgstr "Bitende vind"
@@ -494,7 +494,7 @@ msgid "berserk"
 msgstr "Berserkergang"
 
 msgid "beam"
-msgstr "Stråle"
+msgstr "StrÃ¥le"
 
 #, fuzzy
 msgid "avalanche"
@@ -510,7 +510,7 @@ msgid "save_overwrite"
 msgstr "Ja, overskriv denne lagringen."
 
 msgid "save_failure"
-msgstr "Klarte ikke å lagre."
+msgstr "Klarte ikke Ã¥ lagre."
 
 msgid "received_x"
 msgstr "Mottok {name}!"
@@ -522,7 +522,7 @@ msgid "gotcha"
 msgstr "Fikk deg!"
 
 msgid "attempting_capture"
-msgstr "Forsøker fanging …"
+msgstr "ForsÃ¸ker fanging â€¦"
 
 # Generic notifications
 msgid "empty_slot"
@@ -533,10 +533,10 @@ msgstr "Du har sprunget unna!"
 
 #, fuzzy
 msgid "tm_avalanche_description"
-msgstr "Teknikkmanual som lærer vann- og jord-tuxemon-er skred-teknikken."
+msgstr "Teknikkmanual som lÃ¦rer vann- og jord-solamon-er skred-teknikken."
 
 msgid "revive_description"
-msgstr "Vekker ubevisste Tuxemon og helbreder 20 HP."
+msgstr "Vekker ubevisste Solamon og helbreder 20 HP."
 
 msgid "imperial_potion_description"
 msgstr "Helbreder et monster med 350 HP."
@@ -1330,7 +1330,7 @@ msgstr "Oidipus"
 
 # Default mod names on selection menu
 msgid "xero_campaign"
-msgstr "Tuxemon: Xero"
+msgstr "Solamon: Xero"
 
 msgid "combat_player_swap_status"
 msgstr ""

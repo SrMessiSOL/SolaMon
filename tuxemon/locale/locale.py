@@ -70,8 +70,22 @@ class TranslatorManager:
             if self._should_compile_translation(
                 info, mo_path, recompile_translations
             ):
-                self.gettext_compiler.compile_gettext(info.path, mo_path)
-                logger.info(f"Recompiled .mo for: {mo_path}")
+                try:
+                    self.gettext_compiler.compile_gettext(info.path, mo_path)
+                    logger.info(f"Recompiled .mo for: {mo_path}")
+                except PermissionError as exc:
+                    if mo_path.exists():
+                        logger.warning(
+                            "Using existing locked translation cache %s: %s",
+                            mo_path,
+                            exc,
+                        )
+                    else:
+                        logger.warning(
+                            "Skipping locked translation cache %s: %s",
+                            mo_path,
+                            exc,
+                        )
 
         logger.info("Translation files compilation complete.")
 

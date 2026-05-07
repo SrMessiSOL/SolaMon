@@ -3,8 +3,10 @@
 from __future__ import annotations
 
 import logging
+import os
 import time
 from collections.abc import Callable
+from pathlib import Path
 from typing import TYPE_CHECKING
 
 import pygame
@@ -19,6 +21,17 @@ if TYPE_CHECKING:
     from tuxemon.prepare import DisplayContext
 
 logger = logging.getLogger(__name__)
+
+
+def _startup_trace(message: str) -> None:
+    trace_path = os.environ.get("SOLAMON_STARTUP_TRACE")
+    if not trace_path:
+        return
+    try:
+        with Path(trace_path).open("a", encoding="utf-8") as handle:
+            handle.write(f"{message}\n")
+    except OSError:
+        pass
 
 
 class LocalPygameClient(BaseClient):
@@ -104,6 +117,9 @@ class LocalPygameClient(BaseClient):
         """
         Initiates the main game loop with a fixed timestep.
         """
+        _startup_trace(
+            f"client.main: enter state={self.state.name} states={self.active_state_names}"
+        )
         update = self.update
         draw = self.draw
         screen = self.screen
@@ -115,6 +131,7 @@ class LocalPygameClient(BaseClient):
 
         last_time = clock()
         accumulator = 0.0
+        traced_first_frame = False
 
         while self.state != ClientState.DONE:
             if self.state == ClientState.RUNNING:
@@ -135,6 +152,11 @@ class LocalPygameClient(BaseClient):
                 draw()
                 self.input_manager.draw_inputs(screen)
                 flip()
+                if not traced_first_frame:
+                    _startup_trace(
+                        f"client.main: first frame drawn states={self.active_state_names}"
+                    )
+                    traced_first_frame = True
 
                 if self.config.show_fps:
                     self.renderer.update(frame_length)

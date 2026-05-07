@@ -60,7 +60,6 @@ class WildEncounterAction(EventAction):
             logger.warning("battle is not legal, won't start")
             self.stop()
             return
-
         logger.info("Starting wild encounter!")
 
         current_monster = Monster.spawn_base(

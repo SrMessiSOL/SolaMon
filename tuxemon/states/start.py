@@ -20,10 +20,12 @@ from tuxemon.locale.locale import T
 from tuxemon.menu.menu import PygameMenuState
 from tuxemon.platform.const.graphics import BG_START_SCREEN, BLACK_COLOR
 from tuxemon.platform.const.sizes import PLAYER_NPC
+from tuxemon.chain.slots import chain_slot_is_loadable, latest_chain_slot
 from tuxemon.save_system.save import get_index_of_latest_save
 from tuxemon.save_system.save_manager import SaveManager
 from tuxemon.session import local_session
 from tuxemon.state.state import State
+from tuxemon.tools import open_dialog
 
 if TYPE_CHECKING:
     from tuxemon.base_client import BaseClient
@@ -62,9 +64,21 @@ class StartState(PygameMenuState):
         menu: Menu,
     ) -> None:
         # If there is a save, then move the cursor to "Load game" first
-        index = get_index_of_latest_save()
+        if self.client.config.chain_enabled:
+            index = 0
+            if self.client.chain_session.character:
+                slot = latest_chain_slot(
+                    self.client.config.save_slots,
+                    self.client.chain_session.character,
+                )
+                index = 0 if slot is None else slot - 1
+        else:
+            index = get_index_of_latest_save()
 
         def new_game() -> None:
+            launch_default_game()
+
+        def launch_default_game() -> None:
             launcher = GameLauncher(self.client)
             launcher.launch(
                 session=local_session,
@@ -73,6 +87,50 @@ class StartState(PygameMenuState):
                 ),
                 remove_states=["StartState"],
             )
+
+        def require_chain_identity(
+            action: Callable[[], None],
+            *,
+            allow_existing_character: bool = True,
+        ) -> Callable[[], None]:
+            def _wrapped() -> None:
+                if not self.client.config.chain_enabled:
+                    action()
+                    return
+
+                def _require_character() -> None:
+                    if self.client.chain_session.has_character:
+                        if allow_existing_character:
+                            if chain_slot_is_loadable(
+                                1, self.client.chain_session.character
+                            ):
+                                action()
+                            else:
+                                launch_default_game()
+                        elif chain_slot_is_loadable(
+                            1, self.client.chain_session.character
+                        ):
+                            self.client.event_engine.execute_action(
+                                "load_game", [1, True], True
+                            )
+                        else:
+                            launch_default_game()
+                    else:
+                        self.client.push_state(
+                            "SolamonCharacterState",
+                            on_ready=action,
+                            allow_existing_character=allow_existing_character,
+                        )
+
+                if self.client.chain_session.is_unlocked:
+                    _require_character()
+                else:
+                    self.client.push_state(
+                        "SolamonWalletState",
+                        on_ready=_require_character,
+                    )
+
+            return _wrapped
 
         def change_state(
             state: State | str, **kwargs: Any
@@ -91,18 +149,23 @@ class StartState(PygameMenuState):
         if index is not None:
             menu.add.button(
                 title=T.translate("menu_load"),
-                action=change_state("LoadMenuState"),
+                action=require_chain_identity(change_state("LoadMenuState")),
                 font_size=self.font_type.big,
                 button_id="menu_load",
             )
 
-            if SaveManager.has_autosave():
+            if (
+                not self.client.config.chain_enabled
+                and SaveManager.has_autosave()
+            ):
                 menu.add.button(
                     title=T.translate("menu_autosave"),
-                    action=lambda: self.client.event_engine.execute_action(
-                        "load_game",
-                        [0, True],
-                        True,
+                    action=require_chain_identity(
+                        lambda: self.client.event_engine.execute_action(
+                            "load_game",
+                            [0, True],
+                            True,
+                        )
                     ),
                     font_size=self.font_type.big,
                     button_id="menu_autosave",
@@ -111,37 +174,23 @@ class StartState(PygameMenuState):
         if len(self.client.config.mods) == 1:
             menu.add.button(
                 title=T.translate("menu_new_game"),
-                action=new_game,
+                action=require_chain_identity(
+                    new_game,
+                    allow_existing_character=False,
+                ),
                 font_size=self.font_type.big,
                 button_id="menu_new_game",
             )
         else:
             menu.add.button(
                 title=T.translate("menu_new_game"),
-                action=change_state(
-                    "ModsChoice", mods=self.client.config.mods
+                action=require_chain_identity(
+                    change_state("ModsChoice", mods=self.client.config.mods),
+                    allow_existing_character=False,
                 ),
                 font_size=self.font_type.big,
                 button_id="menu_mod_choice",
             )
-        menu.add.button(
-            title=T.translate("menu_battle"),
-            action=change_state(
-                "DifficultyPickState", on_pick=self.start_battle
-            ),
-            font_size=self.font_type.big,
-            button_id="menu_battle",
-        )
-        menu.add.button(
-            title=T.translate("menu_minigame"),
-            action=change_state(
-                "DifficultyPickState",
-                on_pick=self.start_minigame,
-                difficulties=["easy", "normal", "hard"],
-            ),
-            font_size=self.font_type.big,
-            button_id="menu_minigame",
-        )
         menu.add.button(
             title=T.translate("menu_options"),
             action=change_state("ControlState", main_menu=True),

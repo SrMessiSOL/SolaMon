@@ -261,6 +261,7 @@ class CombatAnimations(Menu[None], ABC):
             self.sprite_map.remove_sprite(monster)
             self.status_icons.remove_monster_icons(monster)
             self.hud_manager.delete_hud(monster)
+            self.bars.remove_monster(monster)
 
         self.animate_monster_leave(monster)
         self.task(kill_monster, interval=2)
@@ -319,7 +320,8 @@ class CombatAnimations(Menu[None], ABC):
             leftover = value_for_new_level
 
             def animate_new_level_progress() -> Animation:
-                # do NOT reset exp_bar.value to 0
+                exp_bar.value = 0.0
+                self.refresh_ui()
                 ani = register(
                     self.animate(
                         exp_bar,
@@ -413,6 +415,12 @@ class CombatAnimations(Menu[None], ABC):
             owner=owner,
             label_data=label_data,
         )
+
+    def _update_hud_details_and_bars(
+        self, monster: Monster, hud: Sprite, is_player: bool
+    ) -> None:
+        self._update_hud_details(monster, hud, is_player)
+        self.refresh_ui()
 
     def check_hud(self, monster: Monster, filename: str) -> Sprite:
         """
@@ -861,6 +869,7 @@ class CombatAnimations(Menu[None], ABC):
             def kill_monster() -> None:
                 self.sprite_map.remove_sprite(monster)
                 self.hud_manager.delete_hud(monster)
+                self.bars.remove_monster(monster)
 
             self.task(kill_monster, interval=2 + num_shakes)
 
@@ -947,6 +956,7 @@ class CombatAnimations(Menu[None], ABC):
         if delete:
             for monster in monsters:
                 self.hud_manager.delete_hud(monster)
+                self.bars.remove_monster(monster)
 
         # Assign and Build HUDs
         # If there is only 1 monster, we use the ID "hud".

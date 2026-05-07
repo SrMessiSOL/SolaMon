@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="git" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="13" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="131">
  <properties>
   <property name="edges" value="clamped"/>
@@ -235,7 +235,7 @@
   </object>
   <object id="108" name="rockittenNO" type="event" x="32" y="0" width="16" height="16">
    <properties>
-    <property name="act1" value="translated_dialog nochoiceTuxemon"/>
+    <property name="act1" value="translated_dialog nochoiceSolamon"/>
     <property name="act2" value="set_variable rockittenchoice:empty"/>
     <property name="act3" value="set_variable letmechoose:pls"/>
     <property name="cond1" value="is variable_set rockittenchoice:no"/>
@@ -243,7 +243,7 @@
   </object>
   <object id="109" name="cardilingNO" type="event" x="64" y="0" width="16" height="16">
    <properties>
-    <property name="act1" value="translated_dialog nochoiceTuxemon"/>
+    <property name="act1" value="translated_dialog nochoiceSolamon"/>
     <property name="act2" value="set_variable cardilingchoice:empty"/>
     <property name="act3" value="set_variable letmechoose:pls"/>
     <property name="cond1" value="is variable_set cardilingchoice:no"/>
@@ -309,7 +309,7 @@
   </object>
   <object id="112" name="tweesherNO" type="event" x="48" y="0" width="16" height="16">
    <properties>
-    <property name="act1" value="translated_dialog nochoiceTuxemon"/>
+    <property name="act1" value="translated_dialog nochoiceSolamon"/>
     <property name="act2" value="set_variable tweesherchoice:empty"/>
     <property name="act3" value="set_variable letmechoose:pls"/>
     <property name="cond1" value="is variable_set tweesherchoice:no"/>
@@ -467,3 +467,4 @@
   </object>
  </objectgroup>
 </map>
+

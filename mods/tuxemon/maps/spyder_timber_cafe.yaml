@@ -1,4 +1,4 @@
-events:
+﻿events:
   Create Florist:
     actions:
     - create_npc spyder_cottoncafe_hillary,10,4
@@ -61,7 +61,7 @@ events:
     type: event
     x: 8
     y: 11
-  Heal Tuxemon:
+  Heal Solamon:
     actions:
     - set_monster_health
     - set_monster_status
@@ -145,3 +145,4 @@ events:
     type: event
     x: 10
     y: 3
+

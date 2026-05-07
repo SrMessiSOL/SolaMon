@@ -115,7 +115,6 @@ class RandomBattleAction(EventAction):
             logger.warning("Battle is not legal, won't start.")
             self.stop()
             return
-
         environment = session.client.environment_manager
         env = environment.get_active_environment()
         if env is None:

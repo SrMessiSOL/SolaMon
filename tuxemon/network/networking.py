@@ -5,19 +5,19 @@
 from __future__ import annotations
 
 import logging
-from dataclasses import dataclass, field, replace
+from dataclasses import dataclass, replace
 from enum import Enum
 from typing import TYPE_CHECKING, Any
 
 from tuxemon.db import Direction
-from tuxemon.item.item import decode_items, encode_items
-from tuxemon.monster.monster import decode_monsters, encode_monsters
+from tuxemon.chain.skins import available_character_skins
+from tuxemon.entity.npc import NPC
+from tuxemon.platform.const.sizes import PLAYER_NPC
 from tuxemon.session import local_session
 from tuxemon.states import world_state as world
 
 if TYPE_CHECKING:
     from tuxemon.base_client import BaseClient
-    from tuxemon.entity.npc import NPC
     from tuxemon.item.item import Item
     from tuxemon.monster.monster import Monster
 
@@ -35,6 +35,7 @@ class EventType(str, Enum):
     CLIENT_INTERACTION = "CLIENT_INTERACTION"
     CLIENT_RESPONSE = "CLIENT_RESPONSE"
     CLIENT_START_BATTLE = "CLIENT_START_BATTLE"
+    CLIENT_CHAT = "CLIENT_CHAT"
     CLIENT_DISCONNECTED = "CLIENT_DISCONNECTED"
     PING = "PING"
     SERVER_SHUTDOWN = "SERVER_SHUTDOWN"
@@ -50,12 +51,7 @@ class CharData:
     name: str  # Character's display name
     facing: Direction  # Direction the character is currently facing (e.g., up, down)
     running: bool = False
-    monsters: list[Monster] = field(
-        default_factory=list
-    )  # List of monsters the character owns
-    inventory: list[Item] = field(
-        default_factory=list
-    )  # List of items in the character's inventory
+    skin: str = "adventurer"
 
     def copy(self, **updates: Any) -> CharData:
         return replace(self, **updates)
@@ -64,21 +60,24 @@ class CharData:
         return {
             "tile_pos": self.tile_pos,
             "name": self.name,
-            "facing": self.facing.name,
+            "facing": self.facing.value,
             "running": self.running,
-            "monsters": encode_monsters(self.monsters),
-            "inventory": encode_items(self.inventory),
+            "skin": self.skin,
         }
 
     @staticmethod
     def from_dict(data: dict[str, Any]) -> CharData:
+        facing_raw = str(data.get("facing", Direction.DOWN.value))
+        facing = Direction(facing_raw.lower())
+        skin = str(data.get("skin") or "adventurer")[:48]
+        if skin not in available_character_skins():
+            skin = "adventurer"
         return CharData(
-            tile_pos=tuple(data["tile_pos"]),
-            name=data["name"],
-            facing=Direction[data["facing"]],
-            running=bool(data["running"]),
-            monsters=decode_monsters(data.get("monsters", [])),
-            inventory=decode_items(data.get("inventory", [])),
+            tile_pos=tuple(data.get("tile_pos", (0, 0))),
+            name=str(data.get("name", ""))[:32],
+            facing=facing,
+            running=bool(data.get("running", False)),
+            skin=skin,
         )
 
 
@@ -107,9 +106,12 @@ class EventData:
     target: str | None = (
         None  # Target client or entity for interactions or combat
     )
+    owner: str | None = None
+    character_mint: str | None = None
     response: Any | None = (
         None  # Optional response payload (e.g., dialogue result, battle outcome)
     )
+    message: str | None = None
 
     def copy(self, **updates: Any) -> EventData:
         return replace(self, **updates)
@@ -119,12 +121,16 @@ class EventData:
             "type": self.type.name,
             "event_number": self.event_number,
             "cuuid": self.cuuid,
+            "direction": self.direction,
             "interaction": self.interaction,
             "map_name": self.map_name,
             "char_dict": self.char_dict.to_dict() if self.char_dict else None,
             "kb_key": self.kb_key,
             "target": self.target,
             "response": self.response,
+            "owner": self.owner,
+            "character_mint": self.character_mint,
+            "message": self.message,
         }
 
     @staticmethod
@@ -133,6 +139,7 @@ class EventData:
             type=EventType[data["type"]],
             event_number=data["event_number"],
             cuuid=data.get("cuuid"),
+            direction=data.get("direction"),
             interaction=data.get("interaction"),
             map_name=data.get("map_name"),
             char_dict=(
@@ -143,6 +150,9 @@ class EventData:
             kb_key=data.get("kb_key"),
             target=data.get("target"),
             response=data.get("response"),
+            owner=data.get("owner"),
+            character_mint=data.get("character_mint"),
+            message=data.get("message"),
         )
 
 
@@ -171,18 +181,22 @@ def populate_client(
         raise ValueError(f"Incomplete event data for client {cuuid}")
 
     char_data = event_data.char_dict
-    char_name = char_data.name
+    slug = f"remote_{cuuid[:8].replace('-', '_')}"
+    char_name = char_data.name or slug
     tile_pos_x, tile_pos_y = char_data.tile_pos
 
-    # Create the NPC sprite based on the provided information
-    game.event_engine.execute_action(
-        "create_npc", [char_name, tile_pos_x, tile_pos_y]
-    )
-    char = local_session.client.get_npc(char_name)
+    char = local_session.client.npc_manager.get_npc(slug)
     if char is None:
-        raise RuntimeError(f"Failed to create or retrieve NPC for {char_name}")
+        char = NPC.create(local_session, PLAYER_NPC)
+        char.slug = slug
+        char.ignore_collisions = True
+        local_session.client.npc_manager.place_npc_on_map(
+            char, event_data.map_name, tile_pos_x, tile_pos_y
+        )
 
-    char.is_player = True
+    char.name = char_name
+    char.is_player = False
+    char.ignore_collisions = True
     char._last_tile_pos = char.tile_pos
     char.interactions = ["TRADE", "DUEL"]
 
@@ -207,32 +221,11 @@ def update_client(
         char_data: A CharData object containing updated character state (e.g., tile position, facing).
         game: The game control object (server or client) for managing the game's state.
     """
-    # Functionality is incomplete due to lack of global x/y implementation
-    return
     if char_data is None:
         return
 
-    # Get the game world state
-    world_state = game.get_state_by_name(world.WorldState)
-
-    # Convert CharData to dictionary
-    data = char_data.to_dict()
-
-    # Update sprite attributes
-    for item, value in data.items():
-        sprite.__dict__[item] = value
-
-        # Handle tile position updates
-        if item == "tile_pos":
-            tile_size = game.context.tile_size
-            position = [
-                value[0] * tile_size[0],
-                value[1] * tile_size[1],
-            ]
-            global_x = getattr(world_state, "global_x", 0)
-            global_y = getattr(world_state, "global_y", 0)
-            abs_position = [
-                position[0] + global_x,
-                position[1] + (global_y - tile_size[1]),
-            ]
-            sprite.__dict__["position"] = abs_position
+    sprite.name = char_data.name or sprite.name
+    if sprite.appearance_manager.state.sprite_name != char_data.skin:
+        sprite.appearance_manager.update(char_data.skin, char_data.skin)
+    sprite.set_facing(char_data.facing)
+    sprite.complete_tile_entry(char_data.tile_pos)

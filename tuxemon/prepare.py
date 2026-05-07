@@ -7,6 +7,7 @@ from __future__ import annotations
 import logging
 import os
 from dataclasses import dataclass
+from pathlib import Path
 
 import pygame as pg
 
@@ -52,11 +53,15 @@ def pygame_init() -> DisplayContext:
     """Initializes Pygame, display, translations, and databases."""
     global DISPLAY_CONTEXT
 
+    _startup_trace("pygame_init: core_init start")
     core_init()
+    _startup_trace("pygame_init: core_init done")
 
     logger.debug("pygame init")
+    _startup_trace("pygame_init: pygame init start")
     pg.init()
     pg.display.set_caption(CONFIG.window_caption)
+    _startup_trace(f"pygame_init: pygame init done driver={pg.display.get_driver()}")
 
     scaling = make_default_scaling(CONFIG, NATIVE_RESOLUTION)
 
@@ -68,12 +73,16 @@ def pygame_init() -> DisplayContext:
     if platform.is_android():
         fullscreen = pg.FULLSCREEN
 
-    flags = pg.HWSURFACE | pg.DOUBLEBUF | fullscreen
+    flags = fullscreen
 
     if CONFIG.vsync:
         pg.display.set_allow_screensaver()
 
+    _startup_trace(
+        f"pygame_init: set_mode start resolution={CONFIG.resolution} flags={flags} vsync={CONFIG.vsync}"
+    )
     screen = pg.display.set_mode(CONFIG.resolution, flags, vsync=CONFIG.vsync)
+    _startup_trace("pygame_init: set_mode done")
     rect = screen.get_rect()
 
     pg.mouse.set_visible(not CONFIG.controller.hide_mouse)
@@ -122,6 +131,21 @@ def core_init() -> None:
     from tuxemon.database.runtime import db
     from tuxemon.locale.locale import T
 
+    _startup_trace("core_init: translations start")
     T.initialize_translations(recompile=CONFIG.recompile_translations)
+    _startup_trace("core_init: translations done")
+    _startup_trace("core_init: db.load start")
     db.load()
+    _startup_trace("core_init: db.load done")
     logger.debug("Initializing core systems")
+
+
+def _startup_trace(message: str) -> None:
+    trace_path = os.environ.get("SOLAMON_STARTUP_TRACE")
+    if not trace_path:
+        return
+    try:
+        with Path(trace_path).open("a", encoding="utf-8") as handle:
+            handle.write(f"{message}\n")
+    except OSError:
+        pass

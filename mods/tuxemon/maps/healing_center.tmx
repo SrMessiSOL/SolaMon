@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="13" height="11" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="40">
  <properties>
   <property name="edges" value="clamped"/>
@@ -71,7 +71,7 @@
     <property name="cond40" value="is party_size player,greater_than,0"/>
    </properties>
   </object>
-  <object id="27" name="Heal Tuxemon" type="event" x="80" y="96" width="16" height="16">
+  <object id="27" name="Heal Solamon" type="event" x="80" y="96" width="16" height="16">
    <properties>
     <property name="act10" value="set_monster_health"/>
     <property name="act20" value="set_monster_status"/>
@@ -152,3 +152,4 @@
   </object>
  </objectgroup>
 </map>
+

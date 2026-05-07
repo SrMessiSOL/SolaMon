@@ -1,12 +1,12 @@
-#
+﻿#
 msgid ""
 msgstr ""
-"Project-Id-Version: Tuxemon\n"
+"Project-Id-Version: Solamon\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-11 00:00+0000\n"
 "PO-Revision-Date: 2023-02-03 04:41+0000\n"
 "Last-Translator: Betsy <betsymaxx@gmailvn.net>\n"
-"Language-Team: Finnish <https://hosted.weblate.org/projects/tuxemon/tuxemon/fi/>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/solamon/solamon/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,22 +24,22 @@ msgid "berry"
 msgstr "Marja"
 
 msgid "tm_blossom_description"
-msgstr "Tekniikkaopas joka opettaa Puu-Tuxemonille kukintatekniikan."
+msgstr "Tekniikkaopas joka opettaa Puu-Solamonille kukintatekniikan."
 
 msgid "item_no_available_target"
-msgstr "{name} ei voida käyttää yhteenkään Tuxemoniisi tällä hetkellä."
+msgstr "{name} ei voida kÃ¤yttÃ¤Ã¤ yhteenkÃ¤Ã¤n Solamoniisi tÃ¤llÃ¤ hetkellÃ¤."
 
 msgid "combat_replacement_is_fainted"
-msgstr "Tuo hirviö on jo valmiiksi pyörtynyt!"
+msgstr "Tuo hirviÃ¶ on jo valmiiksi pyÃ¶rtynyt!"
 
 msgid "dodge_increased"
 msgstr "{user}'n {stat} koheni."
 
 msgid "cherry_description"
-msgstr "Parantaa hirviötä 10:llä terveyspisteellä."
+msgstr "Parantaa hirviÃ¶tÃ¤ 10:llÃ¤ terveyspisteellÃ¤."
 
 msgid "apple_description"
-msgstr "Parantaa hirviötä 10:llä terveyspisteellä."
+msgstr "Parantaa hirviÃ¶tÃ¤ 10:llÃ¤ terveyspisteellÃ¤."
 
 # Cherry
 msgid "cherry"
@@ -59,19 +59,19 @@ msgid "combat_run"
 msgstr "{user} juoksi livohkaan!"
 
 msgid "attacks_rose"
-msgstr "{user}'n hyökkäystuholaadut kohosivat."
+msgstr "{user}'n hyÃ¶kkÃ¤ystuholaadut kohosivat."
 
 msgid "combat_amnesia_get"
-msgstr "{user} kärsii muistinmenetyksestä."
+msgstr "{user} kÃ¤rsii muistinmenetyksestÃ¤."
 
 msgid "combat_state_recover_failure"
-msgstr "{target} enempää ei voida parantaa."
+msgstr "{target} enempÃ¤Ã¤ ei voida parantaa."
 
 msgid "combat_defeat"
-msgstr "Sinut päihitettiin!"
+msgstr "Sinut pÃ¤ihitettiin!"
 
 msgid "attack_resisted"
-msgstr "Hyökkäys torjuttiin!"
+msgstr "HyÃ¶kkÃ¤ys torjuttiin!"
 
 msgid "generic_success"
 msgstr "Se toimi!"
@@ -80,17 +80,17 @@ msgid "receive_happiness"
 msgstr "Haltuun saatiin 5 kaappauslaitetta!"
 
 msgid "attack_effective"
-msgstr "Hyökkäys aiheutti lisätuhoa!"
+msgstr "HyÃ¶kkÃ¤ys aiheutti lisÃ¤tuhoa!"
 
 msgid "item_failure"
-msgstr "Se epäonnistui!"
+msgstr "Se epÃ¤onnistui!"
 
 msgid "not_implemented"
-msgstr "Tätä ominaisuutta ei ole vielä sulautettu."
+msgstr "TÃ¤tÃ¤ ominaisuutta ei ole vielÃ¤ sulautettu."
 
 # Generic notifications
 msgid "empty_slot"
-msgstr "Tyhjä lokero"
+msgstr "TyhjÃ¤ lokero"
 
 msgid "breathe_fire"
 msgstr "Tulihengitys"
@@ -102,7 +102,7 @@ msgid "gotcha"
 msgstr "Sainpas!"
 
 msgid "save_overwrite"
-msgstr "Kyllä vain, ylikirjoita tämä tallennus."
+msgstr "KyllÃ¤ vain, ylikirjoita tÃ¤mÃ¤ tallennus."
 
 msgid "lifeleech"
 msgstr "Elokuppaaja"
@@ -129,13 +129,13 @@ msgid "rust_bomb"
 msgstr "Ruostepommi"
 
 msgid "tonguespear"
-msgstr "Kielikeihäs"
+msgstr "KielikeihÃ¤s"
 
 msgid "ram"
 msgstr "Junttaa"
 
 msgid "refresh"
-msgstr "Virkistä"
+msgstr "VirkistÃ¤"
 
 msgid "venomous_tentacle"
 msgstr "Myrkkylonkero"
@@ -151,65 +151,65 @@ msgid "menu_items"
 msgstr "Esineet"
 
 msgid "menu_up_key"
-msgstr "Nuoli ylöspäin"
+msgstr "Nuoli ylÃ¶spÃ¤in"
 
 msgid "berry_description"
-msgstr "Parantaa hirviötä 10:llä terveyspisteellä."
+msgstr "Parantaa hirviÃ¶tÃ¤ 10:llÃ¤ terveyspisteellÃ¤."
 
 # Orange
 msgid "orange"
 msgstr "Appelsiini"
 
 msgid "orange_description"
-msgstr "Parantaa hirviötä 20:llä terveyspisteellä."
+msgstr "Parantaa hirviÃ¶tÃ¤ 20:llÃ¤ terveyspisteellÃ¤."
 
 msgid "potion_description"
-msgstr "Parantaa hirviötä 50:llä terveyspisteellä."
+msgstr "Parantaa hirviÃ¶tÃ¤ 50:llÃ¤ terveyspisteellÃ¤."
 
 # Super Potion
 msgid "super_potion"
 msgstr "Erityistehorohdos"
 
 msgid "super_potion_description"
-msgstr "Parantaa hirviötä 100:llä terveyspisteellä."
+msgstr "Parantaa hirviÃ¶tÃ¤ 100:llÃ¤ terveyspisteellÃ¤."
 
 msgid "imperial_potion_description"
-msgstr "Parantaa hirviötä 350:llä terveyspisteellä."
+msgstr "Parantaa hirviÃ¶tÃ¤ 350:llÃ¤ terveyspisteellÃ¤."
 
 # Revive
 msgid "revive"
 msgstr "Elvytys"
 
 msgid "revive_description"
-msgstr "Elvyttää tajuttoman Tuxemonin ja palauttaa 20 terveyspistettä."
+msgstr "ElvyttÃ¤Ã¤ tajuttoman Solamonin ja palauttaa 20 terveyspistettÃ¤."
 
 # Capture Device
 msgid "capture_device"
 msgstr "Kaappauslaite"
 
 msgid "capture_device_description"
-msgstr "Kaappaa hirviön."
+msgstr "Kaappaa hirviÃ¶n."
 
 # TMs
 msgid "tm_avalanche"
-msgstr "TO: Maanvyöry"
+msgstr "TO: MaanvyÃ¶ry"
 
 msgid "tm_avalanche_description"
 msgstr ""
-"Tekniikkaopas joka opettaa Vesi taikka Maa -Tuxemonille "
-"maanvyörytystekniikan."
+"Tekniikkaopas joka opettaa Vesi taikka Maa -Solamonille "
+"maanvyÃ¶rytystekniikan."
 
 msgid "tm_blossom"
 msgstr "TO: Kukinta"
 
 msgid "item_cannot_use_here"
-msgstr "{name} ei voida käyttää tässä!"
+msgstr "{name} ei voida kÃ¤yttÃ¤Ã¤ tÃ¤ssÃ¤!"
 
 msgid "reg_papers"
-msgstr "Rekisteröinnin asiakirjat"
+msgstr "RekisterÃ¶innin asiakirjat"
 
 msgid "reg_papers_description"
-msgstr "Rekisteröintiasiakirjojen paketti Koetukseen"
+msgstr "RekisterÃ¶intiasiakirjojen paketti Koetukseen"
 
 # Allie's Address
 msgid "allies_address"
@@ -219,32 +219,32 @@ msgid "allies_address_description"
 msgstr ""
 "Huone 31, Rappu 2, Jokakanavatorni, Puuvillakaupunki\n"
 "\n"
-"Osoitteen vieressä on suudelmajälki"
+"Osoitteen vieressÃ¤ on suudelmajÃ¤lki"
 
 msgid "combat_miss"
 msgstr "Ohi meni..."
 
 msgid "combat_can't_run_from_trainer"
-msgstr "Kouluttajataisteluista ei saa häipyä!"
+msgstr "Kouluttajataisteluista ei saa hÃ¤ipyÃ¤!"
 
 msgid "combat_player_run"
 msgstr "Juoksit pois!"
 
 msgid "combat_used_x"
-msgstr "{user} käytti {name}!"
+msgstr "{user} kÃ¤ytti {name}!"
 
 msgid "combat_used_x_on_y"
-msgstr "{user} käytti {name} kohteessa {target}!"
+msgstr "{user} kÃ¤ytti {name} kohteessa {target}!"
 
 msgid "combat_swap"
-msgstr "{user} lähetti {target}!"
+msgstr "{user} lÃ¤hetti {target}!"
 
 msgid "combat_call_tuxemon"
 msgstr "Mene {name}!"
 
 # TODO: similar to combat_swap - refactor!
 msgid "combat_opponent_call_tuxemon"
-msgstr "{user} lähetti {name}!"
+msgstr "{user} lÃ¤hetti {name}!"
 
 msgid "combat_state_poison_get"
 msgstr "{target} on myrkytetty."
@@ -253,7 +253,7 @@ msgid "combat_state_poison_damage"
 msgstr "{name} otti myrkkyosumaa!"
 
 msgid "combat_state_lifeleech_get"
-msgstr "{user} kuppaa terveyttä {target}."
+msgstr "{user} kuppaa terveyttÃ¤ {target}."
 
 msgid "speed_halved"
 msgstr "{user}'n nopeus puolittui."
@@ -262,22 +262,22 @@ msgid "hp_restored"
 msgstr "{user}'n tp palautettiin."
 
 msgid "combat_state_overfeed_get"
-msgstr "{user} Ylisyötti {target}."
+msgstr "{user} YlisyÃ¶tti {target}."
 
 msgid "dodge_fell"
-msgstr "{user}'n väistökyky putosi."
+msgstr "{user}'n vÃ¤istÃ¶kyky putosi."
 
 msgid "combat_levitate_get"
-msgstr "{user} kohosi ylemmäksi ilmaan."
+msgstr "{user} kohosi ylemmÃ¤ksi ilmaan."
 
 msgid "combat_state_lifeleech_success"
-msgstr "{user} menetti terveyttä elämänkupparille!"
+msgstr "{user} menetti terveyttÃ¤ elÃ¤mÃ¤nkupparille!"
 
 msgid "combat_state_lifeleech_failure"
-msgstr "{link} enempää ei voida parantaa."
+msgstr "{link} enempÃ¤Ã¤ ei voida parantaa."
 
 msgid "combat_state_recover_get"
-msgstr "{target} alkoi elpyä terveydeltään."
+msgstr "{target} alkoi elpyÃ¤ terveydeltÃ¤Ã¤n."
 
 msgid "combat_state_recover_success"
 msgstr "{user} terveys palannut!"
@@ -289,13 +289,13 @@ msgid "combat_trainer_appeared"
 msgstr "{name} haluaa taistella!"
 
 msgid "combat_victory"
-msgstr "Sinä voitit!"
+msgstr "SinÃ¤ voitit!"
 
 msgid "combat_draw"
-msgstr "Kaikki seurueet pyörtyivät!"
+msgstr "Kaikki seurueet pyÃ¶rtyivÃ¤t!"
 
 msgid "combat_capturing_success"
-msgstr "Sinä vangitsit {name}!"
+msgstr "SinÃ¤ vangitsit {name}!"
 
 msgid "combat_capturing_fail"
 msgstr "{name} irtautui vapaaksi!"
@@ -307,41 +307,41 @@ msgid "combat_wild_appeared"
 msgstr "Villi {name} ilmestyi!"
 
 msgid "combat_monster_choice"
-msgstr "Mitä aikoo {name} tehdä?"
+msgstr "MitÃ¤ aikoo {name} tehdÃ¤?"
 
 msgid "combat_fainted"
-msgstr "{name} pyörtyi!"
+msgstr "{name} pyÃ¶rtyi!"
 
 msgid "combat_isactive"
-msgstr "{name} on jo valmiiksi pelissä."
+msgstr "{name} on jo valmiiksi pelissÃ¤."
 
 msgid "combat_target_itself"
-msgstr "{name} ei pitäisi hyökkiä itseään vastaan."
+msgstr "{name} ei pitÃ¤isi hyÃ¶kkiÃ¤ itseÃ¤Ã¤n vastaan."
 
 msgid "attack_very_effective"
-msgstr "Hyökkäys aiheutti kosolti lisävahinkoa!"
+msgstr "HyÃ¶kkÃ¤ys aiheutti kosolti lisÃ¤vahinkoa!"
 
 msgid "attack_weak"
-msgstr "Hyökkäys torjuttiin suurilta osin!"
+msgstr "HyÃ¶kkÃ¤ys torjuttiin suurilta osin!"
 
 msgid "exit"
 msgstr "Ulos"
 
 msgid "item_confirm_use"
-msgstr "Käytä"
+msgstr "KÃ¤ytÃ¤"
 
 msgid "item_confirm_cancel"
-msgstr "Keskeytä"
+msgstr "KeskeytÃ¤"
 
 # TODO same as generic_success and generic_failure - refactor!
 msgid "item_success"
 msgstr "Se toimi!"
 
 msgid "generic_failure"
-msgstr "Se epäonnistui!"
+msgstr "Se epÃ¤onnistui!"
 
 msgid "attempting_capture"
-msgstr "Yritetään vangitsemista..."
+msgstr "YritetÃ¤Ã¤n vangitsemista..."
 
 msgid "received_x"
 msgstr "Saatiin {name}!"
@@ -353,19 +353,19 @@ msgid "save_failure"
 msgstr "Tallentaessa ilmeni ongelma!"
 
 msgid "save_keep"
-msgstr "Ei, säilytä tämä tallennus."
+msgstr "Ei, sÃ¤ilytÃ¤ tÃ¤mÃ¤ tallennus."
 
 msgid "slot"
 msgstr "Lokero"
 
 msgid "faint"
-msgstr "Pyörry"
+msgstr "PyÃ¶rry"
 
 msgid "poison"
 msgstr "Myrkky"
 
 msgid "overfeed"
-msgstr "Ylisyötä"
+msgstr "YlisyÃ¶tÃ¤"
 
 msgid "recover"
 msgstr "Pelasta"
@@ -378,16 +378,16 @@ msgid "amnesia"
 msgstr "Muistinmenetys"
 
 msgid "avalanche"
-msgstr "Maanvyörymä"
+msgstr "MaanvyÃ¶rymÃ¤"
 
 msgid "battery_acid"
 msgstr "Akkuhappo"
 
 msgid "battery_discharge"
-msgstr "Akkuvarauksen vähentymä"
+msgstr "Akkuvarauksen vÃ¤hentymÃ¤"
 
 msgid "beam"
-msgstr "Säde"
+msgstr "SÃ¤de"
 
 msgid "berserk"
 msgstr "Apinanraivo"
@@ -405,7 +405,7 @@ msgid "blossom"
 msgstr "Kukinta"
 
 msgid "boulder"
-msgstr "Kivijärkäle"
+msgstr "KivijÃ¤rkÃ¤le"
 
 msgid "clamp_on"
 msgstr "Kiinnitys"
@@ -414,22 +414,22 @@ msgid "constrict"
 msgstr "Purista"
 
 msgid "electrical_storm"
-msgstr "Sähkömyrsky"
+msgstr "SÃ¤hkÃ¶myrsky"
 
 msgid "energy_claws"
 msgstr "Energiasakset"
 
 msgid "energy_field"
-msgstr "Energiakenttä"
+msgstr "EnergiakenttÃ¤"
 
 msgid "eyebite"
-msgstr "Silmäpuraisu"
+msgstr "SilmÃ¤puraisu"
 
 msgid "feint"
 msgstr "Harhautus"
 
 msgid "fester"
-msgstr "Märintä"
+msgstr "MÃ¤rintÃ¤"
 
 msgid "fire_ball"
 msgstr "Tulipallo"
@@ -438,7 +438,7 @@ msgid "fire_claw"
 msgstr "Tulisaksi"
 
 msgid "flamethrower"
-msgstr "Liekinheittäjä"
+msgstr "LiekinheittÃ¤jÃ¤"
 
 msgid "flood"
 msgstr "Vedenpaisumus"
@@ -465,25 +465,25 @@ msgid "glower"
 msgstr "Kimaltaja"
 
 msgid "goad"
-msgstr "Yllytä"
+msgstr "YllytÃ¤"
 
 msgid "hibernate"
 msgstr "Vaivuta"
 
 msgid "ice_claw"
-msgstr "Jääsaksi"
+msgstr "JÃ¤Ã¤saksi"
 
 msgid "icicle_spear"
-msgstr "Jääpuikkokeihäs"
+msgstr "JÃ¤Ã¤puikkokeihÃ¤s"
 
 msgid "invictus"
-msgstr "Järkähtämättömyys"
+msgstr "JÃ¤rkÃ¤htÃ¤mÃ¤ttÃ¶myys"
 
 msgid "kindling_flame"
 msgstr "Sytyketuli"
 
 msgid "midnight_mantle"
-msgstr "Keskiyösiivet"
+msgstr "KeskiyÃ¶siivet"
 
 msgid "mudslide"
 msgstr "Mutaliuku"
@@ -501,13 +501,13 @@ msgid "peregrine"
 msgstr "Peregriini"
 
 msgid "perfect_cut"
-msgstr "Täydellinen viilto"
+msgstr "TÃ¤ydellinen viilto"
 
 msgid "petrify"
-msgstr "Jähmetä"
+msgstr "JÃ¤hmetÃ¤"
 
 msgid "proboscis"
-msgstr "Imukärsä"
+msgstr "ImukÃ¤rsÃ¤"
 
 msgid "pseudopod"
 msgstr "Pseudopodi"
@@ -519,7 +519,7 @@ msgid "rock"
 msgstr "Kivi"
 
 msgid "rot"
-msgstr "Mädätä"
+msgstr "MÃ¤dÃ¤tÃ¤"
 
 msgid "sand_spray"
 msgstr "Hiekkasuihkutin"
@@ -531,7 +531,7 @@ msgid "shrapnel"
 msgstr "Pomminsirpale"
 
 msgid "shuriken"
-msgstr "Heittotähti"
+msgstr "HeittotÃ¤hti"
 
 msgid "sleep_bomb"
 msgstr "Unipommi"
@@ -540,7 +540,7 @@ msgid "sleeping_powder"
 msgstr "Unijauhe"
 
 msgid "snowstorm"
-msgstr "Lumimyräkkä"
+msgstr "LumimyrÃ¤kkÃ¤"
 
 msgid "splinter"
 msgstr "Sirpale"
@@ -552,16 +552,16 @@ msgid "stampede"
 msgstr "Rynnistys"
 
 msgid "starfall"
-msgstr "Tähtisade"
+msgstr "TÃ¤htisade"
 
 msgid "static_field"
-msgstr "Sähkövarauskenttä"
+msgstr "SÃ¤hkÃ¶varauskenttÃ¤"
 
 msgid "sting"
 msgstr "Pisto"
 
 msgid "stone_rot"
-msgstr "Kivimätä"
+msgstr "KivimÃ¤tÃ¤"
 
 msgid "strike"
 msgstr "Iske"
@@ -570,13 +570,13 @@ msgid "suck_poison"
 msgstr "Ime myrkky"
 
 msgid "sudden_glow"
-msgstr "Yhtäkkis'hehku"
+msgstr "YhtÃ¤kkis'hehku"
 
 msgid "supernova"
-msgstr "Tähdenlento"
+msgstr "TÃ¤hdenlento"
 
 msgid "surge"
-msgstr "Puske päälle"
+msgstr "Puske pÃ¤Ã¤lle"
 
 msgid "take_cover"
 msgstr "Mene suojaan"
@@ -588,7 +588,7 @@ msgid "thunderclap"
 msgstr "Ukkostapute"
 
 msgid "wall_of_steel"
-msgstr "Terässeinä"
+msgstr "TerÃ¤sseinÃ¤"
 
 msgid "wallow"
 msgstr "Ryve"
@@ -597,14 +597,14 @@ msgid "web"
 msgstr "Seitti"
 
 msgid "whirlwind"
-msgstr "Pyörre"
+msgstr "PyÃ¶rre"
 
 msgid "wing_tip"
-msgstr "Siivekäs"
+msgstr "SiivekÃ¤s"
 
 # MENU TRANSLATIONS ##
 msgid "menu_alphabet"
-msgstr "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzåäö1234567890.-!"
+msgstr "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÃ¥Ã¤Ã¶1234567890.-!"
 
 msgid "monster_menu_move"
 msgstr "Liiku"
@@ -614,13 +614,13 @@ msgstr "Vapauta"
 
 # Release notifications
 msgid "cant_release"
-msgstr "Ainoata seurueen Tuxemonia ei voi vapauttaa."
+msgstr "Ainoata seurueen Solamonia ei voi vapauttaa."
 
 msgid "release_confirmation"
 msgstr "Haluatko aivan varmasti vapauttaa {name}?"
 
 msgid "tuxemon_released"
-msgstr "{name} on vapautettu. Virkistä valikko nähdäksesi muutokset."
+msgstr "{name} on vapautettu. VirkistÃ¤ valikko nÃ¤hdÃ¤ksesi muutokset."
 
 # Menu notifications
 msgid "log_off"
@@ -630,17 +630,17 @@ msgid "menu_bag"
 msgstr "Reppu"
 
 msgid "menu_journal"
-msgstr "Päiväkirja"
+msgstr "PÃ¤ivÃ¤kirja"
 
 msgid "menu_load"
 msgstr "Lataa"
 
 msgid "menu_monster"
-msgstr "Tuxemon"
+msgstr "Solamon"
 
 # TODO: duplicate of menu_monster?
 msgid "menu_monsters"
-msgstr "Hirviöt"
+msgstr "HirviÃ¶t"
 
 msgid "menu_multiplayer"
 msgstr "Moninpeli"
@@ -667,22 +667,22 @@ msgid "menu_right_key"
 msgstr "Nuoli oikealle"
 
 msgid "menu_down_key"
-msgstr "Nuoli alaspäin"
+msgstr "Nuoli alaspÃ¤in"
 
 msgid "menu_primary_select_key"
-msgstr "Toimintanäppäin"
+msgstr "ToimintanÃ¤ppÃ¤in"
 
 msgid "menu_secondary_select_key"
-msgstr "Keskeytysnäppäin"
+msgstr "KeskeytysnÃ¤ppÃ¤in"
 
 msgid "menu_back_key"
-msgstr "Näppäin taaksepäin"
+msgstr "NÃ¤ppÃ¤in taaksepÃ¤in"
 
 msgid "options_new_input_key0"
-msgstr "Paina näppäintä jonka haluat uudeksi toimintonäppäimeksi"
+msgstr "Paina nÃ¤ppÃ¤intÃ¤ jonka haluat uudeksi toimintonÃ¤ppÃ¤imeksi"
 
 msgid "options_new_input_key1"
-msgstr "Uudelleenkäynnistä peli saattaaksesi muutokset voimaan!"
+msgstr "UudelleenkÃ¤ynnistÃ¤ peli saattaaksesi muutokset voimaan!"
 
 msgid "abesnaki"
 msgstr "Abesnaki"
@@ -1421,7 +1421,7 @@ msgstr "{box} ({qty})"
 
 # Default mod names on selection menu
 msgid "xero_campaign"
-msgstr "Tuxemon: Xero"
+msgstr "Solamon: Xero"
 
 # Money notification
 msgid "player_wallet"

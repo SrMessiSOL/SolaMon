@@ -1,0 +1,22 @@
+{
+  "name": "solamon-solana-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "create:collections": "node create-collections.mjs",
+    "currency:tx-save": "node currency-transaction-and-save.mjs",
+    "find:character": "node find-character.mjs",
+    "mint:character": "node mint-character.mjs",
+    "mint:projection-assets": "node mint-projection-assets.mjs",
+    "read:player-state": "node read-player-state.mjs",
+    "show:player-pda": "node player-instructions.mjs pda",
+    "submit:player-save": "node submit-player-save.mjs"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@metaplex-foundation/umi": "^1.2.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.2.0",
+    "@solana/web3.js": "^1.98.4"
+  }
+}

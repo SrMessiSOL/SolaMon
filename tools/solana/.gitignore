@@ -1,0 +1,4 @@
+node_modules/
+devnet-authority.json
+devnet-program-keypair.json
+test-*.json

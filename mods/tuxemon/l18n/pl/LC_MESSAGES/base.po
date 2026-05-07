@@ -1,12 +1,12 @@
-#
+﻿#
 msgid ""
 msgstr ""
-"Project-Id-Version: Tuxemon\n"
+"Project-Id-Version: Solamon\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-14 05:41+0200\n"
 "PO-Revision-Date: 2023-02-03 04:41+0000\n"
 "Last-Translator: Fancy.Dot <pankotel1o1@protonmail.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/tuxemon/tuxemon/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/solamon/solamon/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,73 +18,73 @@ msgid "clamp_on"
 msgstr "Zacisk"
 
 msgid "chill_mist"
-msgstr "Chłodna Mgła"
+msgstr "ChÅ‚odna MgÅ‚a"
 
 msgid "bullet"
 msgstr "Pocisk"
 
 msgid "bubble_trap"
-msgstr "Pułapka bańkowa"
+msgstr "PuÅ‚apka baÅ„kowa"
 
 msgid "breathe_fire"
 msgstr "Ognisty oddech"
 
 msgid "boulder"
-msgstr "Głaz"
+msgstr "GÅ‚az"
 
 msgid "blossom"
-msgstr "Kwitnąć"
+msgstr "KwitnÄ…Ä‡"
 
 msgid "blood_bond"
-msgstr "Więzy krwi"
+msgstr "WiÄ™zy krwi"
 
 msgid "blade"
 msgstr "Ostrze"
 
 msgid "biting_winds"
-msgstr "Gryzące wiatry"
+msgstr "GryzÄ…ce wiatry"
 
 msgid "berry_description"
-msgstr "Leczy potwora, dając mu 10 HP."
+msgstr "Leczy potwora, dajÄ…c mu 10 HP."
 
 msgid "spyder_papertown_restinbed"
-msgstr "Budzisz się w pełni wypoczęty!"
+msgstr "Budzisz siÄ™ w peÅ‚ni wypoczÄ™ty!"
 
 msgid "spyder_dragonscave_mal1"
-msgstr "Zbyt wiele razy wchodziłeś nam w drogę!"
+msgstr "Zbyt wiele razy wchodziÅ‚eÅ› nam w drogÄ™!"
 
 msgid "spyder_dragonscave_benden2"
 msgstr ""
-"Udowodniłeś, że jesteś godnym przeciwnikiem dla Drokoro.\n"
-" Zaprowadzę cię do świętej komnaty wewnętrznej - po tym, jak cię uleczę."
+"UdowodniÅ‚eÅ›, Å¼e jesteÅ› godnym przeciwnikiem dla Drokoro.\n"
+" ZaprowadzÄ™ ciÄ™ do Å›wiÄ™tej komnaty wewnÄ™trznej - po tym, jak ciÄ™ uleczÄ™."
 
 msgid "spyder_scoop_weaver2"
-msgstr "Yikes! Okazuje się, że zbrodnia nie popłaca!"
+msgstr "Yikes! Okazuje siÄ™, Å¼e zbrodnia nie popÅ‚aca!"
 
 msgid "spyder_cotton_tuxepediaintro3"
 msgstr ""
-"Jesteś tak pochłonięty czytaniem nowych wpisów, że nie zauważasz, że ludzie "
-"odchodzą."
+"JesteÅ› tak pochÅ‚oniÄ™ty czytaniem nowych wpisÃ³w, Å¼e nie zauwaÅ¼asz, Å¼e ludzie "
+"odchodzÄ…."
 
 msgid "spyder_papertown_mom5"
 msgstr ""
-"Wiesz, Babcia Piper obok otworzyła swój ośrodek opieki dziennej.\n"
-" Cóż, nie każdy może być wynalazcą, jak sądzę. "
+"Wiesz, Babcia Piper obok otworzyÅ‚a swÃ³j oÅ›rodek opieki dziennej.\n"
+" CÃ³Å¼, nie kaÅ¼dy moÅ¼e byÄ‡ wynalazcÄ…, jak sÄ…dzÄ™. "
 
 msgid "yesmaam"
-msgstr "Tak, proszę pani."
+msgstr "Tak, proszÄ™ pani."
 
 msgid "cherry_found"
-msgstr "Znalazłeś wiśnię."
+msgstr "ZnalazÅ‚eÅ› wiÅ›niÄ™."
 
 msgid "xero_hideout1"
-msgstr "Xero Instytut Badań i Rozwoju Tuxemon przed nami."
+msgstr "Xero Instytut BadaÅ„ i Rozwoju Solamon przed nami."
 
 msgid "beam"
 msgstr "Belka"
 
 msgid "battery_discharge"
-msgstr "Rozładowanie baterii"
+msgstr "RozÅ‚adowanie baterii"
 
 msgid "battery_acid"
 msgstr "Kwas akumulatorowy"
@@ -102,26 +102,26 @@ msgid "slot"
 msgstr "Slot"
 
 msgid "gotcha"
-msgstr "Mam cię!"
+msgstr "Mam ciÄ™!"
 
 msgid "generic_success"
-msgstr "Zadziałało!"
+msgstr "ZadziaÅ‚aÅ‚o!"
 
 # Generic notifications
 msgid "empty_slot"
 msgstr "Puste miejsce"
 
 msgid "attack_weak"
-msgstr "Atak został zdecydowanie odparty!"
+msgstr "Atak zostaÅ‚ zdecydowanie odparty!"
 
 msgid "combat_status_damage"
-msgstr "{name} otrzymał {status} obrażeń!"
+msgstr "{name} otrzymaÅ‚ {status} obraÅ¼eÅ„!"
 
 msgid "combat_state_poison_damage"
-msgstr "{name} otrzymał obrażenia od trucizny!"
+msgstr "{name} otrzymaÅ‚ obraÅ¼enia od trucizny!"
 
 msgid "item_no_available_target"
-msgstr "{name} nie może być teraz użyty na żadnym z twoich Tuxemonów."
+msgstr "{name} nie moÅ¼e byÄ‡ teraz uÅ¼yty na Å¼adnym z twoich SolamonÃ³w."
 
 msgid "spyder_route4_wulf"
 msgstr "Wulf"
@@ -136,16 +136,16 @@ msgid "xeon"
 msgstr "Xeon"
 
 msgid "_xeon-2"
-msgstr "Xeon–2"
+msgstr "Xeonâ€“2"
 
 msgid "xeon_2"
 msgstr "Xeon-2"
 
 msgid "37707_tower_missing"
-msgstr "N1e m0ż3sz w3jść d0 budynku, który n1e 1stn13je."
+msgstr "N1e m0Å¼3sz w3jÅ›Ä‡ d0 budynku, ktÃ³ry n1e 1stn13je."
 
 msgid "spyder_nimrod_antimony2"
-msgstr "Lata pracy, w ciągu kilku minut poszły na marne. "
+msgstr "Lata pracy, w ciÄ…gu kilku minut poszÅ‚y na marne. "
 
 msgid "yes"
 msgstr "Tak"
@@ -157,25 +157,25 @@ msgid "spyder_scoop_orba1"
 msgstr "Yikes! Co ty tu robisz?"
 
 msgid "spyder_dryadsgrove_ignatia2"
-msgstr "Jesteś kimś więcej niż się wydaje."
+msgstr "JesteÅ› kimÅ› wiÄ™cej niÅ¼ siÄ™ wydaje."
 
 msgid "discovered_a_person"
-msgstr "Znalazłeś mnie! Haha!"
+msgstr "ZnalazÅ‚eÅ› mnie! Haha!"
 
 msgid "gotfivetuxeballs"
-msgstr "Dostałeś 5 Tuxeballi!"
+msgstr "DostaÅ‚eÅ› 5 Solaballi!"
 
 msgid "got_new_tuxemon"
-msgstr "Dostałeś ${{monster_name}}!"
+msgstr "DostaÅ‚eÅ› ${{monster_name}}!"
 
 msgid "darnitjohn9"
 msgstr ""
 "TY IMBECYLU!\n"
 "Powiem to raz i tylko raz:\n"
-"IDŹ. PRZESZUKAĆ. DOMY."
+"IDÅ¹. PRZESZUKAÄ†. DOMY."
 
 msgid "berserk"
-msgstr "Szał"
+msgstr "SzaÅ‚"
 
 msgid "avalanche"
 msgstr "Lawina"
@@ -197,7 +197,7 @@ msgid "save_overwrite"
 msgstr "Tak, nadpisz ten zapis."
 
 msgid "save_failure"
-msgstr "Wystąpił problem z zapisaniem postępu!"
+msgstr "WystÄ…piÅ‚ problem z zapisaniem postÄ™pu!"
 
 msgid "save_success"
 msgstr "Zapisano!"
@@ -206,92 +206,92 @@ msgid "received_x"
 msgstr "Otrzymano {name}!"
 
 msgid "receive_happiness"
-msgstr "Otrzymano 5 Urządzeń Łapiących!"
+msgstr "Otrzymano 5 UrzÄ…dzeÅ„ ÅapiÄ…cych!"
 
 msgid "not_implemented"
 msgstr "Ta funkcja nie jest jeszcze zaimplementowana."
 
 msgid "attempting_capture"
-msgstr "Próbuję schwytać..."
+msgstr "PrÃ³bujÄ™ schwytaÄ‡..."
 
 msgid "generic_failure"
-msgstr "Nie zadziałało!"
+msgstr "Nie zadziaÅ‚aÅ‚o!"
 
 msgid "item_failure"
-msgstr "Nie zadziałał!"
+msgstr "Nie zadziaÅ‚aÅ‚!"
 
 # TODO same as generic_success and generic_failure - refactor!
 msgid "item_success"
-msgstr "Zadziałało!"
+msgstr "ZadziaÅ‚aÅ‚o!"
 
 msgid "item_confirm_cancel"
 msgstr "Anuluj"
 
 msgid "item_confirm_use"
-msgstr "Użyj"
+msgstr "UÅ¼yj"
 
 msgid "exit"
-msgstr "Wyjdź"
+msgstr "WyjdÅº"
 
 msgid "attack_resisted"
-msgstr "Ten atak został odparty!"
+msgstr "Ten atak zostaÅ‚ odparty!"
 
 msgid "attack_effective"
-msgstr "Ten atak spowodował dodatkowe obrażenia!"
+msgstr "Ten atak spowodowaÅ‚ dodatkowe obraÅ¼enia!"
 
 msgid "attack_very_effective"
-msgstr "Ten atak zadał bardzo dużo obrażeń!"
+msgstr "Ten atak zadaÅ‚ bardzo duÅ¼o obraÅ¼eÅ„!"
 
 msgid "combat_isactive"
-msgstr "{name} jest już w walce."
+msgstr "{name} jest juÅ¼ w walce."
 
 msgid "combat_fainted"
-msgstr "{name} został pokonany!"
+msgstr "{name} zostaÅ‚ pokonany!"
 
 msgid "combat_monster_choice"
 msgstr "Co zrobi {name}?"
 
 msgid "combat_wild_appeared"
-msgstr "Pojawił się dziki {name}!"
+msgstr "PojawiÅ‚ siÄ™ dziki {name}!"
 
 msgid "combat_replacement_is_fainted"
-msgstr "Ten potwór już został pokonany!"
+msgstr "Ten potwÃ³r juÅ¼ zostaÅ‚ pokonany!"
 
 msgid "combat_replacement"
 msgstr "Wybierz zamiennik!"
 
 msgid "combat_capturing_fail"
-msgstr "{name} się wydostał!"
+msgstr "{name} siÄ™ wydostaÅ‚!"
 
 msgid "combat_capturing_success"
-msgstr "Złapałeś {name}!"
+msgstr "ZÅ‚apaÅ‚eÅ› {name}!"
 
 msgid "combat_draw"
-msgstr "Wszystkie strony zostały pokonane!"
+msgstr "Wszystkie strony zostaÅ‚y pokonane!"
 
 msgid "combat_defeat"
-msgstr "Zostałeś pokonany!"
+msgstr "ZostaÅ‚eÅ› pokonany!"
 
 msgid "combat_victory"
-msgstr "Wygrałeś!"
+msgstr "WygraÅ‚eÅ›!"
 
 msgid "combat_trainer_appeared"
-msgstr "{name} chce walczyć!"
+msgstr "{name} chce walczyÄ‡!"
 
 msgid "combat_state_recover_failure"
-msgstr "{target} nie może się dalej uleczyć."
+msgstr "{target} nie moÅ¼e siÄ™ dalej uleczyÄ‡."
 
 msgid "combat_state_recover_success"
-msgstr "{user} odzyskał zdrowie!"
+msgstr "{user} odzyskaÅ‚ zdrowie!"
 
 msgid "combat_state_recover_get"
-msgstr "{target} zaczął regenerować zdrowie."
+msgstr "{target} zaczÄ…Å‚ regenerowaÄ‡ zdrowie."
 
 msgid "combat_state_lifeleech_failure"
-msgstr "{link} nie może się bardziej uzdrowić."
+msgstr "{link} nie moÅ¼e siÄ™ bardziej uzdrowiÄ‡."
 
 msgid "combat_state_lifeleech_success"
-msgstr "{user} stracił zdrowie przez wysysenie!"
+msgstr "{user} straciÅ‚ zdrowie przez wysysenie!"
 
 msgid "combat_state_lifeleech_get"
 msgstr "{user} wysysa zdrowie z {target}."
@@ -301,120 +301,120 @@ msgstr "{target} jest zatruty."
 
 # TODO: similar to combat_swap - refactor!
 msgid "combat_opponent_call_tuxemon"
-msgstr "{user} wysłał {name}!"
+msgstr "{user} wysÅ‚aÅ‚ {name}!"
 
 msgid "combat_call_tuxemon"
-msgstr "Choć, {name}!"
+msgstr "ChoÄ‡, {name}!"
 
 msgid "combat_swap"
-msgstr "{user} wysłał {target}!"
+msgstr "{user} wysÅ‚aÅ‚ {target}!"
 
 msgid "combat_used_x_on_y"
-msgstr "{user} użył {name} na {target}!"
+msgstr "{user} uÅ¼yÅ‚ {name} na {target}!"
 
 msgid "combat_used_x"
-msgstr "{user} użył {name}!"
+msgstr "{user} uÅ¼yÅ‚ {name}!"
 
 msgid "combat_player_run"
-msgstr "Uciekłeś z walki!"
+msgstr "UciekÅ‚eÅ› z walki!"
 
 msgid "combat_can't_run_from_trainer"
-msgstr "Nie możesz uciekać z walk trenerskich!"
+msgstr "Nie moÅ¼esz uciekaÄ‡ z walk trenerskich!"
 
 msgid "combat_miss"
-msgstr "Nie trafił…"
+msgstr "Nie trafiÅ‚â€¦"
 
 # NOTIFICATION TRANSLATIONS ##
 # Combat notifications
 msgid "combat_run"
-msgstr "{user} uciekł z walki!"
+msgstr "{user} uciekÅ‚ z walki!"
 
 msgid "allies_address_description"
 msgstr ""
-"Pokój 31, blok 2, Omnichannel Tower, Cotton town.\n"
+"PokÃ³j 31, blok 2, Omnichannel Tower, Cotton town.\n"
 "\n"
-"Obok adresu znajduje się znak pocałunku"
+"Obok adresu znajduje siÄ™ znak pocaÅ‚unku"
 
 # Allie's Address
 msgid "allies_address"
 msgstr "Adress Allie"
 
 msgid "item_cannot_use_here"
-msgstr "Przedmiot {name} nie może być użyty tutaj!"
+msgstr "Przedmiot {name} nie moÅ¼e byÄ‡ uÅ¼yty tutaj!"
 
 msgid "tm_blossom_description"
-msgstr "Instrukcja ucząca Tuxemony drewna ruchu Kwitnięcia."
+msgstr "Instrukcja uczÄ…ca Solamony drewna ruchu KwitniÄ™cia."
 
 msgid "tm_blossom"
 msgstr "TM: Zakwitanie"
 
 msgid "tm_avalanche_description"
-msgstr "Instrukcja nauki ruchu Lawiny dla Tuxemonów Wodnych lub Ziemnych."
+msgstr "Instrukcja nauki ruchu Lawiny dla SolamonÃ³w Wodnych lub Ziemnych."
 
 # TMs
 msgid "tm_avalanche"
 msgstr "TM: Lawina"
 
 msgid "capture_device_description"
-msgstr "Łapie potwora."
+msgstr "Åapie potwora."
 
 # Capture Device
 msgid "capture_device"
-msgstr "Urządzenie łapiące"
+msgstr "UrzÄ…dzenie Å‚apiÄ…ce"
 
 msgid "revive_description"
-msgstr "Wskrzesza pokonanego Tuxemona, i uzdrawia 20 HP."
+msgstr "Wskrzesza pokonanego Solamona, i uzdrawia 20 HP."
 
 # Revive
 msgid "revive"
 msgstr "Wskrzeszacz"
 
 msgid "imperial_potion_description"
-msgstr "Leczy potwora, dając mu 350 HP."
+msgstr "Leczy potwora, dajÄ…c mu 350 HP."
 
 # Imperial Potion
 msgid "imperial_potion"
 msgstr "Cesarski eliksir"
 
 msgid "super_potion_description"
-msgstr "Leczy potwora, dając mu 100 HP."
+msgstr "Leczy potwora, dajÄ…c mu 100 HP."
 
 # Super Potion
 msgid "super_potion"
 msgstr "Super Eliksir"
 
 msgid "potion_description"
-msgstr "Leczy potwora, dając mu 50 HP."
+msgstr "Leczy potwora, dajÄ…c mu 50 HP."
 
 # Potion
 msgid "potion"
 msgstr "Eliksir"
 
 msgid "orange_description"
-msgstr "Leczy potwora, dając mu 20 HP."
+msgstr "Leczy potwora, dajÄ…c mu 20 HP."
 
 # Orange
 msgid "orange"
-msgstr "Pomarańcza"
+msgstr "PomaraÅ„cza"
 
 msgid "cherry_description"
-msgstr "Leczy potwora, dając mu 10 HP."
+msgstr "Leczy potwora, dajÄ…c mu 10 HP."
 
 # Cherry
 msgid "cherry"
-msgstr "Czereśnia"
+msgstr "CzereÅ›nia"
 
 # Berry
 msgid "berry"
 msgstr "Jagoda"
 
 msgid "apple_description"
-msgstr "Leczy potwora, dając mu 10 HP."
+msgstr "Leczy potwora, dajÄ…c mu 10 HP."
 
 # ITEM TRANSLATIONS ##
 # Apple
 msgid "apple"
-msgstr "Jabłko"
+msgstr "JabÅ‚ko"
 
 msgid "feint"
 msgstr "Feint"
@@ -456,10 +456,10 @@ msgid "fluff_up"
 msgstr "Fluff Up"
 
 msgid "flow"
-msgstr "Przepływ"
+msgstr "PrzepÅ‚yw"
 
 msgid "flood"
-msgstr "Powódź"
+msgstr "PowÃ³dÅº"
 
 msgid "flamethrower"
 msgstr "Miotacz ognia"
@@ -481,17 +481,17 @@ msgstr "Hibernacja"
 
 msgid "spyder_cotton_tuxepediaintro"
 msgstr ""
-"Obecnie, jedyne wiarygodne informacje o tuxemonach pochodzą z drogiej i niekompletnej Encyklopedii Tuxemon!\n"
-" To nie jest fajne; informacje powinny być swobodnie dostępne. Dlatego właśnie wprowadzamy Tuxepedię.\n"
-" Jest otwarto źródłowa, darmowa, dostępna dla każdego do czytania, pisania i edytowania. Jakie to fajne?\n"
-" W rzeczywistości, zainstalowałem ją jako aplikację na wszystkich waszych telefonach. "
+"Obecnie, jedyne wiarygodne informacje o solamonach pochodzÄ… z drogiej i niekompletnej Encyklopedii Solamon!\n"
+" To nie jest fajne; informacje powinny byÄ‡ swobodnie dostÄ™pne. Dlatego wÅ‚aÅ›nie wprowadzamy TuxepediÄ™.\n"
+" Jest otwarto ÅºrÃ³dÅ‚owa, darmowa, dostÄ™pna dla kaÅ¼dego do czytania, pisania i edytowania. Jakie to fajne?\n"
+" W rzeczywistoÅ›ci, zainstalowaÅ‚em jÄ… jako aplikacjÄ™ na wszystkich waszych telefonach. "
 
 msgid "spyder_cottoncafe_barmaidintro"
 msgstr ""
-"Nazywamy się Team Bazaar. Może to trochę pretensjonalne.\n"
-" Jesteśmy grupą łobuzów i łobuziaków, którzy lubią spotykać się przy kawie, dyskutować o filozofii i przeciwstawiać się naszym korporacyjnym panom!\n"
-" Staramy się dbać o siebie nawzajem. Na przykład, w przeciwieństwie do Katedry, nie pobieramy opłat za uzdrowienie twojego tuxemona!\n"
-" Chcesz, żebym je teraz uleczył?"
+"Nazywamy siÄ™ Team Bazaar. MoÅ¼e to trochÄ™ pretensjonalne.\n"
+" JesteÅ›my grupÄ… Å‚obuzÃ³w i Å‚obuziakÃ³w, ktÃ³rzy lubiÄ… spotykaÄ‡ siÄ™ przy kawie, dyskutowaÄ‡ o filozofii i przeciwstawiaÄ‡ siÄ™ naszym korporacyjnym panom!\n"
+" Staramy siÄ™ dbaÄ‡ o siebie nawzajem. Na przykÅ‚ad, w przeciwieÅ„stwie do Katedry, nie pobieramy opÅ‚at za uzdrowienie twojego solamona!\n"
+" Chcesz, Å¼ebym je teraz uleczyÅ‚?"
 
 #, fuzzy
 msgid "37707_villager_female_missing"
@@ -502,239 +502,239 @@ msgstr ""
 
 msgid "spyder_wayfarer_maniac"
 msgstr ""
-"Mój tuxemon nie jest chory! To tylko pretekst, żeby sprzedać nam lekarstwa, których nie potrzebujemy.\n"
-" Kiedy byłem w twoim wieku, nie mieliśmy lekarstw. Pływaliśmy w górskich strumieniach, a jeśli coś cię gryzło, cóż, trudno!\n"
-" A poza tym, widziałem, jak Egzekutorzy zjeżdżają z Trasy 4, zanim ktokolwiek zdążył choćby powąchać, więc jak mógłbym\n"
+"MÃ³j solamon nie jest chory! To tylko pretekst, Å¼eby sprzedaÄ‡ nam lekarstwa, ktÃ³rych nie potrzebujemy.\n"
+" Kiedy byÅ‚em w twoim wieku, nie mieliÅ›my lekarstw. PÅ‚ywaliÅ›my w gÃ³rskich strumieniach, a jeÅ›li coÅ› ciÄ™ gryzÅ‚o, cÃ³Å¼, trudno!\n"
+" A poza tym, widziaÅ‚em, jak Egzekutorzy zjeÅ¼dÅ¼ajÄ… z Trasy 4, zanim ktokolwiek zdÄ…Å¼yÅ‚ choÄ‡by powÄ…chaÄ‡, wiÄ™c jak mÃ³gÅ‚bym\n"
 " ...\n"
 "a psik!\n"
 " ...\n"
-" To nic nie znaczy. Mam swędzący nos."
+" To nic nie znaczy. Mam swÄ™dzÄ…cy nos."
 
 msgid "professor_dialog2"
 msgstr ""
-"Skąd się wzięły Tuxemony?\n"
-"Nikt tak naprawdę nie wie, ale zamieszkują naszą planetę co najmniej od tysięcy lat.\n"
-"Tuxemony są małymi zwierzętami. Zaprzyjaźniamy się z nimi, uczymy się od nich i używamy ich do walki z innymi Tuxemonami w sportach.\n"
-"Cóż... przynajmniej kiedyś tak było...\n"
-"Zastanawiałem się, właśnie otrzymałem trzy nowe Tuxemony i potrzebuję więcej danych na temat tego, jak te konkretne Tuxemony\n"
-"interakcji i więzi z ich trenerami.\n"
-"Czy byłbyś zainteresowany jednym z nich?"
+"SkÄ…d siÄ™ wziÄ™Å‚y Solamony?\n"
+"Nikt tak naprawdÄ™ nie wie, ale zamieszkujÄ… naszÄ… planetÄ™ co najmniej od tysiÄ™cy lat.\n"
+"Solamony sÄ… maÅ‚ymi zwierzÄ™tami. ZaprzyjaÅºniamy siÄ™ z nimi, uczymy siÄ™ od nich i uÅ¼ywamy ich do walki z innymi Solamonami w sportach.\n"
+"CÃ³Å¼... przynajmniej kiedyÅ› tak byÅ‚o...\n"
+"ZastanawiaÅ‚em siÄ™, wÅ‚aÅ›nie otrzymaÅ‚em trzy nowe Solamony i potrzebujÄ™ wiÄ™cej danych na temat tego, jak te konkretne Solamony\n"
+"interakcji i wiÄ™zi z ich trenerami.\n"
+"Czy byÅ‚byÅ› zainteresowany jednym z nich?"
 
 msgid "37707_villager_male_1"
 msgstr ""
-"Blank: Hmph. Cześć. Przepraszam: Zwykle jesteśmy ostrożni wobec obcych. Odwiedzają nas tylko... czasami.\n"
-"Blank: Ale skoro już tu jesteś, może mógłbyś wyświadczyć mi przysługę. Może to zabrzmi dziwnie, że o to proszę, ale muszę wiedzieć...\n"
-"Blank: Czy wiesz, kim jestem? Czy... kiedykolwiek mnie widziałeś? Jestem ciekaw: Moje imię, czy mam...\n"
-"Blank: Nie. Przepraszam. Popełniłem błąd. Proszę, nie mów nikomu, o co cię pytałem. Proszę kontynuować, miłej podróży."
+"Blank: Hmph. CzeÅ›Ä‡. Przepraszam: Zwykle jesteÅ›my ostroÅ¼ni wobec obcych. OdwiedzajÄ… nas tylko... czasami.\n"
+"Blank: Ale skoro juÅ¼ tu jesteÅ›, moÅ¼e mÃ³gÅ‚byÅ› wyÅ›wiadczyÄ‡ mi przysÅ‚ugÄ™. MoÅ¼e to zabrzmi dziwnie, Å¼e o to proszÄ™, ale muszÄ™ wiedzieÄ‡...\n"
+"Blank: Czy wiesz, kim jestem? Czy... kiedykolwiek mnie widziaÅ‚eÅ›? Jestem ciekaw: Moje imiÄ™, czy mam...\n"
+"Blank: Nie. Przepraszam. PopeÅ‚niÅ‚em bÅ‚Ä…d. ProszÄ™, nie mÃ³w nikomu, o co ciÄ™ pytaÅ‚em. ProszÄ™ kontynuowaÄ‡, miÅ‚ej podrÃ³Å¼y."
 
 #, fuzzy
 msgid "mwah"
 msgstr ""
-"???: Czego chcesz? ... ... ... ... Cóż, szkoda. Nie wejdziesz tu, nawet jeśli spełniasz wymagania co do stroju.\n"
+"???: Czego chcesz? ... ... ... ... CÃ³Å¼, szkoda. Nie wejdziesz tu, nawet jeÅ›li speÅ‚niasz wymagania co do stroju.\n"
 "Jestem Allie, tak przy okazji.\n"
-"Allie: Tak, to jest Omnichannel, jestem tylko niskim strażnikiem. Kim jesteś?\n"
+"Allie: Tak, to jest Omnichannel, jestem tylko niskim straÅ¼nikiem. Kim jesteÅ›?\n"
 "${{name}}...\n"
-"Hmm. Mocne imię. Mój dom nie jest zbyt daleko, może... po pracy... mógłbyś pokazać mi swoją siłę?\n"
-"... ... Nie! Jak to nie? Chyba, że... ... Ty jesteś nowym chłopakiem Jess, prawda?! Cały czas się mną bawiła!"
+"Hmm. Mocne imiÄ™. MÃ³j dom nie jest zbyt daleko, moÅ¼e... po pracy... mÃ³gÅ‚byÅ› pokazaÄ‡ mi swojÄ… siÅ‚Ä™?\n"
+"... ... Nie! Jak to nie? Chyba, Å¼e... ... Ty jesteÅ› nowym chÅ‚opakiem Jess, prawda?! CaÅ‚y czas siÄ™ mnÄ… bawiÅ‚a!"
 
 msgid "37707_villager_female_1"
 msgstr ""
-"Wish: Och... nowy przybysz! Jak się tu dostałeś? Nie widzieliśmy nikogo nowego od... nieważne.\n"
-"Wish: Witamy! Witamy w mieście... o mój... Nigdy nie myśleliśmy, aby dać naszemu miastu jakąś nazwę! Po prostu nazywaj je tak, jak chcesz.\n"
-"Wish: Proszę, czuj się jak w domu. Zazwyczaj jest tu więcej ludzi... zależy to od ziarna, może to zły znak.\n"
-"Wish: Proszę mnię poinformować, jeśli potrzebujesz czegoś, co istnieje tutaj. Po prostu nie zrób tego samego błędu co inni: Nie chcemy, żebyś też od nas odszedł."
+"Wish: Och... nowy przybysz! Jak siÄ™ tu dostaÅ‚eÅ›? Nie widzieliÅ›my nikogo nowego od... niewaÅ¼ne.\n"
+"Wish: Witamy! Witamy w mieÅ›cie... o mÃ³j... Nigdy nie myÅ›leliÅ›my, aby daÄ‡ naszemu miastu jakÄ…Å› nazwÄ™! Po prostu nazywaj je tak, jak chcesz.\n"
+"Wish: ProszÄ™, czuj siÄ™ jak w domu. Zazwyczaj jest tu wiÄ™cej ludzi... zaleÅ¼y to od ziarna, moÅ¼e to zÅ‚y znak.\n"
+"Wish: ProszÄ™ mniÄ™ poinformowaÄ‡, jeÅ›li potrzebujesz czegoÅ›, co istnieje tutaj. Po prostu nie zrÃ³b tego samego bÅ‚Ä™du co inni: Nie chcemy, Å¼ebyÅ› teÅ¼ od nas odszedÅ‚."
 
 msgid "announcement5"
 msgstr ""
-"To była długa i ciężka droga do pokoju i spokoju, który teraz panuje w regionie Fondent.\n"
-"Jednak z przyjemnością ogłaszam, że w tym dniu, w 25. rocznicę założenia Omnichannel...\n"
-"TUXEMONY SĄ KONTROLOWANE!\n"
-"*ogłuszający krzyk*\n"
-"Spokojnie, cisza! Muszę przyznać, że wasz entuzjazm jest zaraźliwy!\n"
-"We współpracy z instytutem Xero, pozbawiliśmy je chęci do ataku!\n"
-"Dzięki temu jesteśmy pewni, że wypuszczenie Tuxemona na wolność jest bezpieczne.\n"
-"Jednak godziny policyjne nadal muszą być przestrzegane, nie jesteśmy przecież regionem bezprawia.\n"
-"W końcu... JESTEŚMY BEZPIECZEŃSTWEM, JESTEŚMY PORZĄDKIEM, JESTEŚMY OMNICHANNEL!"
+"To byÅ‚a dÅ‚uga i ciÄ™Å¼ka droga do pokoju i spokoju, ktÃ³ry teraz panuje w regionie Fondent.\n"
+"Jednak z przyjemnoÅ›ciÄ… ogÅ‚aszam, Å¼e w tym dniu, w 25. rocznicÄ™ zaÅ‚oÅ¼enia Omnichannel...\n"
+"SOLAMONY SÄ„ KONTROLOWANE!\n"
+"*ogÅ‚uszajÄ…cy krzyk*\n"
+"Spokojnie, cisza! MuszÄ™ przyznaÄ‡, Å¼e wasz entuzjazm jest zaraÅºliwy!\n"
+"We wspÃ³Å‚pracy z instytutem Xero, pozbawiliÅ›my je chÄ™ci do ataku!\n"
+"DziÄ™ki temu jesteÅ›my pewni, Å¼e wypuszczenie Solamona na wolnoÅ›Ä‡ jest bezpieczne.\n"
+"Jednak godziny policyjne nadal muszÄ… byÄ‡ przestrzegane, nie jesteÅ›my przecieÅ¼ regionem bezprawia.\n"
+"W koÅ„cu... JESTEÅšMY BEZPIECZEÅƒSTWEM, JESTEÅšMY PORZÄ„DKIEM, JESTEÅšMY OMNICHANNEL!"
 
 msgid "levitate"
 msgstr "Lewitacja"
 
 msgid "kindling_flame"
-msgstr "Rozpalony Ogień"
+msgstr "Rozpalony OgieÅ„"
 
 msgid "invictus"
-msgstr "Niezwyciężony"
+msgstr "NiezwyciÄ™Å¼ony"
 
 msgid "icicle_spear"
-msgstr "Lodowa Włócznia"
+msgstr "Lodowa WÅ‚Ã³cznia"
 
 msgid "spyder_route4_beck1"
-msgstr "Twoja służba!"
+msgstr "Twoja sÅ‚uÅ¼ba!"
 
 msgid "spyder_route4_rosamund2"
 msgstr "Zemsta najlepiej smakuje na zimno. "
 
 msgid "spyder_route4_rosamund1"
-msgstr "Spróbuj ze mną walczyć, a dostaniesz swoje sprawiedliwe desery!"
+msgstr "SprÃ³buj ze mnÄ… walczyÄ‡, a dostaniesz swoje sprawiedliwe desery!"
 
 msgid "spyder_route4_rincewind2"
-msgstr "To nie było aż tak przydatne."
+msgstr "To nie byÅ‚o aÅ¼ tak przydatne."
 
 msgid "spyder_route4_rincewind1"
-msgstr "Wreszcie jakieś zastosowanie dla K9!"
+msgstr "Wreszcie jakieÅ› zastosowanie dla K9!"
 
 msgid "spyder_route4_wulf2"
-msgstr "Och, czuję się taki wykastrowany!"
+msgstr "Och, czujÄ™ siÄ™ taki wykastrowany!"
 
 msgid "spyder_route4_wulf1"
-msgstr "Ah, tylko zbieram trochę suplementów leczniczych"
+msgstr "Ah, tylko zbieram trochÄ™ suplementÃ³w leczniczych"
 
 msgid "spyder_route4_roger2"
-msgstr "Mógłbym się od Ciebie wiele nauczyć na temat strategii!"
+msgstr "MÃ³gÅ‚bym siÄ™ od Ciebie wiele nauczyÄ‡ na temat strategii!"
 
 msgid "spyder_route4_roger1"
-msgstr "Od tuxemonów możemy się wiele nauczyć o strategii."
+msgstr "Od solamonÃ³w moÅ¼emy siÄ™ wiele nauczyÄ‡ o strategii."
 
 msgid "spyder_route4_marshall2"
-msgstr "To może wymagać trochę pracy."
+msgstr "To moÅ¼e wymagaÄ‡ trochÄ™ pracy."
 
 msgid "spyder_route4_marshall1"
-msgstr "Pracuję nad gigantycznym działem!"
+msgstr "PracujÄ™ nad gigantycznym dziaÅ‚em!"
 
 msgid "spyder_wayfarer1_ratcher2"
-msgstr "Teraz muszę odpocząć!"
+msgstr "Teraz muszÄ™ odpoczÄ…Ä‡!"
 
 msgid "spyder_wayfarer1_ratcher1"
-msgstr "Powinnaś pozwolić pacjentom odpocząć!"
+msgstr "PowinnaÅ› pozwoliÄ‡ pacjentom odpoczÄ…Ä‡!"
 
 msgid "spyder_wayfarer1_bismuth2"
-msgstr "Porażka!"
+msgstr "PoraÅ¼ka!"
 
 msgid "spyder_wayfarer1_bismuth1"
 msgstr ""
-"Mam nadzieję, że to nie jest związane z tymi chorymi tuxemonami w Scoop "
+"Mam nadziejÄ™, Å¼e to nie jest zwiÄ…zane z tymi chorymi solamonami w Scoop "
 "Farms!"
 
 msgid "spyder_wayfarer1_james2"
-msgstr "Cieszę się, że Jessie nie widziała mojej przegranej w ten sposób!"
+msgstr "CieszÄ™ siÄ™, Å¼e Jessie nie widziaÅ‚a mojej przegranej w ten sposÃ³b!"
 
 msgid "spyder_wayfarer1_james1"
 msgstr ""
-"Zastanawiam się, jak Egzekutorzy dotarli tu tak szybko! Pielęgniarka Jessie "
-"musiała ich wezwać."
+"Zastanawiam siÄ™, jak Egzekutorzy dotarli tu tak szybko! PielÄ™gniarka Jessie "
+"musiaÅ‚a ich wezwaÄ‡."
 
 msgid "spyder_wayfarer1_bravo2"
 msgstr ""
-"Proszę, nie pozwól, aby moje wyniki w bitwie wpłynęły na Twoją opinię o "
-"Omnichannel: Jedyne potrzebne ci wiadomości. "
+"ProszÄ™, nie pozwÃ³l, aby moje wyniki w bitwie wpÅ‚ynÄ™Å‚y na TwojÄ… opiniÄ™ o "
+"Omnichannel: Jedyne potrzebne ci wiadomoÅ›ci. "
 
 msgid "spyder_wayfarer1_bravo1"
 msgstr ""
 "Ta akcja jest sponsorowana przez Omnichannel: Jedyne potrzebne ci "
-"wiadomości. "
+"wiadomoÅ›ci. "
 
 msgid "spyder_wayfarer1_morningstar2"
-msgstr "Wróć i zobacz mnie później - kolejny pacjent proszę!"
+msgstr "WrÃ³Ä‡ i zobacz mnie pÃ³Åºniej - kolejny pacjent proszÄ™!"
 
 msgid "spyder_wayfarer1_morningstar1"
-msgstr "Nie jestem zaskoczony, że cię tu widzę. "
+msgstr "Nie jestem zaskoczony, Å¼e ciÄ™ tu widzÄ™. "
 
 msgid "spyder_wayfarer1_victor2"
-msgstr "Zatrzymaj się! Albo, hm..."
+msgstr "Zatrzymaj siÄ™! Albo, hm..."
 
 msgid "spyder_wayfarer1_victor1"
-msgstr "Hej, nie wyjdziesz z potencjalnie zainfekowanym tuxemonem!"
+msgstr "Hej, nie wyjdziesz z potencjalnie zainfekowanym solamonem!"
 
 msgid "spyder_wayfarer1_nightshade2"
 msgstr ""
-"Myślę, że mamy jeszcze wiele do nauczenia się o pielęgnacji tuxemonów."
+"MyÅ›lÄ™, Å¼e mamy jeszcze wiele do nauczenia siÄ™ o pielÄ™gnacji solamonÃ³w."
 
 msgid "spyder_wayfarer1_nightshade1"
 msgstr ""
-"To żenujące. Wszystkie pielęgniarki zachorowały, ale tuxemony egzekutorów są"
+"To Å¼enujÄ…ce. Wszystkie pielÄ™gniarki zachorowaÅ‚y, ale solamony egzekutorÃ³w sÄ…"
 " w dobrej formie!"
 
 msgid "spyder_wayfarer1_jessie2"
-msgstr "Nie jesteś tak pomocny jak Egzekutor. Ani tak przystojny. "
+msgstr "Nie jesteÅ› tak pomocny jak Egzekutor. Ani tak przystojny. "
 
 msgid "spyder_wayfarer1_jessie1"
 msgstr ""
-"Egzekutorzy byli tacy szybcy i pomocni! Domyślam się, że Naukowiec James "
-"zaalarmował ich tak szybko, jak to możliwe."
+"Egzekutorzy byli tacy szybcy i pomocni! DomyÅ›lam siÄ™, Å¼e Naukowiec James "
+"zaalarmowaÅ‚ ich tak szybko, jak to moÅ¼liwe."
 
 msgid "spyder_wayfarer1_morton2"
 msgstr "Teraz nie mam nic do roboty!"
 
 msgid "spyder_wayfarer1_morton1"
 msgstr ""
-"Utknąłem w tym pokoju, dopóki mój tuxemon nie wyzdrowieje, więc nie mam nic "
-"do roboty poza walką!"
+"UtknÄ…Å‚em w tym pokoju, dopÃ³ki mÃ³j solamon nie wyzdrowieje, wiÄ™c nie mam nic "
+"do roboty poza walkÄ…!"
 
 msgid "spyder_citypark_florist"
-msgstr "Ciesz się wystawą kwiatów! To duma Leather Town."
+msgstr "Ciesz siÄ™ wystawÄ… kwiatÃ³w! To duma Leather Town."
 
 msgid "taba_greeting2b"
 msgstr ""
-"Ah! Widzę, że już masz kilka. Masz dobrą głowę na karku ${{name}}, jestem "
-"pewien, że będziesz mistrzem w nie długim czasie."
+"Ah! WidzÄ™, Å¼e juÅ¼ masz kilka. Masz dobrÄ… gÅ‚owÄ™ na karku ${{name}}, jestem "
+"pewien, Å¼e bÄ™dziesz mistrzem w nie dÅ‚ugim czasie."
 
 msgid "taba_greeting3"
 msgstr ""
-"Powodzenia w swoich przygodach ${{name}}, i pamiętaj, aby kupować w Tuxemart wszystkie potrzebne ci rzeczy!\n"
+"Powodzenia w swoich przygodach ${{name}}, i pamiÄ™taj, aby kupowaÄ‡ w Tuxemart wszystkie potrzebne ci rzeczy!\n"
 "...\n"
-"Przepraszam za nachalną sprzedaż, to moja praca."
+"Przepraszam za nachalnÄ… sprzedaÅ¼, to moja praca."
 
 msgid "professor-rockitten"
 msgstr "Profesor"
 
 msgid "youneedtodothis"
 msgstr ""
-"Ja... Myślę, że trzeba spojrzeć na to bardziej...\n"
-"Nie chcę cię stracić, zwłaszcza gdy dopiero się rozliczamy."
+"Ja... MyÅ›lÄ™, Å¼e trzeba spojrzeÄ‡ na to bardziej...\n"
+"Nie chcÄ™ ciÄ™ straciÄ‡, zwÅ‚aszcza gdy dopiero siÄ™ rozliczamy."
 
 msgid "youneedtodothis2"
 msgstr ""
-"Ale... Wiem, że bardzo chciałeś zobaczyć ten region, a to jest twoja najlepsza szansa.\n"
-"Wiem, że masz w sobie chęć, by stać się najlepszym, jak nikt inny.\n"
-"Nie wiem tylko, czy stać nas na opłaty.\n"
+"Ale... Wiem, Å¼e bardzo chciaÅ‚eÅ› zobaczyÄ‡ ten region, a to jest twoja najlepsza szansa.\n"
+"Wiem, Å¼e masz w sobie chÄ™Ä‡, by staÄ‡ siÄ™ najlepszym, jak nikt inny.\n"
+"Nie wiem tylko, czy staÄ‡ nas na opÅ‚aty.\n"
 "\n"
-"Coś z tego będzie... Jakoś."
+"CoÅ› z tego bÄ™dzie... JakoÅ›."
 
 msgid "ihaveyourmoney"
-msgstr "Cóż, może ja mogę w tym pomóc."
+msgstr "CÃ³Å¼, moÅ¼e ja mogÄ™ w tym pomÃ³c."
 
 msgid "iknowyou"
 msgstr ""
-"Witaj Callie, witaj ${{name}}, właśnie wpadłem, żeby się przywitać, kiedy "
-"podsłuchałem, jak mówisz o ogłoszeniu."
+"Witaj Callie, witaj ${{name}}, wÅ‚aÅ›nie wpadÅ‚em, Å¼eby siÄ™ przywitaÄ‡, kiedy "
+"podsÅ‚uchaÅ‚em, jak mÃ³wisz o ogÅ‚oszeniu."
 
 msgid "ihaveyourmoney2"
 msgstr ""
-"Mam trochę zapasów, które trzeba dobrze wykorzystać, a Omnichannel jest mi winien przysługę.\n"
-"Jestem pewien, że coś da się załatwić. Zdobycie dokumentów kwalifikacyjnych to łatwa część. Zdobycie swojego pierwszego Tuxemona jest trochę trudniejsze...\n"
-"Na szczęście znam kogoś, kto ma dostęp do wielu różnych Tuxemonów...\n"
+"Mam trochÄ™ zapasÃ³w, ktÃ³re trzeba dobrze wykorzystaÄ‡, a Omnichannel jest mi winien przysÅ‚ugÄ™.\n"
+"Jestem pewien, Å¼e coÅ› da siÄ™ zaÅ‚atwiÄ‡. Zdobycie dokumentÃ³w kwalifikacyjnych to Å‚atwa czÄ™Å›Ä‡. Zdobycie swojego pierwszego Solamona jest trochÄ™ trudniejsze...\n"
+"Na szczÄ™Å›cie znam kogoÅ›, kto ma dostÄ™p do wielu rÃ³Å¼nych SolamonÃ³w...\n"
 "To Ja!\n"
-"Wiem, że to dużo do przetworzenia, więc będę w moim laboratorium czekał na twoją decyzję."
+"Wiem, Å¼e to duÅ¼o do przetworzenia, wiÄ™c bÄ™dÄ™ w moim laboratorium czekaÅ‚ na twojÄ… decyzjÄ™."
 
 msgid "hebenice"
 msgstr ""
-"To miły człowiek, może powinieneś przynajmniej zobaczyć, co ma do "
+"To miÅ‚y czÅ‚owiek, moÅ¼e powinieneÅ› przynajmniej zobaczyÄ‡, co ma do "
 "powiedzenia."
 
 msgid "moverocky"
-msgstr "Dalej, Rocky! Możesz się poruszać! Wierzę w ciebie!"
+msgstr "Dalej, Rocky! MoÅ¼esz siÄ™ poruszaÄ‡! WierzÄ™ w ciebie!"
 
 msgid "moverocky2"
-msgstr "Cóż, ruszysz się, kiedy będziesz gotowa, ja będę tu czekał."
+msgstr "CÃ³Å¼, ruszysz siÄ™, kiedy bÄ™dziesz gotowa, ja bÄ™dÄ™ tu czekaÅ‚."
 
 msgid "tuxemontime"
-msgstr "Ach, przyszedłeś! Wspaniale!"
+msgstr "Ach, przyszedÅ‚eÅ›! Wspaniale!"
 
 msgid "tuxemontime1.5"
-msgstr "Rozumiem, że to oznacza, że zdecydowałeś się dołączyć do Próby?"
+msgstr "Rozumiem, Å¼e to oznacza, Å¼e zdecydowaÅ‚eÅ› siÄ™ doÅ‚Ä…czyÄ‡ do PrÃ³by?"
 
 msgid "sting"
-msgstr "Żądło"
+msgstr "Å»Ä…dÅ‚o"
 
 msgid "static_field"
 msgstr "Pole statyczne"
@@ -743,7 +743,7 @@ msgid "starfall"
 msgstr "Starfall"
 
 msgid "stampede"
-msgstr "Popłoch"
+msgstr "PopÅ‚och"
 
 msgid "spit_poison"
 msgstr "Spray"
@@ -752,13 +752,13 @@ msgid "splinter"
 msgstr "Splinter"
 
 msgid "snowstorm"
-msgstr "Zamieć"
+msgstr "ZamieÄ‡"
 
 msgid "sleeping_powder"
-msgstr "Proch Usypiający"
+msgstr "Proch UsypiajÄ…cy"
 
 msgid "sleep_bomb"
-msgstr "Bomba usypiająca"
+msgstr "Bomba usypiajÄ…ca"
 
 msgid "shuriken"
 msgstr "Shuriken"
@@ -779,13 +779,13 @@ msgid "rust_bomb"
 msgstr "Bomba rdzy"
 
 msgid "rot"
-msgstr "Gnić"
+msgstr "GniÄ‡"
 
 msgid "rock"
-msgstr "Skała"
+msgstr "SkaÅ‚a"
 
 msgid "refresh"
-msgstr "Odświeżenie"
+msgstr "OdÅ›wieÅ¼enie"
 
 msgid "ram"
 msgstr "Baran"
@@ -803,16 +803,16 @@ msgid "petrify"
 msgstr "Petryfikacja"
 
 msgid "perfect_cut"
-msgstr "Perfekcyjne cięcie"
+msgstr "Perfekcyjne ciÄ™cie"
 
 msgid "peregrine"
-msgstr "Sokół wędrowny"
+msgstr "SokÃ³Å‚ wÄ™drowny"
 
 msgid "overgrowth"
 msgstr "Przerost"
 
 msgid "one_two"
-msgstr "Jeden–dwa"
+msgstr "Jedenâ€“dwa"
 
 msgid "mudslide"
 msgstr "Mudslide"
@@ -821,10 +821,10 @@ msgid "muddle"
 msgstr "Muddle"
 
 msgid "midnight_mantle"
-msgstr "Płaszcz północy"
+msgstr "PÅ‚aszcz pÃ³Å‚nocy"
 
 msgid "reg_papers_description"
-msgstr "Pakiet papierów rejestracyjnych do The Trial"
+msgstr "Pakiet papierÃ³w rejestracyjnych do The Trial"
 
 msgid "reg_papers"
 msgstr "Papiery rejestracyjne"
@@ -834,24 +834,24 @@ msgstr "Agnigon"
 
 msgid "agnigon_description"
 msgstr ""
-"Jest on nazywany \"fałszywym smokiem\", ponieważ wygląda jak smok, ale w "
-"rzeczywistości wyewoluował z innej linii starożytnych gadów."
+"Jest on nazywany \"faÅ‚szywym smokiem\", poniewaÅ¼ wyglÄ…da jak smok, ale w "
+"rzeczywistoÅ›ci wyewoluowaÅ‚ z innej linii staroÅ¼ytnych gadÃ³w."
 
 msgid "agnidon"
 msgstr "Agnidon"
 
 msgid "agnidon_description"
 msgstr ""
-"Preferuje stanie na czterech nogach, ale może on stać na dwóch żeby otwierać"
-" drzwi, popychać drzewa czy trzymać rzeczy."
+"Preferuje stanie na czterech nogach, ale moÅ¼e on staÄ‡ na dwÃ³ch Å¼eby otwieraÄ‡"
+" drzwi, popychaÄ‡ drzewa czy trzymaÄ‡ rzeczy."
 
 msgid "aardorn"
 msgstr "Aardorn"
 
 msgid "aardorn_description"
 msgstr ""
-"Po urodzeniu jest on wkładany w mrowisku, musząc przegryść swoją drogę do "
-"wyjścia."
+"Po urodzeniu jest on wkÅ‚adany w mrowisku, muszÄ…c przegryÅ›Ä‡ swojÄ… drogÄ™ do "
+"wyjÅ›cia."
 
 msgid "aardart"
 msgstr "Aardart"
@@ -859,7 +859,7 @@ msgstr "Aardart"
 # MONSTER TRANSLATIONS ##
 # Monster details
 msgid "aardart_description"
-msgstr "Liczy każdą zjedzoną mrówkę, i świętuje znaczące liczby."
+msgstr "Liczy kaÅ¼dÄ… zjedzonÄ… mrÃ³wkÄ™, i Å›wiÄ™tuje znaczÄ…ce liczby."
 
 msgid "menu_fight"
 msgstr "Walka"
@@ -878,7 +878,7 @@ msgid "menu_monsters"
 msgstr "Potwory"
 
 msgid "menu_monster"
-msgstr "Tuxemon"
+msgstr "Solamon"
 
 msgid "menu_journal"
 msgstr "Dziennik"
@@ -890,28 +890,28 @@ msgid "multiplayer_join_prompt"
 msgstr "Nazwa hosta czy adres IP?"
 
 msgid "multiplayer_no_servers"
-msgstr "Nie znaleziono serwerów…"
+msgstr "Nie znaleziono serwerÃ³wâ€¦"
 
 msgid "multiplayer_already_hosting"
-msgstr "Gra jest już hostowana!"
+msgstr "Gra jest juÅ¼ hostowana!"
 
 msgid "multiplayer_hosting_ready"
 msgstr "Gotowy na akceptowanie graczy!"
 
 msgid "multiplayer_join_game"
-msgstr "Dołącz do gry"
+msgstr "DoÅ‚Ä…cz do gry"
 
 msgid "multiplayer_scan_games"
 msgstr "Szukaj gier"
 
 msgid "multiplayer_host_game"
-msgstr "Hostuj grę"
+msgstr "Hostuj grÄ™"
 
 msgid "multiplayer_duel"
-msgstr "{name} wyzywa cię na pojedynek!"
+msgstr "{name} wyzywa ciÄ™ na pojedynek!"
 
 msgid "multiplayer_decline"
-msgstr "Odrzuć"
+msgstr "OdrzuÄ‡"
 
 # Multiplayer notifications
 msgid "multiplayer_accept"
@@ -937,155 +937,155 @@ msgstr "Wczytaj"
 
 msgid "announcement3"
 msgstr ""
-"Dziękuję. Ja też cię kocham\n"
+"DziÄ™kujÄ™. Ja teÅ¼ ciÄ™ kocham\n"
 "Teraz, do rzeczy."
 
 msgid "announcement2"
-msgstr "KOCHAMY CIĘ AEBLE!"
+msgstr "KOCHAMY CIÄ˜ AEBLE!"
 
 msgid "announcement1"
 msgstr ""
-"WITAJCIE MIESZKAŃCY REGIONU FONDENT!\n"
-"DZIĘKUJEMY ZA WYSŁUCHANIE TEGO OBOWIĄZKOWEGO OGŁOSZENIA."
+"WITAJCIE MIESZKAÅƒCY REGIONU FONDENT!\n"
+"DZIÄ˜KUJEMY ZA WYSÅUCHANIE TEGO OBOWIÄ„ZKOWEGO OGÅOSZENIA."
 
 msgid "ipausedit"
 msgstr ""
-"Zapauzowałam telewizor, podaj mi proszę szklankę wody, a potem możemy razem "
-"pooglądać."
+"ZapauzowaÅ‚am telewizor, podaj mi proszÄ™ szklankÄ™ wody, a potem moÅ¼emy razem "
+"pooglÄ…daÄ‡."
 
 msgid "thetvbescreamin"
 msgstr ""
-"Kochanie, poczekaj. Włączyłem telewizor i leciała konferencja prasowa Omnichannel.\n"
-"Powinniśmy ją obejrzeć."
+"Kochanie, poczekaj. WÅ‚Ä…czyÅ‚em telewizor i leciaÅ‚a konferencja prasowa Omnichannel.\n"
+"PowinniÅ›my jÄ… obejrzeÄ‡."
 
 msgid "waitdontgo"
-msgstr "${{name}}! Czekaj! Nie odchodź jeszcze!"
+msgstr "${{name}}! Czekaj! Nie odchodÅº jeszcze!"
 
 msgid "wherewasshe"
-msgstr "Ona nie powiedziała nam złych wieści..."
+msgstr "Ona nie powiedziaÅ‚a nam zÅ‚ych wieÅ›ci..."
 
 msgid "frowntime"
 msgstr ""
-"Nie przeszkadza mi to, że tu jestem...\n"
+"Nie przeszkadza mi to, Å¼e tu jestem...\n"
 "Tylko czasami jestem samotny..."
 
 msgid "knight4ispoor"
-msgstr "Ona naprawdę nie jest złą osobą."
+msgstr "Ona naprawdÄ™ nie jest zÅ‚Ä… osobÄ…."
 
 msgid "seeme"
-msgstr "Upewnij się, że przyjdziesz mnie zobaczysz..."
+msgstr "Upewnij siÄ™, Å¼e przyjdziesz mnie zobaczysz..."
 
 msgid "solongjohn2"
-msgstr "Chodź Grant, mamy harmonogram do utrzymania."
+msgstr "ChodÅº Grant, mamy harmonogram do utrzymania."
 
 msgid "solongjohn"
 msgstr ""
-"John, powinieneś tu zostać, żeby zachować spokój.\n"
-"I tak nie chcę cię w pobliżu."
+"John, powinieneÅ› tu zostaÄ‡, Å¼eby zachowaÄ‡ spokÃ³j.\n"
+"I tak nie chcÄ™ ciÄ™ w pobliÅ¼u."
 
 msgid "maamnothing6"
 msgstr ""
 "... ... ... ...\n"
-"... Dobrze. Powinniśmy chyba wrócić do kwatery głównej i złożyć raport."
+"... Dobrze. PowinniÅ›my chyba wrÃ³ciÄ‡ do kwatery gÅ‚Ã³wnej i zÅ‚oÅ¼yÄ‡ raport."
 
 msgid "maamnothing5"
-msgstr "Proszę pani, ja też go nie znalazłam."
+msgstr "ProszÄ™ pani, ja teÅ¼ go nie znalazÅ‚am."
 
 msgid "maamnothing4"
-msgstr "Świetnie. Dzięki za informację."
+msgstr "Åšwietnie. DziÄ™ki za informacjÄ™."
 
 msgid "maamnothing3"
-msgstr "Ja… ja… Nic nie znalazłem."
+msgstr "Jaâ€¦ jaâ€¦ Nic nie znalazÅ‚em."
 
 msgid "maamnothing2"
 msgstr ""
-"Niech to szlag John! Mieliśmy chwilę czasu!\n"
+"Niech to szlag John! MieliÅ›my chwilÄ™ czasu!\n"
 "Czego chcesz?"
 
 msgid "maamnothing"
-msgstr "Proszę pani..."
+msgstr "ProszÄ™ pani..."
 
 msgid "itsmyaurababe3"
-msgstr "Mam nadzieję, że jeszcze się spotkamy. "
+msgstr "Mam nadziejÄ™, Å¼e jeszcze siÄ™ spotkamy. "
 
 msgid "itsmyduhduhduh"
 msgstr "Otrzymano adres Allie!"
 
 msgid "itsmyaurababe2"
 msgstr ""
-"Hmm, teraz gdy na ciebie patrzę, masz dość tajemniczą aurę.\n"
+"Hmm, teraz gdy na ciebie patrzÄ™, masz doÅ›Ä‡ tajemniczÄ… aurÄ™.\n"
 "... ... ... ...\n"
-"Powinniśmy kiedyś porozmawiać. Może zobaczymy się w Cotton Town?"
+"PowinniÅ›my kiedyÅ› porozmawiaÄ‡. MoÅ¼e zobaczymy siÄ™ w Cotton Town?"
 
 msgid "itsmyaurababe"
-msgstr "A teraz, kim ty jesteś?"
+msgstr "A teraz, kim ty jesteÅ›?"
 
 msgid "maamiexist4"
 msgstr ""
-"Nie, zostaw to. Ci ludzie mają najwyraźniej fatalny gust i gardzą użytecznością i prostotą...\n"
-"Sprawdź teraz laboratorium, Grant. Ja poczekam na Johna."
+"Nie, zostaw to. Ci ludzie majÄ… najwyraÅºniej fatalny gust i gardzÄ… uÅ¼ytecznoÅ›ciÄ… i prostotÄ…...\n"
+"SprawdÅº teraz laboratorium, Grant. Ja poczekam na Johna."
 
 msgid "maamiexist3"
 msgstr ""
 "Jest tam komputer z Ubuntu.\n"
-"Miałem zamiar go skonfiskować, ale wiem, że Gnome nie jest w twoim stylu..."
+"MiaÅ‚em zamiar go skonfiskowaÄ‡, ale wiem, Å¼e Gnome nie jest w twoim stylu..."
 
 msgid "maamiexist2"
-msgstr "Czy było tam coś interesującego?"
+msgstr "Czy byÅ‚o tam coÅ› interesujÄ…cego?"
 
 msgid "maamiexist"
-msgstr "Proszę pani, nie ma go w domu."
+msgstr "ProszÄ™ pani, nie ma go w domu."
 
 msgid "oopsie2"
 msgstr ""
-"Dlaczego nie zaczekamy na powrót moich rycerzy.\n"
-"Nienawidzę ogłaszać złych wieści samemu."
+"Dlaczego nie zaczekamy na powrÃ³t moich rycerzy.\n"
+"NienawidzÄ™ ogÅ‚aszaÄ‡ zÅ‚ych wieÅ›ci samemu."
 
 msgid "ourstuffisours"
-msgstr "Dlaczego właściwie tu jesteś?"
+msgstr "Dlaczego wÅ‚aÅ›ciwie tu jesteÅ›?"
 
 msgid "oopsie"
 msgstr ""
-"Przykro mi, że musiałeś to zobaczyć. Czasami jest po prostu taaak bardzo "
-"bezużyteczny."
+"Przykro mi, Å¼e musiaÅ‚eÅ› to zobaczyÄ‡. Czasami jest po prostu taaak bardzo "
+"bezuÅ¼yteczny."
 
 msgid "whereismyhairbrush"
-msgstr "John, Grant, rozproszcie się. ZNAJDZCIE GO."
+msgstr "John, Grant, rozproszcie siÄ™. ZNAJDZCIE GO."
 
 msgid "hellolovelypeople5"
 msgstr ""
 "Nie... Czekaj... Brakuje nam jednej osoby...\n"
-"Jedynego hodowcy Tuxemonów, który pozostał w regionie Fondent. Tego, który nazywa siebie Profesorem Tuxemonów"
+"Jedynego hodowcy SolamonÃ³w, ktÃ³ry pozostaÅ‚ w regionie Fondent. Tego, ktÃ³ry nazywa siebie Profesorem SolamonÃ³w"
 
 msgid "hellolovelypeople4"
-msgstr "Jestem pewien, że w Cotton Town są domy większe od tego..."
+msgstr "Jestem pewien, Å¼e w Cotton Town sÄ… domy wiÄ™ksze od tego..."
 
 msgid "hellolovelypeople3"
 msgstr ""
-"Czy naprawdę jesteście jedynymi ludźmi w tym mieście? Nie ma tu nikogo! To "
-"musi być najmniejsze miasto w regionie Fondent."
+"Czy naprawdÄ™ jesteÅ›cie jedynymi ludÅºmi w tym mieÅ›cie? Nie ma tu nikogo! To "
+"musi byÄ‡ najmniejsze miasto w regionie Fondent."
 
 msgid "hellolovelypeople2"
 msgstr ""
-"Wiem, że pewnie zastanawiacie się, dlaczego ja i moi Omni Rycerze tu jesteśmy.\n"
+"Wiem, Å¼e pewnie zastanawiacie siÄ™, dlaczego ja i moi Omni Rycerze tu jesteÅ›my.\n"
 "Czekaj..."
 
 msgid "cometomepls"
 msgstr ""
-"TERAZ, PROSZĘ WSZYSTKICH O PRZYBYCIE DO CENTRUM MIASTA. OMNICHANNEL PRAGNIE "
-"ZWRÓCIĆ SIĘ DO WAS!"
+"TERAZ, PROSZÄ˜ WSZYSTKICH O PRZYBYCIE DO CENTRUM MIASTA. OMNICHANNEL PRAGNIE "
+"ZWRÃ“CIÄ† SIÄ˜ DO WAS!"
 
 msgid "uselessnes"
 msgstr ""
-"Jesteś absolutnie bezużyteczny, John. Nie mogę uwierzyć, że kiedykolwiek "
-"byliśmy razem."
+"JesteÅ› absolutnie bezuÅ¼yteczny, John. Nie mogÄ™ uwierzyÄ‡, Å¼e kiedykolwiek "
+"byliÅ›my razem."
 
 msgid "johnissorry"
 msgstr ""
-"Przepraszam panią... Ja...\n"
-"Widziałem...\n"
+"Przepraszam paniÄ…... Ja...\n"
+"WidziaÅ‚em...\n"
 "Kilka...\n"
-"Kwiatów..."
+"KwiatÃ³w..."
 
 msgid "darnitjohn10"
 msgstr "TERAZ!"
@@ -1094,260 +1094,260 @@ msgid "darnitjohn8"
 msgstr "AAAAAGH!!!"
 
 msgid "darnitjohn7"
-msgstr "Nie jestem pewien…"
+msgstr "Nie jestem pewienâ€¦"
 
 msgid "darnitjohn6"
-msgstr "Uhh…"
+msgstr "Uhhâ€¦"
 
 msgid "darnitjohn5"
-msgstr "Dlaczego wciąż tu jesteś?"
+msgstr "Dlaczego wciÄ…Å¼ tu jesteÅ›?"
 
 msgid "darnitjohn4"
-msgstr "Tak, proszę pani?"
+msgstr "Tak, proszÄ™ pani?"
 
 msgid "darnitjohn3"
 msgstr "John."
 
 msgid "darnitjohn2"
-msgstr "NIECH MNIE SZLAG TRAFI! WYŁAŹ STAMTĄD!"
+msgstr "NIECH MNIE SZLAG TRAFI! WYÅAÅ¹ STAMTÄ„D!"
 
 msgid "darnitjohn"
 msgstr "Chwileczka, gdzie jest John?"
 
 msgid "hellolovelypeople"
-msgstr "WITAJCIE MIESZKAŃCY MIASTA TABA!"
+msgstr "WITAJCIE MIESZKAÅƒCY MIASTA TABA!"
 
 msgid "bothofyou"
 msgstr ""
-"Obaj wyjdźcie na zewnątrz. Przedstawiciel Omnnichannel chce zwrócić się do "
+"Obaj wyjdÅºcie na zewnÄ…trz. Przedstawiciel Omnnichannel chce zwrÃ³ciÄ‡ siÄ™ do "
 "miasta."
 
 msgid "professorswife"
 msgstr ""
-"O nie! Właśnie go przegapiłeś. Chyba jednak pojechał do miasta. Może sprawdź"
+"O nie! WÅ‚aÅ›nie go przegapiÅ‚eÅ›. Chyba jednak pojechaÅ‚ do miasta. MoÅ¼e sprawdÅº"
 " tam?"
 
 msgid "nopenotyet"
 msgstr ""
-"Niestety, ktoś został ranny na tej trasie. W tej chwili jest ona zamknięta."
+"Niestety, ktoÅ› zostaÅ‚ ranny na tej trasie. W tej chwili jest ona zamkniÄ™ta."
 
 msgid "hmmm2"
-msgstr "Słyszałem, że robią nowy park. Aby \"zazielenić okolicę\""
+msgstr "SÅ‚yszaÅ‚em, Å¼e robiÄ… nowy park. Aby \"zazieleniÄ‡ okolicÄ™\""
 
 msgid "hmmm"
-msgstr "Ciekawe, co oni tam robią?"
+msgstr "Ciekawe, co oni tam robiÄ…?"
 
 msgid "theenergy"
-msgstr "Energia tego człowieka jest bezgraniczna..."
+msgstr "Energia tego czÅ‚owieka jest bezgraniczna..."
 
 msgid "professorexists4"
 msgstr ""
-"Teraz wiem, co myślisz, dlaczego mieliby mi pozwolić?\n"
+"Teraz wiem, co myÅ›lisz, dlaczego mieliby mi pozwoliÄ‡?\n"
 "Niestety dla Ciebie, ten sekret jest dla mnie i tylko dla mnie!\n"
-"Jednakże, Omnichannel powinien wkrótce ogłosić nowe ogłoszenie i myślę, że Ci się spodoba.\n"
-"Lepiej wróć do domu i obejrzyj drugą zapowiedź, No dalej!"
+"JednakÅ¼e, Omnichannel powinien wkrÃ³tce ogÅ‚osiÄ‡ nowe ogÅ‚oszenie i myÅ›lÄ™, Å¼e Ci siÄ™ spodoba.\n"
+"Lepiej wrÃ³Ä‡ do domu i obejrzyj drugÄ… zapowiedÅº, No dalej!"
 
 msgid "professorexists3"
 msgstr ""
-"Przepraszam za moje maniery, nie mogę uwierzyć, że nigdy się nie przedstawiłam!\n"
-"Nazywam się Kay Wren, lepiej znana jako Profesor Tuxemon.\n"
-"Od lat jestem jedyną osobą w regionie Fondent, która może badać Tuxemona."
+"Przepraszam za moje maniery, nie mogÄ™ uwierzyÄ‡, Å¼e nigdy siÄ™ nie przedstawiÅ‚am!\n"
+"Nazywam siÄ™ Kay Wren, lepiej znana jako Profesor Solamon.\n"
+"Od lat jestem jedynÄ… osobÄ… w regionie Fondent, ktÃ³ra moÅ¼e badaÄ‡ Solamona."
 
 msgid "potions2"
 msgstr "Otrzymano 2 eliksiry!"
 
 msgid "professorexists2"
 msgstr ""
-"Ty musisz być dzieckiem Callie! Tyle o tobie słyszałam od twojej mamy.\n"
-"Co cię tu sprowadza?\n"
+"Ty musisz byÄ‡ dzieckiem Callie! Tyle o tobie sÅ‚yszaÅ‚am od twojej mamy.\n"
+"Co ciÄ™ tu sprowadza?\n"
 ".... .... ....\n"
-"Mikstury? Oczywiście, zawsze ich potrzebujesz!\n"
-"Proszę, weź kilka na mój koszt, dzięki mojej uprzejmości."
+"Mikstury? OczywiÅ›cie, zawsze ich potrzebujesz!\n"
+"ProszÄ™, weÅº kilka na mÃ³j koszt, dziÄ™ki mojej uprzejmoÅ›ci."
 
 msgid "professorexists1.5"
 msgstr "Witam!"
 
 msgid "professorexists1"
-msgstr "Dzięki, Ben."
+msgstr "DziÄ™ki, Ben."
 
 msgid "professorexists"
-msgstr "Poproszę 12 eliksirów."
+msgstr "PoproszÄ™ 12 eliksirÃ³w."
 
 msgid "bobtalk"
 msgstr ""
-"Byłoby miło, gdyby więcej ludzi takich jak ty przychodziło się przywitać...\n"
-"Przy okazji, witaj! Miłego dnia! Dziś lub jutro lub jakikolwiek dzień będzie wielki!"
+"ByÅ‚oby miÅ‚o, gdyby wiÄ™cej ludzi takich jak ty przychodziÅ‚o siÄ™ przywitaÄ‡...\n"
+"Przy okazji, witaj! MiÅ‚ego dnia! DziÅ› lub jutro lub jakikolwiek dzieÅ„ bÄ™dzie wielki!"
 
 msgid "grumble"
 msgstr ""
-"Omnichannel to banda oprychów, ale nie mamy wyboru...\n"
-"Jak zawsze mówi, chyba musimy z nimi współpracować..."
+"Omnichannel to banda oprychÃ³w, ale nie mamy wyboru...\n"
+"Jak zawsze mÃ³wi, chyba musimy z nimi wspÃ³Å‚pracowaÄ‡..."
 
 msgid "watchmewatchme"
 msgstr ""
-"Dlaczego idziesz do miasta? Wiesz, że jest wczesna godzina policyjna.\n"
+"Dlaczego idziesz do miasta? Wiesz, Å¼e jest wczesna godzina policyjna.\n"
 "... ... ... ...\n"
 "... ... ... ...\n"
-"Nie wyglądasz na zagrożenie, więc możesz jechać do miasta...\n"
-"Tylko nie mów żadnemu z tych Omnichannelowych zbirów, że cię przepuściłem, dobrze?"
+"Nie wyglÄ…dasz na zagroÅ¼enie, wiÄ™c moÅ¼esz jechaÄ‡ do miasta...\n"
+"Tylko nie mÃ³w Å¼adnemu z tych Omnichannelowych zbirÃ³w, Å¼e ciÄ™ przepuÅ›ciÅ‚em, dobrze?"
 
 msgid "waterwater"
 msgstr "Woda jest lodowato zimna i pyszna!"
 
 msgid "depressedmom"
-msgstr "Dlaczego miałby zrobić coś takiego... Myślałam, że mu zależy..."
+msgstr "Dlaczego miaÅ‚by zrobiÄ‡ coÅ› takiego... MyÅ›laÅ‚am, Å¼e mu zaleÅ¼y..."
 
 msgid "ohnoes2"
 msgstr ""
-"Teraz, gdy to się skończyło... potrzebujemy jeszcze eliksirów z Tuxemartu.\n"
-"Upewnijcie się, że wrócicie przed godziną policyjną!"
+"Teraz, gdy to siÄ™ skoÅ„czyÅ‚o... potrzebujemy jeszcze eliksirÃ³w z Tuxemartu.\n"
+"Upewnijcie siÄ™, Å¼e wrÃ³cicie przed godzinÄ… policyjnÄ…!"
 
 msgid "ohnoes"
-msgstr "Cóż… Nie wiem jak się z tym czuć…"
+msgstr "CÃ³Å¼â€¦ Nie wiem jak siÄ™ z tym czuÄ‡â€¦"
 
 msgid "whythecheering"
-msgstr "Ci z Omnichannel bardzo mu kibicują. Ciekawe dlaczego?"
+msgstr "Ci z Omnichannel bardzo mu kibicujÄ…. Ciekawe dlaczego?"
 
 msgid "announcement4"
 msgstr ""
-"Do WSZYSTKICH mieszkańców regionu Fondent i nie tylko, którzy są tutaj obecni.\n"
-"Nazywam się Aeble, dla tych, którzy się zastanawiają, piszę się A-E-B-L-E i jestem dyrektorem generalnym Omnichannel!"
+"Do WSZYSTKICH mieszkaÅ„cÃ³w regionu Fondent i nie tylko, ktÃ³rzy sÄ… tutaj obecni.\n"
+"Nazywam siÄ™ Aeble, dla tych, ktÃ³rzy siÄ™ zastanawiajÄ…, piszÄ™ siÄ™ A-E-B-L-E i jestem dyrektorem generalnym Omnichannel!"
 
 msgid "okaythen2"
 msgstr ""
-"Wygląda na to, że twoje Tuxemony czują się teraz lepiej! Proszę bardzo!"
+"WyglÄ…da na to, Å¼e twoje Solamony czujÄ… siÄ™ teraz lepiej! ProszÄ™ bardzo!"
 
 msgid "okaythen"
-msgstr "W porządku! Po prostu daj mi sekundę, a wyleczę twojego Tuxemona!"
+msgstr "W porzÄ…dku! Po prostu daj mi sekundÄ™, a wyleczÄ™ twojego Solamona!"
 
 msgid "cottonnurse_dialog"
 msgstr "Witamy w Cotton Town Tuxecenter!"
 
 msgid "ripjimmy"
 msgstr ""
-"Napis na grobie mówi:\n"
-"„Tu leży Jimmy. Przyjaciel, rycerz i… ogólnie zły człowiek. Jednak... nigdy... ... Pomocy!”…\n"
-"Reszta jest zniszczona przez pogodę."
+"Napis na grobie mÃ³wi:\n"
+"â€žTu leÅ¼y Jimmy. Przyjaciel, rycerz iâ€¦ ogÃ³lnie zÅ‚y czÅ‚owiek. Jednak... nigdy... ... Pomocy!â€â€¦\n"
+"Reszta jest zniszczona przez pogodÄ™."
 
 msgid "tabatownbattlearea"
-msgstr "Certyfikowany obszar walki — Taba Town"
+msgstr "Certyfikowany obszar walki â€” Taba Town"
 
 msgid "goodbye2"
 msgstr ""
-"Powodzenia w The Trial, ${{name}}! I dużo szczęścia — będziesz go bardzo "
-"potrzebować."
+"Powodzenia w The Trial, ${{name}}! I duÅ¼o szczÄ™Å›cia â€” bÄ™dziesz go bardzo "
+"potrzebowaÄ‡."
 
 msgid "goodbye"
 msgstr ""
-"Nie pozwól, aby The Trial uniemożliwiła ci przybycie do mnie. W zasadzie... "
-"Może znajdę cię najpierw."
+"Nie pozwÃ³l, aby The Trial uniemoÅ¼liwiÅ‚a ci przybycie do mnie. W zasadzie... "
+"MoÅ¼e znajdÄ™ ciÄ™ najpierw."
 
 msgid "gasp4"
 msgstr ""
-"Dobra, twoje dokumenty rejestracyjne pozostaną nienaruszone. Na razie.\n"
-"John, Grant, zabierz tak zwanego Tuxemon Professor do jego nowego domu."
+"Dobra, twoje dokumenty rejestracyjne pozostanÄ… nienaruszone. Na razie.\n"
+"John, Grant, zabierz tak zwanego Solamon Professor do jego nowego domu."
 
 msgid "gasp3"
-msgstr "Jeśli to prawda, jest w tobie coś więcej, niż sądziłam..."
+msgstr "JeÅ›li to prawda, jest w tobie coÅ› wiÄ™cej, niÅ¼ sÄ…dziÅ‚am..."
 
 msgid "brokethegasp3"
 msgstr ""
-"Proszę, proszę pani z omnichannel, Matka ${{name}} chciała, aby dołączyli do The Trial, aby zobaczyć cały region\n"
-"${{name}} nie robi tego dla pracy, tylko dla doświadczenia."
+"ProszÄ™, proszÄ™ pani z omnichannel, Matka ${{name}} chciaÅ‚a, aby doÅ‚Ä…czyli do The Trial, aby zobaczyÄ‡ caÅ‚y region\n"
+"${{name}} nie robi tego dla pracy, tylko dla doÅ›wiadczenia."
 
 msgid "brokethegasp2"
-msgstr "Ty. Dlaczego mówisz? Nie pozwoliłem ci mówić."
+msgstr "Ty. Dlaczego mÃ³wisz? Nie pozwoliÅ‚em ci mÃ³wiÄ‡."
 
 msgid "brokethegasp"
-msgstr "Teraz pani, jeśli mogę, ${{name}} robi to nie tylko dla pracy."
+msgstr "Teraz pani, jeÅ›li mogÄ™, ${{name}} robi to nie tylko dla pracy."
 
 msgid "gasp2"
 msgstr ""
-"Co ty tu robisz z tym... przestępcą?\n"
+"Co ty tu robisz z tym... przestÄ™pcÄ…?\n"
 "... .... ....\n"
 "... ... ...\n"
-"Dołączasz do The Trial? Naprawdę poddałbyś się tym nonsensom?\n"
-"Jeśli chcesz tylko pracy w Omnichannel, mogłeś mnie po prostu zapytać.\n"
-"Jestem pewien, że znajdę dla ciebie... zastosowanie, jeśli jesteś zainteresowany."
+"DoÅ‚Ä…czasz do The Trial? NaprawdÄ™ poddaÅ‚byÅ› siÄ™ tym nonsensom?\n"
+"JeÅ›li chcesz tylko pracy w Omnichannel, mogÅ‚eÅ› mnie po prostu zapytaÄ‡.\n"
+"Jestem pewien, Å¼e znajdÄ™ dla ciebie... zastosowanie, jeÅ›li jesteÅ› zainteresowany."
 
 msgid "gasp"
-msgstr "Chwila…"
+msgstr "Chwilaâ€¦"
 
 msgid "yahaha"
-msgstr "Ach ha! Znalazłam cię!"
+msgstr "Ach ha! ZnalazÅ‚am ciÄ™!"
 
 msgid "wewnicefight"
 msgstr ""
-"Wow, to była dobra walka!\n"
-"Pozwól mi szybciutko uzdrowić twojego Tuxemona...\n"
+"Wow, to byÅ‚a dobra walka!\n"
+"PozwÃ³l mi szybciutko uzdrowiÄ‡ twojego Solamona...\n"
 "i... Wszystko gotowe!\n"
-"Z trochę więcej praktyki i może kilka Tuxemonów, na pewno będziesz w stanie podjąć się procesu."
+"Z trochÄ™ wiÄ™cej praktyki i moÅ¼e kilka SolamonÃ³w, na pewno bÄ™dziesz w stanie podjÄ…Ä‡ siÄ™ procesu."
 
 msgid "tweesher!"
 msgstr "Zdobyto Tweeshera!"
 
 msgid "choseTweesher2"
 msgstr ""
-"Najpierw jednak sprawdźmy twoją sprawność bojową w szybkiej walce z Tuxemonem.\n"
+"Najpierw jednak sprawdÅºmy twojÄ… sprawnoÅ›Ä‡ bojowÄ… w szybkiej walce z Solamonem.\n"
 " Zobaczmy... Wybieram Rockitten."
 
 msgid "choseTweesher"
 msgstr ""
-"Dobra, oto twój Tweesher! Wiem, że przeżyjecie razem wspaniałe przygody!"
+"Dobra, oto twÃ³j Tweesher! Wiem, Å¼e przeÅ¼yjecie razem wspaniaÅ‚e przygody!"
 
 msgid "chooseyerfateTweesher"
 msgstr ""
-"Świetny wybór! Tweesher jest Tuxemonem wodnym. Ta ewolucja Eagleace jest jednym z najszybszych Tuxemon\n"
-"Czy chcesz wybrać Tweeshera?"
+"Åšwietny wybÃ³r! Tweesher jest Solamonem wodnym. Ta ewolucja Eagleace jest jednym z najszybszych Solamon\n"
+"Czy chcesz wybraÄ‡ Tweeshera?"
 
 msgid "cardiling!"
 msgstr "Zdobyto Cardilinga!"
 
 msgid "chosefight"
-msgstr "I... CZAS NA WALKĘ!"
+msgstr "I... CZAS NA WALKÄ˜!"
 
 msgid "choseCardiling2"
 msgstr ""
-"Najpierw jednak sprawdźmy twoją sprawność bojową w szybkiej walce z Tuxemonem.\n"
+"Najpierw jednak sprawdÅºmy twojÄ… sprawnoÅ›Ä‡ bojowÄ… w szybkiej walce z Solamonem.\n"
 " Zobaczmy... Wybieram Tweeshera."
 
 msgid "choseCardiling"
 msgstr ""
-"W porządku, oto twój Cardiling! Wiem, że przeżyjecie razem wspaniałe "
+"W porzÄ…dku, oto twÃ³j Cardiling! Wiem, Å¼e przeÅ¼yjecie razem wspaniaÅ‚e "
 "przygody!"
 
 msgid "chooseyerfateCardiling"
 msgstr ""
-"Ciekawy wybór, przemawia do iskry wewnątrz ciebie. Cardiling jest Tuxemonem typu fire, znanego z kradzieży jedzenia zarówno przyjaciołom, jak i wrogom.\n"
-"Czy chcesz wybrać Cardilinga?"
+"Ciekawy wybÃ³r, przemawia do iskry wewnÄ…trz ciebie. Cardiling jest Solamonem typu fire, znanego z kradzieÅ¼y jedzenia zarÃ³wno przyjacioÅ‚om, jak i wrogom.\n"
+"Czy chcesz wybraÄ‡ Cardilinga?"
 
-msgid "nochoiceTuxemon"
-msgstr "Dobra, może spojrzysz na pozostałe dwa?"
+msgid "nochoiceSolamon"
+msgstr "Dobra, moÅ¼e spojrzysz na pozostaÅ‚e dwa?"
 
 msgid "rockitten!"
 msgstr "Zdobyto Rockittena!"
 
 msgid "choseRockitten2"
 msgstr ""
-"Najpierw jednak sprawdźmy twoją sprawność bojową w szybkiej walce z Tuxemonem.\n"
+"Najpierw jednak sprawdÅºmy twojÄ… sprawnoÅ›Ä‡ bojowÄ… w szybkiej walce z Solamonem.\n"
 " Zobaczmy... Wybieram Cardiling."
 
 msgid "choseRockitten"
 msgstr ""
-"Dobra, oto twój Rockitten! Wiem, że przeżyjecie razem wspaniałe przygody!"
+"Dobra, oto twÃ³j Rockitten! Wiem, Å¼e przeÅ¼yjecie razem wspaniaÅ‚e przygody!"
 
 msgid "chooseyerfateRockitten"
 msgstr ""
-"Solidny wybór! Rockitten jest Tuxemonem typu earth. W średniowieczu ludzie hodowali Rockitteny, aby siedziały przy drzwiach i wyglądały słodko.\n"
-"Czy chcesz wybrać Rockitten?"
+"Solidny wybÃ³r! Rockitten jest Solamonem typu earth. W Å›redniowieczu ludzie hodowali Rockitteny, aby siedziaÅ‚y przy drzwiach i wyglÄ…daÅ‚y sÅ‚odko.\n"
+"Czy chcesz wybraÄ‡ Rockitten?"
 
 msgid "chooseyerfate"
-msgstr "Którego Tuxemona chcesz?"
+msgstr "KtÃ³rego Solamona chcesz?"
 
 msgid "tuxemontime4"
 msgstr ""
-"Teraz najważniejsza część! Wybór Tuxemona!\n"
-"Niestety, ostatnio moje źródło finansowania stało się… niepewne. To pozostawia ci tylko trzy opcje Tuxemonów, przepraszam za to.\n"
+"Teraz najwaÅ¼niejsza czÄ™Å›Ä‡! WybÃ³r Solamona!\n"
+"Niestety, ostatnio moje ÅºrÃ³dÅ‚o finansowania staÅ‚o siÄ™â€¦ niepewne. To pozostawia ci tylko trzy opcje SolamonÃ³w, przepraszam za to.\n"
 "Te trzy opcje to Rockitten, Cardiling i Tweesher."
 
 msgid "obtainedpapers"
@@ -1355,99 +1355,99 @@ msgstr "Otrzymano dokumenty rejestracyjne!"
 
 msgid "tuxemontime3.1"
 msgstr ""
-"Oto twoje dokumenty rejestracyjne. W pierwszym obszarze bitwy będziesz musiał je przedstawić w zamian za odznakę Trenera.\n"
-"Później dokumenty nie będą Ci potrzebne."
+"Oto twoje dokumenty rejestracyjne. W pierwszym obszarze bitwy bÄ™dziesz musiaÅ‚ je przedstawiÄ‡ w zamian za odznakÄ™ Trenera.\n"
+"PÃ³Åºniej dokumenty nie bÄ™dÄ… Ci potrzebne."
 
 msgid "tuxemontime3"
-msgstr "No i proszę!"
+msgstr "No i proszÄ™!"
 
 msgid "tuxemontime2"
-msgstr "Pierwszą rzeczą do zrobienia jest przygotowanie dokumentów..."
+msgstr "PierwszÄ… rzeczÄ… do zrobienia jest przygotowanie dokumentÃ³w..."
 
 msgid "tuxemontimechoiceno"
-msgstr "Och... W porządku... Będę tu, jeśli zmienisz zdanie..."
+msgstr "Och... W porzÄ…dku... BÄ™dÄ™ tu, jeÅ›li zmienisz zdanie..."
 
 msgid "tuxemontimechoiceyes"
-msgstr "Wspaniałe!"
+msgstr "WspaniaÅ‚e!"
 
 msgid "moreannouncement2"
 msgstr ""
-"Przepraszam, że tak późno informuję o tym adresie, ale uważałem go za ważny, zanim wyciekł do mediów...\n"
-"Cóż... Heh. Jesteśmy właścicielami mediów, więc to chyba nie ma znaczenia, ale chciałem się tym podzielić.\n"
-"Po konsultacji z moimi doradcami, zdecydowaliśmy, że najlepszym sposobem, aby stać się bardziej komfortowym z Tuxemonem, jest użycie go.\n"
-"Minie trochę czasu, zanim będziemy mogli zintegrować je z pracownikami, ale w międzyczasie, jak już mówiłem, wypuścimy je na wolność.\n"
-"Zdaję sobie sprawę, że jest to szok dla wszystkich, rozumiem też, że niektórzy z was mogą się nawet bać. Wszyscy wiemy, co się stało wcześniej...\n"
-"Nie czas się bać, ponieważ Omnichannel będzie sponsorował odrodzenie starożytnej tradycji znanej jako The Trial.\n"
-"Teraz, dla tych, którzy są mniej zorientowani w historii regionu Fondent, sto lat temu istniała tradycja, w której młodzi ludzie łapali i hodowali Tuxemona.\n"
-"Następnie używali tych Tuxemonów do walki z innymi i podnosili rangę w swoim mieście, a najlepszy Trener Tuxemonów zyskiwał status i władzę.\n"
-"Stworzymy wersję tego w dzisiejszych czasach. Utworzymy obszary bitewne w wielu miastach na terenie Fondentu.\n"
-"Każdy obszar bitewny będzie musiał być ukończony w kolejności, a najbardziej obiecujący trener lub trenerzy będą mogli wziąć udział w Mistrzostwach.\n"
-"Mistrzostwa odbędą się na szczycie Wieży Omnichannel w Cotton Town, ale tylko wtedy, gdy Trener Tuxemon przejdzie przez wszystkie obszary bitewne.\n"
-"Próba jest zaprojektowana jako sposób na powolne wprowadzenie do życia publicznego Tuxemonów i zachęcenie do podróżowania po regionie.\n"
-"Kto może to lepiej zademonstrować niż nasza młodzież?\n"
-"Każdy mecz będzie transmitowany na żywo na kanale Omnichannel-T, najnowszej stacji telewizyjnej poświęconej wyłącznie programom związanym z Tuxemon!\n"
-"Nie martw się, dodatek będzie odzwierciedlony w Twoim rachunku.\n"
-"Aha, i jeszcze jedno, wszyscy Trenerzy Tuxemonów będą zwolnieni z godziny policyjnej.\n"
-"Przed tym oczywiście będziesz potrzebował Tuxemona! Nie każdy może zostać Trenerem Tuxemonów. To byłby czysty chaos!\n"
-"Po pierwsze, musisz zarejestrować swoje imię u lokalnego przedstawiciela Omnichannel i jeśli zostaniesz wybrany, zostaniesz wysłany na szkolenie Omnichannel.\n"
-"Po pomyślnym ukończeniu szkolenia, otrzymasz Tuxemona i będziesz mógł rozpocząć udział w Próbie!\n"
-"Nie mogę się doczekać, aby Was wszystkich poznać! Stwórzmy razem nowy świat!\n"
-"W końcu... JESTEŚMY BEZPIECZEŃSTWEM, JESTEŚMY PORZĄDKIEM, JESTEŚMY OMNICHANNEL! A teraz,\n"
+"Przepraszam, Å¼e tak pÃ³Åºno informujÄ™ o tym adresie, ale uwaÅ¼aÅ‚em go za waÅ¼ny, zanim wyciekÅ‚ do mediÃ³w...\n"
+"CÃ³Å¼... Heh. JesteÅ›my wÅ‚aÅ›cicielami mediÃ³w, wiÄ™c to chyba nie ma znaczenia, ale chciaÅ‚em siÄ™ tym podzieliÄ‡.\n"
+"Po konsultacji z moimi doradcami, zdecydowaliÅ›my, Å¼e najlepszym sposobem, aby staÄ‡ siÄ™ bardziej komfortowym z Solamonem, jest uÅ¼ycie go.\n"
+"Minie trochÄ™ czasu, zanim bÄ™dziemy mogli zintegrowaÄ‡ je z pracownikami, ale w miÄ™dzyczasie, jak juÅ¼ mÃ³wiÅ‚em, wypuÅ›cimy je na wolnoÅ›Ä‡.\n"
+"ZdajÄ™ sobie sprawÄ™, Å¼e jest to szok dla wszystkich, rozumiem teÅ¼, Å¼e niektÃ³rzy z was mogÄ… siÄ™ nawet baÄ‡. Wszyscy wiemy, co siÄ™ staÅ‚o wczeÅ›niej...\n"
+"Nie czas siÄ™ baÄ‡, poniewaÅ¼ Omnichannel bÄ™dzie sponsorowaÅ‚ odrodzenie staroÅ¼ytnej tradycji znanej jako The Trial.\n"
+"Teraz, dla tych, ktÃ³rzy sÄ… mniej zorientowani w historii regionu Fondent, sto lat temu istniaÅ‚a tradycja, w ktÃ³rej mÅ‚odzi ludzie Å‚apali i hodowali Solamona.\n"
+"NastÄ™pnie uÅ¼ywali tych SolamonÃ³w do walki z innymi i podnosili rangÄ™ w swoim mieÅ›cie, a najlepszy Trener SolamonÃ³w zyskiwaÅ‚ status i wÅ‚adzÄ™.\n"
+"Stworzymy wersjÄ™ tego w dzisiejszych czasach. Utworzymy obszary bitewne w wielu miastach na terenie Fondentu.\n"
+"KaÅ¼dy obszar bitewny bÄ™dzie musiaÅ‚ byÄ‡ ukoÅ„czony w kolejnoÅ›ci, a najbardziej obiecujÄ…cy trener lub trenerzy bÄ™dÄ… mogli wziÄ…Ä‡ udziaÅ‚ w Mistrzostwach.\n"
+"Mistrzostwa odbÄ™dÄ… siÄ™ na szczycie WieÅ¼y Omnichannel w Cotton Town, ale tylko wtedy, gdy Trener Solamon przejdzie przez wszystkie obszary bitewne.\n"
+"PrÃ³ba jest zaprojektowana jako sposÃ³b na powolne wprowadzenie do Å¼ycia publicznego SolamonÃ³w i zachÄ™cenie do podrÃ³Å¼owania po regionie.\n"
+"Kto moÅ¼e to lepiej zademonstrowaÄ‡ niÅ¼ nasza mÅ‚odzieÅ¼?\n"
+"KaÅ¼dy mecz bÄ™dzie transmitowany na Å¼ywo na kanale Omnichannel-T, najnowszej stacji telewizyjnej poÅ›wiÄ™conej wyÅ‚Ä…cznie programom zwiÄ…zanym z Solamon!\n"
+"Nie martw siÄ™, dodatek bÄ™dzie odzwierciedlony w Twoim rachunku.\n"
+"Aha, i jeszcze jedno, wszyscy Trenerzy SolamonÃ³w bÄ™dÄ… zwolnieni z godziny policyjnej.\n"
+"Przed tym oczywiÅ›cie bÄ™dziesz potrzebowaÅ‚ Solamona! Nie kaÅ¼dy moÅ¼e zostaÄ‡ Trenerem SolamonÃ³w. To byÅ‚by czysty chaos!\n"
+"Po pierwsze, musisz zarejestrowaÄ‡ swoje imiÄ™ u lokalnego przedstawiciela Omnichannel i jeÅ›li zostaniesz wybrany, zostaniesz wysÅ‚any na szkolenie Omnichannel.\n"
+"Po pomyÅ›lnym ukoÅ„czeniu szkolenia, otrzymasz Solamona i bÄ™dziesz mÃ³gÅ‚ rozpoczÄ…Ä‡ udziaÅ‚ w PrÃ³bie!\n"
+"Nie mogÄ™ siÄ™ doczekaÄ‡, aby Was wszystkich poznaÄ‡! StwÃ³rzmy razem nowy Å›wiat!\n"
+"W koÅ„cu... JESTEÅšMY BEZPIECZEÅƒSTWEM, JESTEÅšMY PORZÄ„DKIEM, JESTEÅšMY OMNICHANNEL! A teraz,\n"
 "MY\n"
-"JESTEŚMY\n"
-"PRZYSZŁOŚCIĄ!"
+"JESTEÅšMY\n"
+"PRZYSZÅOÅšCIÄ„!"
 
 msgid "moreannouncement"
 msgstr "UWAGA WSZYSCY OBYWATELE REGIONU FONDENT!"
 
 msgid "theanthemishere"
-msgstr "Słuchaj! Hymn się zaczyna, zdążyliśmy w samą porę. Chodź i oglądaj!"
+msgstr "SÅ‚uchaj! Hymn siÄ™ zaczyna, zdÄ…Å¼yliÅ›my w samÄ… porÄ™. ChodÅº i oglÄ…daj!"
 
 msgid "timeforround22"
-msgstr "Och! Zdobyłeś eliksiry! Dobrze! Teraz naprawdę musimy wracać."
+msgstr "Och! ZdobyÅ‚eÅ› eliksiry! Dobrze! Teraz naprawdÄ™ musimy wracaÄ‡."
 
 msgid "timeforround2"
-msgstr "${{name}}! Nareszcie! Wróciłeś! Bałem się, że przegapisz ogłoszenie!"
+msgstr "${{name}}! Nareszcie! WrÃ³ciÅ‚eÅ›! BaÅ‚em siÄ™, Å¼e przegapisz ogÅ‚oszenie!"
 
 msgid "hmmm7"
-msgstr "Ale pogoda jest ładna, prawda?"
+msgstr "Ale pogoda jest Å‚adna, prawda?"
 
 msgid "hmmm6"
-msgstr ".... .... Okej... Ale to może być..."
+msgstr ".... .... Okej... Ale to moÅ¼e byÄ‡..."
 
 msgid "hmmm5"
 msgstr ""
-"Max, tak bardzo jak możesz tego chcieć, ustaliliśmy to. Oni nie robią i nie "
-"zrobią parku wodnego."
+"Max, tak bardzo jak moÅ¼esz tego chcieÄ‡, ustaliliÅ›my to. Oni nie robiÄ… i nie "
+"zrobiÄ… parku wodnego."
 
 msgid "hmmm4"
-msgstr "Może robią park wodny!"
+msgstr "MoÅ¼e robiÄ… park wodny!"
 
 msgid "hmmm3"
-msgstr "Jaki to ma sens? Trasa i tak jest prawie cała w trawie."
+msgstr "Jaki to ma sens? Trasa i tak jest prawie caÅ‚a w trawie."
 
 # MENU TRANSLATIONS ##
 msgid "menu_alphabet"
 msgstr ""
-"aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźżAĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŹŻ1234567890.-!"
+"aÄ…bcÄ‡deÄ™fghijklÅ‚mnÅ„oÃ³pqrsÅ›tuvwxyzÅºÅ¼AÄ„BCÄ†DEÄ˜FGHIJKLÅMNÅƒOÃ“PQRSÅšTUVWXYZÅ¹Å»1234567890.-!"
 
 msgid "supernova"
 msgstr "Supernova"
 
 msgid "combat_state_overfeed_get"
-msgstr "{user} przekarmił {target}."
+msgstr "{user} przekarmiÅ‚ {target}."
 
 msgid "hp_restored"
-msgstr "hp {user} zostało przywrócone"
+msgstr "hp {user} zostaÅ‚o przywrÃ³cone"
 
 msgid "combat_amnesia_get"
-msgstr "{user} dostał amnezji."
+msgstr "{user} dostaÅ‚ amnezji."
 
 msgid "overfeed"
 msgstr "Przekarmiony"
 
 msgid "take_cover"
-msgstr "Osłoń się"
+msgstr "OsÅ‚oÅ„ siÄ™"
 
 #, fuzzy
 msgid "strike"
@@ -1455,16 +1455,16 @@ msgstr "Strike"
 
 #, fuzzy
 msgid "suck_poison"
-msgstr "Wyssij Truciznę"
+msgstr "Wyssij TruciznÄ™"
 
 msgid "dodge_increased"
-msgstr "{stat} gracza wzrósł."
+msgstr "{stat} gracza wzrÃ³sÅ‚."
 
 msgid "sudden_glow"
-msgstr "Nagły Blask"
+msgstr "NagÅ‚y Blask"
 
 msgid "wall_of_steel"
-msgstr "Ściana Stali"
+msgstr "Åšciana Stali"
 
 msgid "cardinale"
 msgstr "Cardinale"
@@ -2182,70 +2182,70 @@ msgid "turnipper"
 msgstr "Turnipper"
 
 msgid "taba_town_homeplace"
-msgstr "Dom użytkownika ${{name}}"
+msgstr "Dom uÅ¼ytkownika ${{name}}"
 
 msgid "fishing_rod"
-msgstr "Wędka"
+msgstr "WÄ™dka"
 
 #, fuzzy
 msgid "sledgehammer"
-msgstr "Młot kowalski"
+msgstr "MÅ‚ot kowalski"
 
 #, fuzzy
 msgid "sledgehammer_description"
-msgstr "Rozbijaj szare głazy."
+msgstr "Rozbijaj szare gÅ‚azy."
 
 #, fuzzy
 msgid "lucky_bamboo_description"
 msgstr ""
-"Z praktycznego punktu widzenia, to wcale nie bambus. Nie jest też "
-"szczególnie szczęśliwy. Ale to ładna roślina domowa."
+"Z praktycznego punktu widzenia, to wcale nie bambus. Nie jest teÅ¼ "
+"szczegÃ³lnie szczÄ™Å›liwy. Ale to Å‚adna roÅ›lina domowa."
 
 #, fuzzy
 msgid "flintstone_description"
 msgstr ""
-"Łuszczący się kamień używany do wyrobu narzędzi i rozpalania ognia. Nie w "
+"ÅuszczÄ…cy siÄ™ kamieÅ„ uÅ¼ywany do wyrobu narzÄ™dzi i rozpalania ognia. Nie w "
 "tym samym czasie."
 
 #, fuzzy
 msgid "peace_lily_description"
-msgstr "Wytrzymała roślina domowa dla kogoś wyjątkowego."
+msgstr "WytrzymaÅ‚a roÅ›lina domowa dla kogoÅ› wyjÄ…tkowego."
 
 #, fuzzy
 msgid "sea_girdle_description"
-msgstr "Sznur bombek, miękkich i śliskich jak algi."
+msgstr "Sznur bombek, miÄ™kkich i Å›liskich jak algi."
 
 #, fuzzy
 msgid "stovepipe_description"
 msgstr ""
-"Długa żelazna rura. Obchodzenie się z nią pozostawia ręce brudne i "
+"DÅ‚uga Å¼elazna rura. Obchodzenie siÄ™ z niÄ… pozostawia rÄ™ce brudne i "
 "popielate."
 
 #, fuzzy
 msgid "pyramidion_description"
-msgstr "Złoty trójkąt, który brzęczy niebiańską mocą."
+msgstr "ZÅ‚oty trÃ³jkÄ…t, ktÃ³ry brzÄ™czy niebiaÅ„skÄ… mocÄ…."
 
 #, fuzzy
 msgid "sweet_sand_description"
 msgstr ""
-"W niektórych częściach świata ludzie myją się tym pachnącym, błotnistym "
+"W niektÃ³rych czÄ™Å›ciach Å›wiata ludzie myjÄ… siÄ™ tym pachnÄ…cym, bÅ‚otnistym "
 "piaskiem."
 
 #, fuzzy
 msgid "petrified_dung_description"
-msgstr "Wygląda jak, no cóż, kupa... ale jest twarda jak kamień."
+msgstr "WyglÄ…da jak, no cÃ³Å¼, kupa... ale jest twarda jak kamieÅ„."
 
 #, fuzzy
 msgid "fishing_rod_description"
-msgstr "Złów rybę."
+msgstr "ZÅ‚Ã³w rybÄ™."
 
 #, fuzzy
 msgid "shammer_fossil_description"
-msgstr "Przypomina czaszkę starożytnego psa, ale jest twarda jak kamień."
+msgstr "Przypomina czaszkÄ™ staroÅ¼ytnego psa, ale jest twarda jak kamieÅ„."
 
 #, fuzzy
 msgid "rhincus_fossil_description"
-msgstr "Przypomina czaszkę ząbkowanego ptaka, ale jest twarda jak kamień."
+msgstr "Przypomina czaszkÄ™ zÄ…bkowanego ptaka, ale jest twarda jak kamieÅ„."
 
 # Boosters
 #, fuzzy
@@ -2254,7 +2254,7 @@ msgstr "Odznaka: Greenwash"
 
 #, fuzzy
 msgid "greenwash_badge_description"
-msgstr "Tuxemon zakupiony w Greenwash wymaga tej odznaki do przemiany."
+msgstr "Solamon zakupiony w Greenwash wymaga tej odznaki do przemiany."
 
 #, fuzzy
 msgid "nimrod_badge"
@@ -2262,7 +2262,7 @@ msgstr "Odznaka: Nimrod"
 
 #, fuzzy
 msgid "nimrod_badge_description"
-msgstr "Tuxemon kupiony od Nimroda wymaga tej odznaki do przemiany."
+msgstr "Solamon kupiony od Nimroda wymaga tej odznaki do przemiany."
 
 #, fuzzy
 msgid "omnichannel_badge"
@@ -2270,7 +2270,7 @@ msgstr "Odznaka: Omnichannel"
 
 #, fuzzy
 msgid "omnichannel_badge_description"
-msgstr "Tuxemon kupiony w Omnichannel wymaga tej odznaki do przemiany."
+msgstr "Solamon kupiony w Omnichannel wymaga tej odznaki do przemiany."
 
 #, fuzzy
 msgid "scoop_badge"
@@ -2278,7 +2278,7 @@ msgstr "Odznaka: Scoop"
 
 #, fuzzy
 msgid "scoop_badge_description"
-msgstr "Tuxemon kupiony od Scoopa wymaga tej odznaki do przemiany."
+msgstr "Solamon kupiony od Scoopa wymaga tej odznaki do przemiany."
 
 #, fuzzy
 msgid "shaft_badge"
@@ -2286,7 +2286,7 @@ msgstr "Odznaka: Shaft"
 
 #, fuzzy
 msgid "shaft_badge_description"
-msgstr "Tuxemon kupiony w Shaft wymaga tej odznaki do przemiany."
+msgstr "Solamon kupiony w Shaft wymaga tej odznaki do przemiany."
 
 #, fuzzy
 msgid "booster_tech"
@@ -2295,7 +2295,7 @@ msgstr "Wzmacniacz techniczny"
 #, fuzzy
 msgid "booster_tech_description"
 msgstr ""
-"Technologia open source, która pozwala przekształcić tuxemona w inną formę."
+"Technologia open source, ktÃ³ra pozwala przeksztaÅ‚ciÄ‡ solamona w innÄ… formÄ™."
 
 #, fuzzy
 msgid "earth_booster"
@@ -2303,7 +2303,7 @@ msgstr "Wzmacniacz ziemi"
 
 #, fuzzy
 msgid "earth_booster_description"
-msgstr "Pozwala przekształcać tuxemona typu ziemnego w inną formę."
+msgstr "Pozwala przeksztaÅ‚caÄ‡ solamona typu ziemnego w innÄ… formÄ™."
 
 #, fuzzy
 msgid "fire_booster"
@@ -2311,15 +2311,15 @@ msgstr "Wzmacniacz ognia"
 
 #, fuzzy
 msgid "fire_booster_description"
-msgstr "Pozwala przekształcać tuxemona typu ognistego w inną formę."
+msgstr "Pozwala przeksztaÅ‚caÄ‡ solamona typu ognistego w innÄ… formÄ™."
 
 #, fuzzy
 msgid "flintstone"
-msgstr "Krzemień"
+msgstr "KrzemieÅ„"
 
 #, fuzzy
 msgid "lucky_bamboo"
-msgstr "Szczęśliwy bambus"
+msgstr "SzczÄ™Å›liwy bambus"
 
 #, fuzzy
 msgid "metal_booster"
@@ -2327,7 +2327,7 @@ msgstr "Wzmacniacz metalu"
 
 #, fuzzy
 msgid "metal_booster_description"
-msgstr "Pozwala przekształcać tuxemona typu metalowego w inną formę."
+msgstr "Pozwala przeksztaÅ‚caÄ‡ solamona typu metalowego w innÄ… formÄ™."
 
 #, fuzzy
 msgid "miaow_milk"
@@ -2335,7 +2335,7 @@ msgstr "Mleko Miau"
 
 #, fuzzy
 msgid "miaow_milk_description"
-msgstr "Koty uwielbiają smak mleka miau™!"
+msgstr "Koty uwielbiajÄ… smak mleka miauâ„¢!"
 
 #, fuzzy
 msgid "peace_lily"
@@ -2343,7 +2343,7 @@ msgstr "Lilia pokoju"
 
 #, fuzzy
 msgid "petrified_dung"
-msgstr "Skamieniałe łajno"
+msgstr "SkamieniaÅ‚e Å‚ajno"
 
 #, fuzzy
 msgid "pyramidion"
@@ -2359,23 +2359,23 @@ msgstr "fajka"
 
 #, fuzzy
 msgid "sweet_sand"
-msgstr "Słodki piasek"
+msgstr "SÅ‚odki piasek"
 
 #, fuzzy
 msgid "tectonic_drill"
-msgstr "Wiertło tektoniczne"
+msgstr "WiertÅ‚o tektoniczne"
 
 #, fuzzy
 msgid "tectonic_drill_description"
-msgstr "Duża maszyna typu \"click-clack\" używana do wiercenia w ziemi."
+msgstr "DuÅ¼a maszyna typu \"click-clack\" uÅ¼ywana do wiercenia w ziemi."
 
 #, fuzzy
 msgid "thunderstone"
-msgstr "Kamień Gromu"
+msgstr "KamieÅ„ Gromu"
 
 #, fuzzy
 msgid "thunderstone_description"
-msgstr "Stary kamienny relikt, teraz noszony na szczęście."
+msgstr "Stary kamienny relikt, teraz noszony na szczÄ™Å›cie."
 
 #, fuzzy
 msgid "water_booster"
@@ -2383,7 +2383,7 @@ msgstr "Wzmacniacz wody"
 
 #, fuzzy
 msgid "water_booster_description"
-msgstr "Pozwala przekształcać tuxemona typu wodnego w inną formę."
+msgstr "Pozwala przeksztaÅ‚caÄ‡ solamona typu wodnego w innÄ… formÄ™."
 
 #, fuzzy
 msgid "wood_booster"
@@ -2391,7 +2391,7 @@ msgstr "Wzmacniacz drewna"
 
 #, fuzzy
 msgid "wood_booster_description"
-msgstr "Pozwala na przekształcanie tuxemona typu drewnianego w inną formę."
+msgstr "Pozwala na przeksztaÅ‚canie solamona typu drewnianego w innÄ… formÄ™."
 
 #, fuzzy
 msgid "dungeon"
@@ -2407,19 +2407,19 @@ msgstr "sklep"
 
 #, fuzzy
 msgid "inside"
-msgstr "wewnątrz"
+msgstr "wewnÄ…trz"
 
 #, fuzzy
 msgid "outside"
-msgstr "na zewnątrz"
+msgstr "na zewnÄ…trz"
 
 #, fuzzy
 msgid "item_used_wrong_location_inside"
-msgstr "{name} może być używany tylko {here}!"
+msgstr "{name} moÅ¼e byÄ‡ uÅ¼ywany tylko {here}!"
 
 #, fuzzy
 msgid "item_used_wrong_location_type"
-msgstr "{name} może być użyta tylko w {here}!"
+msgstr "{name} moÅ¼e byÄ‡ uÅ¼yta tylko w {here}!"
 
 # Map Types:
 #, fuzzy
@@ -2438,23 +2438,23 @@ msgid "oedipus"
 msgstr "Edyp"
 
 msgid "nudiflot_male_description"
-msgstr "Zjada i magazynuje truciznę stworzeń morskich, którymi się żywi."
+msgstr "Zjada i magazynuje truciznÄ™ stworzeÅ„ morskich, ktÃ³rymi siÄ™ Å¼ywi."
 
 msgid "web"
-msgstr "Sieć"
+msgstr "SieÄ‡"
 
 msgid "nudiflot_female_description"
-msgstr "Zjada i magazynuje truciznę stworzeń morskich, którymi się żywi."
+msgstr "Zjada i magazynuje truciznÄ™ stworzeÅ„ morskich, ktÃ³rymi siÄ™ Å¼ywi."
 
 msgid "spyder_mansion_drinkingbuddya2"
-msgstr "Tu jesteś stary przyjacielu! Zabierzmy cię z powrotem do rzeki."
+msgstr "Tu jesteÅ› stary przyjacielu! Zabierzmy ciÄ™ z powrotem do rzeki."
 
 msgid "lizard"
 msgstr "Jaszczurka"
 
 # Default mod names on selection menu
 msgid "xero_campaign"
-msgstr "Tuxemon: Xero"
+msgstr "Solamon: Xero"
 
 msgid "dragon"
 msgstr "Smok"
@@ -2463,13 +2463,13 @@ msgid "no"
 msgstr "Nie"
 
 msgid "spyder_dragonscave_cailin2"
-msgstr "Dziękuję."
+msgstr "DziÄ™kujÄ™."
 
 msgid "spyder_dragonscave_lucille2"
-msgstr "Pożałujesz tego."
+msgstr "PoÅ¼aÅ‚ujesz tego."
 
 msgid "yestalk"
-msgstr "Naprawdę? Dzięki..."
+msgstr "NaprawdÄ™? DziÄ™ki..."
 
 msgid "earth"
 msgstr "Ziemia"
@@ -2478,44 +2478,44 @@ msgid "water"
 msgstr "Woda"
 
 msgid "spyder_tunnelb_greta2"
-msgstr "O nie, potrzebuję więcej!"
+msgstr "O nie, potrzebujÄ™ wiÄ™cej!"
 
 msgid "spyder_tunnelb_tommy1"
-msgstr "Widziałeś moją kanapkę?"
+msgstr "WidziaÅ‚eÅ› mojÄ… kanapkÄ™?"
 
 msgid "spyder_papertown_mom4"
-msgstr "Witamy ponownie! Spójrz na siebie, rośniesz tak szybko."
+msgstr "Witamy ponownie! SpÃ³jrz na siebie, roÅ›niesz tak szybko."
 
 msgid "kennel_label"
 msgstr "{box} ({qty})"
 
 msgid "fire"
-msgstr "Ogień"
+msgstr "OgieÅ„"
 
 msgid "wood"
 msgstr "Drewno"
 
 msgid "devil"
-msgstr "Diabeł"
+msgstr "DiabeÅ‚"
 
 msgid "spyder_nimrod_mace1"
-msgstr "Chcę odejść i zostać muzykiem."
+msgstr "ChcÄ™ odejÅ›Ä‡ i zostaÄ‡ muzykiem."
 
 msgid "nodrink"
-msgstr "Jestem pewny, że jesteś za młody, żeby pić..."
+msgstr "Jestem pewny, Å¼e jesteÅ› za mÅ‚ody, Å¼eby piÄ‡..."
 
 msgid "input_name"
-msgstr "Imię?"
+msgstr "ImiÄ™?"
 
 msgid "37707_sign_foreign"
-msgstr "Ten znak jest napisany w obcym języku, którego nie rozumiesz."
+msgstr "Ten znak jest napisany w obcym jÄ™zyku, ktÃ³rego nie rozumiesz."
 
 msgid "37707_house"
 msgstr ""
-"Dziwne: jest zamknięty. Wygląda na to, że nikt nie używa tego budynku."
+"Dziwne: jest zamkniÄ™ty. WyglÄ…da na to, Å¼e nikt nie uÅ¼ywa tego budynku."
 
 msgid "37707_mail"
-msgstr "Jest puste i pełne pajęczyn."
+msgstr "Jest puste i peÅ‚ne pajÄ™czyn."
 
 # Money notification
 msgid "player_wallet"

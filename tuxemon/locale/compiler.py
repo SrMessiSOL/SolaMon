@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import os
 from pathlib import Path
 
 from babel.messages.mofile import write_mo
@@ -39,9 +40,17 @@ class GettextCompiler:
         with po_path.open(encoding="UTF8") as po_file:
             catalog = read_po(po_file)
 
-        with mo_path.open("wb") as mo_file:
-            write_mo(mo_file, catalog)
+        temp_path = mo_path.with_name(f"{mo_path.name}.{os.getpid()}.tmp")
+        try:
+            with temp_path.open("wb") as mo_file:
+                write_mo(mo_file, catalog)
+            temp_path.replace(mo_path)
             logger.debug(f"writing {self.locale_dir} mo: {mo_path}")
+        finally:
+            try:
+                temp_path.unlink(missing_ok=True)
+            except PermissionError:
+                logger.debug("Temporary mo cache file is locked: %s", temp_path)
 
     def get_mo_path(self, locale: str, category: str, domain: str) -> Path:
         """

@@ -2,10 +2,10 @@
 slug: tuxemon
 
 # Short human-readable explanation of what the mod does
-description: A brief summary of the mod's purpose.
+description: Solamon on-chain monster RPG.
 
 # The human-readable name of your mod. This is often displayed to users in a mod list.
-name: Tuxemon
+name: Solamon
 
 # The version of your mod, used for compatibility checks and display purposes.
 version: 1.0.0
@@ -23,14 +23,14 @@ startup_rules:
 starting_players: ["npc_red"]
 
 # The map file (.tmx) where the player begins when starting this mod
-starting_map: "start_tuxemon.tmx"
+starting_map: "spyder_bedroom.tmx"
 
 # The player's initial position on the starting map (x, y coordinates)
-starting_position: [0, 0]
+starting_position: [3, 4]
 
 # The starting amount of money the player begins with.
 # Must be a list: [min, max]. If both values are the same, it behaves like a fixed value.
-starting_money: [500, 500]
+starting_money: [0, 0]
 
 # A list of possible player names to choose from.
 # If only one name is listed, it will be used directly.

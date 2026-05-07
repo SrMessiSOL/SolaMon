@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING
 
 from tuxemon.network.client import TuxemonClient
 from tuxemon.network.server import TuxemonServer
+from tuxemon.session import local_session
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +23,7 @@ class NetworkManager:
         self.client: TuxemonClient | None = None
         self._last_host_state = False
         self._last_client_state = False
+        self._auto_connect_started = False
 
     def initialize(self) -> None:
         if self.server or self.client:
@@ -31,9 +33,14 @@ class NetworkManager:
         self.client = TuxemonClient(self.parent)
 
     def update(self, dt: float) -> None:
+        self._maybe_auto_connect()
+
         if self.client and self.client.listening:
             self.client.update()
-            current_map = self.parent.get_map_name()
+            try:
+                current_map = self.parent.get_map_name()
+            except ValueError:
+                return
             self.parent.npc_manager.add_clients_to_map(
                 self.client.registry, current_map
             )
@@ -55,6 +62,24 @@ class NetworkManager:
                 f"Client state changed: {self._last_client_state} -> {new_client_state}"
             )
             self._last_client_state = new_client_state
+
+    def _maybe_auto_connect(self) -> None:
+        config = self.parent.config
+        if (
+            self._auto_connect_started
+            or not config.multiplayer_enabled
+            or self.is_connected()
+            or self.client is None
+            or not self.parent.chain_session.has_character
+            or not local_session.has_player()
+        ):
+            return
+
+        self.client.connect_to_host(
+            config.multiplayer_server_host,
+            config.multiplayer_server_port,
+        )
+        self._auto_connect_started = True
 
     def shutdown(self) -> None:
         """

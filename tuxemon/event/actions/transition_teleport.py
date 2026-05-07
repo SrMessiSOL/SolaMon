@@ -80,7 +80,35 @@ class TransitionTeleportAction(EventAction):
             _time,
             rgb,
             char,
-            lambda: session.client.teleporter.handle_next_teleport(char),
+            lambda: self._finish_teleport(session, char),
         )
 
         self.stop()
+
+    def _finish_teleport(self, session: Session, char) -> None:
+        session.client.teleporter.handle_next_teleport(char)
+        if not getattr(session.client, "_solamon_pending_faint_recovery", False):
+            setattr(session.client, "_solamon_faint_recovery_in_progress", False)
+            return
+
+        setattr(session.client, "_solamon_pending_faint_recovery", False)
+        setattr(session.client, "_solamon_defer_heal_autosave", True)
+        try:
+            action = session.client.event_engine
+            action.execute_action("set_monster_health")
+            action.execute_action("set_monster_status")
+        finally:
+            setattr(session.client, "_solamon_defer_heal_autosave", False)
+
+        session.world.task(
+            lambda: self._save_faint_recovery(session),
+            interval=1.0,
+        )
+
+    def _save_faint_recovery(self, session: Session) -> None:
+        from tuxemon.chain.autosave import auto_save_chain_state
+
+        try:
+            auto_save_chain_state(session, "battle loss recovery")
+        finally:
+            setattr(session.client, "_solamon_faint_recovery_in_progress", False)

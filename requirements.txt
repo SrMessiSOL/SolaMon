@@ -1,5 +1,6 @@
 babel
 cbor
+cryptography
 websockets
 pillow
 packaging

@@ -12,6 +12,12 @@ from tuxemon.locale.locale import T
 from tuxemon.menu.interface import MenuItem
 from tuxemon.menu.menu import PopUpMenu
 from tuxemon.platform.const import buttons
+from tuxemon.chain.loading import show_blockchain_loading
+from tuxemon.chain.slots import (
+    chain_slot_is_loadable,
+    load_onchain_save_data,
+    read_onchain_player_state,
+)
 from tuxemon.save_system.save_manager import SaveManager
 from tuxemon.tools import open_choice_dialog
 from tuxemon.ui.menu_options import MenuOptions, create_choice_options
@@ -30,6 +36,7 @@ PAGE_LABEL_WIDTH = 80
 PAGE_LABEL_HEIGHT = 30
 PAGE_LABEL_MARGIN_RIGHT = 120
 PAGE_LABEL_MARGIN_BOTTOM = 60
+_CHAIN_SAVE_UNSET = object()
 
 
 class PaginatedMenuState(PopUpMenu[None]):
@@ -44,6 +51,8 @@ class PaginatedMenuState(PopUpMenu[None]):
     name: ClassVar[str] = "PaginatedMenuState"
 
     def __init__(self, client: BaseClient, **kwargs: Any):
+        self._chain_loadable_cache: dict[int, bool] = {}
+        self._chain_save_cache: SaveData | None | object = _CHAIN_SAVE_UNSET
         super().__init__(client=client, **kwargs)
 
     def _snap_selection_to_page(self) -> None:
@@ -70,6 +79,33 @@ class PaginatedMenuState(PopUpMenu[None]):
             return None
 
         return super().process_event(event)
+
+    def _slot_is_chain_loadable(self, slot: int) -> bool:
+        if not self.client.config.chain_enabled:
+            return SaveManager.exists(slot)
+        if slot in self._chain_loadable_cache:
+            return self._chain_loadable_cache[slot]
+        show_blockchain_loading(self.client)
+        loadable = chain_slot_is_loadable(
+            slot,
+            self.client.chain_session.character,
+        )
+        self._chain_loadable_cache[slot] = loadable
+        return loadable
+
+    def _load_chain_save_data(self) -> SaveData | None:
+        if self.client.chain_session.character is None:
+            return None
+        if self._chain_save_cache is _CHAIN_SAVE_UNSET:
+            show_blockchain_loading(self.client)
+            self._chain_save_cache = load_onchain_save_data(
+                self.client.chain_session.character
+            )
+        return (
+            self._chain_save_cache
+            if self._chain_save_cache is not _CHAIN_SAVE_UNSET
+            else None
+        )
 
     def draw(self, surface: Surface) -> None:
         """Draw popup + page indicator."""
@@ -107,8 +143,10 @@ class SaveMenuState(PaginatedMenuState):
         selected_index: int | None = None,
         **kwargs: Any,
     ):
-        self.max_slots = client.config.save_slots
-        self.save_slots_per_page = client.config.save_slots_per_page
+        self.max_slots = 1 if client.config.chain_enabled else client.config.save_slots
+        self.save_slots_per_page = (
+            1 if client.config.chain_enabled else client.config.save_slots_per_page
+        )
 
         super().__init__(
             client=client, selected_index=selected_index or 0, **kwargs
@@ -131,12 +169,16 @@ class SaveMenuState(PaginatedMenuState):
             self.add(item)
 
     def create_menu_item(self, slot_rect: Rect, slot: int) -> MenuItem[None]:
-        if SaveManager.exists(slot):
-            image = SaveManager.render_slot(
-                slot_rect,
-                slot,
-                scaling=self.client.context.scaling,
-                font=self.font,
+        if self._slot_is_chain_loadable(slot):
+            image = (
+                self._render_chain_slot(slot_rect, slot)
+                if self.client.config.chain_enabled
+                else SaveManager.render_slot(
+                    slot_rect,
+                    slot,
+                    scaling=self.client.context.scaling,
+                    font=self.font,
+                )
             )
             return MenuItem(image, T.translate("menu_save"), None, None, True)
         else:
@@ -181,12 +223,14 @@ class SaveMenuState(PaginatedMenuState):
     def save(self) -> None:
         self.client.event_engine.execute_action(
             "save_game",
-            [self.selected_index],
+            [0 if self.client.config.chain_enabled else self.selected_index],
             True,
         )
 
     def on_menu_selection(self, menuitem: MenuItem[None]) -> None:
-        slot = SaveManager.slot_from_ui(self.selected_index)
+        slot = 1 if self.client.config.chain_enabled else SaveManager.slot_from_ui(
+            self.selected_index
+        )
 
         def positive() -> None:
             self.client.remove_state_by_name("ChoiceState")
@@ -214,11 +258,56 @@ class SaveMenuState(PaginatedMenuState):
             menu = MenuOptions(create_choice_options(actions))
             open_choice_dialog(self.client, menu, escape_key_exits=True)
 
-        if SaveManager.exists(slot):
+        if SaveManager.exists(slot) and not self.client.config.chain_enabled:
             ask()
         else:
             self.client.remove_state_by_name("SaveMenuState")
             self.save()
+
+    def _render_chain_slot(self, slot_rect: Rect, slot: int) -> Surface:
+        image = Surface(slot_rect.size)
+        image.fill((16, 21, 30))
+        draw_text(
+            image,
+            "On-chain slot",
+            (12, 8, slot_rect.width - 24, 28),
+            scaling=self.client.context.scaling,
+            font=self.font,
+        )
+        save_data = self._load_chain_save_data()
+        if save_data and save_data.npc_state:
+            draw_text(
+                image,
+                save_data.npc_state.player_name or f"{T.translate('slot')} {slot}",
+                (12, 42, slot_rect.width - 24, 28),
+                scaling=self.client.context.scaling,
+                font=self.font,
+            )
+            draw_text(
+                image,
+                save_data.npc_state.current_map or "",
+                (12, 76, slot_rect.width - 24, 28),
+                scaling=self.client.context.scaling,
+                font=self.font,
+            )
+        elif self.client.chain_session.character:
+            onchain = read_onchain_player_state(self.client.chain_session.character)
+            if onchain:
+                draw_text(
+                    image,
+                    self.client.chain_session.character.name or f"{T.translate('slot')} {slot}",
+                    (12, 42, slot_rect.width - 24, 28),
+                    scaling=self.client.context.scaling,
+                    font=self.font,
+                )
+                draw_text(
+                    image,
+                    str(onchain.get("mapId") or "On-chain save"),
+                    (12, 76, slot_rect.width - 24, 28),
+                    scaling=self.client.context.scaling,
+                    font=self.font,
+                )
+        return image
 
 
 class LoadMenuState(PaginatedMenuState):
@@ -232,8 +321,10 @@ class LoadMenuState(PaginatedMenuState):
         **kwargs: Any,
     ):
         selected_index = selected_index or 0
-        self.max_slots = client.config.save_slots
-        self.save_slots_per_page = client.config.save_slots_per_page
+        self.max_slots = 1 if client.config.chain_enabled else client.config.save_slots
+        self.save_slots_per_page = (
+            1 if client.config.chain_enabled else client.config.save_slots_per_page
+        )
 
         super().__init__(
             client=client, selected_index=selected_index, **kwargs
@@ -256,12 +347,16 @@ class LoadMenuState(PaginatedMenuState):
             self.add(item)
 
     def create_menu_item(self, slot_rect: Rect, slot: int) -> MenuItem[None]:
-        if SaveManager.exists(slot):
-            image = SaveManager.render_slot(
-                slot_rect,
-                slot,
-                scaling=self.client.context.scaling,
-                font=self.font,
+        if self._slot_is_chain_loadable(slot):
+            image = (
+                self._render_chain_slot(slot_rect, slot)
+                if self.client.config.chain_enabled
+                else SaveManager.render_slot(
+                    slot_rect,
+                    slot,
+                    scaling=self.client.context.scaling,
+                    font=self.font,
+                )
             )
             return MenuItem(image, T.translate("menu_load"), None, None, True)
         else:
@@ -272,7 +367,7 @@ class LoadMenuState(PaginatedMenuState):
                 font=self.font,
             )
             return MenuItem(
-                image, T.translate("empty_slot"), None, None, False
+                image, T.translate("empty_slot"), None, None, True
             )
 
     def _draw_slot_text(
@@ -306,13 +401,62 @@ class LoadMenuState(PaginatedMenuState):
             )
 
     def on_menu_selection(self, menuitem: MenuItem[None]) -> None:
-        slot = SaveManager.slot_from_ui(
-            self.selected_index, includes_autosave=False
+        slot = (
+            1
+            if self.client.config.chain_enabled
+            else SaveManager.slot_from_ui(
+                self.selected_index, includes_autosave=False
+            )
         )
 
-        if SaveManager.exists(slot):
+        if self._slot_is_chain_loadable(slot):
             self.client.event_engine.execute_action(
                 "load_game",
                 [slot, True],
                 True,
             )
+
+    def _render_chain_slot(self, slot_rect: Rect, slot: int) -> Surface:
+        image = Surface(slot_rect.size)
+        image.fill((16, 21, 30))
+        draw_text(
+            image,
+            "On-chain slot",
+            (12, 8, slot_rect.width - 24, 28),
+            scaling=self.client.context.scaling,
+            font=self.font,
+        )
+        save_data = self._load_chain_save_data()
+        if save_data and save_data.npc_state:
+            draw_text(
+                image,
+                save_data.npc_state.player_name or f"{T.translate('slot')} {slot}",
+                (12, 42, slot_rect.width - 24, 28),
+                scaling=self.client.context.scaling,
+                font=self.font,
+            )
+            draw_text(
+                image,
+                save_data.npc_state.current_map or "",
+                (12, 76, slot_rect.width - 24, 28),
+                scaling=self.client.context.scaling,
+                font=self.font,
+            )
+        elif self.client.chain_session.character:
+            onchain = read_onchain_player_state(self.client.chain_session.character)
+            if onchain:
+                draw_text(
+                    image,
+                    self.client.chain_session.character.name or f"{T.translate('slot')} {slot}",
+                    (12, 42, slot_rect.width - 24, 28),
+                    scaling=self.client.context.scaling,
+                    font=self.font,
+                )
+                draw_text(
+                    image,
+                    str(onchain.get("mapId") or "On-chain save"),
+                    (12, 76, slot_rect.width - 24, 28),
+                    scaling=self.client.context.scaling,
+                    font=self.font,
+                )
+        return image

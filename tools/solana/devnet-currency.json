@@ -1,0 +1,10 @@
+{
+  "rpcUrl": "https://api.devnet.solana.com",
+  "symbol": "SLMN",
+  "decimals": 6,
+  "mint": "4D1AJNsxG6DjDWB1tpexmokzCxTnD7kwdPVqg3haafAa",
+  "treasuryOwner": "9S8GZ6gVYiBARWLCeWdoPqMdHGVHg9sMR3hYXzrTZtnY",
+  "treasuryTokenAccount": "Aqx7tjLDnGrPS47LrdBDzk6FiPKHroHThTSNq4huRfjF",
+  "testPlayerWallet": "5ALFmgHH5qZeQREc5QAqpzoBWVskNn5kuLGQVkk2mgJg",
+  "testPlayerTokenAccount": "AstE1nJrEqPsq8qxekJPqd264fUqicS9HdaqH8tjBURt"
+}

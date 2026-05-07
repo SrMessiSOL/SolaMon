@@ -80,6 +80,7 @@ class OpenShopAction(EventAction):
             )
 
         economy = character.economy
+        session.client.event_engine.suspend()
 
         def push_state(state_name: str, buyer: NPC, seller: NPC) -> None:
             session.client.push_state(

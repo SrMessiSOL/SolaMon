@@ -325,10 +325,14 @@ class Entity:
 
     def add_collision(self, tile_pos: tuple[int, int]) -> None:
         """Set the entity's wandering position in the collision zone."""
+        if self.ignore_collisions:
+            return
         self.client.collision_manager.add_collision(self, tile_pos)
 
     def remove_collision(self) -> None:
         """Remove the entity's wandering position from the collision zone."""
+        if self.ignore_collisions:
+            return
         self.client.collision_manager.remove_collision(self.tile_pos)
 
     def begin_tile_exit(self) -> None:

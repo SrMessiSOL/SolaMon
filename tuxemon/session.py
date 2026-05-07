@@ -47,6 +47,7 @@ class AbstractSession(ABC, Generic[ClientType]):
         self._total_playtime: float = 0.0
         self.current_condition_box: BoundingBox | None = None
         self._current_slot: int | None = None
+        self._chain_autosave_suppressed_until: float = 0.0
 
         self._client: ClientType | None = None
         self._world: WorldState | None = None
@@ -108,6 +109,18 @@ class AbstractSession(ABC, Generic[ClientType]):
         self._start_timestamp = time.time()
         self._total_playtime = 0.0
 
+    def suppress_chain_autosave(self, seconds: float = 3.0) -> None:
+        """Temporarily prevent load-time event replay from writing chain state."""
+        until = time.time() + seconds
+        self._chain_autosave_suppressed_until = max(
+            self._chain_autosave_suppressed_until,
+            until,
+        )
+
+    @property
+    def chain_autosave_suppressed(self) -> bool:
+        return time.time() < self._chain_autosave_suppressed_until
+
     def get_state(self) -> SessionSave:
         """Returns session-level state to be saved and updates internal playtime."""
         current_duration = time.time() - self._start_timestamp
@@ -156,6 +169,9 @@ class Session(AbstractSession["BaseClient"]):
         """The slot index most recently saved or loaded."""
         return self._current_slot
 
+    def set_current_slot(self, slot: int) -> None:
+        self._current_slot = slot
+
     def load_state(self, save_data: SaveData) -> None:
         """
         Loads the player, world, and other session-level states from a saved game model.
@@ -174,7 +190,11 @@ class Session(AbstractSession["BaseClient"]):
         """
         save_data = save.get_save_data(self)
         save_path = save.get_save_path(index)
-        save.save(save_data, save_path)
+        save.save(
+            save_data,
+            save_path,
+            chain_session=self.client.chain_session,
+        )
         self._current_slot = slot
         return save_data
 

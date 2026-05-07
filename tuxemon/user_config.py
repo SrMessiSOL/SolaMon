@@ -27,6 +27,9 @@ def setup_user_environment() -> TuxemonConfig:
         raise
 
     loaded_config = TuxemonConfig(paths.USER_CONFIG_PATH)
+    loaded_config.config_model.game.recompile_translations = False
+    loaded_config.config_model.game.multiplayer_enabled = True
+    loaded_config.config_model.game.multiplayer_auto_connect = True
 
     try:
         dump_yaml_path(

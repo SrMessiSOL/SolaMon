@@ -1,12 +1,12 @@
-#
+﻿#
 msgid ""
 msgstr ""
-"Project-Id-Version: Tuxemon\n"
+"Project-Id-Version: Solamon\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-14 05:41+0200\n"
 "PO-Revision-Date: 2023-02-03 04:41+0000\n"
 "Last-Translator: Betsy <betsymaxx@gmailvn.net>\n"
-"Language-Team: Esperanto <https://hosted.weblate.org/projects/tuxemon/tuxemon/eo/>\n"
+"Language-Team: Esperanto <https://hosted.weblate.org/projects/solamon/solamon/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,49 +20,49 @@ msgid "apple"
 msgstr "Pomo"
 
 msgid "apple_description"
-msgstr "Ĝi sanigas monstron de 10 SP."
+msgstr "Äœi sanigas monstron de 10 SP."
 
 # Berry
 msgid "berry"
 msgstr "Bero"
 
 msgid "berry_description"
-msgstr "Ĝi sanigas monstron de 10 SP."
+msgstr "Äœi sanigas monstron de 10 SP."
 
 # Cherry
 msgid "cherry"
-msgstr "Ĉerizo"
+msgstr "Äˆerizo"
 
 msgid "cherry_description"
-msgstr "Ĝi sanigas monstron de 10 SP."
+msgstr "Äœi sanigas monstron de 10 SP."
 
 # Orange
 msgid "orange"
-msgstr "Oranĝo"
+msgstr "OranÄo"
 
 msgid "orange_description"
-msgstr "Ĝi sanigas monstron de 20 SP."
+msgstr "Äœi sanigas monstron de 20 SP."
 
 # Potion
 msgid "potion"
 msgstr "Pocio"
 
 msgid "potion_description"
-msgstr "Ĝi sanigas monstron de 50 SP."
+msgstr "Äœi sanigas monstron de 50 SP."
 
 # Super Potion
 msgid "super_potion"
 msgstr "Ega pocio"
 
 msgid "super_potion_description"
-msgstr "Ĝi sanigas monstron de 100 SP."
+msgstr "Äœi sanigas monstron de 100 SP."
 
 # Imperial Potion
 msgid "imperial_potion"
 msgstr "Imperia pocio"
 
 msgid "imperial_potion_description"
-msgstr "Ĝi sanigas monstron de 350 SP."
+msgstr "Äœi sanigas monstron de 350 SP."
 
 # Capture Device
 msgid "capture_device"
@@ -83,7 +83,7 @@ msgid "combat_player_run"
 msgstr "Vi forkuris!"
 
 msgid "combat_used_x_on_y"
-msgstr "{name} estis uzata de {user} kontraŭ {target}!"
+msgstr "{name} estis uzata de {user} kontraÅ­ {target}!"
 
 msgid "combat_swap"
 msgstr "{user} sendas {target}!"
@@ -96,10 +96,10 @@ msgid "combat_opponent_call_tuxemon"
 msgstr "{name} estis sendata de {user}!"
 
 msgid "combat_state_poison_damage"
-msgstr "{name} veneniĝis!"
+msgstr "{name} veneniÄis!"
 
 msgid "combat_status_damage"
-msgstr "{name} damaĝiĝis pro {status}!"
+msgstr "{name} damaÄiÄis pro {status}!"
 
 msgid "combat_victory"
 msgstr "Vi venkis!"
@@ -108,22 +108,22 @@ msgid "combat_defeat"
 msgstr "Vi malvenkis!"
 
 msgid "combat_draw"
-msgstr "Ĉiuj svenis!"
+msgstr "Äˆiuj svenis!"
 
 msgid "combat_capturing_success"
 msgstr "{name} estas kaptita!"
 
 msgid "combat_capturing_fail"
-msgstr "{name} liberiĝis!"
+msgstr "{name} liberiÄis!"
 
 msgid "combat_replacement"
-msgstr "Elektu anstataŭon!"
+msgstr "Elektu anstataÅ­on!"
 
 msgid "combat_replacement_is_fainted"
 msgstr "La monstro svenis!"
 
 msgid "combat_wild_appeared"
-msgstr "Sovaĝa {name} aperis!"
+msgstr "SovaÄa {name} aperis!"
 
 msgid "combat_monster_choice"
 msgstr "Kion {name} faru?"
@@ -136,13 +136,13 @@ msgstr "{name} jam batalas."
 
 # Generic notifications
 msgid "not_implemented"
-msgstr "Ĉi tiu trajto ne estas jam realigita."
+msgstr "Äˆi tiu trajto ne estas jam realigita."
 
 msgid "generic_success"
-msgstr "Ĝi funkciis!"
+msgstr "Äœi funkciis!"
 
 msgid "generic_failure"
-msgstr "Ĝi fiaskis!"
+msgstr "Äœi fiaskis!"
 
 msgid "empty_slot"
 msgstr "Malplena ujo"
@@ -158,19 +158,19 @@ msgstr "Nuligi"
 
 # TODO same as generic_success and generic_failure - refactor!
 msgid "item_success"
-msgstr "Ĝi funkciis!"
+msgstr "Äœi funkciis!"
 
 msgid "item_failure"
-msgstr "Ĝi fiaskis!"
+msgstr "Äœi fiaskis!"
 
 msgid "attempting_capture"
-msgstr "Kaptado…"
+msgstr "Kaptadoâ€¦"
 
 msgid "gotcha"
 msgstr "Bone!"
 
 msgid "item_cannot_use_here"
-msgstr "{name} ne uzeblas ĉi tie!"
+msgstr "{name} ne uzeblas Ä‰i tie!"
 
 msgid "receive_happiness"
 msgstr ""
@@ -207,7 +207,7 @@ msgid "pound"
 msgstr "Frapo"
 
 msgid "swap"
-msgstr "Ŝanĝo"
+msgstr "ÅœanÄo"
 
 msgid "water_shot"
 msgstr "Akva pafo"
@@ -221,7 +221,7 @@ msgstr "Run"
 # MENU TRANSLATIONS ##
 msgid "menu_alphabet"
 msgstr ""
-"ABCĈDEFGĜHĤIJĴKLMNOPRSŜTUŬVZabcĉdefgĝhĥijĵklmnoprsŝtuŭvz1234567890.-!\\0"
+"ABCÄˆDEFGÄœHÄ¤IJÄ´KLMNOPRSÅœTUÅ¬VZabcÄ‰defgÄhÄ¥ijÄµklmnoprsÅtuÅ­vz1234567890.-!\\0"
 
 # Monster Menu notifications
 msgid "monster_menu_info"
@@ -250,7 +250,7 @@ msgid "menu_journal"
 msgstr "Taglibro"
 
 msgid "menu_load"
-msgstr "Ŝargi"
+msgstr "Åœargi"
 
 msgid "menu_monster"
 msgstr "Tuksemono"
@@ -291,10 +291,10 @@ msgid "multiplayer_host_game"
 msgstr "Gastigi ludon"
 
 msgid "multiplayer_scan_games"
-msgstr "Serĉi por ludoj"
+msgstr "SerÄ‰i por ludoj"
 
 msgid "multiplayer_join_game"
-msgstr "Aliĝi la ludon"
+msgstr "AliÄi la ludon"
 
 msgid "multiplayer_hosting_ready"
 msgstr "Preta por gastigi!"
@@ -306,7 +306,7 @@ msgid "multiplayer_no_servers"
 msgstr "Neniu servilo trovata..."
 
 msgid "multiplayer_join_prompt"
-msgstr "Ĉu gastignomo aŭ IP-adreso?"
+msgstr "Äˆu gastignomo aÅ­ IP-adreso?"
 
 # MONSTER TRANSLATIONS ##
 # Monster details
@@ -357,20 +357,20 @@ msgstr "Axolightl"
 
 msgid "axolightl_description"
 msgstr ""
-"Ĝi lumigas la profundajn akvojn per sia vosto, montrante sekuran ŝirmon por "
-"fiŝoj."
+"Äœi lumigas la profundajn akvojn per sia vosto, montrante sekuran Åirmon por "
+"fiÅoj."
 
 msgid "bamboon"
 msgstr "Bambiano"
 
 msgid "bamboon_description"
-msgstr "Ĝi luktas kun sia bambua bastono, kiun ĝi uzas ankaŭ por ekvilibriĝi."
+msgstr "Äœi luktas kun sia bambua bastono, kiun Äi uzas ankaÅ­ por ekvilibriÄi."
 
 msgid "bigfin"
 msgstr "Bigfin"
 
 msgid "bigfin_description"
-msgstr "Tuta ekosystem ekzistas sur sia dorso, do ĝi provas ne iri subakve."
+msgstr "Tuta ekosystem ekzistas sur sia dorso, do Äi provas ne iri subakve."
 
 msgid "bolt"
 msgstr "Bolt"
@@ -439,7 +439,7 @@ msgstr "Dandleono"
 
 msgid "dandylion_description"
 msgstr ""
-"Ĝi naskigas unu idaron dumvive. Do ĝi vagabondas per la mondo, klopodante en"
+"Äœi naskigas unu idaron dumvive. Do Äi vagabondas per la mondo, klopodante en"
 " trovi ilin."
 
 msgid "djinnbo"
@@ -447,14 +447,14 @@ msgstr "Djinnbo"
 
 msgid "djinnbo_description"
 msgstr ""
-"Oni malkorekte kredas, ke ĝi estas homo, kiu mortis en fajro. Aktuale, siaj "
+"Oni malkorekte kredas, ke Äi estas homo, kiu mortis en fajro. Aktuale, siaj "
 "gepatroj mortis."
 
 msgid "dollfin"
 msgstr "Dollfin"
 
 msgid "dollfin_description"
-msgstr "Ĝi sekvas ŝipon de loko al loko, eksplorante la mondon."
+msgstr "Äœi sekvas Åipon de loko al loko, eksplorante la mondon."
 
 msgid "dracune"
 msgstr "Dracune"
@@ -484,7 +484,7 @@ msgid "eyenemy"
 msgstr "Okumiko"
 
 msgid "eyenemy_description"
-msgstr "Ĝi sin nutras per belaj videoj kaj aliaj spektindaj atrakcioj."
+msgstr "Äœi sin nutras per belaj videoj kaj aliaj spektindaj atrakcioj."
 
 msgid "falcono"
 msgstr "Falcono"
@@ -541,7 +541,7 @@ msgstr "Lambert"
 
 msgid "lambert_description"
 msgstr ""
-"Ĝi sidiĝis sur siaj nuksoj de siaj gepatroj, kiuj sendis ĝin en la mondon."
+"Äœi sidiÄis sur siaj nuksoj de siaj gepatroj, kiuj sendis Äin en la mondon."
 
 msgid "legko"
 msgstr "Legko"
@@ -590,7 +590,7 @@ msgstr "Nudiflot"
 
 msgid "nudiflot_description"
 msgstr ""
-"Ĝi manĝas kaj konservas la venenon de la marbestoj, per kiu ĝi sin nutras."
+"Äœi manÄas kaj konservas la venenon de la marbestoj, per kiu Äi sin nutras."
 
 msgid "nut"
 msgstr "Juglando"
@@ -687,14 +687,14 @@ msgstr "Sumobug"
 
 msgid "sumobug_description"
 msgstr ""
-"Ĝi usas sian pezon por stumbligi plurajn malamikoj. Ĝi estas densa kiel "
+"Äœi usas sian pezon por stumbligi plurajn malamikoj. Äœi estas densa kiel "
 "stelo."
 
 msgid "tigrock"
 msgstr "Tigroko"
 
 msgid "tigrock_description"
-msgstr "Oni diras, ke ĝi inventis sin mem ĉar evoluo ne konsideris ĝin."
+msgstr "Oni diras, ke Äi inventis sin mem Ä‰ar evoluo ne konsideris Äin."
 
 msgid "tumblecoon"
 msgstr "Tumblecoon"
@@ -793,10 +793,10 @@ msgid "lions_tooth"
 msgstr "Dento de Leono"
 
 msgid "vengeance"
-msgstr "Venĝo"
+msgstr "VenÄo"
 
 msgid "joyful"
-msgstr "Ĝojeco"
+msgstr "Äœojeco"
 
 msgid "cloaked"
 msgstr ""
@@ -844,7 +844,7 @@ msgid "proboscis"
 msgstr "Proboscis"
 
 msgid "flopped"
-msgstr "Ruiniĝita"
+msgstr "RuiniÄita"
 
 msgid "metal"
 msgstr "Metalo"
@@ -956,7 +956,7 @@ msgstr "Team Xero Grunt X"
 # DIALOG TRANSLATIONS ##
 # general dialogs
 msgid "healmytuxemon"
-msgstr "Do you want to heal your Tuxemon?"
+msgstr "Do you want to heal your Solamon?"
 
 msgid "haveagoodday"
 msgstr "Have a nice day!"
@@ -1003,10 +1003,10 @@ msgstr "Not really"
 # NPC dialogs
 msgid "professor_dialog"
 msgstr ""
-"Profesoro: Ah, jes. Vi estas la persono, kiun mi antendas por renkontiĝi.\n"
-"Mi aŭdis, ke vi volas lerni pri Tuksemonoj.\n"
-"Tuksemonoj estas etaj bestoj, kelkaj personoj nomas ilin monstrojn, kiuj ni amikiĝas kaj uzas por batali kontraŭ aliaj Tuksemonoj.\n"
-"Mi ĵus ricevis tri novajn Tuksemonojn por serĉado kaj mi dezirus doni unu el ili al vi.\n"
+"Profesoro: Ah, jes. Vi estas la persono, kiun mi antendas por renkontiÄi.\n"
+"Mi aÅ­dis, ke vi volas lerni pri Tuksemonoj.\n"
+"Tuksemonoj estas etaj bestoj, kelkaj personoj nomas ilin monstrojn, kiuj ni amikiÄas kaj uzas por batali kontraÅ­ aliaj Tuksemonoj.\n"
+"Mi Äµus ricevis tri novajn Tuksemonojn por serÄ‰ado kaj mi dezirus doni unu el ili al vi.\n"
 "Kiun vi deziras?"
 
 msgid "professor_dialog6.1"
@@ -1016,25 +1016,25 @@ msgid "professor_dialog6.2"
 msgstr "Profesoro: Kia superba elekto! Rokato estas tero-tipa Tuksemono"
 
 msgid "professor_dialog6.3"
-msgstr "Profesoro: Kia saĝa elekto! Fruktero estas ligno-tipa Tuksemono"
+msgstr "Profesoro: Kia saÄa elekto! Fruktero estas ligno-tipa Tuksemono"
 
 msgid "professor_dialog7"
 msgstr ""
-"Profesoro: Mi esperas, ke ni renkontiĝos denove! Mi ekvojaĝos, do eble ni "
-"renkontiĝos kelkfoje."
+"Profesoro: Mi esperas, ke ni renkontiÄos denove! Mi ekvojaÄos, do eble ni "
+"renkontiÄos kelkfoje."
 
 msgid "karrianna_dialog1"
 msgstr ""
-"Lidja: Mi trejnas ekde la lastaj monatoj! Neniuj ankoraŭ malvenkigas min!"
+"Lidja: Mi trejnas ekde la lastaj monatoj! Neniuj ankoraÅ­ malvenkigas min!"
 
 msgid "karrianna_dialog2"
-msgstr "Nu… Vi estas la unua trejnisto, kiun mi renkontis…"
+msgstr "Nuâ€¦ Vi estas la unua trejnisto, kiun mi renkontisâ€¦"
 
 msgid "xero_hideout1"
-msgstr "Xero instituto por la Tuksemona Serĉado kaj Progreso antaŭen."
+msgstr "Xero instituto por la Tuksemona SerÄ‰ado kaj Progreso antaÅ­en."
 
 msgid "cherry_found"
-msgstr "Vi trovis unu ĉerizon"
+msgstr "Vi trovis unu Ä‰erizon"
 
 msgid "xero_grunts_block"
 msgstr "This area is under construction, it should be done soon."
@@ -1157,7 +1157,7 @@ msgid "iamknight3"
 msgstr ""
 "What are you doing here? You know that only knights are allowed through city park.\n"
 "... ... ... Hmm... So you're trying to get to Leather Town...\n"
-"Well, I guess you could enter the challenge if you want. The only problem is that you'll need a Tuxemon...\n"
+"Well, I guess you could enter the challenge if you want. The only problem is that you'll need a Solamon...\n"
 "I'm sure we can lend you one. Are you up for the challenge?"
 
 msgid "sorry"
@@ -1165,8 +1165,8 @@ msgstr "Okay, well... when you're ready, I'll still be here..."
 
 msgid "splendid"
 msgstr ""
-"You will? Splendid! Now, to find you a suitable Tuxemon...\n"
-"... ... You already have a Tuxemon? Well, I'm sure that you'd be able to handle yourself well..."
+"You will? Splendid! Now, to find you a suitable Solamon...\n"
+"... ... You already have a Solamon? Well, I'm sure that you'd be able to handle yourself well..."
 
 msgid "cottonnurse_dialog"
 msgstr "Welcome to the Cotton Town Tuxecenter!"
@@ -1178,10 +1178,10 @@ msgid "okaythen"
 msgstr ""
 
 msgid "okaythen2"
-msgstr "Well, it looks like your Tuxemon are full of energy! Here they are!"
+msgstr "Well, it looks like your Solamon are full of energy! Here they are!"
 
 msgid "input_name"
-msgstr "Kiel vi nomiĝas?"
+msgstr "Kiel vi nomiÄas?"
 
 msgid "birdling"
 msgstr "Birdling"
@@ -1717,4 +1717,4 @@ msgstr "{box} ({qty})"
 
 # Default mod names on selection menu
 msgid "xero_campaign"
-msgstr "Tuxemon: Xero"
+msgstr "Solamon: Xero"

@@ -208,8 +208,15 @@ class Item:
         """
         Applies the item's effects using EffectProcessor and returns the results.
         """
+        if user.is_player and session.client.config.chain_enabled:
+            from tuxemon.chain.fees import require_player_sol_for_chain
+
+            if not require_player_sol_for_chain(session, f"item use {self.slug}"):
+                return ItemEffectResult(name=self.name)
+
         self.effects = self.core_assets.parse_effects(self.effect_defs)
         self.effect_handler = EffectProcessor(self.effects)
+        monster_count_before = len(user.monsters)
         result = self.effect_handler.process_item(
             session=session, source=self, target=target
         )
@@ -232,7 +239,42 @@ class Item:
                 if self.behaviors.destroy_on_break:
                     user.bag.remove_item(self)
 
+        quantity_before_consume = self.stock.quantity
         self.consume_if_needed(user, result)
+        if self.stock.quantity != quantity_before_consume:
+            reason = f"item use {self.slug}"
+            if len(user.monsters) != monster_count_before:
+                monster_slug = target.slug if target is not None else "unknown"
+                reason = f"monster caught {monster_slug} using {self.slug}"
+            elif self.stock.quantity == 0:
+                reason = f"item change {self.slug} x-1"
+
+            if user.is_player and _defer_battle_chain_item_use(session, reason):
+                return result
+
+            from tuxemon.chain.autosave import auto_save_chain_state
+
+            saved = auto_save_chain_state(session, reason)
+            if saved and self.stock.quantity == 0:
+                from tuxemon.chain.burn import burn_asset_for_session
+
+                burn_asset_for_session(
+                    session,
+                    kind="item",
+                    instance_id=str(self.instance_id),
+                )
+            if (
+                not saved
+                and reason.startswith("monster caught ")
+                and target is not None
+                and target in user.monsters
+            ):
+                user.monsters.remove(target)
+                if self not in user.bag.items:
+                    self.set_quantity(1)
+                    user.bag.add_item(self, 1)
+                else:
+                    self.increase_quantity(1)
         return result
 
     def consume_if_needed(self, user: NPC, result: ItemEffectResult) -> None:
@@ -265,3 +307,42 @@ def decode_items(json_data: Sequence[Mapping[str, Any]] | None) -> list[Item]:
 
 def encode_items(itms: Sequence[Item]) -> Sequence[Mapping[str, Any]]:
     return [itm.get_state() for itm in itms]
+
+
+def _defer_battle_chain_item_use(session: Session, reason: str) -> bool:
+    client = getattr(session, "client", None)
+    if client is None or not client.config.chain_enabled:
+        return False
+    combat_session = getattr(client, "combat_session", None)
+    if combat_session is None or not getattr(combat_session, "players", None):
+        return False
+    if reason.startswith("monster caught "):
+        body = reason.removeprefix("monster caught ").strip()
+        monster_id, _separator, item_id = body.partition(" using ")
+        setattr(
+            client,
+            "_solamon_pending_battle_chain_action",
+            {
+                "kind": "catch_solamon",
+                "primaryId": (monster_id or "unknown")[:32],
+                "secondaryId": (item_id or "")[:32],
+                "amount": 1,
+            },
+        )
+        setattr(client, "_solamon_pending_battle_nft_sync", True)
+        return True
+    if reason.startswith("item use "):
+        item_id = reason.removeprefix("item use ").strip()
+        setattr(
+            client,
+            "_solamon_pending_battle_chain_action",
+            {
+                "kind": "catch_solamon",
+                "primaryId": "attempt",
+                "secondaryId": item_id[:32],
+                "amount": 1,
+            },
+        )
+        setattr(client, "_solamon_pending_battle_nft_sync", True)
+        return True
+    return False

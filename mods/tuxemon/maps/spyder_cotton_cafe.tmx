@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="12" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="44">
  <properties>
   <property name="edges" value="clamped"/>
@@ -100,12 +100,13 @@
     <property name="act40" value="translated_dialog spyder_cotton_tuxepediaintro2"/>
     <property name="act50" value="screen_transition 0.5"/>
     <property name="act51" value="wait 0.5"/>
-    <property name="act52" value="set_variable visitedcottoncafe:yes"/>
-    <property name="act53" value="add_item app_tuxepedia"/>
-    <property name="act54" value="translated_dialog app_tuxepedia,,center,center,center"/>
-    <property name="act85" value="pathfind spyder_cottontown_hacker,6,5"/>
-    <property name="act86" value="char_face spyder_cottontown_hacker,player"/>
-    <property name="act87" value="char_face player,spyder_cottontown_hacker"/>
+     <property name="act52" value="set_variable visitedcottoncafe:yes"/>
+     <property name="act53" value="add_item app_tuxepedia"/>
+     <property name="act54" value="translated_dialog app_tuxepedia,,center,center,center"/>
+     <property name="act84" value="autosave state_item_bundle"/>
+     <property name="act85" value="pathfind spyder_cottontown_hacker,6,5"/>
+     <property name="act86" value="char_face spyder_cottontown_hacker,player"/>
+     <property name="act87" value="char_face player,spyder_cottontown_hacker"/>
     <property name="act88" value="translated_dialog spyder_cotton_tuxepediaintro4"/>
     <property name="act90" value="unlock_controls"/>
     <property name="act91" value="pathfind spyder_cottontown_barmaid,0,4"/>
@@ -147,7 +148,7 @@
     <property name="cond1" value="not char_exists spyder_cottoncafe_hillary"/>
    </properties>
   </object>
-  <object id="26" name="Heal Tuxemon" type="event" x="0" y="48" width="16" height="16">
+  <object id="26" name="Heal Solamon" type="event" x="0" y="48" width="16" height="16">
    <properties>
     <property name="act10" value="set_monster_health"/>
     <property name="act11" value="set_monster_status"/>
@@ -269,3 +270,4 @@
   </object>
  </objectgroup>
 </map>
+

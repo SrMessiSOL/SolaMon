@@ -7,11 +7,14 @@ from typing import TYPE_CHECKING, Any, ClassVar
 
 from pygame.surface import Surface
 
+from tuxemon.chain.autosave import auto_save_chain_currency_transfer
+from tuxemon.chain.fees import require_player_sol_for_chain
 from tuxemon.item.item import Item
 from tuxemon.item.shop_utils import (
     generate_label,
 )
 from tuxemon.menu.interface import MenuItem
+from tuxemon.session import local_session
 from tuxemon.states.shop_base import ShopMenuState
 
 if TYPE_CHECKING:
@@ -146,10 +149,28 @@ class ShopItemBuyMenuState(ShopItemMenuState):
             price = self.economy.calculate_price(item, quantity)
             if price.final_price > self.buyer_manager.get_money():
                 return
+            reason = f"buy item {item.slug} x{quantity}"
+            if not require_player_sol_for_chain(local_session, reason):
+                return
 
+            previous_buyer_money = self.buyer_manager.get_money()
+            previous_seller_money = self.seller_manager.get_money()
             self.transaction_manager.buy_item(
                 self.buyer, item, quantity, label, price.final_price
             )
+            saved = auto_save_chain_currency_transfer(
+                local_session,
+                reason,
+                direction="spend",
+                amount=price.final_price,
+            )
+            if not saved:
+                bought = self.buyer.bag.find_item(item.slug)
+                if bought is not None:
+                    self.buyer.bag.remove_item(bought, quantity)
+                self.client.shop_manager.increase_stock(label, quantity)
+                self.buyer_manager.set_money(previous_buyer_money)
+                self.seller_manager.set_money(previous_seller_money)
             self.reload_items()
             if (
                 self.seller.shop_inventory
@@ -171,6 +192,7 @@ class ShopItemBuyMenuState(ShopItemMenuState):
             callback=partial(buy_item),
             price=price,
             wallet_money=self.buyer_manager.get_money(),
+            close_before_callback=True,
         )
 
 
@@ -202,8 +224,25 @@ class ShopItemSellMenuState(ShopItemMenuState):
             price = self.economy.calculate_price(
                 item, quantity, seller_mode=True
             )
+            reason = f"sell item {item.slug} x{quantity}"
+            if not require_player_sol_for_chain(local_session, reason):
+                return
             self.transaction_manager.sell_item(
                 self.seller, item, quantity, price.final_price, label
+            )
+            if not self.seller.bag.has_item(item.slug):
+                from tuxemon.chain.burn import burn_asset_for_session
+
+                burn_asset_for_session(
+                    local_session,
+                    kind="item",
+                    instance_id=str(item.instance_id),
+                )
+            auto_save_chain_currency_transfer(
+                local_session,
+                reason,
+                direction="reward",
+                amount=price.final_price,
             )
             self.reload_items()
             if not self.seller.bag.has_item(item.slug):
@@ -219,4 +258,5 @@ class ShopItemSellMenuState(ShopItemMenuState):
             callback=partial(sell_item),
             cost=cost,
             wallet_money=self.seller_manager.get_money(),
+            close_before_callback=True,
         )

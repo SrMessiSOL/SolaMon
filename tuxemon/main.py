@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import logging
+import os
+from pathlib import Path
 from typing import TYPE_CHECKING
 
 from tuxemon.client import LocalPygameClient
@@ -15,6 +17,17 @@ if TYPE_CHECKING:
     from tuxemon.prepare import DisplayContext
 
 logger = logging.getLogger(__name__)
+
+
+def _startup_trace(message: str) -> None:
+    trace_path = os.environ.get("SOLAMON_STARTUP_TRACE")
+    if not trace_path:
+        return
+    try:
+        with Path(trace_path).open("a", encoding="utf-8") as handle:
+            handle.write(f"{message}\n")
+    except OSError:
+        pass
 
 
 def main(
@@ -31,15 +44,23 @@ def main(
 
     import pygame
 
+    _startup_trace("main: create client start")
     client = LocalPygameClient.create(config, context)
+    _startup_trace("main: create client done")
     local_session.set_client(client)
 
+    _startup_trace("main: configure states start")
     configure_game_states(client, config, load_slot)
+    _startup_trace(
+        f"main: configure states done states={client.active_state_names}"
+    )
 
     if config.collision_map:
         configure_debug_options(client)
 
+    _startup_trace("main: client main start")
     client.main()
+    _startup_trace("main: client main done")
     pygame.quit()
 
 

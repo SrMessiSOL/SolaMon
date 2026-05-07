@@ -54,6 +54,17 @@ docs/autogen/
 
 # Save games
 tuxemon/saves/
+players/
+
+# Local Solana authority/program keys and generated devnet metadata.
+tools/solana/*authority*.json
+tools/solana/*keypair*.json
+tools/solana/metadata/
+tools/solana/node_modules/
+
+# Rust/Solana build output
+target/
+programs/*/target/
 
 # Windows file
 Thumbs.db
@@ -76,3 +87,5 @@ Thumbs.db
 mods/tuxemon/maps/~$Map Helper.xlsx
 mods/tuxemon/db/encounter/~$JSON-o-matic for Encounters.ods
 /.mypy_cache/
+.vercel
+.render-cli/

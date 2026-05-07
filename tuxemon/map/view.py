@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from enum import Enum
@@ -11,6 +12,7 @@ from typing import TYPE_CHECKING
 
 from pygame import SRCALPHA
 from pygame.draw import line
+from pygame.font import Font
 from pygame.gfxdraw import box
 from pygame.rect import Rect
 from pygame.surface import Surface
@@ -29,6 +31,8 @@ from tuxemon.math import Vector2
 from tuxemon.platform.const.graphics import BLACK_COLOR
 from tuxemon.prepare import DISPLAY_CONTEXT, DisplayContext
 from tuxemon.surfanim import SurfaceAnimation, SurfaceAnimationCollection
+from tuxemon.ui.text import draw_text
+from tuxemon.ui.text_alignment import HorizontalAlignment, VerticalAlignment
 from tuxemon.user_config import CONFIG
 
 logger = logging.getLogger(__name__)
@@ -453,6 +457,7 @@ class MapRenderer(AbstractRenderer):
         """Update the map animations."""
         self.camera_manager.update(dt)
         self.map_animations.update_all(dt)
+        self.bubble_manager.update()
 
     def _prepare_map_rendering(self, current_map: AbstractMap) -> None:
         """Prepares the map renderer for drawing."""
@@ -559,7 +564,20 @@ class MapRenderer(AbstractRenderer):
             )
 
         pixel_x, pixel_y = npc.position
-        return [WorldSurfaces(frame, Vector2(pixel_x, pixel_y), layer)]
+        surfaces = [WorldSurfaces(frame, Vector2(pixel_x, pixel_y), layer)]
+        if _is_remote_player(npc):
+            label = self.bubble_manager.render_name_label(npc.name)
+            tile_w, tile_h = self.context.tile_size
+            label_x = pixel_x + ((frame.get_width() - label.get_width()) / tile_w / 2)
+            label_y = pixel_y + (frame.get_height() / tile_h / 2) + 0.02
+            surfaces.append(
+                WorldSurfaces(
+                    label,
+                    Vector2(label_x, label_y),
+                    layer + 1,
+                )
+            )
+        return surfaces
 
 
 class BubbleManager:
@@ -572,22 +590,92 @@ class BubbleManager:
         offset_divisor: int = 10,
     ):
         self._bubbles: dict[NPC, Surface] = {}
+        self._expires_at: dict[NPC, float] = {}
         self.context = context
         self.layer = layer
         self.offset_divisor = offset_divisor
+        self.font = Font(None, context.scaling.scale_int(18))
+        self.name_font = Font(None, context.scaling.scale_int(9))
+        self.chat_font = Font(None, context.scaling.scale_int(12))
 
     def add_bubble(self, entity: NPC, surface: Surface) -> None:
         self._bubbles[entity] = surface
+        self._expires_at.pop(entity, None)
+
+    def add_text_bubble(self, entity: NPC, message: str, ttl: float = 5.0) -> None:
+        self._bubbles[entity] = self.render_bubble(message)
+        self._expires_at[entity] = time.monotonic() + ttl
+
+    def update(self) -> None:
+        now = time.monotonic()
+        for entity, expires_at in list(self._expires_at.items()):
+            if now >= expires_at:
+                self._expires_at.pop(entity, None)
+                self._bubbles.pop(entity, None)
 
     def remove_bubble(self, entity: NPC) -> None:
         if self.has_bubble(entity):
             del self._bubbles[entity]
+        self._expires_at.pop(entity, None)
 
     def has_bubble(self, entity: NPC) -> bool:
         return entity in self._bubbles
 
     def clear_all_bubbles(self) -> None:
         self._bubbles.clear()
+        self._expires_at.clear()
+
+    def render_name_label(self, name: str) -> Surface:
+        label = str(name or "Player")[:16]
+        padding_x = self.context.scaling.scale_int(3)
+        padding_y = self.context.scaling.scale_int(1)
+        text_w, text_h = self.name_font.size(label)
+        width = text_w + (padding_x * 2)
+        height = min(
+            self.context.tile_size[1] - 2,
+            text_h + (padding_y * 2),
+        )
+        surface = Surface((width, height), SRCALPHA)
+        draw_text(
+            surface,
+            label,
+            (padding_x, 0, width - (padding_x * 2), height),
+            scaling=self.context.scaling,
+            font=self.name_font,
+            font_color=(255, 255, 255),
+            h_alignment=HorizontalAlignment.CENTER,
+            v_alignment=VerticalAlignment.CENTER,
+        )
+        return surface
+
+    def render_bubble(self, message: str) -> Surface:
+        text = str(message or "")[:60]
+        padding_x = self.context.scaling.scale_int(5)
+        padding_y = self.context.scaling.scale_int(1)
+        max_text_width = self.context.scaling.scale_int(92)
+        lines = _wrap_text_to_width(text, self.chat_font, max_text_width)
+        line_height = max(self.chat_font.get_linesize(), self.context.scaling.scale_int(11))
+        text_width = max(self.chat_font.size(line)[0] for line in lines)
+        width = text_width + (padding_x * 2)
+        height = (line_height * len(lines)) + (padding_y * 2)
+        surface = Surface((width, height), SRCALPHA)
+        for index, line_text in enumerate(lines):
+            draw_text(
+                surface,
+                line_text,
+                (
+                    padding_x,
+                    padding_y + (index * line_height),
+                    width - (padding_x * 2),
+                    line_height,
+                ),
+                scaling=self.context.scaling,
+                font=self.chat_font,
+                font_color=(255, 245, 0),
+                h_alignment=HorizontalAlignment.CENTER,
+                v_alignment=VerticalAlignment.CENTER,
+            )
+        return surface
 
     def get_rendered_bubbles(
         self, current_map: AbstractMap
@@ -610,11 +698,52 @@ class BubbleManager:
 
             # Position bubble relative to the entity's sprite rect
             bubble_rect.centerx = center_x + (sprite_renderer.rect.width // 2)
-            bubble_rect.bottom = center_y - int(
-                sprite_renderer.rect.height / self.offset_divisor
-            )
+            bubble_rect.bottom = center_y - int(sprite_renderer.rect.height * 0.16)
             rendered_bubbles.append((surface, bubble_rect, self.layer))
         return rendered_bubbles
+
+
+def _wrap_text_to_width(text: str, font: Font, max_width: int) -> list[str]:
+    lines: list[str] = []
+    current = ""
+    for word in text.split(" "):
+        parts = _split_word_to_width(word, font, max_width)
+        for part in parts:
+            candidate = part if not current else f"{current} {part}"
+            if font.size(candidate)[0] <= max_width:
+                current = candidate
+            else:
+                if current:
+                    lines.append(current)
+                current = part
+        if word == "":
+            candidate = f"{current} "
+            if font.size(candidate)[0] <= max_width:
+                current = candidate
+    if current:
+        lines.append(current)
+    return lines or [""]
+
+
+def _split_word_to_width(word: str, font: Font, max_width: int) -> list[str]:
+    if font.size(word)[0] <= max_width:
+        return [word]
+    parts: list[str] = []
+    current = ""
+    for char in word:
+        candidate = current + char
+        if current and font.size(candidate)[0] > max_width:
+            parts.append(current)
+            current = char
+        else:
+            current = candidate
+    if current:
+        parts.append(current)
+    return parts
+
+
+def _is_remote_player(npc: NPC) -> bool:
+    return str(getattr(npc, "slug", "")).startswith("remote_")
 
 
 class DebugRenderer:

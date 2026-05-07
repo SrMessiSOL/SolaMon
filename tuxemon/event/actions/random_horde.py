@@ -65,7 +65,6 @@ class RandomHordeAction(EventAction):
             logger.info(f"Repellent active, skipping encounter.")
             self.stop()
             return
-
         if self.total_prob is not None:
             if not (0 <= self.total_prob <= 100):
                 logger.error(

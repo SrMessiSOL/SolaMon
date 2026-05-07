@@ -230,6 +230,15 @@ class WorldMenuManager:
                 self._menu_item("menu_player", "CharacterState", **param)
             )
 
+        if self.client.config.chain_enabled:
+            current_menu.append(
+                MenuItem(
+                    "solamon_wallet",
+                    "SOLAMON WALLET",
+                    self._get_change_state_callback("SolamonWalletManageState"),
+                )
+            )
+
         if player.mission_controller.get_missions_with_met_prerequisites():
             current_menu.append(
                 self._menu_item(

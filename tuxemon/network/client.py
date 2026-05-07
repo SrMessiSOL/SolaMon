@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import time
 from enum import Enum, auto
 from itertools import count
 from typing import TYPE_CHECKING, Any, TypedDict
@@ -40,14 +41,14 @@ class TuxemonClient:
     def __init__(
         self,
         game: BaseClient,
-        server_port: int = 40081,
+        server_port: int | None = None,
     ) -> None:
         """
         Initializes the client with networking, event handling, and multiplayer
         support.
         """
         self.game = game
-        self.server_port = server_port
+        self.server_port = server_port or game.config.multiplayer_server_port
 
         self.dispatcher = EventDispatcher(self)
         self.input_translator = InputEventTranslator(self)
@@ -63,6 +64,8 @@ class TuxemonClient:
         self.populated: bool = False
         self.listening: bool = False
         self.event_counter = count(start=1)
+        self._last_presence_sent_at = 0.0
+        self._last_presence_snapshot: tuple[str, tuple[int, int]] | None = None
 
         # Networking wrapper: handles loop, JSON, ping.
         self.client = WebsocketClientWrapper(
@@ -103,6 +106,7 @@ class TuxemonClient:
     def update(self) -> None:
         """Synchronizes game state and handles connection updates per frame."""
         self.connection_manager.update()
+        self.sync_manager.maybe_publish_presence()
         self.check_notify()
 
     def check_notify(self) -> None:
@@ -160,6 +164,10 @@ class TuxemonClient:
         """Handles routing of combat-related events."""
         self.interaction_manager.route_combat(event)
 
+    def send_chat(self, message: str) -> None:
+        """Broadcast an ephemeral same-map chat bubble."""
+        self.sync_manager.send_chat(message)
+
 
 class InputEventTranslator:
     """
@@ -212,7 +220,22 @@ class InputEventTranslator:
 
         if event_type == "CLIENT_FACING":
             if self.client.game.network_manager.is_connected():
-                event_data_dict["char_dict"] = {"facing": kb_key}
+                character = self.client.game.chain_session.character
+                event_data_dict.update(
+                    {
+                        "map_name": self.client.game.get_map_name(),
+                        "char_dict": {
+                            "tile_pos": local_session.player.tile_pos,
+                            "name": local_session.player.name,
+                            "facing": kb_key,
+                            "skin": current_player_skin(),
+                        },
+                        "owner": character.owner if character else None,
+                        "character_mint": (
+                            character.character_mint if character else None
+                        ),
+                    }
+                )
             else:
                 return None
         else:
@@ -260,19 +283,25 @@ class PlayerSyncManager:
 
     def populate_player(self, event_type: str = "PUSH_SELF") -> None:
         """Sends client character to the server."""
+        map_name = self._current_map_name()
+        if map_name is None:
+            return
         player_data = local_session.player.__dict__
-        map_name = self.game.get_map_name()
 
         char_dict = {
-            "tile_pos": player_data.get("tile_pos", [0, 0]),
+            "tile_pos": local_session.player.tile_pos,
             "name": player_data.get("name", "Unnamed Player"),
-            "facing": player_data.get("facing", "down"),
+            "facing": local_session.player.facing.value,
+            "skin": current_player_skin(),
         }
+        character = self.game.chain_session.character
 
         self._send_event(
             event_type,
             map_name=map_name,
             char_dict=char_dict,
+            owner=character.owner if character else None,
+            character_mint=character.character_mint if character else None,
         )
         self.client.populated = True
 
@@ -280,17 +309,89 @@ class PlayerSyncManager:
         self, direction: str, event_type: str = "CLIENT_MAP_UPDATE"
     ) -> None:
         """Sends client's current map and location to the server."""
-        pd = local_session.player.__dict__
-        map_name = self.game.get_map_name()
+        map_name = self._current_map_name()
+        if map_name is None:
+            return
 
-        char_dict = {"tile_pos": pd["tile_pos"]}
+        char_dict = {
+            "tile_pos": local_session.player.tile_pos,
+            "name": local_session.player.name,
+            "facing": local_session.player.facing.value,
+            "skin": current_player_skin(),
+        }
+        character = self.game.chain_session.character
 
         self._send_event(
             event_type,
             map_name=map_name,
             direction=direction,
             char_dict=char_dict,
+            owner=character.owner if character else None,
+            character_mint=character.character_mint if character else None,
         )
+
+    def maybe_publish_presence(self) -> None:
+        if not self.client.listening:
+            return
+        if not self.client.client.registered or not self.client.populated:
+            return
+        try:
+            map_name = self.game.get_map_name()
+        except ValueError:
+            return
+        tile_pos = local_session.player.tile_pos
+        now = time.monotonic()
+        snapshot = (map_name, tile_pos)
+        if snapshot == self.client._last_presence_snapshot and (
+            now - self.client._last_presence_sent_at
+        ) < 1.0:
+            return
+        self.client._last_presence_snapshot = snapshot
+        self.client._last_presence_sent_at = now
+        self.update_player(
+            local_session.player.facing.value,
+            event_type="CLIENT_MAP_UPDATE",
+        )
+
+    def send_chat(self, message: str) -> None:
+        cleaned = "".join(
+            char
+            for char in message.strip()
+            if char.isprintable() and char not in "\r\n\t"
+        )[:120]
+        if not cleaned:
+            return
+        map_name = self._current_map_name()
+        if map_name is None:
+            return
+        character = self.game.chain_session.character
+        self._send_event(
+            "CLIENT_CHAT",
+            map_name=map_name,
+            direction=local_session.player.facing.value,
+            char_dict={
+                "tile_pos": local_session.player.tile_pos,
+                "name": local_session.player.name,
+                "facing": local_session.player.facing.value,
+                "skin": current_player_skin(),
+            },
+            owner=character.owner if character else None,
+            character_mint=character.character_mint if character else None,
+            message=cleaned,
+        )
+        renderer = getattr(self.game, "map_renderer", None)
+        if renderer is not None:
+            renderer.bubble_manager.add_text_bubble(
+                local_session.player,
+                cleaned,
+                ttl=5.0,
+            )
+
+    def _current_map_name(self) -> str | None:
+        try:
+            return self.game.get_map_name()
+        except ValueError:
+            return None
 
 
 class MultiplayerDiscovery:
@@ -354,8 +455,6 @@ class InteractionManager:
                 cuuid = client_id
                 break
 
-        pd = local_session.player.__dict__
-
         event_data = {
             "type": event_type,
             "event_number": next(self.client.event_counter),
@@ -363,8 +462,10 @@ class InteractionManager:
             "target": cuuid,
             "response": response,
             "char_dict": {
-                "monsters": pd.get("monsters", []),
-                "inventory": pd.get("inventory", []),
+                "tile_pos": local_session.player.tile_pos,
+                "name": local_session.player.name,
+                "facing": local_session.player.facing.value,
+                "skin": current_player_skin(),
             },
         }
 
@@ -395,7 +496,10 @@ class ConnectionManager:
 
         if self.state is ConnState.REGISTERING:
             if self.client.client.registered and not self.client.populated:
-                self.client.sync_manager.populate_player()
+                try:
+                    self.client.sync_manager.populate_player()
+                except ValueError:
+                    return
                 self.state = ConnState.READY
 
     def connect_to_host(self, ip: str, port: int) -> None:
@@ -412,3 +516,8 @@ class ConnectionManager:
 
     def disconnect(self) -> None:
         self.state = ConnState.DISCONNECTED
+
+
+def current_player_skin() -> str:
+    player = local_session.player
+    return str(player.appearance_manager.state.sprite_name or "adventurer")

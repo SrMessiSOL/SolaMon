@@ -1,12 +1,12 @@
-#
+﻿#
 msgid ""
 msgstr ""
-"Project-Id-Version: Tuxemon\n"
+"Project-Id-Version: Solamon\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-14 05:41+0200\n"
 "PO-Revision-Date: 2023-02-03 04:41+0000\n"
 "Last-Translator: Betsy <betsymaxx@gmailvn.net>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/tuxemon/tuxemon/es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/solamon/solamon/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,21 +45,21 @@ msgstr "Cura a un monstruo 20 HP."
 
 # Potion
 msgid "potion"
-msgstr "Poción"
+msgstr "PociÃ³n"
 
 msgid "potion_description"
 msgstr "Cura a un monstruo 50 HP."
 
 # Super Potion
 msgid "super_potion"
-msgstr "Super Poción"
+msgstr "Super PociÃ³n"
 
 msgid "super_potion_description"
 msgstr "Cura a un monstruo 100 HP."
 
 # Imperial Potion
 msgid "imperial_potion"
-msgstr "Poción Imperial"
+msgstr "PociÃ³n Imperial"
 
 msgid "imperial_potion_description"
 msgstr "Cura a un monstruo 350 HP."
@@ -69,7 +69,7 @@ msgid "revive"
 msgstr "Revivir"
 
 msgid "revive_description"
-msgstr "Revive a un Tuxemon debilitado y le cura 20 HP."
+msgstr "Revive a un Solamon debilitado y le cura 20 HP."
 
 # Capture Device
 msgid "capture_device"
@@ -84,30 +84,30 @@ msgstr "MT: Avalancha"
 
 msgid "tm_avalanche_description"
 msgstr ""
-"Manual técnico que enseña a un Tuxemon de Agua o Tierra la técnica "
+"Manual tÃ©cnico que enseÃ±a a un Solamon de Agua o Tierra la tÃ©cnica "
 "Avalancha."
 
 msgid "tm_blossom"
 msgstr "TM: Florecer"
 
 msgid "tm_blossom_description"
-msgstr "Manual técnico que enseña a un Tuxemon de Madera la técnica Florecer."
+msgstr "Manual tÃ©cnico que enseÃ±a a un Solamon de Madera la tÃ©cnica Florecer."
 
 msgid "item_cannot_use_here"
-msgstr "¡No puede usarse {name} aquí!"
+msgstr "Â¡No puede usarse {name} aquÃ­!"
 
 msgid "item_no_available_target"
-msgstr "No puede usarse {name} en ninguno de tus Tuxemon en este momento."
+msgstr "No puede usarse {name} en ninguno de tus Solamon en este momento."
 
 # Allie's Address
 msgid "allies_address"
-msgstr "Dirección de Allie"
+msgstr "DirecciÃ³n de Allie"
 
 msgid "allies_address_description"
 msgstr ""
-"Habitación 31, Número 2, Torre Omnichannel, Pueblo Algodón\n"
+"HabitaciÃ³n 31, NÃºmero 2, Torre Omnichannel, Pueblo AlgodÃ³n\n"
 "\n"
-"Se observa la marca de un beso al lado de la dirección"
+"Se observa la marca de un beso al lado de la direcciÃ³n"
 
 # Money notification
 msgid "player_wallet"
@@ -116,112 +116,112 @@ msgstr "La cartera de ${{name}}: ${{money}}${{currency}}"
 # NOTIFICATION TRANSLATIONS ##
 # Combat notifications
 msgid "combat_run"
-msgstr "¡{user} se escapó!"
+msgstr "Â¡{user} se escapÃ³!"
 
 msgid "combat_miss"
-msgstr "Falló..."
+msgstr "FallÃ³..."
 
 msgid "combat_can't_run_from_trainer"
-msgstr "¡No puedes huir!"
+msgstr "Â¡No puedes huir!"
 
 msgid "combat_player_run"
-msgstr "¡Escapaste sin problemas!"
+msgstr "Â¡Escapaste sin problemas!"
 
 msgid "combat_used_x"
-msgstr "¡{user} usó {name}!"
+msgstr "Â¡{user} usÃ³ {name}!"
 
 msgid "combat_used_x_on_y"
-msgstr "¡{user} usó {name} sobre {target}!"
+msgstr "Â¡{user} usÃ³ {name} sobre {target}!"
 
 msgid "combat_swap"
-msgstr "¡{user} sacó a {target}!"
+msgstr "Â¡{user} sacÃ³ a {target}!"
 
 msgid "combat_call_tuxemon"
-msgstr "¡Adelante {name}!"
+msgstr "Â¡Adelante {name}!"
 
 # TODO: similar to combat_swap - refactor!
 msgid "combat_opponent_call_tuxemon"
-msgstr "¡{user} sacó a {name}!"
+msgstr "Â¡{user} sacÃ³ a {name}!"
 
 msgid "combat_state_poison_get"
-msgstr "{target} está envenenado."
+msgstr "{target} estÃ¡ envenenado."
 
 msgid "combat_state_poison_damage"
-msgstr "¡{name} recibió daño por envenenamiento!"
+msgstr "Â¡{name} recibiÃ³ daÃ±o por envenenamiento!"
 
 msgid "combat_state_lifeleech_get"
-msgstr "{user} está absorbiendo la vida de {target}."
+msgstr "{user} estÃ¡ absorbiendo la vida de {target}."
 
 msgid "combat_state_lifeleech_success"
-msgstr "¡{user} perdió salud por chupavidas!"
+msgstr "Â¡{user} perdiÃ³ salud por chupavidas!"
 
 #, fuzzy
 msgid "combat_state_lifeleech_failure"
-msgstr "{link} no puede curarse más."
+msgstr "{link} no puede curarse mÃ¡s."
 
 msgid "combat_state_recover_get"
-msgstr "{target} empezó a recuperar salud."
+msgstr "{target} empezÃ³ a recuperar salud."
 
 msgid "combat_state_recover_success"
-msgstr "¡{user} recuperó salud!"
+msgstr "Â¡{user} recuperÃ³ salud!"
 
 msgid "combat_state_recover_failure"
-msgstr "{target} no puede curarse más."
+msgstr "{target} no puede curarse mÃ¡s."
 
 msgid "combat_status_damage"
-msgstr "¡{name} sufrió {status} de daño!"
+msgstr "Â¡{name} sufriÃ³ {status} de daÃ±o!"
 
 msgid "combat_trainer_appeared"
-msgstr "¡{name} quiere combatir!"
+msgstr "Â¡{name} quiere combatir!"
 
 msgid "combat_victory"
-msgstr "¡{name} ha ganado!"
+msgstr "Â¡{name} ha ganado!"
 
 msgid "combat_defeat"
-msgstr "¡{name} ha sido derrotado!"
+msgstr "Â¡{name} ha sido derrotado!"
 
 msgid "combat_draw"
-msgstr "¡Todos los equipos se han debilitado!"
+msgstr "Â¡Todos los equipos se han debilitado!"
 
 msgid "combat_capturing_success"
-msgstr "¡Has capturado a {name}!"
+msgstr "Â¡Has capturado a {name}!"
 
 msgid "combat_capturing_fail"
-msgstr "¡{name} consiguió liberarse!"
+msgstr "Â¡{name} consiguiÃ³ liberarse!"
 
 msgid "combat_replacement"
-msgstr "¡Escoge otro Tuxemon!"
+msgstr "Â¡Escoge otro Solamon!"
 
 msgid "combat_replacement_is_fainted"
-msgstr "¡Ese Tuxemon se encuentra debilitado!"
+msgstr "Â¡Ese Solamon se encuentra debilitado!"
 
 msgid "combat_wild_appeared"
-msgstr "Un {name} salvaje apareció!"
+msgstr "Un {name} salvaje apareciÃ³!"
 
 msgid "combat_monster_choice"
-msgstr "¿Qué hará {name}?"
+msgstr "Â¿QuÃ© harÃ¡ {name}?"
 
 msgid "combat_fainted"
-msgstr "¡{name} se debilitó!"
+msgstr "Â¡{name} se debilitÃ³!"
 
 msgid "combat_isactive"
-msgstr "{name} ya está luchando."
+msgstr "{name} ya estÃ¡ luchando."
 
 msgid "attack_very_effective"
-msgstr "¡El ataque hizo mucho daño adicional!"
+msgstr "Â¡El ataque hizo mucho daÃ±o adicional!"
 
 msgid "attack_effective"
-msgstr "¡El ataque hizo daño adicional!"
+msgstr "Â¡El ataque hizo daÃ±o adicional!"
 
 msgid "attack_resisted"
-msgstr "¡El ataque fue resistido!"
+msgstr "Â¡El ataque fue resistido!"
 
 msgid "attack_weak"
-msgstr "¡El ataque fue fuertemente resistido!"
+msgstr "Â¡El ataque fue fuertemente resistido!"
 
 # Generic notifications
 msgid "empty_slot"
-msgstr "Ranura vacía"
+msgstr "Ranura vacÃ­a"
 
 msgid "exit"
 msgstr "Salir"
@@ -234,37 +234,37 @@ msgstr "Cancelar"
 
 # TODO same as generic_success and generic_failure - refactor!
 msgid "item_success"
-msgstr "¡Funcionó!"
+msgstr "Â¡FuncionÃ³!"
 
 msgid "item_failure"
-msgstr "¡Falló!"
+msgstr "Â¡FallÃ³!"
 
 msgid "generic_success"
-msgstr "¡Funcionó!"
+msgstr "Â¡FuncionÃ³!"
 
 msgid "generic_failure"
-msgstr "¡Falló!"
+msgstr "Â¡FallÃ³!"
 
 msgid "attempting_capture"
 msgstr "Intentando capturar..."
 
 msgid "gotcha"
-msgstr "¡Atrapado!"
+msgstr "Â¡Atrapado!"
 
 msgid "not_implemented"
-msgstr "Esta característica aún no ha sido implementada."
+msgstr "Esta caracterÃ­stica aÃºn no ha sido implementada."
 
 msgid "receive_happiness"
 msgstr "Recibidos 5 Dispositivos de Captura!!"
 
 msgid "received_x"
-msgstr "¡Se ha recibido {name}!"
+msgstr "Â¡Se ha recibido {name}!"
 
 msgid "save_success"
-msgstr "¡Guardado completado!"
+msgstr "Â¡Guardado completado!"
 
 msgid "save_failure"
-msgstr "¡Ha habido un problema al guardar la partida!"
+msgstr "Â¡Ha habido un problema al guardar la partida!"
 
 msgid "slot"
 msgstr "Ranura"
@@ -292,10 +292,10 @@ msgid "avalanche"
 msgstr "Avalancha"
 
 msgid "battery_acid"
-msgstr "Ácido de batería"
+msgstr "Ãcido de baterÃ­a"
 
 msgid "battery_discharge"
-msgstr "Descargar batería"
+msgstr "Descargar baterÃ­a"
 
 msgid "beam"
 msgstr "Rayo"
@@ -316,10 +316,10 @@ msgid "blossom"
 msgstr "Florecer"
 
 msgid "boulder"
-msgstr "Peñasco"
+msgstr "PeÃ±asco"
 
 msgid "breathe_fire"
-msgstr "Aliento Flamígero"
+msgstr "Aliento FlamÃ­gero"
 
 msgid "bubble_trap"
 msgstr "Trampa de Burbuja"
@@ -328,22 +328,22 @@ msgid "bullet"
 msgstr "Balazo"
 
 msgid "chill_mist"
-msgstr "Niebla Gélida"
+msgstr "Niebla GÃ©lida"
 
 msgid "clamp_on"
 msgstr "Sujetar"
 
 msgid "constrict"
-msgstr "Constricción"
+msgstr "ConstricciÃ³n"
 
 msgid "electrical_storm"
-msgstr "Tormenta eléctrica"
+msgstr "Tormenta elÃ©ctrica"
 
 msgid "energy_claws"
-msgstr "Garras de Energía"
+msgstr "Garras de EnergÃ­a"
 
 msgid "energy_field"
-msgstr "Campo de Energía"
+msgstr "Campo de EnergÃ­a"
 
 msgid "eyebite"
 msgstr "Mirada Penetrante"
@@ -364,7 +364,7 @@ msgid "flamethrower"
 msgstr "Lanzallamas"
 
 msgid "flood"
-msgstr "Inundación"
+msgstr "InundaciÃ³n"
 
 msgid "flow"
 msgstr "Flujo"
@@ -376,7 +376,7 @@ msgid "font"
 msgstr "Fuente"
 
 msgid "frostbite"
-msgstr "Congelación"
+msgstr "CongelaciÃ³n"
 
 msgid "fume"
 msgstr "Vapor"
@@ -388,7 +388,7 @@ msgid "glower"
 msgstr "Mirada Fulminante"
 
 msgid "goad"
-msgstr "Aguijón"
+msgstr "AguijÃ³n"
 
 msgid "hibernate"
 msgstr "Hibernar"
@@ -397,7 +397,7 @@ msgid "ice_claw"
 msgstr "Garra de Hielo"
 
 msgid "icicle_spear"
-msgstr "Lanza Carámbano"
+msgstr "Lanza CarÃ¡mbano"
 
 msgid "invictus"
 msgstr "Invencible"
@@ -412,7 +412,7 @@ msgid "midnight_mantle"
 msgstr "Manto de Medianoche"
 
 msgid "muddle"
-msgstr "Confusión"
+msgstr "ConfusiÃ³n"
 
 msgid "mudslide"
 msgstr "Avalancha de Lodo"
@@ -427,7 +427,7 @@ msgid "peck"
 msgstr "Picotazo"
 
 msgid "peregrine"
-msgstr "Halcón"
+msgstr "HalcÃ³n"
 
 msgid "perfect_cut"
 msgstr "Corte perfecto"
@@ -436,10 +436,10 @@ msgid "petrify"
 msgstr "Petrificar"
 
 msgid "proboscis"
-msgstr "Probóscide"
+msgstr "ProbÃ³scide"
 
 msgid "pseudopod"
-msgstr "Pseudópodo"
+msgstr "PseudÃ³podo"
 
 msgid "quicksand"
 msgstr "Arenas Movedizas"
@@ -454,10 +454,10 @@ msgid "rock"
 msgstr "Roca"
 
 msgid "rot"
-msgstr "Putrefacción"
+msgstr "PutrefacciÃ³n"
 
 msgid "rust_bomb"
-msgstr "Bomba de Óxido"
+msgstr "Bomba de Ã“xido"
 
 msgid "salamander"
 msgstr "Salamandra"
@@ -475,10 +475,10 @@ msgid "shuriken"
 msgstr "Shuriken"
 
 msgid "sleep_bomb"
-msgstr "Bomba de Sueño"
+msgstr "Bomba de SueÃ±o"
 
 msgid "sleeping_powder"
-msgstr "Polvo Somnífero"
+msgstr "Polvo SomnÃ­fero"
 
 msgid "snowstorm"
 msgstr "Tormenta de Nieve"
@@ -496,13 +496,13 @@ msgid "starfall"
 msgstr "Lluvia de Estrellas"
 
 msgid "static_field"
-msgstr "Campo estático"
+msgstr "Campo estÃ¡tico"
 
 msgid "sting"
 msgstr "Picadura"
 
 msgid "stone_rot"
-msgstr "Putrefacción Pétrea"
+msgstr "PutrefacciÃ³n PÃ©trea"
 
 msgid "strike"
 msgstr "Asalto"
@@ -532,7 +532,7 @@ msgid "tonguespear"
 msgstr "Lengua Afilada"
 
 msgid "venomous_tentacle"
-msgstr "Tentáculo Venenoso"
+msgstr "TentÃ¡culo Venenoso"
 
 msgid "wall_of_steel"
 msgstr "Muro de Acero"
@@ -552,24 +552,24 @@ msgstr "Punta de Ala"
 # MENU TRANSLATIONS ##
 msgid "menu_alphabet"
 msgstr ""
-"ABCDEFGHIJKLMNÑOPQRSTUVWXYZ\\0abcdefghijklmnñopqrstuvwxyz\\01234567890.-¡!"
+"ABCDEFGHIJKLMNÃ‘OPQRSTUVWXYZ\\0abcdefghijklmnÃ±opqrstuvwxyz\\01234567890.-Â¡!"
 
 msgid "menu_char_variants"
 msgstr ""
-"AÁ\n"
-"EÉ\n"
-"IÍ\n"
-"OÓ\n"
-"UÚÜ\n"
-"aá\n"
-"eé\n"
-"ií\n"
-"oó\n"
-"uúü"
+"AÃ\n"
+"EÃ‰\n"
+"IÃ\n"
+"OÃ“\n"
+"UÃšÃœ\n"
+"aÃ¡\n"
+"eÃ©\n"
+"iÃ­\n"
+"oÃ³\n"
+"uÃºÃ¼"
 
 # Monster Menu notifications
 msgid "monster_menu_info"
-msgstr "Información"
+msgstr "InformaciÃ³n"
 
 msgid "monster_menu_move"
 msgstr "Mover"
@@ -597,7 +597,7 @@ msgid "menu_load"
 msgstr "Cargar"
 
 msgid "menu_monster"
-msgstr "Tuxemon"
+msgstr "Solamon"
 
 # TODO: duplicate of menu_monster?
 msgid "menu_monsters"
@@ -629,7 +629,7 @@ msgid "multiplayer_decline"
 msgstr "Rechazar"
 
 msgid "multiplayer_duel"
-msgstr "¡{name} quiere retarte a un duelo!"
+msgstr "Â¡{name} quiere retarte a un duelo!"
 
 msgid "multiplayer_host_game"
 msgstr "Crear partida"
@@ -641,23 +641,23 @@ msgid "multiplayer_join_game"
 msgstr "Unirse a la partida"
 
 msgid "multiplayer_hosting_ready"
-msgstr "¡Preparado para aceptar conexiones!"
+msgstr "Â¡Preparado para aceptar conexiones!"
 
 msgid "multiplayer_already_hosting"
-msgstr "¡Ya eres el líder de la partida!"
+msgstr "Â¡Ya eres el lÃ­der de la partida!"
 
 msgid "multiplayer_no_servers"
 msgstr "No se han encontrado servidores..."
 
 msgid "multiplayer_join_prompt"
-msgstr "¿Nombre de host o IP?"
+msgstr "Â¿Nombre de host o IP?"
 
 # MONSTER TRANSLATIONS ##
 # Monster details
 msgid "aardart_description"
 msgstr ""
 "Lleva la cuenta de todas las hormigas que ha comido, y celebra llegar a "
-"números elevados."
+"nÃºmeros elevados."
 
 msgid "aardart"
 msgstr "Aardart"
@@ -673,30 +673,30 @@ msgstr "Aardorn"
 msgid "agnidon_description"
 msgstr ""
 "Prefiere andar sobre cuatro patas, pero puede erguirse para abrir puertas, "
-"empujar árboles o sostener cosas."
+"empujar Ã¡rboles o sostener cosas."
 
 msgid "agnidon"
 msgstr "Agnidon"
 
 msgid "agnigon_description"
 msgstr ""
-"Se dice que es un 'dragón falso', porque parece un dragón, pero en realidad "
-"evolucionó a partir de una línea diferente de antiguos reptiles."
+"Se dice que es un 'dragÃ³n falso', porque parece un dragÃ³n, pero en realidad "
+"evolucionÃ³ a partir de una lÃ­nea diferente de antiguos reptiles."
 
 msgid "agnigon"
 msgstr "Agnigon"
 
 msgid "agnite_description"
 msgstr ""
-"Es juguetón, pero debe enseñársele temprano a mantener su fuego a raya."
+"Es juguetÃ³n, pero debe enseÃ±Ã¡rsele temprano a mantener su fuego a raya."
 
 msgid "agnite"
 msgstr "Agnite"
 
 msgid "allagon_description"
 msgstr ""
-"Los ALLAGON se ven atraídos hacia las reliquias hechas con los metales que "
-"dejaron atrás sus antepasados, y reaccionarán con violencia para "
+"Los ALLAGON se ven atraÃ­dos hacia las reliquias hechas con los metales que "
+"dejaron atrÃ¡s sus antepasados, y reaccionarÃ¡n con violencia para "
 "recuperarlas."
 
 msgid "allagon"
@@ -704,7 +704,7 @@ msgstr "Allagon"
 
 msgid "anoleaf_description"
 msgstr ""
-"Considera a las plantas que crecen cerca de él sus hermanos y hermanas."
+"Considera a las plantas que crecen cerca de Ã©l sus hermanos y hermanas."
 
 msgid "anoleaf"
 msgstr "Anoleaf"
@@ -719,14 +719,14 @@ msgstr "Axolightl"
 
 msgid "bamboon_description"
 msgstr ""
-"Lucha con su vara de bambú, que también usa para mantener el equilibrio."
+"Lucha con su vara de bambÃº, que tambiÃ©n usa para mantener el equilibrio."
 
 msgid "bamboon"
 msgstr "Bamboon"
 
 msgid "bigfin_description"
 msgstr ""
-"Tiene un ecosistema entero en su espalda, así que intenta no sumergirse."
+"Tiene un ecosistema entero en su espalda, asÃ­ que intenta no sumergirse."
 
 msgid "bigfin"
 msgstr "Bigfin"
@@ -739,7 +739,7 @@ msgstr "Bolt"
 
 msgid "cairfrey_description"
 msgstr ""
-"Un alegre elemento de mobiliario que se despertó una mañana y decidió "
+"Un alegre elemento de mobiliario que se despertÃ³ una maÃ±ana y decidiÃ³ "
 "explorar."
 
 msgid "cairfrey"
@@ -747,7 +747,7 @@ msgstr "Cairfrey"
 
 msgid "capiti_description"
 msgstr ""
-"Parece un bebé, pero se han encuntrado especímenes de cientos de años."
+"Parece un bebÃ©, pero se han encuntrado especÃ­menes de cientos de aÃ±os."
 
 msgid "capiti"
 msgstr "Capiti"
@@ -761,14 +761,14 @@ msgstr "Cardiling"
 msgid "cardinale_description"
 msgstr ""
 "Odia firmemente a lis depredadores, y les declara la guerra a ellos y sus "
-"pequeños en cuanto puede."
+"pequeÃ±os en cuanto puede."
 
 msgid "cardinale"
 msgstr "Cardinale"
 
 msgid "cardiwing_description"
 msgstr ""
-"Su canto es notable, pero pocos se atreverían a mantener a un pájaro cantor "
+"Su canto es notable, pero pocos se atreverÃ­an a mantener a un pÃ¡jaro cantor "
 "explosivo."
 
 msgid "cardiwing"
@@ -776,16 +776,16 @@ msgstr "Cardiwing"
 
 msgid "chillimp_description"
 msgstr ""
-"Se rumorea que vive en lo alto de montañas heladas, pero nunca se le ha "
-"sacado una fotografía clara."
+"Se rumorea que vive en lo alto de montaÃ±as heladas, pero nunca se le ha "
+"sacado una fotografÃ­a clara."
 
 msgid "chillimp"
 msgstr "Chillimp"
 
 msgid "chloragon_description"
 msgstr ""
-"Eclosiona de un huevo antiguo plantado en suelo fértil.Cuando se acaben los "
-"huevos, no habrá más CHLORAGON."
+"Eclosiona de un huevo antiguo plantado en suelo fÃ©rtil.Cuando se acaben los "
+"huevos, no habrÃ¡ mÃ¡s CHLORAGON."
 
 msgid "chloragon"
 msgstr "Chloragon"
@@ -797,14 +797,14 @@ msgid "conifrost"
 msgstr "Conifrost"
 
 msgid "corvix_description"
-msgstr "Arma sus alas con fragmentos de hueso de sus víctimas."
+msgstr "Arma sus alas con fragmentos de hueso de sus vÃ­ctimas."
 
 msgid "corvix"
 msgstr "Corvix"
 
 msgid "dandylion_description"
 msgstr ""
-"Da a luz a una camada en toda su vida. Después vaga por el mundo en su "
+"Da a luz a una camada en toda su vida. DespuÃ©s vaga por el mundo en su "
 "busca."
 
 msgid "dandylion"
@@ -812,7 +812,7 @@ msgstr "Dandylion"
 
 msgid "djinnbo_description"
 msgstr ""
-"Existe la creencia errónea de que es un humano que murió en un incendio. En "
+"Existe la creencia errÃ³nea de que es un humano que muriÃ³ en un incendio. En "
 "realidad, los que murieron fueron sus parientes."
 
 msgid "djinnbo"
@@ -826,15 +826,15 @@ msgstr "Dollfin"
 
 msgid "dracune_description"
 msgstr ""
-"Se encuentra inmóvil durante el día, pero puede menearse y morder de noche."
+"Se encuentra inmÃ³vil durante el dÃ­a, pero puede menearse y morder de noche."
 
 msgid "dracune"
 msgstr "Dracune"
 
 msgid "dragarbor_description"
 msgstr ""
-"Cuando siente acercarse el fin de sus días, viaja a un cementerio y se "
-"planta a sí mismo. La flor de su cola crece por siempre."
+"Cuando siente acercarse el fin de sus dÃ­as, viaja a un cementerio y se "
+"planta a sÃ­ mismo. La flor de su cola crece por siempre."
 
 msgid "dragarbor"
 msgstr "Dragarbor"
@@ -853,7 +853,7 @@ msgid "eaglace"
 msgstr "Eaglace"
 
 msgid "eruptibus_description"
-msgstr "Los herreros trabajan con él, calentando metales en su caldera."
+msgstr "Los herreros trabajan con Ã©l, calentando metales en su caldera."
 
 msgid "eruptibus"
 msgstr "Eruptibus"
@@ -866,8 +866,8 @@ msgstr "Eyenemy"
 
 msgid "falcono_description"
 msgstr ""
-"No tiene miedo de ningun adversario, y atacará sin dudarlo a un enemigo de "
-"cualquier tamaño."
+"No tiene miedo de ningun adversario, y atacarÃ¡ sin dudarlo a un enemigo de "
+"cualquier tamaÃ±o."
 
 msgid "falcono"
 msgstr "Falcono"
@@ -875,7 +875,7 @@ msgstr "Falcono"
 msgid "ferricran_description"
 msgstr ""
 "Hubo un tiempo en el que los FERRICRAN estaban cubiertos de escamas "
-"adamantinas, y tenían alas de mithril."
+"adamantinas, y tenÃ­an alas de mithril."
 
 msgid "ferricran"
 msgstr "Ferricran"
@@ -888,7 +888,7 @@ msgstr "Firomenis"
 
 msgid "fluttaflap_description"
 msgstr ""
-"Se alimenta de impurezas, así que purifica la sangre de aquellos a los que "
+"Se alimenta de impurezas, asÃ­ que purifica la sangre de aquellos a los que "
 "muerde."
 
 msgid "fluttaflap"
@@ -903,7 +903,7 @@ msgid "fruitera"
 msgstr "Fruitera"
 
 msgid "gectile_description"
-msgstr "Es tan rápido y ligero que puede caminar sobre las hojas."
+msgstr "Es tan rÃ¡pido y ligero que puede caminar sobre las hojas."
 
 msgid "gectile"
 msgstr "Gectile"
@@ -911,7 +911,7 @@ msgstr "Gectile"
 msgid "heronquak_description"
 msgstr ""
 "El cristal de su pecho es confundido con un diamante por los cazadores "
-"furtivos. Se funde al ser extraído del cuerpo de un HERONQUAK."
+"furtivos. Se funde al ser extraÃ­do del cuerpo de un HERONQUAK."
 
 msgid "heronquak"
 msgstr "Heronquak"
@@ -924,7 +924,7 @@ msgstr "Hydrone"
 
 msgid "katacoon_description"
 msgstr ""
-"Permanece en una pose meditativa en su crisálida, moviéndose solamente para "
+"Permanece en una pose meditativa en su crisÃ¡lida, moviÃ©ndose solamente para "
 "pinchar a sus enemigos."
 
 msgid "katacoon"
@@ -932,7 +932,7 @@ msgstr "Katacoon"
 
 msgid "lambert_description"
 msgstr ""
-"Es colocado en su fruto por su padre, quien luego lo envía a vagar por el "
+"Es colocado en su fruto por su padre, quien luego lo envÃ­a a vagar por el "
 "mundo."
 
 msgid "lambert"
@@ -940,7 +940,7 @@ msgstr "Lambert"
 
 msgid "legko_description"
 msgstr ""
-"Durante mucho tiempo se pensó que no tenía piernas, pero de hecho sus hojas "
+"Durante mucho tiempo se pensÃ³ que no tenÃ­a piernas, pero de hecho sus hojas "
 "son extremidades vestigiales."
 
 msgid "legko"
@@ -975,15 +975,15 @@ msgstr "Noctalo"
 
 msgid "noctula_description"
 msgstr ""
-"Se alimenta de insectos mientras que los PIPIS se alimentan de fruta, así "
-"que, a pesar de vivir en proximidad, no compiten entre sí."
+"Se alimenta de insectos mientras que los PIPIS se alimentan de fruta, asÃ­ "
+"que, a pesar de vivir en proximidad, no compiten entre sÃ­."
 
 msgid "noctula"
 msgstr "Noctula"
 
 msgid "nostray_description"
 msgstr ""
-"Puede oler cualquier cosa en el océano, sin importar lo lejos que esté."
+"Puede oler cualquier cosa en el ocÃ©ano, sin importar lo lejos que estÃ©."
 
 msgid "nostray"
 msgstr "Nostray"
@@ -1040,8 +1040,8 @@ msgstr "Rockitten"
 
 msgid "sapragon_description"
 msgstr ""
-"En tiempos pretéritos, cada elemento tenía un poderoso dragón - pero esas "
-"criaturas han disminuído y son raras en estos días."
+"En tiempos pretÃ©ritos, cada elemento tenÃ­a un poderoso dragÃ³n - pero esas "
+"criaturas han disminuÃ­do y son raras en estos dÃ­as."
 
 msgid "sapragon"
 msgstr "Sapragon"
@@ -1060,7 +1060,7 @@ msgstr "Selmatek"
 
 msgid "sharpfin_description"
 msgstr ""
-"Es invisible en el agua, siendo visible únicamente cuando salta del agua "
+"Es invisible en el agua, siendo visible Ãºnicamente cuando salta del agua "
 "para arrastrar animales en la orilla hacia las profundidades."
 
 msgid "sharpfin"
@@ -1087,7 +1087,7 @@ msgstr "Spycozeus"
 
 msgid "sumchon_description"
 msgstr ""
-"Usa su peso para hacer tropezar a enemigos mucho más grandes que él. Es tan "
+"Usa su peso para hacer tropezar a enemigos mucho mÃ¡s grandes que Ã©l. Es tan "
 "denso como una estrella."
 
 msgid "sumchon"
@@ -1097,15 +1097,15 @@ msgid "swap"
 msgstr "Swap"
 
 msgid "template_description"
-msgstr "Descripción aquí"
+msgstr "DescripciÃ³n aquÃ­"
 
 msgid "template"
 msgstr "Nombre de Plantilla"
 
 msgid "tigrock_description"
 msgstr ""
-"Se dice que tuvo que inventarse a sí mismo porque no se había diseñado una "
-"evolución."
+"Se dice que tuvo que inventarse a sÃ­ mismo porque no se habÃ­a diseÃ±ado una "
+"evoluciÃ³n."
 
 msgid "tigrock"
 msgstr "Tigrock"
@@ -1124,26 +1124,26 @@ msgstr "Tux"
 
 msgid "tweesher_description"
 msgstr ""
-"Cuanto más frío haga, más duro es su pico. Por debajo de 0 grados, es más "
+"Cuanto mÃ¡s frÃ­o haga, mÃ¡s duro es su pico. Por debajo de 0 grados, es mÃ¡s "
 "duro que el diamante."
 
 msgid "tweesher"
 msgstr "Tweesher"
 
 msgid "vamporm_description"
-msgstr "Tiene sed de sangre, pero se las arregla con la savia de los árboles."
+msgstr "Tiene sed de sangre, pero se las arregla con la savia de los Ã¡rboles."
 
 msgid "vamporm"
 msgstr "Vamporm"
 
 msgid "velocitile_description"
-msgstr "Puede ir más rápido que una bala, pero solo si ha calentado primero."
+msgstr "Puede ir mÃ¡s rÃ¡pido que una bala, pero solo si ha calentado primero."
 
 msgid "velocitile"
 msgstr "Velocitile"
 
 msgid "wrougon_description"
-msgstr "Cada WROUGON nace con una mancha de óxido mayor que la de sus padres."
+msgstr "Cada WROUGON nace con una mancha de Ã³xido mayor que la de sus padres."
 
 msgid "wrougon"
 msgstr "Wrougon"
@@ -1162,10 +1162,10 @@ msgid "snout"
 msgstr "Hocico"
 
 msgid "false_dragon"
-msgstr "Dragón falso"
+msgstr "DragÃ³n falso"
 
 msgid "dragon"
-msgstr "Dragón"
+msgstr "DragÃ³n"
 
 msgid "sprout"
 msgstr "Brote"
@@ -1180,13 +1180,13 @@ msgid "island"
 msgstr "Isla"
 
 msgid "host"
-msgstr "Anfitrión"
+msgstr "AnfitriÃ³n"
 
 msgid "woodwose"
 msgstr "Ser de los bosques"
 
 msgid "firebird"
-msgstr "Pájaro de fuego"
+msgstr "PÃ¡jaro de fuego"
 
 msgid "frost_ape"
 msgstr "Mono helado"
@@ -1198,7 +1198,7 @@ msgid "horned_raptor"
 msgstr "Rapaz cornuda"
 
 msgid "lions_tooth"
-msgstr "Diente de león"
+msgstr "Diente de leÃ³n"
 
 msgid "vengeance"
 msgstr "Venganza"
@@ -1267,13 +1267,13 @@ msgid "earth"
 msgstr "Tierra"
 
 msgid "rip"
-msgstr "Rasgón"
+msgstr "RasgÃ³n"
 
 msgid "yeti"
 msgstr "Yeti"
 
 msgid "some_category_here"
-msgstr "Categoría aquí"
+msgstr "CategorÃ­a aquÃ­"
 
 msgid "ex_machina"
 msgstr "Ex Machina"
@@ -1282,13 +1282,13 @@ msgid "water"
 msgstr "Agua"
 
 msgid "clot"
-msgstr "Coágulo"
+msgstr "CoÃ¡gulo"
 
 msgid "restless"
 msgstr "Inquieto"
 
 msgid "slurpy"
-msgstr "Chupón"
+msgstr "ChupÃ³n"
 
 # NPC TRANSLATIONS ##
 # NPC slugs and names
@@ -1299,7 +1299,7 @@ msgid "allie"
 msgstr "Allie"
 
 msgid "cottonnurse"
-msgstr "Enfermera de Pueblo Algodón"
+msgstr "Enfermera de Pueblo AlgodÃ³n"
 
 msgid "karrianna"
 msgstr "Karrianna"
@@ -1370,42 +1370,42 @@ msgstr "Soldado del equipo Xero X"
 # DIALOG TRANSLATIONS ##
 # general dialogs
 msgid "healmytuxemon"
-msgstr "¿Deseas curar tus Tuxemon?"
+msgstr "Â¿Deseas curar tus Solamon?"
 
 msgid "haveagoodday"
-msgstr "¡Que tengas un buen día!"
+msgstr "Â¡Que tengas un buen dÃ­a!"
 
 msgid "yes"
-msgstr "Sí"
+msgstr "SÃ­"
 
 msgid "no"
 msgstr "No"
 
 msgid "door_problems"
-msgstr "La puerta está atascada y no se abre..."
+msgstr "La puerta estÃ¡ atascada y no se abre..."
 
 msgid "empty_pot"
-msgstr "Es una maceta vacía. Quizás alguien plante algo aquí."
+msgstr "Es una maceta vacÃ­a. QuizÃ¡s alguien plante algo aquÃ­."
 
 msgid "purple_flowers"
-msgstr "¡Alguien ha plantado unas flores moradas de olor dulce!"
+msgstr "Â¡Alguien ha plantado unas flores moradas de olor dulce!"
 
 msgid "orange_flowers"
-msgstr "¡Alguien ha plantado unas flores naranjas preciosas!"
+msgstr "Â¡Alguien ha plantado unas flores naranjas preciosas!"
 
 msgid "famous_statue"
 msgstr ""
-"Es una estatua de un antiguo maestro Tuxemon. El nombre se ha desgastado con"
+"Es una estatua de un antiguo maestro Solamon. El nombre se ha desgastado con"
 " el tiempo y resulta ilegible..."
 
 msgid "famous_statue2"
-msgstr "Dice: \"Para nuestros amados amigos y héroes, los Wywen\""
+msgstr "Dice: \"Para nuestros amados amigos y hÃ©roes, los Wywen\""
 
 msgid "cotton_town_fountain"
 msgstr "Es una fuente. Hay muchas monedas en el fondo."
 
 msgid "tree"
-msgstr "¡Este árbol parece feliz y saludable!"
+msgstr "Â¡Este Ã¡rbol parece feliz y saludable!"
 
 msgid "route_2"
 msgstr "Ruta 2"
@@ -1417,10 +1417,10 @@ msgid "not_really"
 msgstr "En realidad no."
 
 msgid "mistaken"
-msgstr "Estás equivocado."
+msgstr "EstÃ¡s equivocado."
 
 msgid "thats_me"
-msgstr "¡Ése soy yo!"
+msgstr "Â¡Ã‰se soy yo!"
 
 msgid "cash_register"
 msgstr "Es una caja registradora, parece relativamente nueva."
@@ -1428,286 +1428,286 @@ msgstr "Es una caja registradora, parece relativamente nueva."
 msgid "potions_in_shop"
 msgstr ""
 "El mostrador parece tener muchas pociones, deben ser bastante populares por "
-"aquí."
+"aquÃ­."
 
 msgid "capture_devices_in_shop"
-msgstr "Dispositivos de captura. ¿Cómo los harán?"
+msgstr "Dispositivos de captura. Â¿CÃ³mo los harÃ¡n?"
 
 # NPC dialogs
 msgid "professor_dialog"
 msgstr ""
-"Profesor: Ah, sí. Justo la persona a la que quería ver.\n"
-"He oído que quieres aprender sobre los Tuxemon.¿Es así?"
+"Profesor: Ah, sÃ­. Justo la persona a la que querÃ­a ver.\n"
+"He oÃ­do que quieres aprender sobre los Solamon.Â¿Es asÃ­?"
 
 msgid "professor_yes"
-msgstr "¡Genial!"
+msgstr "Â¡Genial!"
 
 msgid "professor_no"
 msgstr ""
-"Vaya, que lástima. ¡Pues me he hecho todo el camino hasta aquí para hablar "
-"contigo, así que escucha!"
+"Vaya, que lÃ¡stima. Â¡Pues me he hecho todo el camino hasta aquÃ­ para hablar "
+"contigo, asÃ­ que escucha!"
 
 msgid "professor_dialog2"
 msgstr ""
-"¿De dónde vinieron los Tuxemon?\n"
-"Nadie lo sabe realmente, pero han habitado nuestro planeta por miles de años cuanto menos. \n"
-"Los Tuxemon son pequeños animales. \n"
-"Nos hacemos sus amigos, aprendemos de ellos, y los usamos para luchar contra otros Tuxemon en competiciones deportivas.\n"
-"Bueno... por lo menos solíamos hacerlo...\n"
-"Me preguntaba... acabo de recibir tres nuevos Tuxemon y me gustaría investigar cómo actúan con un entrenador. \n"
-"¿Estarías interesado en uno?"
+"Â¿De dÃ³nde vinieron los Solamon?\n"
+"Nadie lo sabe realmente, pero han habitado nuestro planeta por miles de aÃ±os cuanto menos. \n"
+"Los Solamon son pequeÃ±os animales. \n"
+"Nos hacemos sus amigos, aprendemos de ellos, y los usamos para luchar contra otros Solamon en competiciones deportivas.\n"
+"Bueno... por lo menos solÃ­amos hacerlo...\n"
+"Me preguntaba... acabo de recibir tres nuevos Solamon y me gustarÃ­a investigar cÃ³mo actÃºan con un entrenador. \n"
+"Â¿EstarÃ­as interesado en uno?"
 
 msgid "professor_turn"
-msgstr "Claro que estarías interesado, ¿a quién quiero engañar?"
+msgstr "Claro que estarÃ­as interesado, Â¿a quiÃ©n quiero engaÃ±ar?"
 
 msgid "professor_select"
-msgstr "¿Cual de ellos quieres?"
+msgstr "Â¿Cual de ellos quieres?"
 
 msgid "professor_dialog6.1"
 msgstr ""
-"Profesor: ¡Una elección excelente! Hydrone es un Tuxemon de tipo agua."
+"Profesor: Â¡Una elecciÃ³n excelente! Hydrone es un Solamon de tipo agua."
 
 msgid "professor_dialog6.2"
 msgstr ""
-"Profesor: ¡Una elección soberbia! Rockitten es un Tuxemon de tipo tierra."
+"Profesor: Â¡Una elecciÃ³n soberbia! Rockitten es un Solamon de tipo tierra."
 
 msgid "professor_dialog6.3"
-msgstr "Profesor: ¡Una buena elección! Fruitera es un Tuxemon de tipo madera."
+msgstr "Profesor: Â¡Una buena elecciÃ³n! Fruitera es un Solamon de tipo madera."
 
 msgid "professor_dialog7"
 msgstr ""
-"Profesor: ¡Espero verte pronto! Voy a irme de viaje, así que quizás nos "
-"encontremos en algún momento."
+"Profesor: Â¡Espero verte pronto! Voy a irme de viaje, asÃ­ que quizÃ¡s nos "
+"encontremos en algÃºn momento."
 
 msgid "karrianna_dialog1"
 msgstr ""
-"Karrianna: ¡He estado entrenando todo este último mes! ¡Nadie me ha "
-"derrotado aún!"
+"Karrianna: Â¡He estado entrenando todo este Ãºltimo mes! Â¡Nadie me ha "
+"derrotado aÃºn!"
 
 msgid "karrianna_dialog2"
 msgstr "Bueno... Eres el primer entrenador al que me he enfrentado..."
 
 msgid "xero_hideout1"
-msgstr "Instituto Xero para la Investigación y Desarrollo de Tuxemon."
+msgstr "Instituto Xero para la InvestigaciÃ³n y Desarrollo de Solamon."
 
 msgid "cherry_found"
 msgstr "Has encontrado una cereza."
 
 msgid "xero_grunts_block"
-msgstr "Esta zona está en construcción y será terminada pronto."
+msgstr "Esta zona estÃ¡ en construcciÃ³n y serÃ¡ terminada pronto."
 
 msgid "waiting_for_misa"
 msgstr ""
-"Nuestro líder quiere hablar contigo. Cuando estés listo, habla con mi amigo "
-"aquí a mi lado."
+"Nuestro lÃ­der quiere hablar contigo. Cuando estÃ©s listo, habla con mi amigo "
+"aquÃ­ a mi lado."
 
 msgid "teleport?"
-msgstr "¿Estás preparado para conocer a nuestro líder?"
+msgstr "Â¿EstÃ¡s preparado para conocer a nuestro lÃ­der?"
 
 msgid "ouch"
 msgstr "Lo siento, pero esto puede doler un poco..."
 
 msgid "maybe_sometime_again?"
-msgstr "De acuerdo, esperaré aquí hasta que estés listo."
+msgstr "De acuerdo, esperarÃ© aquÃ­ hasta que estÃ©s listo."
 
 msgid "youcantleave"
 msgstr ""
-"Las puertas están cerradas por fuera... ¿Hay una llave en alguna parte?"
+"Las puertas estÃ¡n cerradas por fuera... Â¿Hay una llave en alguna parte?"
 
 msgid "discovered_a_person"
-msgstr "¡Me encontraste! ¡Jajaja!"
+msgstr "Â¡Me encontraste! Â¡Jajaja!"
 
 msgid "a_serious_discussion"
 msgstr ""
 "???: Te llevo observando un tiempo. Me alegro de que mis seguidores hayan podido atraparte ileso.\n"
-"¡Oh! ¿Dónde están mis modales? \n"
-"Soy Misa, líder del Instituto Xero para la Investigación y Desarrollo de Tuxemon.\n"
-"¿Cómo decías que te llamabas? \n"
+"Â¡Oh! Â¿DÃ³nde estÃ¡n mis modales? \n"
+"Soy Misa, lÃ­der del Instituto Xero para la InvestigaciÃ³n y Desarrollo de Solamon.\n"
+"Â¿CÃ³mo decÃ­as que te llamabas? \n"
 "....  .....  ....\n"
-"¿${{name}}?\n"
-"Misa: Parece un buen nombre para alguien que posee un Tuxemon de forma ilegal."
+"Â¿${{name}}?\n"
+"Misa: Parece un buen nombre para alguien que posee un Solamon de forma ilegal."
 
 msgid "oops"
 msgstr ""
-"Oh. Supongo que no lo sabías...\n"
-"No debes tener miedo, tener un Tuxemon de tu parte es la mejor cosa que te ha pasado nunca."
+"Oh. Supongo que no lo sabÃ­as...\n"
+"No debes tener miedo, tener un Solamon de tu parte es la mejor cosa que te ha pasado nunca."
 
 msgid "backstory"
 msgstr ""
-"Unos treinta años atrás, un grupo llamado Omnichannel comenzó a controlar los medios de comunicación\n"
-"Poco depués, dejaron de permitir a todo el mundo expresarse en ellos.\n"
-"Así que la gente decidió usar a los Tuxemon como mensajeros y para zanjar disputas. \n"
-"Hace unos diez años, comenzó a reprimirse el uso de Tuxemon.\n"
-"Ahora, solo las personas con aprobación pueden poseer y criar Tuxemon. \n"
+"Unos treinta aÃ±os atrÃ¡s, un grupo llamado Omnichannel comenzÃ³ a controlar los medios de comunicaciÃ³n\n"
+"Poco depuÃ©s, dejaron de permitir a todo el mundo expresarse en ellos.\n"
+"AsÃ­ que la gente decidiÃ³ usar a los Solamon como mensajeros y para zanjar disputas. \n"
+"Hace unos diez aÃ±os, comenzÃ³ a reprimirse el uso de Solamon.\n"
+"Ahora, solo las personas con aprobaciÃ³n pueden poseer y criar Solamon. \n"
 "Mi grupo investiga con ellos, por lo que todos tenemos.\n"
-"Tú eres distinto. No has sido aprobado por Omnichannel. \n"
-"Podrías ser el entrenador que hemos estado buscando.\n"
-"Omnichannel, por despiadados que sean, no son la única amenaza que tenemos aquí. \n"
-"Hay otra organización llamada Spyder.\n"
-"No deberías preocuparte mucho por ellos. No tienen mucha actividad cerca de aquí.\n"
+"TÃº eres distinto. No has sido aprobado por Omnichannel. \n"
+"PodrÃ­as ser el entrenador que hemos estado buscando.\n"
+"Omnichannel, por despiadados que sean, no son la Ãºnica amenaza que tenemos aquÃ­. \n"
+"Hay otra organizaciÃ³n llamada Spyder.\n"
+"No deberÃ­as preocuparte mucho por ellos. No tienen mucha actividad cerca de aquÃ­.\n"
 "Ahora, te mandaremos de vuelta en tu viaje. \n"
 "Pero solo si aceptas ayudarnos contra Omnichannel.\n"
 "De lo contrario, te denunciaremos ante Omnichannel nosotros mismos. \n"
-"Y en ese caso lo perderás todo.\n"
+"Y en ese caso lo perderÃ¡s todo.\n"
 "Siempre estamos vigilando."
 
 msgid "backstory9"
-msgstr "¿Qué dices? ¿Nos ayudarás?"
+msgstr "Â¿QuÃ© dices? Â¿Nos ayudarÃ¡s?"
 
 msgid "sorryfurthis"
-msgstr "Buena elección. Lo siento, esto solo dolerá un poco."
+msgstr "Buena elecciÃ³n. Lo siento, esto solo dolerÃ¡ un poco."
 
 msgid "mwah"
 msgstr ""
-"???: ¿Qué quieres? ... ... ... Bueno, pues no. No vas a entrar aquí, incluso aunque vistas con tan buen gusto.\n"
+"???: Â¿QuÃ© quieres? ... ... ... Bueno, pues no. No vas a entrar aquÃ­, incluso aunque vistas con tan buen gusto.\n"
 "Soy Allie por cierto.\n"
-"Allie: Sí, esto es el Omnichannel, pero yo soy solo una humilde guardia. ¿Quién eres tú?\n"
+"Allie: SÃ­, esto es el Omnichannel, pero yo soy solo una humilde guardia. Â¿QuiÃ©n eres tÃº?\n"
 "${{name}}...\n"
-"Mmm. Un nombre potente. Mi casa no está muy lejos, quizás... después del trabajo... ¿podrías enseñarme lo fuerte que eres?\n"
-"... ... ¡No! ¿Cómo que no? Salvo que... ... ¡Tú eres el nuevo novio de Jess, ¿no?! ¡Ha estado jugando conmigo todo este tiempo!"
+"Mmm. Un nombre potente. Mi casa no estÃ¡ muy lejos, quizÃ¡s... despuÃ©s del trabajo... Â¿podrÃ­as enseÃ±arme lo fuerte que eres?\n"
+"... ... Â¡No! Â¿CÃ³mo que no? Salvo que... ... Â¡TÃº eres el nuevo novio de Jess, Â¿no?! Â¡Ha estado jugando conmigo todo este tiempo!"
 
 msgid "mwah2"
-msgstr "¡¡¡JESS!!!"
+msgstr "Â¡Â¡Â¡JESS!!!"
 
 msgid "itslockedboi"
-msgstr "Allie cierra la puerta detrás de ella..."
+msgstr "Allie cierra la puerta detrÃ¡s de ella..."
 
 msgid "hellothere"
-msgstr "???: ¡Hola!"
+msgstr "???: Â¡Hola!"
 
 msgid "kmere"
-msgstr "¿Por qué no te acercas y hablamos?"
+msgstr "Â¿Por quÃ© no te acercas y hablamos?"
 
 msgid "theinfo"
 msgstr ""
-"Lamento que hayas tenido que ver esa escena. Allie es difícil de tratar a veces, al contrario que mi hija Jess.\n"
-"¡Oh! ¿Dónde están mis modales? Mi nombre es Ae... ¿Sabes qué? Mejor lo escribo.\n"
+"Lamento que hayas tenido que ver esa escena. Allie es difÃ­cil de tratar a veces, al contrario que mi hija Jess.\n"
+"Â¡Oh! Â¿DÃ³nde estÃ¡n mis modales? Mi nombre es Ae... Â¿Sabes quÃ©? Mejor lo escribo.\n"
 "Aeble\n"
-"Se pronuncia \"ahbluh\", pero todo el mundo me llama simplemente Able. Puedes llamarme así, supongo...\n"
-"Aeble: Soy el CEO aquí en Omnichannel. Todas las retransmisiones que ves, deben ser aprobadas por mí.\n"
-"Ahora bien, no soy el único que hace su parte. Tenemos una junta directiva que nos ayuda a administrar los distritos.\n"
-"La junta lleva siendo reelegida desde que se formó. Han realizado un gran trabajo, así que tiene sentido.\n"
-"El objetivo de Omnichannel es abrir el mundo a todos. La única forma, no obstante, de hacer que todos sean iguales,\n"
-"fue restringir a los Tuxemon.\n"
-"Empezamos confiscándolos, pero la mayoría de Tuxemon conseguían escapar. Así que pasamos a medidas extremas.\n"
-"Nuestra organización hermana Spyder ha desarrollado una droga que puede cambiar a los Tuxemon.\n"
-"Aísla una porción del cerebro que todo Tuxemon misteriosamente tiene, y la sobrecarga.\n"
-"Una vez que ha sido sobrecargada con electricidad, sus ganas de resistirse se desvanecen y se vuelven dóciles.\n"
-"Por ello, unas pocas especies se encuentran extintas, específicamente Rockitten, Fruitera, y Hydrone.\n"
-"Esto ya no importa, no obstante. Esta generación ya ni siquiera sabe lo que son los Tuxemon, a menos que trabajen para nosotros.\n"
-"La tasa de natalidad está en su punto más alto, y el apoyo a Omnichannel no ha caído desde el año anterior a la restricción.\n"
-"Los Tuxemon son una maldición penetrante que destruye a la humanidad. Omnichannel ha arreglado esto y ha impuesto orden.\n"
-"Los Tuxemon destruyen y cualquiera que diga lo contrario miente. Lo siento, pero debo volver al trabajo."
+"Se pronuncia \"ahbluh\", pero todo el mundo me llama simplemente Able. Puedes llamarme asÃ­, supongo...\n"
+"Aeble: Soy el CEO aquÃ­ en Omnichannel. Todas las retransmisiones que ves, deben ser aprobadas por mÃ­.\n"
+"Ahora bien, no soy el Ãºnico que hace su parte. Tenemos una junta directiva que nos ayuda a administrar los distritos.\n"
+"La junta lleva siendo reelegida desde que se formÃ³. Han realizado un gran trabajo, asÃ­ que tiene sentido.\n"
+"El objetivo de Omnichannel es abrir el mundo a todos. La Ãºnica forma, no obstante, de hacer que todos sean iguales,\n"
+"fue restringir a los Solamon.\n"
+"Empezamos confiscÃ¡ndolos, pero la mayorÃ­a de Solamon conseguÃ­an escapar. AsÃ­ que pasamos a medidas extremas.\n"
+"Nuestra organizaciÃ³n hermana Spyder ha desarrollado una droga que puede cambiar a los Solamon.\n"
+"AÃ­sla una porciÃ³n del cerebro que todo Solamon misteriosamente tiene, y la sobrecarga.\n"
+"Una vez que ha sido sobrecargada con electricidad, sus ganas de resistirse se desvanecen y se vuelven dÃ³ciles.\n"
+"Por ello, unas pocas especies se encuentran extintas, especÃ­ficamente Rockitten, Fruitera, y Hydrone.\n"
+"Esto ya no importa, no obstante. Esta generaciÃ³n ya ni siquiera sabe lo que son los Solamon, a menos que trabajen para nosotros.\n"
+"La tasa de natalidad estÃ¡ en su punto mÃ¡s alto, y el apoyo a Omnichannel no ha caÃ­do desde el aÃ±o anterior a la restricciÃ³n.\n"
+"Los Solamon son una maldiciÃ³n penetrante que destruye a la humanidad. Omnichannel ha arreglado esto y ha impuesto orden.\n"
+"Los Solamon destruyen y cualquiera que diga lo contrario miente. Lo siento, pero debo volver al trabajo."
 
 msgid "liela_goes_to_battle"
 msgstr ""
-"¡Si vas a molestarme mientras recojo bayas, me veo obligado a retarte!"
+"Â¡Si vas a molestarme mientras recojo bayas, me veo obligado a retarte!"
 
 msgid "Cathedral_Center"
 msgstr "Centro de la Catedral: Vivimos para Servir."
 
 msgid "Cotton_Mart"
-msgstr "¡Obtén la novedad en la Tienda de Novedades!"
+msgstr "Â¡ObtÃ©n la novedad en la Tienda de Novedades!"
 
 msgid "Cotton_Town_Sign"
 msgstr ""
-"Bienvenidos a Pueblo Algodón: Una Fuerza en Crecimiento\n"
-"↑ Pueblo Algodón --- Ruta 1 ↓"
+"Bienvenidos a Pueblo AlgodÃ³n: Una Fuerza en Crecimiento\n"
+"â†‘ Pueblo AlgodÃ³n --- Ruta 1 â†“"
 
 msgid "column1"
-msgstr "Una columna rara y antigua. Esto solía ser parte de un templo."
+msgstr "Una columna rara y antigua. Esto solÃ­a ser parte de un templo."
 
 msgid "column2"
 msgstr ""
-"Una columna rara y antigua. Otras ruinas de la misma civilización se pueden "
+"Una columna rara y antigua. Otras ruinas de la misma civilizaciÃ³n se pueden "
 "encontrar en la Ruta 3. "
 
 msgid "cityparksign"
 msgstr ""
 "Bienvenido al Parque de la Ciudad: Una muestra del mundo silvestre\n"
-"↑ Parque de la Ciudad --- Ruta 2 ↓"
+"â†‘ Parque de la Ciudad --- Ruta 2 â†“"
 
 msgid "route2speech"
-msgstr "¡¡¡Ehhhh!!!"
+msgstr "Â¡Â¡Â¡Ehhhh!!!"
 
 msgid "route2speech2"
 msgstr ""
-"Oh. Solo eres tú, ${{name}}...\n"
-"Sé más considerado la siguiente vez que empujes a alguien. El barranco es más profundo de lo que parece..."
+"Oh. Solo eres tÃº, ${{name}}...\n"
+"SÃ© mÃ¡s considerado la siguiente vez que empujes a alguien. El barranco es mÃ¡s profundo de lo que parece..."
 
 msgid "route2speech3"
 msgstr ""
 "Aunque realmente puede que no sea algo malo...\n"
-"Lo sé, todo el mundo necesita que yo lidere, pero con todo lo que está pasando...\n"
-"Pero tú no quieres escucharme... ¿verdad?"
+"Lo sÃ©, todo el mundo necesita que yo lidere, pero con todo lo que estÃ¡ pasando...\n"
+"Pero tÃº no quieres escucharme... Â¿verdad?"
 
 msgid "yestalk"
-msgstr "¿En serio? Gracias..."
+msgstr "Â¿En serio? Gracias..."
 
 msgid "notalk"
 msgstr ""
-"¡Cómo puedes ser tan insensible! ¡Pues me vas a escuchar de todos modos!"
+"Â¡CÃ³mo puedes ser tan insensible! Â¡Pues me vas a escuchar de todos modos!"
 
 msgid "spillit"
 msgstr ""
-"Ya sabes que soy el líder del instituto Xero y que te he reclutado para luchar contra ellos. Pero hay algo que no sabes.\n"
-"Allie, a la que conociste anteriormente... ¿Qué? Te dije que estaríamos vigilando, no deberías sorprenderte."
+"Ya sabes que soy el lÃ­der del instituto Xero y que te he reclutado para luchar contra ellos. Pero hay algo que no sabes.\n"
+"Allie, a la que conociste anteriormente... Â¿QuÃ©? Te dije que estarÃ­amos vigilando, no deberÃ­as sorprenderte."
 
 msgid "spillit3"
 msgstr ""
-"Lo que sea... Allie es mi hermana y lo significa todo para mí, así que me "
-"destrozó enterarme de que se la han llevado al cuartel general."
+"Lo que sea... Allie es mi hermana y lo significa todo para mÃ­, asÃ­ que me "
+"destrozÃ³ enterarme de que se la han llevado al cuartel general."
 
 msgid "spillit4"
 msgstr ""
-"Puede no parecer algo malo, pero lo es. ¿Sabes qué les hacen? ¿¡LO SABES!?"
+"Puede no parecer algo malo, pero lo es. Â¿Sabes quÃ© les hacen? Â¿Â¡LO SABES!?"
 
 msgid "spillit5"
 msgstr ""
-"Porque yo tampoco... Lo único que sé es que nunca nadie ha abandonado "
-"Omnichannel después de ser reclutado."
+"Porque yo tampoco... Lo Ãºnico que sÃ© es que nunca nadie ha abandonado "
+"Omnichannel despuÃ©s de ser reclutado."
 
 msgid "spillit6"
 msgstr ""
-"En cualquier caso... no es de tu incumbencia. Lo único que importa es hacer "
+"En cualquier caso... no es de tu incumbencia. Lo Ãºnico que importa es hacer "
 "caer a Omnichannel."
 
 msgid "spillit7"
 msgstr ""
-"Lamento molestarte con mis problemas. El Parque de la Ciudad está delante, "
+"Lamento molestarte con mis problemas. El Parque de la Ciudad estÃ¡ delante, "
 "cuando desees continuar"
 
 msgid "leavemealone"
-msgstr "Solíamos jugar ahí todo el tiempo cuando éramos jóvenes..."
+msgstr "SolÃ­amos jugar ahÃ­ todo el tiempo cuando Ã©ramos jÃ³venes..."
 
 msgid "iamknight"
 msgstr ""
-"¡¡AHHH!!!\n"
-"Pensé que eras otra persona. Disculpa por gritar."
+"Â¡Â¡AHHH!!!\n"
+"PensÃ© que eras otra persona. Disculpa por gritar."
 
 msgid "iamknight2"
 msgstr ""
-"Espera, ¿tú eres del que todo el mundo habla en susurros? ¿El que tiene un "
-"Tuxemon ilegal?"
+"Espera, Â¿tÃº eres del que todo el mundo habla en susurros? Â¿El que tiene un "
+"Solamon ilegal?"
 
 msgid "mistakenknight"
 msgstr ""
-"No, es imposible que esté equivocado. ¡Eres tú!\n"
-"No te preocupes, no se lo diré a nadie."
+"No, es imposible que estÃ© equivocado. Â¡Eres tÃº!\n"
+"No te preocupes, no se lo dirÃ© a nadie."
 
 msgid "thatsmeknight"
 msgstr ""
-"¡Oh, expléndido! Sabía desde el principio que tenías que ser tú.\n"
-"No te preocupes, no se lo diré a nadie."
+"Â¡Oh, explÃ©ndido! SabÃ­a desde el principio que tenÃ­as que ser tÃº.\n"
+"No te preocupes, no se lo dirÃ© a nadie."
 
 msgid "quicklyknight"
 msgstr ""
-"No me queda mucho tiempo. Omnichannel está viniendo...\n"
-"Debía encontrarme con un contacto, pero tendrás que hacerlo tú. Están viniendo."
+"No me queda mucho tiempo. Omnichannel estÃ¡ viniendo...\n"
+"DebÃ­a encontrarme con un contacto, pero tendrÃ¡s que hacerlo tÃº. EstÃ¡n viniendo."
 
 msgid "quicklyknight2"
 msgstr ""
-"Dos personas controlan Omnichannel. La junta de dirección es un chiste."
+"Dos personas controlan Omnichannel. La junta de direcciÃ³n es un chiste."
 
 msgid "quicklyknight3"
 msgstr "Allie. Allie es la que no quiere que lo sepas."
@@ -1716,20 +1716,20 @@ msgid "quicklyknight4"
 msgstr "Lo siento, pero he de irme ya."
 
 msgid "omnichannelarrives"
-msgstr "¡DETENTE!"
+msgstr "Â¡DETENTE!"
 
 msgid "yesmaam"
-msgstr "Sí, señora."
+msgstr "SÃ­, seÃ±ora."
 
 msgid "firsts"
 msgstr ""
-"♪ Watch me whip ♪\n"
-"♪ Watch me nae nae ♪\n"
-"Esta canción es muy buena, ¿verdad?"
+"â™ª Watch me whip â™ª\n"
+"â™ª Watch me nae nae â™ª\n"
+"Esta canciÃ³n es muy buena, Â¿verdad?"
 
 msgid "nopenotyet"
 msgstr ""
-"Lo siento, alguien ha resultado herido en la ruta. Ahora mismo está cerrada."
+"Lo siento, alguien ha resultado herido en la ruta. Ahora mismo estÃ¡ cerrada."
 
 msgid "bothofyou"
 msgstr ""
@@ -1737,22 +1737,22 @@ msgstr ""
 " la ciudad."
 
 msgid "hellolovelypeople"
-msgstr "¡HOLAAAAA CIUDADANOS DE PUEBLO TABA!"
+msgstr "Â¡HOLAAAAA CIUDADANOS DE PUEBLO TABA!"
 
 msgid "darnitjohn"
-msgstr "Espera... ¿Dónde está John?"
+msgstr "Espera... Â¿DÃ³nde estÃ¡ John?"
 
 msgid "darnitjohn2"
-msgstr "¡MALDITA SEA JOHN! ¡Ven aquí!"
+msgstr "Â¡MALDITA SEA JOHN! Â¡Ven aquÃ­!"
 
 msgid "darnitjohn3"
 msgstr "John."
 
 msgid "darnitjohn4"
-msgstr "¿S-Sí señora?"
+msgstr "Â¿S-SÃ­ seÃ±ora?"
 
 msgid "darnitjohn5"
-msgstr "¿Qué haces aún ahí?"
+msgstr "Â¿QuÃ© haces aÃºn ahÃ­?"
 
 msgid "darnitjohn6"
 msgstr "Uhh..."
@@ -1761,105 +1761,105 @@ msgid "darnitjohn7"
 msgstr "No estoy seguro..."
 
 msgid "darnitjohn8"
-msgstr "¡¡¡AAAAARGH!!!"
+msgstr "Â¡Â¡Â¡AAAAARGH!!!"
 
 msgid "darnitjohn9"
 msgstr ""
-"¡TÚ, IMBÉCIL!\n"
+"Â¡TÃš, IMBÃ‰CIL!\n"
 "Voy a decirlo una y solo una vez:\n"
 "VE. A. INSPECCIONAR. LAS. CASAS."
 
 msgid "darnitjohn10"
-msgstr "¡AHORA!"
+msgstr "Â¡AHORA!"
 
 msgid "johnissorry"
 msgstr ""
-"Disculpe señora... Yo... \n"
+"Disculpe seÃ±ora... Yo... \n"
 "Vi... \n"
 "Algunas... \n"
 "Flores..."
 
 msgid "uselessnes"
 msgstr ""
-"Eres completamente inútil John. No puedo creer que hayamos estado juntos."
+"Eres completamente inÃºtil John. No puedo creer que hayamos estado juntos."
 
 msgid "cometomepls"
 msgstr ""
-"AHORA, TODO EL MUNDO, POR FAVOR VENID AL CENTRO DEL PUEBLO. ¡OMNICHANNEL "
+"AHORA, TODO EL MUNDO, POR FAVOR VENID AL CENTRO DEL PUEBLO. Â¡OMNICHANNEL "
 "QUIERE DIRIGIRSE A VOSOTROS!"
 
 msgid "hellolovelypeople2"
 msgstr ""
-"Sé que probablemente os preguntáis por qué mis Omnicaballeros y yo estamos aquí.\n"
+"SÃ© que probablemente os preguntÃ¡is por quÃ© mis Omnicaballeros y yo estamos aquÃ­.\n"
 "Espera..."
 
 msgid "hellolovelypeople3"
 msgstr ""
-"¿De verdad sóis las únicas personas de este pueblo? ¡No hay nadie aquí! Este"
-" DEBE ser el pueblo más pequeño en toda la región Fondent."
+"Â¿De verdad sÃ³is las Ãºnicas personas de este pueblo? Â¡No hay nadie aquÃ­! Este"
+" DEBE ser el pueblo mÃ¡s pequeÃ±o en toda la regiÃ³n Fondent."
 
 msgid "hellolovelypeople4"
 msgstr ""
-"Estoy bastante segura de que hay casas en Pueblo Algodón más grandes que "
+"Estoy bastante segura de que hay casas en Pueblo AlgodÃ³n mÃ¡s grandes que "
 "esto..."
 
 msgid "hellolovelypeople5"
 msgstr ""
 "No... Espera... Nos falta una persona... \n"
-"El solitario criador de Tuxemon de la región Fondent. El que se hace llamar Profesor Tuxemon"
+"El solitario criador de Solamon de la regiÃ³n Fondent. El que se hace llamar Profesor Solamon"
 
 msgid "whereismyhairbrush"
 msgstr "John, Grant, separaos. ENCONTRADLO."
 
 msgid "oopsie"
-msgstr "Siento que tuviérais que ver eso. Es TAAAAAAAN inútil a veces..."
+msgstr "Siento que tuviÃ©rais que ver eso. Es TAAAAAAAN inÃºtil a veces..."
 
 msgid "ourstuffisours"
-msgstr "¿Por qué estás realmente aquí?"
+msgstr "Â¿Por quÃ© estÃ¡s realmente aquÃ­?"
 
 msgid "oopsie2"
 msgstr ""
-"¿Por qué no esperamos a que regresen mis caballeros? \n"
+"Â¿Por quÃ© no esperamos a que regresen mis caballeros? \n"
 "Odio anunciar malas noticias sola."
 
 msgid "maamiexist"
-msgstr "Señora, no está en la casa."
+msgstr "SeÃ±ora, no estÃ¡ en la casa."
 
 msgid "maamiexist2"
-msgstr "¿Había algo de interés?"
+msgstr "Â¿HabÃ­a algo de interÃ©s?"
 
 msgid "maamiexist3"
 msgstr ""
 "Hay un ordenador ejecutando Ubuntu.\n"
-"Iba a confiscarlo, pero sé que Gnome no es tu estilo..."
+"Iba a confiscarlo, pero sÃ© que Gnome no es tu estilo..."
 
 msgid "maamiexist4"
 msgstr ""
-"No, déjalo. Esta gente obviamente tiene un gusto terrible y desprecian la utilidad y la simplicidad...\n"
-"Comprueba el laboratorio ahora Grant. Esperaré a John."
+"No, dÃ©jalo. Esta gente obviamente tiene un gusto terrible y desprecian la utilidad y la simplicidad...\n"
+"Comprueba el laboratorio ahora Grant. EsperarÃ© a John."
 
 msgid "itsmyaurababe"
-msgstr "Ahora, ¿quién eres tú?"
+msgstr "Ahora, Â¿quiÃ©n eres tÃº?"
 
 msgid "itsmyaurababe2"
 msgstr ""
 "Mmm, ahora que te veo, tienes un aura bastante misteriosa.\n"
 "...   ...   ...   ...\n"
-"Deberíamos hablar en algún momento. ¿Quizás puedas pasarte a verme a Pueblo Algodón?"
+"DeberÃ­amos hablar en algÃºn momento. Â¿QuizÃ¡s puedas pasarte a verme a Pueblo AlgodÃ³n?"
 
 msgid "itsmyduhduhduh"
-msgstr "¡Recibiste la dirección de Allie!"
+msgstr "Â¡Recibiste la direcciÃ³n de Allie!"
 
 msgid "itsmyaurababe3"
 msgstr "Espero que nos volvamos a encontrar. "
 
 msgid "maamnothing"
-msgstr "Señora..."
+msgstr "SeÃ±ora..."
 
 msgid "maamnothing2"
 msgstr ""
-"¡Maldita sea, John! ¡Has interrumpido nuestro momento!\n"
-"¿Qué quieres?"
+"Â¡Maldita sea, John! Â¡Has interrumpido nuestro momento!\n"
+"Â¿QuÃ© quieres?"
 
 msgid "maamnothing3"
 msgstr "Yo... Yo... No he encontrado nada."
@@ -1868,118 +1868,118 @@ msgid "maamnothing4"
 msgstr "Genial. Gracias por avisar."
 
 msgid "maamnothing5"
-msgstr "Señora, yo tampoco le he encontrado."
+msgstr "SeÃ±ora, yo tampoco le he encontrado."
 
 msgid "maamnothing6"
 msgstr ""
 "... ... ... ...\n"
-"... Bien. Probablemente deberíamos volver al cuartel general y reportar."
+"... Bien. Probablemente deberÃ­amos volver al cuartel general y reportar."
 
 msgid "solongjohn"
 msgstr ""
-"John, deberías quedarte aquí a mantener la paz.\n"
+"John, deberÃ­as quedarte aquÃ­ a mantener la paz.\n"
 "No te quiero a mi alrededor de todos modos."
 
 msgid "solongjohn2"
 msgstr "Ven Grant, tenemos una agenda que seguir."
 
 msgid "seeme"
-msgstr "Asegúrate de venir a verme..."
+msgstr "AsegÃºrate de venir a verme..."
 
 msgid "knight4ispoor"
 msgstr "Ella no es mala persona en realidad."
 
 msgid "frowntime"
 msgstr ""
-"No me importa estar aquí...\n"
+"No me importa estar aquÃ­...\n"
 "Solamente es un poco solitario a veces..."
 
 msgid "wherewasshe"
 msgstr "No nos ha dicho las malas noticias..."
 
 msgid "waitdontgo"
-msgstr "¡${{name}}! ¡Espera! ¡No te vayas aún!"
+msgstr "Â¡${{name}}! Â¡Espera! Â¡No te vayas aÃºn!"
 
 msgid "thetvbescreamin"
 msgstr ""
-"Cariño, espera. Acabo de encender la televisión y echaban una rueda de prensa de Omnichannel.\n"
-"Deberíamos verla."
+"CariÃ±o, espera. Acabo de encender la televisiÃ³n y echaban una rueda de prensa de Omnichannel.\n"
+"DeberÃ­amos verla."
 
 msgid "ipausedit"
 msgstr "He pausado la tele para poder coger un vaso de agua y verla juntos."
 
 msgid "announcement1"
 msgstr ""
-"¡SALUDOS, CIUDADANOS DE LA REGIÓN FONDENT!\n"
+"Â¡SALUDOS, CIUDADANOS DE LA REGIÃ“N FONDENT!\n"
 "GRACIAS POR SINTONIZAR VUESTROS TELEVISORES PARA VER ESTE ANUNCIO OBLIGATORIO."
 
 msgid "announcement2"
-msgstr "¡TE QUEREMOS, ABLE!"
+msgstr "Â¡TE QUEREMOS, ABLE!"
 
 msgid "announcement3"
 msgstr ""
-"Gracias. Yo también os quiero.\n"
+"Gracias. Yo tambiÃ©n os quiero.\n"
 "Ahora, a lo que vamos."
 
 msgid "announcement4"
 msgstr ""
-"A TODOS los ciudadanos de la región Fondent y más allá que estáis viendo este programa, os doy la bienvenida.\n"
-"¡Mi nombre es Aeble, deletreado A-E-B-L-E para aquellos que se lo pregunten, y soy el CEO de Omnichannel!"
+"A TODOS los ciudadanos de la regiÃ³n Fondent y mÃ¡s allÃ¡ que estÃ¡is viendo este programa, os doy la bienvenida.\n"
+"Â¡Mi nombre es Aeble, deletreado A-E-B-L-E para aquellos que se lo pregunten, y soy el CEO de Omnichannel!"
 
 msgid "whythecheering"
 msgstr ""
-"Toda esa gente de Omnichannel le está vitoreando mucho. ¿Me pregunto por "
-"qué?"
+"Toda esa gente de Omnichannel le estÃ¡ vitoreando mucho. Â¿Me pregunto por "
+"quÃ©?"
 
 msgid "announcement5"
 msgstr ""
-"Hemos seguido un camino largo y difícil hasta nuestra situación actual aquí, en la región Fondent.\n"
-"No obstante, es para mí un placer anunciar en este día, el vigésimo quinto aniversario de la fundación de Omnichannel...\n"
-"¡LOS TUXEMON ESTÁN BAJO CONTROL!\n"
+"Hemos seguido un camino largo y difÃ­cil hasta nuestra situaciÃ³n actual aquÃ­, en la regiÃ³n Fondent.\n"
+"No obstante, es para mÃ­ un placer anunciar en este dÃ­a, el vigÃ©simo quinto aniversario de la fundaciÃ³n de Omnichannel...\n"
+"Â¡LOS SOLAMON ESTÃN BAJO CONTROL!\n"
 "*grito ensordecedor*\n"
-"¡Silencio! ¡Silencio! ¡He de decir que vuestro entusiasmo es contagioso!\n"
-"¡Conjuntamente con el instituto Xero, hemos eliminado su deseo de atacar!\n"
-"A causa de esto, estamos bastante convencidos de que dejar sueltos a los Tuxemon es seguro ahora.\n"
-"No obstante, los toques de queda siguen vigentes. ¡No somos una tierra sin ley después de todo!\n"
-"Al fin y al cabo... ¡SOMOS SEGURIDAD, SOMOS ORDEN, SOMOS OMNICHANNEL!"
+"Â¡Silencio! Â¡Silencio! Â¡He de decir que vuestro entusiasmo es contagioso!\n"
+"Â¡Conjuntamente con el instituto Xero, hemos eliminado su deseo de atacar!\n"
+"A causa de esto, estamos bastante convencidos de que dejar sueltos a los Solamon es seguro ahora.\n"
+"No obstante, los toques de queda siguen vigentes. Â¡No somos una tierra sin ley despuÃ©s de todo!\n"
+"Al fin y al cabo... Â¡SOMOS SEGURIDAD, SOMOS ORDEN, SOMOS OMNICHANNEL!"
 
 msgid "ohnoes"
-msgstr "Bueno... No sé como sentirme con todo esto..."
+msgstr "Bueno... No sÃ© como sentirme con todo esto..."
 
 msgid "ohnoes2"
 msgstr ""
-"En cualquier caso, necesitamos pociones del Tuxemart. Probablemente deberías ir al pueblo y conseguir algunas.\n"
-"¡Asegúrate de volver antes del toque de queda, no obstante!"
+"En cualquier caso, necesitamos pociones del Tuxemart. Probablemente deberÃ­as ir al pueblo y conseguir algunas.\n"
+"Â¡AsegÃºrate de volver antes del toque de queda, no obstante!"
 
 msgid "depressedmom"
-msgstr "¿Por qué haría algo como eso?... Pensaba que le importaba..."
+msgstr "Â¿Por quÃ© harÃ­a algo como eso?... Pensaba que le importaba..."
 
 msgid "waterwater"
-msgstr "¡El agua está helada y deliciosa!"
+msgstr "Â¡El agua estÃ¡ helada y deliciosa!"
 
 msgid "ripjimmy"
 msgstr ""
 "En la tumba se puede leer:\n"
-"Aquí yace Jimmy. Un amigo, un caballero, y ... en general una mala persona. No obstante, ... nunca ... ... ¡Ayuda! ...\n"
+"AquÃ­ yace Jimmy. Un amigo, un caballero, y ... en general una mala persona. No obstante, ... nunca ... ... Â¡Ayuda! ...\n"
 "El resto se ha borrado con el tiempo."
 
 msgid "cottonnurse_dialog"
-msgstr "¡Bienvenido al Centro Tuxemon de Pueblo Algodón!"
+msgstr "Â¡Bienvenido al Centro Solamon de Pueblo AlgodÃ³n!"
 
 msgid "tabanurse_dialog"
 msgstr ""
-"¡Bienvenido al Centro Tuxemon de ${{map_name}}!\n"
-"¿Deseas curar tus Tuxemon?"
+"Â¡Bienvenido al Centro Solamon de ${{map_name}}!\n"
+"Â¿Deseas curar tus Solamon?"
 
 msgid "okaythen"
-msgstr "¡De acuerdo! ¡Solo dame un segundo y curaré tus Tuxemon!"
+msgstr "Â¡De acuerdo! Â¡Solo dame un segundo y curarÃ© tus Solamon!"
 
 msgid "okaythen2"
-msgstr "Bien, ¡parece que tus Tuxemon están mejor ahora! ¡Aquí están!"
+msgstr "Bien, Â¡parece que tus Solamon estÃ¡n mejor ahora! Â¡AquÃ­ estÃ¡n!"
 
 msgid "waithere"
 msgstr ""
-"Tenemos que esperar aquí de momento. Al parecer un árbol se ha caído más "
+"Tenemos que esperar aquÃ­ de momento. Al parecer un Ã¡rbol se ha caÃ­do mÃ¡s "
 "adelante."
 
 msgid "nodrink"
@@ -1987,53 +1987,53 @@ msgstr "Estoy bastante seguro de que eres demasiado joven para beber..."
 
 msgid "professorswife"
 msgstr ""
-"¡Oh, no! Lo acabas de perder por poco. Creo que ha ido al pueblo, no "
-"obstante. ¿Quizás deberías mirar allí?"
+"Â¡Oh, no! Lo acabas de perder por poco. Creo que ha ido al pueblo, no "
+"obstante. Â¿QuizÃ¡s deberÃ­as mirar allÃ­?"
 
 msgid "waithere2"
-msgstr "¡Oh, espero que nadie resultara herido por la caída del árbol!"
+msgstr "Â¡Oh, espero que nadie resultara herido por la caÃ­da del Ã¡rbol!"
 
 msgid "input_name"
-msgstr "¿Cuál es tu nombre?"
+msgstr "Â¿CuÃ¡l es tu nombre?"
 
 msgid "input_monster_name"
-msgstr "¿Qué nombre quieres poner a tu Tuxemon?"
+msgstr "Â¿QuÃ© nombre quieres poner a tu Solamon?"
 
 msgid "happy_guy_dialog"
 msgstr ""
-"Happy: ¡Hola! Me encanta poner motes a los Tuxemon, ¿quieres que les ponga "
+"Happy: Â¡Hola! Me encanta poner motes a los Solamon, Â¿quieres que les ponga "
 "motes a los tuyos?"
 
 msgid "happy_rename"
 msgstr ""
-"Happy: ¡Es un nombre genial! Estoy seguro de que a tu Tuxemon le encanta :)"
+"Happy: Â¡Es un nombre genial! Estoy seguro de que a tu Solamon le encanta :)"
 
 msgid "shady_guy_dialog"
 msgstr ""
-"Tipo Siniestro: ¡Eh, tú! Si tienes algún... \"problema\" asociado a tu "
+"Tipo Siniestro: Â¡Eh, tÃº! Si tienes algÃºn... \"problema\" asociado a tu "
 "nombre puedo arreglarlo por ti..."
 
 msgid "shady_rename"
 msgstr "Tipo Siniestro: Buena suerte con tu nuevo nombre, amigo..."
 
 msgid "37707_sign_welcome"
-msgstr "¡Bienvenido al pueblo 37707! Somos..."
+msgstr "Â¡Bienvenido al pueblo 37707! Somos..."
 
 msgid "37707_sign_tower"
-msgstr "Torre del pueblo 37707. Estructura altamente inestable: ¡No entrar!"
+msgstr "Torre del pueblo 37707. Estructura altamente inestable: Â¡No entrar!"
 
 msgid "37707_sign_foreign"
 msgstr ""
-"Esta señal está escrita en un lenguage extraño que no logras entender."
+"Esta seÃ±al estÃ¡ escrita en un lenguage extraÃ±o que no logras entender."
 
 msgid "37707_sign_hidden"
 msgstr "Sal mientras puedas..."
 
 msgid "37707_sign_missing_welcome"
-msgstr "Bi3n^3nid0 a Pu3b10 ¡ERROR! N^nca fu1m0$"
+msgstr "Bi3n^3nid0 a Pu3b10 Â¡ERROR! N^nca fu1m0$"
 
 msgid "37707_sign_missing_tower"
-msgstr "Pueblo N/A <undefined_structure>. Odahcucse rebah saírebed"
+msgstr "Pueblo N/A <undefined_structure>. Odahcucse rebah saÃ­rebed"
 
 msgid "37707_sign_missing_foreign"
 msgstr ""
@@ -2048,10 +2048,10 @@ msgid "37707_sign_missing_hidden_unread"
 msgstr "3$ D3M@$1@D0 T@RD3 Y@"
 
 msgid "37707_house"
-msgstr "Qué extraño: está cerrado. Nadie parece estar usando este edificio."
+msgstr "QuÃ© extraÃ±o: estÃ¡ cerrado. Nadie parece estar usando este edificio."
 
 msgid "37707_mail"
-msgstr "Está vacío y lleno de telarañas."
+msgstr "EstÃ¡ vacÃ­o y lleno de telaraÃ±as."
 
 msgid "37707_house_missing"
 msgstr "N0 h@y nAd@ @qu1. Nunc@ l0 hub0."
@@ -2061,8 +2061,8 @@ msgstr "E$t@ v@ci0 y pu3dE$ v3r l@ n@dA."
 
 msgid "37707_flower"
 msgstr ""
-"Sientes una cálida energía que emana de esta flor. Es lo único de este "
-"pueblo que a tus Tuxemon parece gustarle."
+"Sientes una cÃ¡lida energÃ­a que emana de esta flor. Es lo Ãºnico de este "
+"pueblo que a tus Solamon parece gustarle."
 
 msgid "37707_flower_missing"
 msgstr ""
@@ -2071,11 +2071,11 @@ msgstr ""
 
 msgid "37707_computer"
 msgstr ""
-"Consola de desarrollador: Esto es solo para desarrolladores Tuxemon, para probar un sistema de carga de datos experimental.\n"
-"La variable del nuevo loader se activará ahora. Por favor, reportad cualquier problema a https://tuxemon.org.\n"
-"Nota de desarrollador 1: Esto elimina la finalización en caso de mapas faltantes. ¡El sistema puede intentar cargar datos inválidos!\n"
-"Nota de desarrollador 2: NO guardes tu partida con esto activado, puede producir corrupción de datos.\n"
-"Nota de desarrollador 3: Al cambiar a Python 3, los datos han sido agregados y combinados de forma inusual. ¡Por favor depura esto!"
+"Consola de desarrollador: Esto es solo para desarrolladores Solamon, para probar un sistema de carga de datos experimental.\n"
+"La variable del nuevo loader se activarÃ¡ ahora. Por favor, reportad cualquier problema a https://solamon.org.\n"
+"Nota de desarrollador 1: Esto elimina la finalizaciÃ³n en caso de mapas faltantes. Â¡El sistema puede intentar cargar datos invÃ¡lidos!\n"
+"Nota de desarrollador 2: NO guardes tu partida con esto activado, puede producir corrupciÃ³n de datos.\n"
+"Nota de desarrollador 3: Al cambiar a Python 3, los datos han sido agregados y combinados de forma inusual. Â¡Por favor depura esto!"
 
 msgid "37707_tower_missing"
 msgstr "N0 pu3de$ 3ntr@r 3n un 3d1fIci0 qu3 n0 e+i$t3."
@@ -2088,197 +2088,197 @@ msgstr ""
 
 msgid "37707_villager_male_1"
 msgstr ""
-"Blank: Mmmm. Hola. Lo siento: normalmente somos precavidos con los extraños. Solo recibimos visitas... a veces.\n"
-"Blank: Pero ya que estás aquí, quizás puedas hacerme un favor. Puede sonar extraño viniendo de mí, pero necesito saberlo...\n"
-"Blank: ¿Sabes quién soy? ¿Me has... visto alguna vez? Tengo curiosidad: mi nombre, ¿tengo un...\n"
-"Blank: No. Lo siento: he cometido un error. Por favor, no le digas a nadie que te he preguntado eso. Continúa, disfruta tu viaje aquí."
+"Blank: Mmmm. Hola. Lo siento: normalmente somos precavidos con los extraÃ±os. Solo recibimos visitas... a veces.\n"
+"Blank: Pero ya que estÃ¡s aquÃ­, quizÃ¡s puedas hacerme un favor. Puede sonar extraÃ±o viniendo de mÃ­, pero necesito saberlo...\n"
+"Blank: Â¿Sabes quiÃ©n soy? Â¿Me has... visto alguna vez? Tengo curiosidad: mi nombre, Â¿tengo un...\n"
+"Blank: No. Lo siento: he cometido un error. Por favor, no le digas a nadie que te he preguntado eso. ContinÃºa, disfruta tu viaje aquÃ­."
 
 msgid "37707_villager_male_2"
 msgstr ""
-"Blank: No puedes ayudarme más. No nos está permitido hablar de ello. No "
+"Blank: No puedes ayudarme mÃ¡s. No nos estÃ¡ permitido hablar de ello. No "
 "puedes entenderlo. Vete."
 
 msgid "37707_villager_male_3"
 msgstr ""
-"Blank: Tú... tú nos traerás la ruina de nuevo. ¡Vuelve sobre tus pasos y no "
+"Blank: TÃº... tÃº nos traerÃ¡s la ruina de nuevo. Â¡Vuelve sobre tus pasos y no "
 "regreses!"
 
 msgid "37707_villager_female_1"
 msgstr ""
-"Wish: ¡Oh... un recién llegado! ¿Cómo viniste aquí? No hemos visto a nadie nuevo desde... oh, da igual.\n"
-"Wish: ¡Bienvenido! Bienvenido a... oh vaya: ¡nunca le llegamos a dar un nombre a nuestro pueblo! Puedes llamarnos como quieras supongo.\n"
-"Wish: Por favor, considérate como en tu propia casa. Normalmente hay más gente por aquí... depende de la semilla, quizás hoy no era buena.\n"
-"Wish: Dime si necesitas algo que exista aquí. Pero no cometas el mismo error que los otros: no queremos que tú también nos abandones."
+"Wish: Â¡Oh... un reciÃ©n llegado! Â¿CÃ³mo viniste aquÃ­? No hemos visto a nadie nuevo desde... oh, da igual.\n"
+"Wish: Â¡Bienvenido! Bienvenido a... oh vaya: Â¡nunca le llegamos a dar un nombre a nuestro pueblo! Puedes llamarnos como quieras supongo.\n"
+"Wish: Por favor, considÃ©rate como en tu propia casa. Normalmente hay mÃ¡s gente por aquÃ­... depende de la semilla, quizÃ¡s hoy no era buena.\n"
+"Wish: Dime si necesitas algo que exista aquÃ­. Pero no cometas el mismo error que los otros: no queremos que tÃº tambiÃ©n nos abandones."
 
 msgid "37707_villager_female_2"
-msgstr "Wish: Por favor, no entres en la torre. Aún no ha sido construída."
+msgstr "Wish: Por favor, no entres en la torre. AÃºn no ha sido construÃ­da."
 
 msgid "37707_villager_female_3"
-msgstr "Wish: No, no, no: ¡deja de hacer eso! ¿No entiendes que no está aquí?"
+msgstr "Wish: No, no, no: Â¡deja de hacer eso! Â¿No entiendes que no estÃ¡ aquÃ­?"
 
 msgid "37707_villager_male_missing"
 msgstr ""
-"00000: Y0 nunc@ n@cÍ\n"
+"00000: Y0 nunc@ n@cÃ\n"
 "${{name}} ${{name}} ${{name}} ${{name}} ${{name}} ${{name}} ${{name}} ${{name}} ${{name}} ${{name}}"
 
 msgid "37707_villager_female_missing"
 msgstr ""
-"@*!^: ¡0H... un r3c1En Ll3g@d0! ¿C0mo v1ni$t3 @qu1? <NONE> h3m0$ v1$t0 @ nAd13 nu3v0 d3$De... ()h, d@ dA D@ IGUAAAAAL\n"
-"@*!^: ¡BIenvENidO! Bi3nven1d0 a... 0H N/A: ¡nunc@ le ll3gam0$ a d@r un n0mbr3 a nue$tr0 puebl0 {<1} Nunc@ ll3gam000s {<2} NuNc@ l0 c0n$tru1m0s\n"
+"@*!^: Â¡0H... un r3c1En Ll3g@d0! Â¿C0mo v1ni$t3 @qu1? <NONE> h3m0$ v1$t0 @ nAd13 nu3v0 d3$De... ()h, d@ dA D@ IGUAAAAAL\n"
+"@*!^: Â¡BIenvENidO! Bi3nven1d0 a... 0H N/A: Â¡nunc@ le ll3gam0$ a d@r un n0mbr3 a nue$tr0 puebl0 {<1} Nunc@ ll3gam000s {<2} NuNc@ l0 c0n$tru1m0s\n"
 "E TO NO EX ST  EST S C NECT D  A L  N DA D B S IRT  AH RA"
 
 msgid "spyder_cottonart_florist"
 msgstr ""
-"¿Qué opinas del cuadro azul de un barco en el puerto?\n"
-"Es de estilo impresionista, lo que significa que intenta capturar cómo se ve y se comporta la luz.\n"
-"¿Ves el sol pequeño y rojo reflejado en las olas del agua?"
+"Â¿QuÃ© opinas del cuadro azul de un barco en el puerto?\n"
+"Es de estilo impresionista, lo que significa que intenta capturar cÃ³mo se ve y se comporta la luz.\n"
+"Â¿Ves el sol pequeÃ±o y rojo reflejado en las olas del agua?"
 
 msgid "spyder_cottonart_goth"
 msgstr ""
-"Solía gustarme venir aquí cada fin de semana a mirar los cuadros.\n"
+"SolÃ­a gustarme venir aquÃ­ cada fin de semana a mirar los cuadros.\n"
 "Ahora los mejores han sido vendidos y las entradas son muy caras.\n"
-"Pero mi abuelita quería venir, así que ..."
+"Pero mi abuelita querÃ­a venir, asÃ­ que ..."
 
 msgid "spyder_cottonart_granny"
 msgstr ""
-"Debo estar volviéndome nostálgica. Casi digo:\n"
-"\"¡Antes, en mis tiempos, las cosas eran mejores!\""
+"Debo estar volviÃ©ndome nostÃ¡lgica. Casi digo:\n"
+"\"Â¡Antes, en mis tiempos, las cosas eran mejores!\""
 
 msgid "spyder_cottoncafe_barmaidintro"
 msgstr ""
-"Nos hacemos llamar el Equipo Bazar. Quizás es un poco pretencioso.\n"
-"¡Somos un grupo de pícaros y bribones a los que nos gusta juntarnos a beber café, hablar de filosofía y desafiar a nuestros amos corporativos!\n"
-"Nos gusta cuidarnos entre nosotros. Por ejemplo, al contrario que la Catedral ¡no cobramos por curar tus Tuxemon!\n"
-"¿Quieres que cure a los tuyos?"
+"Nos hacemos llamar el Equipo Bazar. QuizÃ¡s es un poco pretencioso.\n"
+"Â¡Somos un grupo de pÃ­caros y bribones a los que nos gusta juntarnos a beber cafÃ©, hablar de filosofÃ­a y desafiar a nuestros amos corporativos!\n"
+"Nos gusta cuidarnos entre nosotros. Por ejemplo, al contrario que la Catedral Â¡no cobramos por curar tus Solamon!\n"
+"Â¿Quieres que cure a los tuyos?"
 
 msgid "spyder_cottoncafe_hackerchat"
 msgstr ""
-"Es genial que estés ayudando a la Tuxepedia.\n"
+"Es genial que estÃ©s ayudando a la Solapedia.\n"
 "...\n"
-"¿Hay algún premio por añadir todos los Tuxemon?\n"
-"Solo la satisfacción de ayudar a la raza humana, hombre."
+"Â¿Hay algÃºn premio por aÃ±adir todos los Solamon?\n"
+"Solo la satisfacciÃ³n de ayudar a la raza humana, hombre."
 
 msgid "spyder_cottontown_enforcer"
-msgstr "¡Largo de aquí, niño, esto es propiedad privada!"
+msgstr "Â¡Largo de aquÃ­, niÃ±o, esto es propiedad privada!"
 
 msgid "spyder_cottontown_hackerintro"
 msgstr ""
-"Ey, ¡qué Tuxemon más chulo! ¿Puedo ver el recibo?\n"
+"Ey, Â¡quÃ© Solamon mÃ¡s chulo! Â¿Puedo ver el recibo?\n"
 "...\n"
-"Es broma, me parecía que no lo habías obtenido a través de, ehmm, los canales oficiales.\n"
-"Durante años, los Cinco Pilares han controlado los Tuxemon más fuertes. ¿Crees que molaría fastidiarles un poco?\n"
+"Es broma, me parecÃ­a que no lo habÃ­as obtenido a travÃ©s de, ehmm, los canales oficiales.\n"
+"Durante aÃ±os, los Cinco Pilares han controlado los Solamon mÃ¡s fuertes. Â¿Crees que molarÃ­a fastidiarles un poco?\n"
 "...\n"
-"¡Bien! Tengo un proyecto para ti. ¡Encuéntrate conmigo en el Café!"
+"Â¡Bien! Tengo un proyecto para ti. Â¡EncuÃ©ntrate conmigo en el CafÃ©!"
 
 msgid "spyder_cottontown_monk"
 msgstr ""
-"Me ha asignado el Dojo de los Cinco Elementos para cuidar las estatuas aquí.\n"
+"Me ha asignado el Dojo de los Cinco Elementos para cuidar las estatuas aquÃ­.\n"
 "Pero Omnichannel planea expandir sus oficinas a este lugar.\n"
-"No sé qué ocurrirá con las estatuas cuando lo hagan."
+"No sÃ© quÃ© ocurrirÃ¡ con las estatuas cuando lo hagan."
 
 msgid "spyder_papertown_firstfight_win"
 msgstr ""
-"Ugh, debe ser casualidad. ¡No hay forma de que el nuevo modelo sea peor que "
+"Ugh, debe ser casualidad. Â¡No hay forma de que el nuevo modelo sea peor que "
 "el viejo!"
 
 msgid "spyder_papertown_wrapup"
 msgstr ""
-"¡Le daré el resto de ellos a los otros niños que no tienen su propio "
-"Tuxemon! Y quizás me quede uno para mí. "
+"Â¡Le darÃ© el resto de ellos a los otros niÃ±os que no tienen su propio "
+"Solamon! Y quizÃ¡s me quede uno para mÃ­. "
 
 msgid "spyder_papertown_lambertchosen"
-msgstr "¡Una buena elección! Lambert es un Tuxemon de Madera."
+msgstr "Â¡Una buena elecciÃ³n! Lambert es un Solamon de Madera."
 
 msgid "spyder_papertown_agnitechosen"
-msgstr "¡Una elección genial! Agnite es un Tuxemon de Fuego."
+msgstr "Â¡Una elecciÃ³n genial! Agnite es un Solamon de Fuego."
 
 msgid "spyder_papertown_tweesherchosen"
-msgstr "¡Una elección inspirada! Tweesher es un Tuxemon de Agua."
+msgstr "Â¡Una elecciÃ³n inspirada! Tweesher es un Solamon de Agua."
 
 msgid "spyder_papertown_nutchosen"
-msgstr "¡Una elección magnífica! Nut es un Tuxemon de Metal."
+msgstr "Â¡Una elecciÃ³n magnÃ­fica! Nut es un Solamon de Metal."
 
 msgid "spyder_papertown_rockittenchosen"
-msgstr "¡Una elección excelente! Rockitten es un Tuxemon de Tierra."
+msgstr "Â¡Una elecciÃ³n excelente! Rockitten es un Solamon de Tierra."
 
 msgid "spyder_papertown_myfirstmon2"
-msgstr "Aquí vamos, ¡cinco Tuxemon! ¿Cuál quieres?"
+msgstr "AquÃ­ vamos, Â¡cinco Solamon! Â¿CuÃ¡l quieres?"
 
 msgid "spyder_papertown_myfirstmon"
 msgstr ""
-"¡Anda, has venido! Genial.\n"
-"¡Cuando llegan nuevos Tuxemon chulos de la Catedral, simplemente tiramos los viejos a la basura!\n"
-"¡Parece mucho gasto, especialmente cuando niños como tú no tienen ninguno!"
+"Â¡Anda, has venido! Genial.\n"
+"Â¡Cuando llegan nuevos Solamon chulos de la Catedral, simplemente tiramos los viejos a la basura!\n"
+"Â¡Parece mucho gasto, especialmente cuando niÃ±os como tÃº no tienen ninguno!"
 
 msgid "spyder_papertown_grannypiper2"
 msgstr ""
-"Ya sabes, ¡los Pipers hicimos nuestra fortuna en el negocio de las guarderías!\n"
-"Llevo retirada diez años y estoy empezando a aburrirme. ¡Quiero volver!"
+"Ya sabes, Â¡los Pipers hicimos nuestra fortuna en el negocio de las guarderÃ­as!\n"
+"Llevo retirada diez aÃ±os y estoy empezando a aburrirme. Â¡Quiero volver!"
 
 msgid "spyder_papertown_mom6"
 msgstr ""
-"¡Enhorabuena! ¡Derrotaste a las corporaciones!\n"
+"Â¡Enhorabuena! Â¡Derrotaste a las corporaciones!\n"
 "Por supuesto, ahora mucha gente se ha quedado sin empleo... pero hiciste lo correcto. Creo."
 
 msgid "taba_greeting2b"
 msgstr ""
-"¡Ah! Veo que ya tienes algunas. Se nota que eres un chico sensato, "
-"${{name}}. Estoy seguro de que te convertirás en un campeón pronto."
+"Â¡Ah! Veo que ya tienes algunas. Se nota que eres un chico sensato, "
+"${{name}}. Estoy seguro de que te convertirÃ¡s en un campeÃ³n pronto."
 
 msgid "taba_greeting2a"
 msgstr ""
-"La tienda está realizando una promoción, aquí tienes algunas para empezar. "
-"Se usan para capturar Tuxemon. ¡Pero es más fácil si los dejas débiles "
+"La tienda estÃ¡ realizando una promociÃ³n, aquÃ­ tienes algunas para empezar. "
+"Se usan para capturar Solamon. Â¡Pero es mÃ¡s fÃ¡cil si los dejas dÃ©biles "
 "primero!"
 
 msgid "taba_greeting1"
 msgstr ""
-"Relaciones públicas Jaime: ¡Eh, ${{name}}! He oído que tienes un Tuxemon, "
-"¡enhorabuena! Si quieres aumentar tu equipo, necesitarás Tuxeballs."
+"Relaciones pÃºblicas Jaime: Â¡Eh, ${{name}}! He oÃ­do que tienes un Solamon, "
+"Â¡enhorabuena! Si quieres aumentar tu equipo, necesitarÃ¡s Solaballs."
 
 msgid "spyder_papertown_mom4"
-msgstr "¡Bienvenido de nuevo! Mírate, cómo creces tan rápido."
+msgstr "Â¡Bienvenido de nuevo! MÃ­rate, cÃ³mo creces tan rÃ¡pido."
 
 msgid "spyder_papertown_mom3"
 msgstr ""
-"Oh, te has agenciado un Tuxemon. ¡Enhorabuena!\n"
-"¿Por qué no te diriges hacia el siguiente pueblo y exploras un poco?"
+"Oh, te has agenciado un Solamon. Â¡Enhorabuena!\n"
+"Â¿Por quÃ© no te diriges hacia el siguiente pueblo y exploras un poco?"
 
 msgid "spyder_papertown_mom1"
 msgstr ""
-"¡Buenos días, cielo! Descansa aquí tanto tiempo como necesites.\n"
-"¿Por qué estoy diciendo esto? ¡Si vives aquí!"
+"Â¡Buenos dÃ­as, cielo! Descansa aquÃ­ tanto tiempo como necesites.\n"
+"Â¿Por quÃ© estoy diciendo esto? Â¡Si vives aquÃ­!"
 
 msgid "spyder_papertown_homemaker1"
 msgstr ""
-"¿Cómo estás, ${{name}}?\n"
+"Â¿CÃ³mo estÃ¡s, ${{name}}?\n"
 "Callado y solemne como siempre, ya veo."
 
 # DIALOG TRANSLATIONS ##
 # spyder dialogs
 msgid "spyder_papertown_stopthere"
 msgstr ""
-"¡Eh! ¿Qué te crees que estás haciendo?\n"
-"No es seguro adentrarte en la naturaleza si no tienes un Tuxemon.\n"
+"Â¡Eh! Â¿QuÃ© te crees que estÃ¡s haciendo?\n"
+"No es seguro adentrarte en la naturaleza si no tienes un Solamon.\n"
 "Ven y compra uno en nuestra tienda."
 
 msgid "gotfivetuxeballs"
-msgstr "¡Obtuviste 5 Tuxeballs!"
+msgstr "Â¡Obtuviste 5 Solaballs!"
 
 msgid "save_keep"
 msgstr "No, conservar esta partida guardada."
 
 msgid "save_overwrite"
-msgstr "Sí, sobrescribir esta partida guardada."
+msgstr "SÃ­, sobrescribir esta partida guardada."
 
 msgid "spyder_leathercbd_sign"
 msgstr "Distrito Comercial de Pueblo Cuero"
 
 msgid "spyder_leathertown_sign"
-msgstr "Pueblo Cuero: Prueba de que la belleza y la minería pueden coexistir."
+msgstr "Pueblo Cuero: Prueba de que la belleza y la minerÃ­a pueden coexistir."
 
 msgid "spyder_nimrod_plaque"
-msgstr "Patrocinado por Nimrod. \"Si no los vendiéramos, otro lo haría\""
+msgstr "Patrocinado por Nimrod. \"Si no los vendiÃ©ramos, otro lo harÃ­a\""
 
 msgid "spyder_column2_sign"
 msgstr ""
@@ -2292,30 +2292,30 @@ msgid "spyder_citypark_routesign"
 msgstr "Parque de la ciudad: Sabor a naturaleza."
 
 msgid "spyder_route2_routesign"
-msgstr "Bienvenido a la Ruta 2: El camino histórico."
+msgstr "Bienvenido a la Ruta 2: El camino histÃ³rico."
 
 #, fuzzy
 msgid "spyder_citypark_achievement"
-msgstr "Casa del Maníaco de los Logros: Cerrado."
+msgstr "Casa del ManÃ­aco de los Logros: Cerrado."
 
 msgid "spyder_papertown_restinbed"
-msgstr "¡Te despiertas completamente descansado!"
+msgstr "Â¡Te despiertas completamente descansado!"
 
 msgid "spyder_papertown_home"
-msgstr "¡Hogar, dulce hogar!"
+msgstr "Â¡Hogar, dulce hogar!"
 
 msgid "spyder_papertown_daycare2"
-msgstr "Guardería: ¡Ahora abierta!"
+msgstr "GuarderÃ­a: Â¡Ahora abierta!"
 
 msgid "spyder_route1_routesign"
-msgstr "Ruta 1: ¡Ten cuidado!"
+msgstr "Ruta 1: Â¡Ten cuidado!"
 
 #, fuzzy
 msgid "spyder_papertown_daycare1"
-msgstr "Guardería: En construcción."
+msgstr "GuarderÃ­a: En construcciÃ³n."
 
 msgid "spyder_multi_martsign"
-msgstr "Compra cosas aquí."
+msgstr "Compra cosas aquÃ­."
 
 # MESSAGE TRANSLATIONS ##
 # spyder messages
@@ -2371,13 +2371,13 @@ msgid "spyder_papertown_grannypiper"
 msgstr "Abuelita Piper"
 
 msgid "spyder_papertown_mom"
-msgstr "Mamá"
+msgstr "MamÃ¡"
 
 msgid "spyder_papertown_homemaker"
 msgstr "Ama de casa"
 
 msgid "spyder_papertown_riverboatcaptain"
-msgstr "Capitán del barco"
+msgstr "CapitÃ¡n del barco"
 
 msgid "spyder_frolicking_conileaf"
 msgstr "Conileaf"
@@ -2390,68 +2390,68 @@ msgstr "Dante"
 
 msgid "spyder_cotton_nurse1"
 msgstr ""
-"¡Bienvenido al Centro de la Catedral de Pueblo Algodón!\n"
-"¿Quieres curar tus Tuxemon?"
+"Â¡Bienvenido al Centro de la Catedral de Pueblo AlgodÃ³n!\n"
+"Â¿Quieres curar tus Solamon?"
 
 msgid "spyder_papertown_danteresting"
 msgstr ""
-"¡Estoy trabajando, jefe, estoy trabajando!\n"
-"Oh, si eres tú. Ya sabes, acabamos tirando gran parte de nuestros productos.\n"
+"Â¡Estoy trabajando, jefe, estoy trabajando!\n"
+"Oh, si eres tÃº. Ya sabes, acabamos tirando gran parte de nuestros productos.\n"
 "Todo acaba en las papeleras de la parte trasera de la tienda."
 
 msgid "spyder_route3_wanda2"
 msgstr ""
-"La pesca es buena en Ciudad Flor, ¿pero quién quiere caminar tan lejos?\n"
-"Toma, te puedes quedar mi Caña de Pescar."
+"La pesca es buena en Ciudad Flor, Â¿pero quiÃ©n quiere caminar tan lejos?\n"
+"Toma, te puedes quedar mi CaÃ±a de Pescar."
 
 msgid "spyder_route3_wanda1"
-msgstr "¡Todo lo que parece que consigo capturar son Nudiflot aburridos!"
+msgstr "Â¡Todo lo que parece que consigo capturar son Nudiflot aburridos!"
 
 msgid "spyder_route3_surat2"
-msgstr "Sabía que no lo entenderías. "
+msgstr "SabÃ­a que no lo entenderÃ­as. "
 
 msgid "spyder_route3_roxby3"
 msgstr ""
-"Espero que la Jefa no esté enfadada. Se enfada muy rápido.\n"
+"Espero que la Jefa no estÃ© enfadada. Se enfada muy rÃ¡pido.\n"
 "Pero es buena persona y tiene un corazon de diamante."
 
 msgid "spyder_route3_connor2"
-msgstr "Oh, vaya, esto será una nueva experiencia para ellos."
+msgstr "Oh, vaya, esto serÃ¡ una nueva experiencia para ellos."
 
 msgid "spyder_route3_connor1"
 msgstr ""
-"Mi Weavifly está listo para combatir ahora. Hubo un tiempo en el que no "
-"podía volar."
+"Mi Weavifly estÃ¡ listo para combatir ahora. Hubo un tiempo en el que no "
+"podÃ­a volar."
 
 msgid "spyder_route3_curie2"
-msgstr "¿Por qué hiciste eso?"
+msgstr "Â¿Por quÃ© hiciste eso?"
 
 msgid "spyder_route3_curie1"
-msgstr "¡Mira mi magnífico invento!"
+msgstr "Â¡Mira mi magnÃ­fico invento!"
 
 msgid "spyder_route3_novak2"
 msgstr "Mmm, no lo suficientemente listo..."
 
 msgid "spyder_route3_novak1"
-msgstr " ¡Mi Elofly es un genio! Voy a coleccionar tantos como pueda."
+msgstr " Â¡Mi Elofly es un genio! Voy a coleccionar tantos como pueda."
 
 msgid "spyder_route3_zoolander1"
 msgstr ""
-"¿Una roca está causando problemas a los viajeros?\n"
-" ¿Es \"culpa nuestra\"?\n"
-" ¿A quién le importa? ¡Tenemos trabajo urgente que hacer!"
+"Â¿Una roca estÃ¡ causando problemas a los viajeros?\n"
+" Â¿Es \"culpa nuestra\"?\n"
+" Â¿A quiÃ©n le importa? Â¡Tenemos trabajo urgente que hacer!"
 
 msgid "spyder_museum_postboy1"
 msgstr ""
-"¿Sabías que los primeros anteojos se hacían con berilo y no con cristal?\n"
+"Â¿SabÃ­as que los primeros anteojos se hacÃ­an con berilo y no con cristal?\n"
 "...\n"
-"¡Lo aprendí el último año de un guía en este museo! Pero ya no hay guías en este lugar."
+"Â¡Lo aprendÃ­ el Ãºltimo aÃ±o de un guÃ­a en este museo! Pero ya no hay guÃ­as en este lugar."
 
 msgid "spyder_museum_miner1"
 msgstr ""
-"¡Solía haber una sección entera aquí de la historia de nuestro mundo!\n"
-"¡Pero cuando Nimrod se convirtió en patrocinador, la reemplazaron por historia militar!\n"
-"¡Ahora todo el mundo se inventa sus propias teorías sobre la historia mundial!"
+"Â¡SolÃ­a haber una secciÃ³n entera aquÃ­ de la historia de nuestro mundo!\n"
+"Â¡Pero cuando Nimrod se convirtiÃ³ en patrocinador, la reemplazaron por historia militar!\n"
+"Â¡Ahora todo el mundo se inventa sus propias teorÃ­as sobre la historia mundial!"
 
 msgid "spyder_museum_shopkeeper_chat"
 msgstr ""
@@ -2459,7 +2459,7 @@ msgstr ""
 
 msgid "spyder_museum_entrance3"
 msgstr ""
-"Desafortunadamente ahora necesitamos cobrar por las entradas. Serán "
+"Desafortunadamente ahora necesitamos cobrar por las entradas. SerÃ¡n "
 "100${{currency}}, por favor."
 
 #, fuzzy
@@ -2470,128 +2470,128 @@ msgstr ""
 
 msgid "spyder_museum_entrance1"
 msgstr ""
-"¡Bienvenido al museo de historia natural! Es gratis, pero depende de "
-"vuestras generosas donaciones. ¿Considerarías realizar una donación de "
+"Â¡Bienvenido al museo de historia natural! Es gratis, pero depende de "
+"vuestras generosas donaciones. Â¿ConsiderarÃ­as realizar una donaciÃ³n de "
 "50${{currency}}?"
 
 msgid "spyder_citypark_edith2"
-msgstr "Mmm, quizás tengas algo de razón."
+msgstr "Mmm, quizÃ¡s tengas algo de razÃ³n."
 
 msgid "spyder_citypark_edith1"
 msgstr ""
-"Eh, ¿has dicho que soy como mi Tuxemon? ¡Lucharé contigo por decir eso!"
+"Eh, Â¿has dicho que soy como mi Solamon? Â¡LucharÃ© contigo por decir eso!"
 
 msgid "spyder_citypark_bobette2"
-msgstr " Un gato habría ganado…"
+msgstr " Un gato habrÃ­a ganadoâ€¦"
 
 msgid "spyder_citypark_bobette1"
-msgstr " Me gustan los gatos. Un Aardorn es básicamente un gato, ¿verdad?"
+msgstr " Me gustan los gatos. Un Aardorn es bÃ¡sicamente un gato, Â¿verdad?"
 
 msgid "spyder_citypark_frances2"
-msgstr "Deberías venir a visitarnos en algún momento. "
+msgstr "DeberÃ­as venir a visitarnos en algÃºn momento. "
 
 msgid "spyder_route2_marion2"
 msgstr "Yo no como hormigas."
 
 msgid "spyder_citypark_florist"
-msgstr "¡Disfruta de estas vistas con flores! Es el orgullo de Pueblo Cuero."
+msgstr "Â¡Disfruta de estas vistas con flores! Es el orgullo de Pueblo Cuero."
 
 msgid "spyder_citypark_granny"
-msgstr "Iremos de nuevo a Pueblo Cuero después de un pequeño descanso."
+msgstr "Iremos de nuevo a Pueblo Cuero despuÃ©s de un pequeÃ±o descanso."
 
 msgid "spyder_route2_marion1"
-msgstr "¡Hay muchas hormigas apetitosas!... Para mi Aardorn, quería decir."
+msgstr "Â¡Hay muchas hormigas apetitosas!... Para mi Aardorn, querÃ­a decir."
 
 msgid "spyder_route2_graf1"
-msgstr "¡Soy un as, luchando y jugando al tenis!"
+msgstr "Â¡Soy un as, luchando y jugando al tenis!"
 
 msgid "spyder_route2_billie2"
 msgstr ""
-"Ha sido casualidad. Mis Tuxemon eran muy caros, y eso significa que son de "
+"Ha sido casualidad. Mis Solamon eran muy caros, y eso significa que son de "
 "mucha calidad."
 
 msgid "spyder_route2_billie1"
-msgstr "¡Eh, tacaño! ¿Aún tienes tu Tuxemon robado?"
+msgstr "Â¡Eh, tacaÃ±o! Â¿AÃºn tienes tu Solamon robado?"
 
 msgid "spyder_cotton_tuxepediaintro3"
 msgstr ""
-"Estás tan absorto leyendo las nuevas entradas, que no te das cuenta de que "
+"EstÃ¡s tan absorto leyendo las nuevas entradas, que no te das cuenta de que "
 "la gente se marcha."
 
 msgid "spyder_cotton_tuxepediaintro2"
 msgstr ""
-"Lo único que hace falta para añadir información es capturar ese Tuxemon en "
+"Lo Ãºnico que hace falta para aÃ±adir informaciÃ³n es capturar ese Solamon en "
 "particular. Es genial."
 
 msgid "spyder_cotton_tuxepediaintro"
 msgstr ""
-"¡De momento, la única información fiable sobre los Tuxemon está en la cara e incompleta Enciclopedia Tuxemon!\n"
-"Eso no está bien, la información debería estar disponible gratuitamente. Por eso estamos creando la Tuxepedia.\n"
-"Es de código abierto, gratuita, y disponible para que todo el mundo la lea, escriba y edite. ¿A que es genial?\n"
-"De hecho, la acabo de instalar como una aplicación en todos vuestros móviles. "
+"Â¡De momento, la Ãºnica informaciÃ³n fiable sobre los Solamon estÃ¡ en la cara e incompleta Enciclopedia Solamon!\n"
+"Eso no estÃ¡ bien, la informaciÃ³n deberÃ­a estar disponible gratuitamente. Por eso estamos creando la Solapedia.\n"
+"Es de cÃ³digo abierto, gratuita, y disponible para que todo el mundo la lea, escriba y edite. Â¿A que es genial?\n"
+"De hecho, la acabo de instalar como una aplicaciÃ³n en todos vuestros mÃ³viles. "
 
 msgid "spyder_cottonscoop_deviceexplan2"
 msgstr ""
-"Los Dispositivos de Captura te permiten capturar Tuxemon y tenerlos como sirvientes.\n"
-"Son más efectivos cuando se usan en Tuxemon de bajo nivel, o que han recibido daño. Selecciónalos durante la batalla desde tu menú de Objetos.\n"
-"Gracias por escuchar. Aquí tienes cinco Dispositivos de Captura como muestra gratuita. "
+"Los Dispositivos de Captura te permiten capturar Solamon y tenerlos como sirvientes.\n"
+"Son mÃ¡s efectivos cuando se usan en Solamon de bajo nivel, o que han recibido daÃ±o. SelecciÃ³nalos durante la batalla desde tu menÃº de Objetos.\n"
+"Gracias por escuchar. AquÃ­ tienes cinco Dispositivos de Captura como muestra gratuita. "
 
 msgid "spyder_cottonscoop_deviceexplan"
 msgstr "Deja que mi ayudante te explique."
 
 msgid "spyder_cottonscoop_devicenoexplan"
 msgstr ""
-"     Está bien, aquí tienes cinco como muestra gratuita. ¡Si tienes alguna "
-"pregunta sobre cómo funcionan los Dispositivos de Captura, pregunta a mi "
+"     EstÃ¡ bien, aquÃ­ tienes cinco como muestra gratuita. Â¡Si tienes alguna "
+"pregunta sobre cÃ³mo funcionan los Dispositivos de Captura, pregunta a mi "
 "ayudante!"
 
 msgid "spyder_cottonscoop_deviceoffer"
 msgstr ""
 "Bienvenido, cliente. Hoy, estamos promocionando los Dispositivos de Captura."
-" ¿Sabes lo que son?"
+" Â¿Sabes lo que son?"
 
 msgid "spyder_cottonscoop_shopassistant"
 msgstr ""
-"Los Dispositivos de Captura te permiten capturar Tuxemon y tenerlos como sirvientes.\n"
-"Son más efectivos cuando se usan en Tuxemon de bajo nivel, o que han recibido daño.\n"
-"Selecciónalos durante la batalla desde tu menú de Objetos."
+"Los Dispositivos de Captura te permiten capturar Solamon y tenerlos como sirvientes.\n"
+"Son mÃ¡s efectivos cuando se usan en Solamon de bajo nivel, o que han recibido daÃ±o.\n"
+"SelecciÃ³nalos durante la batalla desde tu menÃº de Objetos."
 
 msgid "spyder_cottonart_shopkeeper"
 msgstr ""
-"Bienvenido a la Galería de Arte de Pueblo Algodón. Ah... ¡quiero decir, a la Tienda de Arte!\n"
+"Bienvenido a la GalerÃ­a de Arte de Pueblo AlgodÃ³n. Ah... Â¡quiero decir, a la Tienda de Arte!\n"
 "Desde que nos cortaron el presupuesto hemos tenido que vender las obras de arte en lugar de solo mostrarlas.\n"
-"La entrada cuesta 50${{currency}}. Va a los dividendos anuales de la compañía."
+"La entrada cuesta 50${{currency}}. Va a los dividendos anuales de la compaÃ±Ã­a."
 
 msgid "spyder_cottoncafe_barmaid"
-msgstr "Bienvenido de nuevo. ¿Pongo a tus Tuxemon en la unidad de curación?"
+msgstr "Bienvenido de nuevo. Â¿Pongo a tus Solamon en la unidad de curaciÃ³n?"
 
 msgid "spyder_cottontown_stopthere"
 msgstr ""
-"¡Eh, eso no está bien! ¡Debes venir a mi charla en el café antes de irte!"
+"Â¡Eh, eso no estÃ¡ bien! Â¡Debes venir a mi charla en el cafÃ© antes de irte!"
 
 msgid "professorexists4"
 msgstr ""
-"Ahora, sé lo que estás pensando, ¿por qué me lo permitirían?\n"
-"Desafortunadamente para ti, ¡ese secreto es mío y solo mío!\n"
-"No obstante, Omnichannel debería realizar una declaración pronto, y creo que te va a gustar.\n"
-"Mejor que te llevemos de vuelta a casa y veamos la segunda declaración. ¡Vamos!"
+"Ahora, sÃ© lo que estÃ¡s pensando, Â¿por quÃ© me lo permitirÃ­an?\n"
+"Desafortunadamente para ti, Â¡ese secreto es mÃ­o y solo mÃ­o!\n"
+"No obstante, Omnichannel deberÃ­a realizar una declaraciÃ³n pronto, y creo que te va a gustar.\n"
+"Mejor que te llevemos de vuelta a casa y veamos la segunda declaraciÃ³n. Â¡Vamos!"
 
 msgid "professorexists3"
 msgstr ""
-"¡Oh! Disculpa mis modales, ¡no puedo creer que no me haya presentado!\n"
-"Mi nombre es Kay Wren, más conocido como el Profesor Tuxemon.\n"
-"Durante años he sido la única persona en la Región Fondent con permiso para estudiar a los Tuxemon."
+"Â¡Oh! Disculpa mis modales, Â¡no puedo creer que no me haya presentado!\n"
+"Mi nombre es Kay Wren, mÃ¡s conocido como el Profesor Solamon.\n"
+"Durante aÃ±os he sido la Ãºnica persona en la RegiÃ³n Fondent con permiso para estudiar a los Solamon."
 
 msgid "potions2"
-msgstr "¡Recibiste 2 pociones!"
+msgstr "Â¡Recibiste 2 pociones!"
 
 msgid "professorexists2"
 msgstr ""
-"¡Tú debes ser el chico de Callie! Tu madre habla mucho sobre ti.\n"
-"¿Qué te trae por aquí?\n"
-"… … …\n"
-"¿Pociones? ¡Por supuesto, esas siempre hacen falta!\n"
-"Toma, estas las paga la casa, por cortesía mía."
+"Â¡TÃº debes ser el chico de Callie! Tu madre habla mucho sobre ti.\n"
+"Â¿QuÃ© te trae por aquÃ­?\n"
+"â€¦ â€¦ â€¦\n"
+"Â¿Pociones? Â¡Por supuesto, esas siempre hacen falta!\n"
+"Toma, estas las paga la casa, por cortesÃ­a mÃ­a."
 
 msgid "professorexists1"
 msgstr "Gracias Ben."
@@ -2601,88 +2601,88 @@ msgstr "Quiero 12 pociones, por favor."
 
 msgid "bobtalk"
 msgstr ""
-"Estaría bien que más gente como tú se pasara a saludar…\n"
-"Y ya que estamos… ¡Hola! ¡Que tengas un buen día! Hoy, o mañana, o cualquier día… ¡será genial!"
+"EstarÃ­a bien que mÃ¡s gente como tÃº se pasara a saludarâ€¦\n"
+"Y ya que estamosâ€¦ Â¡Hola! Â¡Que tengas un buen dÃ­a! Hoy, o maÃ±ana, o cualquier dÃ­aâ€¦ Â¡serÃ¡ genial!"
 
 msgid "grumble"
 msgstr ""
-"Omnichannel son un puñado de matones, pero no tenemos elección…\n"
-"Como ella siempre dice, supongo que tenemos que trabajar con ellos…"
+"Omnichannel son un puÃ±ado de matones, pero no tenemos elecciÃ³nâ€¦\n"
+"Como ella siempre dice, supongo que tenemos que trabajar con ellosâ€¦"
 
 msgid "watchmewatchme"
 msgstr ""
-"¿Por qué te diriges al pueblo? Ya sabes, hay toque de queda.\n"
-"… … … …\n"
-"… … … …\n"
-"No pareces una amenaza, así que puedes ir al pueblo…\n"
-"Pero no le digas a ninguno de esos matones de Omnichannel que te he dejado pasar, ¿de acuerdo?"
+"Â¿Por quÃ© te diriges al pueblo? Ya sabes, hay toque de queda.\n"
+"â€¦ â€¦ â€¦ â€¦\n"
+"â€¦ â€¦ â€¦ â€¦\n"
+"No pareces una amenaza, asÃ­ que puedes ir al puebloâ€¦\n"
+"Pero no le digas a ninguno de esos matones de Omnichannel que te he dejado pasar, Â¿de acuerdo?"
 
 msgid "hey"
-msgstr "¡Hola!"
+msgstr "Â¡Hola!"
 
 msgid "moreannouncement"
-msgstr "¡ATENCIÓN, TODOS LOS CIUDADANOS DE LA REGIÓN FONDENT!"
+msgstr "Â¡ATENCIÃ“N, TODOS LOS CIUDADANOS DE LA REGIÃ“N FONDENT!"
 
 msgid "theanthemishere"
 msgstr ""
-"¡Escucha! El himno está comenzando, hemos llegado justo a tiempo. ¡Ven y "
+"Â¡Escucha! El himno estÃ¡ comenzando, hemos llegado justo a tiempo. Â¡Ven y "
 "observa!"
 
 msgid "timeforround22"
 msgstr ""
-"¡Oh! ¡Conseguiste las pociones! ¡Bien! Ahora sí que tenemos que volver."
+"Â¡Oh! Â¡Conseguiste las pociones! Â¡Bien! Ahora sÃ­ que tenemos que volver."
 
 msgid "timeforround2"
 msgstr ""
-"¡${{name}}! ¡Por fin! ¡Has vuelto! ¡Me temía que te perdieras el anuncio!"
+"Â¡${{name}}! Â¡Por fin! Â¡Has vuelto! Â¡Me temÃ­a que te perdieras el anuncio!"
 
 msgid "hmmm7"
-msgstr "El tiempo es bueno no obstante, ¿a que sí?"
+msgstr "El tiempo es bueno no obstante, Â¿a que sÃ­?"
 
 msgid "hmmm6"
-msgstr "… … … Bueno… Pero podría ser…"
+msgstr "â€¦ â€¦ â€¦ Buenoâ€¦ Pero podrÃ­a serâ€¦"
 
 msgid "hmmm5"
 msgstr ""
-"Max, por mucho que quieras uno, ya hemos hablado de esto. Ni están haciendo "
-"un parque acuático, ni lo van a hacer."
+"Max, por mucho que quieras uno, ya hemos hablado de esto. Ni estÃ¡n haciendo "
+"un parque acuÃ¡tico, ni lo van a hacer."
 
 msgid "hmmm4"
-msgstr "¡Quizás están haciendo un parque acuático!"
+msgstr "Â¡QuizÃ¡s estÃ¡n haciendo un parque acuÃ¡tico!"
 
 msgid "hmmm3"
 msgstr ""
-"¿Qué sentido tiene? La ruta está prácticamente cubierta de hierba de todos "
+"Â¿QuÃ© sentido tiene? La ruta estÃ¡ prÃ¡cticamente cubierta de hierba de todos "
 "modos."
 
 msgid "hmmm2"
 msgstr ""
-"He oído que están haciendo un nuevo parque. Para \"crear espacios verdes en "
+"He oÃ­do que estÃ¡n haciendo un nuevo parque. Para \"crear espacios verdes en "
 "la zona\"."
 
 msgid "hmmm"
-msgstr "Me pregunto qué están haciendo por aquí..."
+msgstr "Me pregunto quÃ© estÃ¡n haciendo por aquÃ­..."
 
 msgid "theenergy"
-msgstr "La energía de ese hombre no tiene límite..."
+msgstr "La energÃ­a de ese hombre no tiene lÃ­mite..."
 
 msgid "spyder_papertown_mom5"
 msgstr ""
-"Ya sabes, la Abuelita Piper, la vecina de al lado, ha abierto su Guardería.\n"
+"Ya sabes, la Abuelita Piper, la vecina de al lado, ha abierto su GuarderÃ­a.\n"
 "Bueno, supongo que no todo el mundo puede ser inventor. "
 
 msgid "spyder_papertown_mom2"
 msgstr ""
-"Hola cariño, debería seguir con mis inventos.\n"
-"¿Puedes entretenerte tú solo?\n"
-"En mis tiempos, nos podíamos divertir con cualquier cosa: un palo, una roca, basura que sacábamos de las papeleras... "
+"Hola cariÃ±o, deberÃ­a seguir con mis inventos.\n"
+"Â¿Puedes entretenerte tÃº solo?\n"
+"En mis tiempos, nos podÃ­amos divertir con cualquier cosa: un palo, una roca, basura que sacÃ¡bamos de las papeleras... "
 
 msgid "fishing_rod_description"
 msgstr "Atrapa peces."
 
 # Item descriptions ##
 msgid "fishing_rod"
-msgstr "Caña de pescar"
+msgstr "CaÃ±a de pescar"
 
 msgid "sledgehammer"
 msgstr "Mazo"
@@ -2694,7 +2694,7 @@ msgid "flower"
 msgstr "Ciudad Flor"
 
 msgid "cotton"
-msgstr "Pueblo Algodón"
+msgstr "Pueblo AlgodÃ³n"
 
 msgid "candy"
 msgstr "Pueblo Caramelo"
@@ -2706,70 +2706,70 @@ msgid "leather"
 msgstr "Pueblo Cuero"
 
 msgid "spyder_route3_weaver2"
-msgstr "¡Vamos, sal!"
+msgstr "Â¡Vamos, sal!"
 
 msgid "spyder_route3_qqq2"
 msgstr ""
-"¡No revelaré nada sobre nuestro plan! ¡De hecho, olvida que he dicho nada "
+"Â¡No revelarÃ© nada sobre nuestro plan! Â¡De hecho, olvida que he dicho nada "
 "sobre un plan!"
 
 msgid "spyder_route3_zoolander2"
-msgstr "¡Ah, se me ha caído la almádena!"
+msgstr "Â¡Ah, se me ha caÃ­do la almÃ¡dena!"
 
 msgid "spyder_route3_drag2"
 msgstr ""
-"AGENTE: ¡¿Pero qué…?! ¡Ven conmigo, puedes explicar esto en el cuartel "
+"AGENTE: Â¡Â¿Pero quÃ©â€¦?! Â¡Ven conmigo, puedes explicar esto en el cuartel "
 "general!"
 
 msgid "spyder_citypark2_florist"
 msgstr ""
-"Las flores se ven bien, ¿verdad? … ¡Desde que empezó la minería en Pueblo "
+"Las flores se ven bien, Â¿verdad? â€¦ Â¡Desde que empezÃ³ la minerÃ­a en Pueblo "
 "Cuero, las flores han estado expuestas a los elementos!"
 
 msgid "spyder_cotton_tuxepediaintro4"
 msgstr ""
-"Es genial que hayas venido. Aún quedan muchos Tuxemon por añadir. Unos cien, diría yo.\n"
-"Podrías dedicarte a ello y marcar la diferencia en el mundo. "
+"Es genial que hayas venido. AÃºn quedan muchos Solamon por aÃ±adir. Unos cien, dirÃ­a yo.\n"
+"PodrÃ­as dedicarte a ello y marcar la diferencia en el mundo. "
 
 msgid "spyder_papertown_grannypiper1"
 msgstr ""
-"¡Oh, hola ${{name}}! ¡No te había visto entre el ajetreo y los escombros!\n"
-"¡No puedo esperar a que la Guardería esté instalada!"
+"Â¡Oh, hola ${{name}}! Â¡No te habÃ­a visto entre el ajetreo y los escombros!\n"
+"Â¡No puedo esperar a que la GuarderÃ­a estÃ© instalada!"
 
 msgid "spyder_tunnelb_lute2"
-msgstr "… aunque no necesariamente los mejores luchadores."
+msgstr "â€¦ aunque no necesariamente los mejores luchadores."
 
 msgid "spyder_tunnelb_lute1"
-msgstr "¡Los murciélagos son las mejores mascotas!"
+msgstr "Â¡Los murciÃ©lagos son las mejores mascotas!"
 
 msgid "spyder_tunnelb_beryll2"
-msgstr "¡Ah! ¡Se me ha caído mi colección de rocas!"
+msgstr "Â¡Ah! Â¡Se me ha caÃ­do mi colecciÃ³n de rocas!"
 
 msgid "spyder_tunnelb_beryll1"
 msgstr "Me gusta coleccionar rocas y piedras."
 
 msgid "spyder_nimrod_honour2"
-msgstr "¡Deja esos prototipos en paz!"
+msgstr "Â¡Deja esos prototipos en paz!"
 
 msgid "spyder_nimrod_honour1"
-msgstr "¡No te atrevas a tocar esos prototipos! "
+msgstr "Â¡No te atrevas a tocar esos prototipos! "
 
 msgid "spyder_cottonhouse2_catgirl"
 msgstr ""
-"¿Has conocido al anciano en el Parque de la Ciudad? ¡Está obsesionado con "
-"batir récords!"
+"Â¿Has conocido al anciano en el Parque de la Ciudad? Â¡EstÃ¡ obsesionado con "
+"batir rÃ©cords!"
 
 msgid "spyder_route4_roger2"
-msgstr "¡Podría aprender mucho sobre estrategia de ti!"
+msgstr "Â¡PodrÃ­a aprender mucho sobre estrategia de ti!"
 
 msgid "spyder_route4_roger1"
-msgstr "Podemos aprender mucho sobre estrategia de los Tuxemon."
+msgstr "Podemos aprender mucho sobre estrategia de los Solamon."
 
 msgid "gasp"
-msgstr "Espera…"
+msgstr "Esperaâ€¦"
 
 msgid "yahaha"
-msgstr "¡Ajá! ¡Te encontré!"
+msgstr "Â¡AjÃ¡! Â¡Te encontrÃ©!"
 
 msgid "professor-rockitten"
 msgstr "Profesor"
@@ -2784,248 +2784,248 @@ msgid "reg_papers"
 msgstr "Papeles de Registro"
 
 msgid "tweesher!"
-msgstr "¡Tweesher obtenido!"
+msgstr "Â¡Tweesher obtenido!"
 
 msgid "choseTweesher2"
 msgstr ""
-"Primero, no obstante, vamos a ver tus proezas en batalla con un combate rápido de Tuxemon.\n"
-"Veamos… Escogeré a Rockitten."
+"Primero, no obstante, vamos a ver tus proezas en batalla con un combate rÃ¡pido de Solamon.\n"
+"Veamosâ€¦ EscogerÃ© a Rockitten."
 
 msgid "choseTweesher"
 msgstr ""
-"¡De acuerdo, aquí está tu Tweesher! ¡Sé que ambos viviréis grandes aventuras"
+"Â¡De acuerdo, aquÃ­ estÃ¡ tu Tweesher! Â¡SÃ© que ambos vivirÃ©is grandes aventuras"
 " juntos!"
 
 msgid "chooseyerfateTweesher"
 msgstr ""
-"¡Una gran elección! Tweesher es un Tuxemon de tipo Agua. Su evolución Eagleace es uno de los Tuxemon más rápidos.\n"
-"¿Quieres elegir a Tweesher?"
+"Â¡Una gran elecciÃ³n! Tweesher es un Solamon de tipo Agua. Su evoluciÃ³n Eagleace es uno de los Solamon mÃ¡s rÃ¡pidos.\n"
+"Â¿Quieres elegir a Tweesher?"
 
 msgid "cardiling!"
-msgstr "¡Cardiling obtenido!"
+msgstr "Â¡Cardiling obtenido!"
 
 msgid "chosefight"
-msgstr "Y… ¡LUCHEMOS!"
+msgstr "Yâ€¦ Â¡LUCHEMOS!"
 
 msgid "choseCardiling2"
 msgstr ""
-"Primero, no obstante, vamos a ver tus proezas en batalla con un combate rápido de Tuxemon.\n"
-"Veamos… Escogeré a Tweesher."
+"Primero, no obstante, vamos a ver tus proezas en batalla con un combate rÃ¡pido de Solamon.\n"
+"Veamosâ€¦ EscogerÃ© a Tweesher."
 
 msgid "choseCardiling"
 msgstr ""
-"¡De acuerdo, aquí está tu Cardiling! ¡Sé que ambos viviréis grandes "
+"Â¡De acuerdo, aquÃ­ estÃ¡ tu Cardiling! Â¡SÃ© que ambos vivirÃ©is grandes "
 "aventuras juntos!"
 
 msgid "chooseyerfateCardiling"
 msgstr ""
-"Una elección interesante, y que deja entrever una chispa en tu interior. Cardiling es un Tuxemon de tipo Fuego, conocido por robar comida tanto de amigos como de enemigos.\n"
-"¿Quieres elegir a Cardiling?"
+"Una elecciÃ³n interesante, y que deja entrever una chispa en tu interior. Cardiling es un Solamon de tipo Fuego, conocido por robar comida tanto de amigos como de enemigos.\n"
+"Â¿Quieres elegir a Cardiling?"
 
-msgid "nochoiceTuxemon"
-msgstr "Vale, ¿por qué no le echas un vistazo a los otros dos?"
+msgid "nochoiceSolamon"
+msgstr "Vale, Â¿por quÃ© no le echas un vistazo a los otros dos?"
 
 msgid "rockitten!"
-msgstr "¡Rockitten obtenido!"
+msgstr "Â¡Rockitten obtenido!"
 
 msgid "choseRockitten2"
 msgstr ""
-"Primero, no obstante, vamos a ver tus proezas en batalla con un combate rápido de Tuxemon.\n"
-"Veamos… Escogeré a Cardiling."
+"Primero, no obstante, vamos a ver tus proezas en batalla con un combate rÃ¡pido de Solamon.\n"
+"Veamosâ€¦ EscogerÃ© a Cardiling."
 
 msgid "choseRockitten"
 msgstr ""
-"¡De acuerdo, aquí está tu Rockitten! ¡Sé que ambos viviréis grandes "
+"Â¡De acuerdo, aquÃ­ estÃ¡ tu Rockitten! Â¡SÃ© que ambos vivirÃ©is grandes "
 "aventuras juntos!"
 
 msgid "chooseyerfateRockitten"
 msgstr ""
-"¡Una elección sólida! Rockitten es un Tuxemon de tipo Tierra. En la época medieval, criaban Rockittens para que se sentaran al lado de la puerta y quedaran bonitos.\n"
-"¿Quieres elegir a Rockitten?"
+"Â¡Una elecciÃ³n sÃ³lida! Rockitten es un Solamon de tipo Tierra. En la Ã©poca medieval, criaban Rockittens para que se sentaran al lado de la puerta y quedaran bonitos.\n"
+"Â¿Quieres elegir a Rockitten?"
 
 msgid "chooseyerfate"
-msgstr "¿Qué Tuxemon quieres?"
+msgstr "Â¿QuÃ© Solamon quieres?"
 
 msgid "tuxemontime4"
 msgstr ""
-"¡Ahora la parte más importante! ¡Escoger tu Tuxemon!\n"
-"Desafortunadamente, mi fuente de financiación se ha vuelto… reacia recientemente. Esto te deja solo con tres opciones de Tuxemon, lo siento por ello.\n"
+"Â¡Ahora la parte mÃ¡s importante! Â¡Escoger tu Solamon!\n"
+"Desafortunadamente, mi fuente de financiaciÃ³n se ha vueltoâ€¦ reacia recientemente. Esto te deja solo con tres opciones de Solamon, lo siento por ello.\n"
 "Las tres opciones son Rockitten, Cardiling y Tweesher."
 
 msgid "obtainedpapers"
-msgstr "¡Papeles de Registro recibidos!"
+msgstr "Â¡Papeles de Registro recibidos!"
 
 msgid "tuxemontime3.1"
 msgstr ""
-"Aquí están tus papeles de registro. Tendrás que presentarlos en la primera Área de Batalla para que te den una medalla de Entrenador.\n"
-"No los necesitarás después de eso."
+"AquÃ­ estÃ¡n tus papeles de registro. TendrÃ¡s que presentarlos en la primera Ãrea de Batalla para que te den una medalla de Entrenador.\n"
+"No los necesitarÃ¡s despuÃ©s de eso."
 
 msgid "tuxemontime3"
-msgstr "¡Allá vamos!"
+msgstr "Â¡AllÃ¡ vamos!"
 
 msgid "tuxemontime2"
-msgstr "Ahora, la primera cosa es tener tus papeles en regla…"
+msgstr "Ahora, la primera cosa es tener tus papeles en reglaâ€¦"
 
 msgid "tuxemontimechoiceno"
-msgstr "Oh… Vale… Estaré aquí si cambias de opinión."
+msgstr "Ohâ€¦ Valeâ€¦ EstarÃ© aquÃ­ si cambias de opiniÃ³n."
 
 msgid "tuxemontimechoiceyes"
-msgstr "¡Espléndido!"
+msgstr "Â¡EsplÃ©ndido!"
 
 msgid "tuxemontime"
-msgstr "¡Ah, viniste! ¡Genial!"
+msgstr "Â¡Ah, viniste! Â¡Genial!"
 
 msgid "moverocky2"
-msgstr "Bueno, ya te moverás cuando estés listo. Estaré esperándote aquí."
+msgstr "Bueno, ya te moverÃ¡s cuando estÃ©s listo. EstarÃ© esperÃ¡ndote aquÃ­."
 
 msgid "moverocky"
-msgstr "¡Vamos Rocky! ¡Puedes moverte! ¡Yo creo en ti!"
+msgstr "Â¡Vamos Rocky! Â¡Puedes moverte! Â¡Yo creo en ti!"
 
 msgid "hebenice"
 msgstr ""
-"Es un hombre simpático, quizás deberías por lo menos ver qué tiene que "
+"Es un hombre simpÃ¡tico, quizÃ¡s deberÃ­as por lo menos ver quÃ© tiene que "
 "decir."
 
 msgid "ihaveyourmoney2"
 msgstr ""
 "Tengo un poco guardado que necesita que le den buen uso, y Omnichannel me debe un favor.\n"
-"Estoy seguro de que podemos arreglar algo. Obtener los permisos es la parte fácil. Conseguir tu primer Tuxemon es un poco más difícil…\n"
-"Afortunadamente, resulta que conozco a alguien con acceso a muchos Tuxemon diferentes…\n"
-"¡Yo mismo!\n"
-"Ahora, sé que es mucho que procesar, así que estaré en mi laboratorio esperando tu decisión."
+"Estoy seguro de que podemos arreglar algo. Obtener los permisos es la parte fÃ¡cil. Conseguir tu primer Solamon es un poco mÃ¡s difÃ­cilâ€¦\n"
+"Afortunadamente, resulta que conozco a alguien con acceso a muchos Solamon diferentesâ€¦\n"
+"Â¡Yo mismo!\n"
+"Ahora, sÃ© que es mucho que procesar, asÃ­ que estarÃ© en mi laboratorio esperando tu decisiÃ³n."
 
 msgid "iknowyou"
 msgstr ""
-"¡Hola Callie! ¡Hola ${{name}}! Solo me paré para saludar cuando os oí "
+"Â¡Hola Callie! Â¡Hola ${{name}}! Solo me parÃ© para saludar cuando os oÃ­ "
 "hablando sobre el anuncio."
 
 msgid "ihaveyourmoney"
-msgstr "Bueno, quizás pueda ayudarte con eso."
+msgstr "Bueno, quizÃ¡s pueda ayudarte con eso."
 
 msgid "youneedtodothis2"
 msgstr ""
-"Pero… sé que estabas ansioso por ver la región, y esta es tu mejor oportunidad.\n"
-"Sé que tienes el impulso dentro de ti de ser el mejor, como nunca nadie haya sido.\n"
-"Lo único es que no sé si podemos permitirnos el coste.\n"
+"Peroâ€¦ sÃ© que estabas ansioso por ver la regiÃ³n, y esta es tu mejor oportunidad.\n"
+"SÃ© que tienes el impulso dentro de ti de ser el mejor, como nunca nadie haya sido.\n"
+"Lo Ãºnico es que no sÃ© si podemos permitirnos el coste.\n"
 "\n"
-"Lograremos hacer algo… de alguna manera."
+"Lograremos hacer algoâ€¦ de alguna manera."
 
 msgid "youneedtodothis"
 msgstr ""
-"Creo… creo que deberías ver esto…\n"
-"No quiero perderte, especialmente ahora que nos estábamos asentando."
+"Creoâ€¦ creo que deberÃ­as ver estoâ€¦\n"
+"No quiero perderte, especialmente ahora que nos estÃ¡bamos asentando."
 
 msgid "spyder_cottonhouse1_tvwatch"
 msgstr ""
-"Es el último reality show: unas personas y sus Tuxemon realizan desafíos en "
+"Es el Ãºltimo reality show: unas personas y sus Solamon realizan desafÃ­os en "
 "una isla remota."
 
 msgid "spyder_scoop_cochini2"
 msgstr "Oink."
 
 msgid "spyder_scoop_cochini1"
-msgstr "¡Oink! ¡Oink! "
+msgstr "Â¡Oink! Â¡Oink! "
 
 msgid "spyder_route4_beck2"
 msgstr "Juego, set y partido."
 
 msgid "spyder_route4_beck1"
-msgstr "¡Tú sacas!"
+msgstr "Â¡TÃº sacas!"
 
 msgid "spyder_wayfarer1_ratcher2"
-msgstr "¡Ahora el que necesita un descanso soy yo!"
+msgstr "Â¡Ahora el que necesita un descanso soy yo!"
 
 msgid "spyder_wayfarer1_ratcher1"
-msgstr "¡Debes dejar descansar a los pacientes!"
+msgstr "Â¡Debes dejar descansar a los pacientes!"
 
 msgid "spyder_wayfarer1_victor2"
-msgstr "¡Párate ahí mismo! O… bueno…"
+msgstr "Â¡PÃ¡rate ahÃ­ mismo! Oâ€¦ buenoâ€¦"
 
 msgid "spyder_wayfarer1_victor1"
-msgstr "¡Hey! ¡No vas a salir con Tuxemon potencialmente infectados!"
+msgstr "Â¡Hey! Â¡No vas a salir con Solamon potencialmente infectados!"
 
 msgid "spyder_wayfarer1_morton2"
-msgstr "¡Ahora ya no puedo hacer nada de nada!"
+msgstr "Â¡Ahora ya no puedo hacer nada de nada!"
 
 msgid "spyder_wayfarer1_morton1"
 msgstr ""
-"Debo quedarme en esta habitación hasta que mis Tuxemon se recuperen, ¡así "
+"Debo quedarme en esta habitaciÃ³n hasta que mis Solamon se recuperen, Â¡asÃ­ "
 "que no puedo hacer nada excepto combatir!"
 
 msgid "spyder_wayfarer1_morningstar2"
-msgstr "Ven a verme después. ¡Siguiente paciente, por favor!"
+msgstr "Ven a verme despuÃ©s. Â¡Siguiente paciente, por favor!"
 
 msgid "spyder_wayfarer1_morningstar1"
-msgstr "No me sorprende verte aquí. "
+msgstr "No me sorprende verte aquÃ­. "
 
 msgid "spyder_searoutec_nigel2"
 msgstr ""
-"¡Vale, no la estoy custodiando! ¡Los otros jinetes de dragón no me dejan "
+"Â¡Vale, no la estoy custodiando! Â¡Los otros jinetes de dragÃ³n no me dejan "
 "unirme a ellos!"
 
 msgid "spyder_searoutec_nigel1"
 msgstr ""
-"¡Ésta es la Cueva del Dragón! Estoy aquí fuera porque… uh, porque la estoy "
+"Â¡Ã‰sta es la Cueva del DragÃ³n! Estoy aquÃ­ fuera porqueâ€¦ uh, porque la estoy "
 "custodiando."
 
 msgid "spyder_flower_artist_clipping"
 msgstr ""
-"Un recorte de periódico está en la pared. Comienza así:\n"
-"\"El famoso crítico de arte ha dejado su pluma envenenada y ha tomado el pincel.\n"
-"Después de años de demoler artistas, ¿podrá hacerlo él mejor?\""
+"Un recorte de periÃ³dico estÃ¡ en la pared. Comienza asÃ­:\n"
+"\"El famoso crÃ­tico de arte ha dejado su pluma envenenada y ha tomado el pincel.\n"
+"DespuÃ©s de aÃ±os de demoler artistas, Â¿podrÃ¡ hacerlo Ã©l mejor?\""
 
 msgid "spyder_flower_artist1"
 msgstr ""
-"Trazos simples y torpes y un tema pedestre. ¡Bah! Otro lienzo arruinado."
+"Trazos simples y torpes y un tema pedestre. Â¡Bah! Otro lienzo arruinado."
 
 msgid "spyder_route6_rigel2"
 msgstr "Ahora ya no hay nada que hacer."
 
 msgid "spyder_route6_rigel1"
-msgstr "Podríamos combatir. ¡No hay nada más que hacer de momento!"
+msgstr "PodrÃ­amos combatir. Â¡No hay nada mÃ¡s que hacer de momento!"
 
 msgid "spyder_route6_richard2"
-msgstr "Peor. Día. De mi vida."
+msgstr "Peor. DÃ­a. De mi vida."
 
 msgid "spyder_route6_richard1"
 msgstr ""
-"Tío, el único día que dejo el ordenador para ir a pasear, ¡y ocurre esto!"
+"TÃ­o, el Ãºnico dÃ­a que dejo el ordenador para ir a pasear, Â¡y ocurre esto!"
 
 msgid "spyder_tunnelb_tommy2"
-msgstr "¡Mi hambre me ha despistado!"
+msgstr "Â¡Mi hambre me ha despistado!"
 
 msgid "spyder_tunnelb_tommy1"
-msgstr "¿Has visto mi sándwich?"
+msgstr "Â¿Has visto mi sÃ¡ndwich?"
 
 msgid "spyder_scoop_orba2"
-msgstr "¿Qué estoy haciendo yo aquí, de hecho?"
+msgstr "Â¿QuÃ© estoy haciendo yo aquÃ­, de hecho?"
 
 msgid "spyder_scoop_orba1"
-msgstr "¡Ay! ¿Qué estás haciendo aquí?"
+msgstr "Â¡Ay! Â¿QuÃ© estÃ¡s haciendo aquÃ­?"
 
 msgid "spyder_scoop_alyssa2"
-msgstr "¡Te lo estoy diciendo: mantuvimos la enfermedad bajo control!"
+msgstr "Â¡Te lo estoy diciendo: mantuvimos la enfermedad bajo control!"
 
 msgid "spyder_scoop_alyssa1"
 msgstr ""
-"Tan pronto como la enfermedad fue detectada, movimos a los Tuxemon "
+"Tan pronto como la enfermedad fue detectada, movimos a los Solamon "
 "infectados a esta unidad de confinamiento."
 
 msgid "spyder_scoop_rubid2"
 msgstr ""
-"Los estudios muestran que los Tuxemon encuentran los combates más "
+"Los estudios muestran que los Solamon encuentran los combates mÃ¡s "
 "estresantes que vivir en estas condiciones. "
 
 msgid "spyder_scoop_rubid1"
-msgstr "Esta es de hecho la forma más humana de mantener Tuxemon."
+msgstr "Esta es de hecho la forma mÃ¡s humana de mantener Solamon."
 
 msgid "spyder_route5_cleo2"
-msgstr "¡Oh, ancestros, os he fallado!"
+msgstr "Â¡Oh, ancestros, os he fallado!"
 
 msgid "spyder_route5_cleo1"
 msgstr ""
 "Madre dice que podemos trazar nuestra ascendencia hasta los reyes que "
-"gobernaban este país tiempo atrás."
+"gobernaban este paÃ­s tiempo atrÃ¡s."
 
 msgid "spyder_route5_hunter2"
 msgstr "Volveremos."
@@ -3037,280 +3037,280 @@ msgid "spyder_searoutec_beech2"
 msgstr "De acuerdo, te creo."
 
 msgid "spyder_searoutec_beech1"
-msgstr "Hey, ¿has hecho algo en el agua?"
+msgstr "Hey, Â¿has hecho algo en el agua?"
 
 msgid "spyder_nimrod_maverick2"
-msgstr "Ojalá conociera alguien con el que pudiera tocar."
+msgstr "OjalÃ¡ conociera alguien con el que pudiera tocar."
 
 msgid "spyder_nimrod_maverick1"
 msgstr "De noche toco la guitarra yo solo."
 
 msgid "spyder_leatherhouse2_tv"
 msgstr ""
-"Un pequeño monstruo verde está levantando un barco y sacándolo de un "
+"Un pequeÃ±o monstruo verde estÃ¡ levantando un barco y sacÃ¡ndolo de un "
 "pantano."
 
 msgid "spyder_route4_rosamund2"
-msgstr "La venganza se sirve mejor fría. "
+msgstr "La venganza se sirve mejor frÃ­a. "
 
 msgid "spyder_route4_rosamund1"
-msgstr "¡Intenta combatir conmigo y recibirás tu merecido!"
+msgstr "Â¡Intenta combatir conmigo y recibirÃ¡s tu merecido!"
 
 msgid "spyder_flower_cady_willtrade"
-msgstr "¡Bien, genial! Allá vamos."
+msgstr "Â¡Bien, genial! AllÃ¡ vamos."
 
 msgid "spyder_flower_cady_nogrintot"
 msgstr "Oh, no importa. Veo que no tienes un Grintot. "
 
 msgid "spyder_flower_cady1"
 msgstr ""
-"Oh, me encantaría tener un souvenir para traer a casa conmigo.\n"
-"Adoro a esos dulces y pequeños Grintot. ¿Podrías conseguirme uno?\n"
-"Te podría dar mi Hampotamos a cambio."
+"Oh, me encantarÃ­a tener un souvenir para traer a casa conmigo.\n"
+"Adoro a esos dulces y pequeÃ±os Grintot. Â¿PodrÃ­as conseguirme uno?\n"
+"Te podrÃ­a dar mi Hampotamos a cambio."
 
 msgid "spyder_flower_fez_willtrade"
-msgstr "¡Bien, genial! Allá vamos."
+msgstr "Â¡Bien, genial! AllÃ¡ vamos."
 
 msgid "spyder_flower_fez_noignibus"
 msgstr "Oh, no importa. Puedo ver que no tienes un Ignibus."
 
 msgid "spyder_flower_fez1"
 msgstr ""
-"Todo el mundo en nuestra región debe escoger de entre los mismos cinco Tuxemon aburridos.\n"
-"Conozco como un centenar de personas con un Foxfire…\n"
-"Hey, ¿quieres intercambiar? ¿Mi Foxfire por un Ignibus?"
+"Todo el mundo en nuestra regiÃ³n debe escoger de entre los mismos cinco Solamon aburridos.\n"
+"Conozco como un centenar de personas con un Foxfireâ€¦\n"
+"Hey, Â¿quieres intercambiar? Â¿Mi Foxfire por un Ignibus?"
 
 msgid "spyder_flower_mieke_willtrade"
-msgstr "¡Bien, genial! Allá vamos."
+msgstr "Â¡Bien, genial! AllÃ¡ vamos."
 
 msgid "spyder_flower_mieke_nobudaye"
 msgstr "Oh, no importa. Veo que no tienes un Budaye."
 
 msgid "spyder_flower_mieke1"
 msgstr ""
-"¡Es tan excitante para nosotros visitar la región de Fondant! Tenéis algunos Tuxemon tan únicos aquí…\n"
-"Hey, ¿quieres intercambiar? Mi Conileaf por una criatura que no tenemos allá en casa…\n"
-"¿Qué tal Budaye?"
+"Â¡Es tan excitante para nosotros visitar la regiÃ³n de Fondant! TenÃ©is algunos Solamon tan Ãºnicos aquÃ­â€¦\n"
+"Hey, Â¿quieres intercambiar? Mi Conileaf por una criatura que no tenemos allÃ¡ en casaâ€¦\n"
+"Â¿QuÃ© tal Budaye?"
 
 msgid "spyder_route4_marshall2"
-msgstr "Puede que aún necesite algo de trabajo."
+msgstr "Puede que aÃºn necesite algo de trabajo."
 
 msgid "spyder_route4_marshall1"
-msgstr "¡Estoy trabajando en un cañón gigante!"
+msgstr "Â¡Estoy trabajando en un caÃ±Ã³n gigante!"
 
 msgid "spyder_wayfarer1_james2"
-msgstr "¡Me alegro de que Jessie no me viera perder así!"
+msgstr "Â¡Me alegro de que Jessie no me viera perder asÃ­!"
 
 msgid "spyder_wayfarer1_james1"
 msgstr ""
-"¡Me pregunto cómo los Ejecutores llegaron tan rápido! La Enfermera Jessie "
-"debió haberlos llamado."
+"Â¡Me pregunto cÃ³mo los Ejecutores llegaron tan rÃ¡pido! La Enfermera Jessie "
+"debiÃ³ haberlos llamado."
 
 msgid "spyder_wayfarer1_bravo2"
 msgstr ""
-"Por favor no dejes que mi desempeño en combate afecte tu opinión sobre "
-"Omnichannel: Las Únicas Noticias Que Necesitas. "
+"Por favor no dejes que mi desempeÃ±o en combate afecte tu opiniÃ³n sobre "
+"Omnichannel: Las Ãšnicas Noticias Que Necesitas. "
 
 msgid "spyder_wayfarer1_bravo1"
 msgstr ""
-"Esta ejecución está patrocinada por Omnichannel: Las Únicas Noticias Que "
+"Esta ejecuciÃ³n estÃ¡ patrocinada por Omnichannel: Las Ãšnicas Noticias Que "
 "Necesitas. "
 
 msgid "spyder_wayfarer1_nightshade2"
 msgstr ""
-"Supongo que tenemos mucho que aprender sobre el cuidado de los Tuxemon."
+"Supongo que tenemos mucho que aprender sobre el cuidado de los Solamon."
 
 msgid "spyder_wayfarer1_nightshade1"
 msgstr ""
-"Es embarazoso. Todos los Tuxemon de las Enfermeras se pusieron enfermos, "
-"¡pero los Tuxemon de los Ejecutores están en forma!"
+"Es embarazoso. Todos los Solamon de las Enfermeras se pusieron enfermos, "
+"Â¡pero los Solamon de los Ejecutores estÃ¡n en forma!"
 
 msgid "spyder_wayfarer1_jessie2"
 msgstr "No eres tan servicial como un Ejecutor. Ni tan atractivo. "
 
 msgid "spyder_wayfarer1_jessie1"
 msgstr ""
-"¡Los Ejecutores han sido tán rápidos y serviciales! Supongo que el "
-"Científico James les alertó tan pronto como fue posible."
+"Â¡Los Ejecutores han sido tÃ¡n rÃ¡pidos y serviciales! Supongo que el "
+"CientÃ­fico James les alertÃ³ tan pronto como fue posible."
 
 msgid "spyder_wayfarer1_maniac2"
-msgstr "¡Un poco de privacidad, por favor! "
+msgstr "Â¡Un poco de privacidad, por favor! "
 
 msgid "spyder_wayfarer1_maniac"
 msgstr ""
-"Hey, amigo, ¿quieres my Botbot?\n"
-"No sé cuánto tiempo voy a estar atrapado aquí, así que mientras podría explorar contigo."
+"Hey, amigo, Â¿quieres my Botbot?\n"
+"No sÃ© cuÃ¡nto tiempo voy a estar atrapado aquÃ­, asÃ­ que mientras podrÃ­a explorar contigo."
 
 msgid "spyder_wayfarer_granny"
 msgstr ""
-"No me lo explico… ¡en un momento mi Cairfrey estaba sano, y al siguiente se puso enfermo!\n"
-"Por lo menos los Ejecutores llegaron rápido. "
+"No me lo explicoâ€¦ Â¡en un momento mi Cairfrey estaba sano, y al siguiente se puso enfermo!\n"
+"Por lo menos los Ejecutores llegaron rÃ¡pido. "
 
 msgid "spyder_wayfarer_nurse"
 msgstr ""
-"Hay Tuxemon enfermos en el edificio. Mejor será dejar a los Ejecutores que arreglen las cosas.\n"
-"Si decides continuar, no puedo asegurarte cómo se lo van a tomar. "
+"Hay Solamon enfermos en el edificio. Mejor serÃ¡ dejar a los Ejecutores que arreglen las cosas.\n"
+"Si decides continuar, no puedo asegurarte cÃ³mo se lo van a tomar. "
 
 msgid "spyder_wayfarer_shopkeeper"
 msgstr ""
 "Lo siento, colega, no hay habitaciones disponibles.\n"
-"Los Ejecutores dicen que una enfermedad rara se ha propagado entre los Tuxemon de algunos huéspedes, así que estamos bajo cuarentena.\n"
-"Puedo curar tus Tuxemon, no obstante. ¿Quieres?"
+"Los Ejecutores dicen que una enfermedad rara se ha propagado entre los Solamon de algunos huÃ©spedes, asÃ­ que estamos bajo cuarentena.\n"
+"Puedo curar tus Solamon, no obstante. Â¿Quieres?"
 
 msgid "spyder_scoop_turner2"
-msgstr "Recuerda, ¡no tenemos nada que ver con que la enfermedad saliera!"
+msgstr "Recuerda, Â¡no tenemos nada que ver con que la enfermedad saliera!"
 
 msgid "spyder_scoop_turner1"
 msgstr ""
-"Algunas de estas personas te dirán que los Ejecutores dejamos que la "
-"enfermedad saliera. ¡No les creas!"
+"Algunas de estas personas te dirÃ¡n que los Ejecutores dejamos que la "
+"enfermedad saliera. Â¡No les creas!"
 
 msgid "spyder_scoop_taggart2"
-msgstr "Si tú no robaste las Restricciones Extremas, ¿quién fue? "
+msgstr "Si tÃº no robaste las Restricciones Extremas, Â¿quiÃ©n fue? "
 
 msgid "spyder_scoop_taggart1"
 msgstr ""
-"¡Alguien robó las Restricciones Extremas que inventamos para mantener "
-"Tuxemon en la unidad de confinamiento! ¿Has sido tú?"
+"Â¡Alguien robÃ³ las Restricciones Extremas que inventamos para mantener "
+"Solamon en la unidad de confinamiento! Â¿Has sido tÃº?"
 
 msgid "spyder_route6_frances2"
-msgstr "Deberías visitarnos en algún momento."
+msgstr "DeberÃ­as visitarnos en algÃºn momento."
 
 msgid "spyder_route6_frances1"
-msgstr "Mi Narcileaf mantiene el jardín más exquisito de todo el mundo."
+msgstr "Mi Narcileaf mantiene el jardÃ­n mÃ¡s exquisito de todo el mundo."
 
 msgid "spyder_searoutec_gil2"
 msgstr ""
-"Por supuesto… ¡succionar el veneno hace que Nudiflot se vuelva venenoso!"
+"Por supuestoâ€¦ Â¡succionar el veneno hace que Nudiflot se vuelva venenoso!"
 
 msgid "spyder_searoutec_gil1"
 msgstr "Si te pica un Manosting, Nudiflot puede succionarte el veneno."
 
 msgid "spyder_dryadsgrove_ignatia2"
-msgstr "Eres más de lo que aparentas."
+msgstr "Eres mÃ¡s de lo que aparentas."
 
 msgid "spyder_dryadsgrove_ignatia1"
-msgstr "Somos más de lo que aparentamos."
+msgstr "Somos mÃ¡s de lo que aparentamos."
 
 msgid "spyder_leatherhouse2_snugglepot2"
-msgstr "¡Guau! ¡Algún día seré un entrenador como tú!"
+msgstr "Â¡Guau! Â¡AlgÃºn dÃ­a serÃ© un entrenador como tÃº!"
 
 msgid "spyder_papertown_tvwatch"
 msgstr ""
-"¿Qué hay en la tele? Una reina del baile de un instituto está rompiendo su "
-"corona en pedazos y repartiéndolos."
+"Â¿QuÃ© hay en la tele? Una reina del baile de un instituto estÃ¡ rompiendo su "
+"corona en pedazos y repartiÃ©ndolos."
 
 msgid "spyder_route3_sign"
 msgstr ""
-"Ruta 3: La rehabilitación comenzará tan pronto como sea posible.\n"
+"Ruta 3: La rehabilitaciÃ³n comenzarÃ¡ tan pronto como sea posible.\n"
 "Por favor, dejen de molestarnos."
 
 msgid "spyder_papertown_townsign"
-msgstr "Pueblo Papel: ¡La puerta a Fondent!"
+msgstr "Pueblo Papel: Â¡La puerta a Fondent!"
 
 msgid "got_new_tuxemon"
-msgstr "¡Nace un nuevo Tuxemon! ¡Bienvenido {monster_name}!"
+msgstr "Â¡Nace un nuevo Solamon! Â¡Bienvenido {monster_name}!"
 
 msgid "spyder_searoutec_leek2"
 msgstr "Solo ganaste porque te di _alga_ de ventaja."
 
 msgid "spyder_searoutec_leek1"
-msgstr "Déjame ganar. ¡No seas _pescado_!"
+msgstr "DÃ©jame ganar. Â¡No seas _pescado_!"
 
 msgid "spyder_searoutec_rutherford2"
-msgstr "… y ni una gota que puedas tragar."
+msgstr "â€¦ y ni una gota que puedas tragar."
 
 msgid "spyder_searoutec_rutherford1"
-msgstr "¡Agua, agua por todas partes! Realmente te hace pensar…"
+msgstr "Â¡Agua, agua por todas partes! Realmente te hace pensarâ€¦"
 
 msgid "spyder_dryadsgrove_petra2"
 msgstr "Hombre ingrato."
 
 msgid "spyder_dryadsgrove_petra1"
-msgstr "¡Rompe los moldes de la naturaleza!"
+msgstr "Â¡Rompe los moldes de la naturaleza!"
 
 msgid "professorexists1.5"
-msgstr "¡Eh, hola!"
+msgstr "Â¡Eh, hola!"
 
 msgid "spyder_nimrod_antimony2"
-msgstr "Años de trabajo, tirados por el desagüe en minutos. "
+msgstr "AÃ±os de trabajo, tirados por el desagÃ¼e en minutos. "
 
 msgid "spyder_nimrod_antimony1"
 msgstr ""
-"¡Oh dios, has destruido los prototipos! ¡Estábamos a punto de empezar la "
-"producción en masa!"
+"Â¡Oh dios, has destruido los prototipos! Â¡EstÃ¡bamos a punto de empezar la "
+"producciÃ³n en masa!"
 
 msgid "reg_papers_description"
-msgstr "Un paquete de inscripciones para el Desafío"
+msgstr "Un paquete de inscripciones para el DesafÃ­o"
 
 msgid "tabatownbattlearea"
 msgstr "Arena de Batalla Certificada de Omnichannel - Pueblo Taba"
 
 msgid "goodbye2"
 msgstr ""
-"¡Hasta la vista ${{name}}! Y buena suerte en el Desafío, la necesitarás."
+"Â¡Hasta la vista ${{name}}! Y buena suerte en el DesafÃ­o, la necesitarÃ¡s."
 
 msgid "goodbye"
 msgstr ""
-"No dejes que el Desafío te impida venir a verme. De hecho… quizás te "
+"No dejes que el DesafÃ­o te impida venir a verme. De hechoâ€¦ quizÃ¡s te "
 "encuentre yo antes."
 
 msgid "gasp4"
 msgstr ""
-"Está bien, dejaré vuestras inscripciones intactas. De momento.\n"
-"John, Grant, llevad al que se hace llamar Profesor Tuxemon a su nuevo hogar."
+"EstÃ¡ bien, dejarÃ© vuestras inscripciones intactas. De momento.\n"
+"John, Grant, llevad al que se hace llamar Profesor Solamon a su nuevo hogar."
 
 msgid "gasp3"
-msgstr "Si eso es verdad, hay más en ti de lo que pensaba…"
+msgstr "Si eso es verdad, hay mÃ¡s en ti de lo que pensabaâ€¦"
 
 msgid "brokethegasp3"
 msgstr ""
-"Por favor, señora de Omnichannel, la madre de ${{name}} quería que se unieran al Desafío para ver la región entera.\n"
-"${{name}} no lo está haciendo por el trabajo, lo están haciendo por la experiencia."
+"Por favor, seÃ±ora de Omnichannel, la madre de ${{name}} querÃ­a que se unieran al DesafÃ­o para ver la regiÃ³n entera.\n"
+"${{name}} no lo estÃ¡ haciendo por el trabajo, lo estÃ¡n haciendo por la experiencia."
 
 msgid "brokethegasp2"
-msgstr "Tú. ¿Por qué estás hablando? No te he dado permiso para hablar."
+msgstr "TÃº. Â¿Por quÃ© estÃ¡s hablando? No te he dado permiso para hablar."
 
 msgid "brokethegasp"
 msgstr ""
-"Señora, si me disculpa, ${{name}} lo está haciendo para algo más que un "
+"SeÃ±ora, si me disculpa, ${{name}} lo estÃ¡ haciendo para algo mÃ¡s que un "
 "trabajo."
 
 msgid "gasp2"
 msgstr ""
-"¿Qué estás haciendo ahí con este… criminal?\n"
-"… … …\n"
-"… … …\n"
-"¿Unirte al Desafío? ¿De verdad vas a someterte a ese sinsentido?\n"
-"Si todo lo que querías es un trabajo en Omnichannel, podrías simplemente haberme preguntado.\n"
-"Estoy segura de que podría encontrar un… uso para ti si estás interesado."
+"Â¿QuÃ© estÃ¡s haciendo ahÃ­ con esteâ€¦ criminal?\n"
+"â€¦ â€¦ â€¦\n"
+"â€¦ â€¦ â€¦\n"
+"Â¿Unirte al DesafÃ­o? Â¿De verdad vas a someterte a ese sinsentido?\n"
+"Si todo lo que querÃ­as es un trabajo en Omnichannel, podrÃ­as simplemente haberme preguntado.\n"
+"Estoy segura de que podrÃ­a encontrar unâ€¦ uso para ti si estÃ¡s interesado."
 
 msgid "wewnicefight"
 msgstr ""
-"¡Guau, buena pelea!\n"
-"Déjame curar tus Tuxemon rápidamente…\n"
-"Y… ¡ya está! ¡Todo listo!\n"
-"Con un poco más de práctica, y quizás algunos Tuxemon más, seguro que podrás realizar el Desafío."
+"Â¡Guau, buena pelea!\n"
+"DÃ©jame curar tus Solamon rÃ¡pidamenteâ€¦\n"
+"Yâ€¦ Â¡ya estÃ¡! Â¡Todo listo!\n"
+"Con un poco mÃ¡s de prÃ¡ctica, y quizÃ¡s algunos Solamon mÃ¡s, seguro que podrÃ¡s realizar el DesafÃ­o."
 
 msgid "tuxemontime1.5"
-msgstr "¿Supongo que esto significa que has decidido unirte al Desafío?"
+msgstr "Â¿Supongo que esto significa que has decidido unirte al DesafÃ­o?"
 
 msgid "spyder_dragonscave_benden4"
 msgstr ""
-"Por favor, ${{name}}. Si tú no puedes parar a esos villanos, todo está "
+"Por favor, ${{name}}. Si tÃº no puedes parar a esos villanos, todo estÃ¡ "
 "perdido."
 
 msgid "spyder_omnichannel_byrne2"
-msgstr "Qué decepción."
+msgstr "QuÃ© decepciÃ³n."
 
 msgid "spyder_omnichannel_byrne1"
-msgstr "Mi Jemuar viene de un pueblo donde no hay nada más que cuarzo."
+msgstr "Mi Jemuar viene de un pueblo donde no hay nada mÃ¡s que cuarzo."
 
 msgid "spyder_dragonscave_daenny2"
-msgstr "Podrás haberme superado, pero nunca superarás a Benden."
+msgstr "PodrÃ¡s haberme superado, pero nunca superarÃ¡s a Benden."
 
 msgid "spyder_dragonscave_daenny1"
-msgstr "¡Prepárate para ser derrotado!"
+msgstr "Â¡PrepÃ¡rate para ser derrotado!"
 
 msgid "spyder_dryadsgrove_aquemini2"
 msgstr "Reza por sobrevivir a tu visita."
@@ -3319,14 +3319,14 @@ msgid "spyder_dryadsgrove_aquemini1"
 msgstr "Bienvenido a nuestra arboleda, mortal."
 
 msgid "spyder_riverboatcaptain"
-msgstr "Capitán de barco fluvial"
+msgstr "CapitÃ¡n de barco fluvial"
 
 msgid "spyder_cottontown_townsign"
-msgstr "Bienvenido a Pueblo Algodón: Una fuerza en crecimiento."
+msgstr "Bienvenido a Pueblo AlgodÃ³n: Una fuerza en crecimiento."
 
 msgid "spyder_scoop_paine2"
 msgstr ""
-"¡Si esos Ejecutores no hubieran venido y expuesto sus mascotas Tuxemon a la "
+"Â¡Si esos Ejecutores no hubieran venido y expuesto sus mascotas Solamon a la "
 "enfermedad, nunca hubiera salido de las instalaciones!"
 
 msgid "spyder_scoop_paine1"
@@ -3334,139 +3334,139 @@ msgstr "Me siento fatal porque la enfermedad haya salido al exterior. "
 
 msgid "spyder_flower_florist"
 msgstr ""
-"Solía haber un capitán de barco aquí que te podía llevar arriba y abajo a lo largo del río.\n"
-"Pero no le he visto desde hace unos días. "
+"SolÃ­a haber un capitÃ¡n de barco aquÃ­ que te podÃ­a llevar arriba y abajo a lo largo del rÃ­o.\n"
+"Pero no le he visto desde hace unos dÃ­as. "
 
 msgid "spyder_cottonhouse1_firefighter"
 msgstr ""
-"¿Sabías que es posible para los Tuxemon tener dos elementos?\n"
-"Incluso una técnica puede pertenecer a dos elementos simultáneamente."
+"Â¿SabÃ­as que es posible para los Solamon tener dos elementos?\n"
+"Incluso una tÃ©cnica puede pertenecer a dos elementos simultÃ¡neamente."
 
 msgid "spyder_route1_beachcomber"
 msgstr ""
-"Para correr tan solo mantén presionada la tecla SHIFT.\n"
-"¡Mírame! ¡Soy libre como un ELOFLY!"
+"Para correr tan solo mantÃ©n presionada la tecla SHIFT.\n"
+"Â¡MÃ­rame! Â¡Soy libre como un ELOFLY!"
 
 msgid "spyder_route4_rincewind2"
-msgstr "No fue tan útil."
+msgstr "No fue tan Ãºtil."
 
 msgid "spyder_route4_rincewind1"
-msgstr "¡Finalmente, un uso para K9!"
+msgstr "Â¡Finalmente, un uso para K9!"
 
 msgid "spyder_route3_twig3"
 msgstr ""
-"Entrenaré más y me volveré tan fuerte como nuestra Jefa.\n"
-"Ella ha trabajado duramente para convertirse en la líder. Quiero ser como ella algún día."
+"EntrenarÃ© mÃ¡s y me volverÃ© tan fuerte como nuestra Jefa.\n"
+"Ella ha trabajado duramente para convertirse en la lÃ­der. Quiero ser como ella algÃºn dÃ­a."
 
 msgid "spyder_route3_twig2"
-msgstr "No menciones lo del museo a la jefa, ¿de acuerdo?"
+msgstr "No menciones lo del museo a la jefa, Â¿de acuerdo?"
 
 msgid "spyder_route3_twig1"
 msgstr ""
-"¡Algunas de las cosas que estamos excavando deberían estar en un museo!\n"
-"Espera, tú no trabajas aquí. "
+"Â¡Algunas de las cosas que estamos excavando deberÃ­an estar en un museo!\n"
+"Espera, tÃº no trabajas aquÃ­. "
 
 msgid "spyder_leather_maniac"
 msgstr ""
-"¿Cómo va tu aventura de momento?\n"
-"…\n"
-"¡Wow, tan hablador! Realmente te estás quitando el caparazón."
+"Â¿CÃ³mo va tu aventura de momento?\n"
+"â€¦\n"
+"Â¡Wow, tan hablador! Realmente te estÃ¡s quitando el caparazÃ³n."
 
 msgid "spyder_papertown_firstfight"
 msgstr ""
-"Eh, ¿qué haces hurgando en la basura? Eso es asqueroso, ¡y va contra las normas!\n"
-"…\n"
-"¿Qué?¿Están tirando Tuxemon en perfectas condiciones?\n"
-"…\n"
-"Bien, si estuvieran en perfectas condiciones, no los tirarían, ¿no?\n"
-"Deben ser inferiores a los nuevos modelos. ¡Vamos, te lo mostraré! "
+"Eh, Â¿quÃ© haces hurgando en la basura? Eso es asqueroso, Â¡y va contra las normas!\n"
+"â€¦\n"
+"Â¿QuÃ©?Â¿EstÃ¡n tirando Solamon en perfectas condiciones?\n"
+"â€¦\n"
+"Bien, si estuvieran en perfectas condiciones, no los tirarÃ­an, Â¿no?\n"
+"Deben ser inferiores a los nuevos modelos. Â¡Vamos, te lo mostrarÃ©! "
 
 msgid "moreannouncement2"
 msgstr ""
-"Lamento haberos dado el aviso de este anuncio tan tarde, pero creí que era importante antes de que los medios lo filtren…\n"
-"Bien… Ehh. Tenemos el control de los medios, así que supongo que no importaría, pero igualmente quería compartirlo.\n"
-"Después de consultar con mis consejeros, hemos decidido que la mejor forma de estar más cómodos con los Tuxemon, es usarlos.\n"
-"Ahora, pasará un tiempo hasta que podamos integrarlos como trabajadores, pero mientras tanto, como decía anteriormente, los liberaremos en plena naturaleza.\n"
-"Sé que esto os chocará a todos, y además entiendo que algunos podríais tener miedo. Ya sabemos lo que ocurrió en el pasado…\n"
-"Pero este no es momento para tener miedo, ya que Omnichannel patrocinará la restauración de la antigua tradición conocida como El Desafío.\n"
-"Ahora, para aquellos que estéis menos versados en la historia de la región de Fondent, hace cien años había una tradición en la que jóvenes hombres y mujeres capturaban y criaban Tuxemon.\n"
-"Ellos usaban esos Tuxemon para combatir con otros y ascender de rango en su pueblo, con el mejor Entrenador Tuxemon ganando estatus y poder.\n"
-"Vamos a crear una versión de esto para los tiempos modernos. Formaremos áreas de batalla en múltiples ciudades a lo largo de Fondent.\n"
-"Cada Área de Batalla deberá ser completada en orden, y el entrenador o los entrenadores más prometedores podrán intentar el Campeonato.\n"
-"El Campeonato se realizará en lo alto de la Torre Omnichannel en Pueblo Algodón, pero solo cuando un Entrenador Tuxemon haya superado todas las Áreas de Batalla.\n"
-"El Desafío está diseñado como una forma de introducir poco a poco los Tuxemon en la vida pública y para fomentar los viajes a través de la región.\n"
-"¿Quiénes mejor para demostrar esto que nuestros jóvenes?\n"
-"¡Cada Partido se retransmitirá en directo en Omnichannel-T, el nuevo canal de televisión dedicado en exclusiva a programación relacionada con los Tuxemon!\n"
-"No os preocupéis, el añadido se reflejará en vuestras facturas.\n"
-"Oh, y una cosa más, a los Entrenadores Tuxemon no se les aplicará el toque de queda.\n"
-"¡Antes de esto, por supuesto, necesitaréis un Tuxemon! Ahora, no todo el mundo tiene permitido ser un Entrenador Tuxemon. ¡Eso sería puro caos!\n"
-"Primero, deberéis registrar vuestro nombre con vuestro representante local de Omnichannel, y si sois seleccionados seréis enviados al entrenamiento de Omnichannel.\n"
-"¡Después de completar con éxito vuestro entrenamiento, se os proporcionará un Tuxemon y podréis empezar a participar en El Desafío!\n"
-"¡Estoy esperando encontrarme con todos vosotros! ¡Creemos un nuevo mundo juntos!\n"
-"Después de todo… ¡SOMOS SEGURIDAD, SOMOS ORDEN, SOMOS OMNICHANNEL! Y ahora,\n"
-"¡SOMOS\n"
+"Lamento haberos dado el aviso de este anuncio tan tarde, pero creÃ­ que era importante antes de que los medios lo filtrenâ€¦\n"
+"Bienâ€¦ Ehh. Tenemos el control de los medios, asÃ­ que supongo que no importarÃ­a, pero igualmente querÃ­a compartirlo.\n"
+"DespuÃ©s de consultar con mis consejeros, hemos decidido que la mejor forma de estar mÃ¡s cÃ³modos con los Solamon, es usarlos.\n"
+"Ahora, pasarÃ¡ un tiempo hasta que podamos integrarlos como trabajadores, pero mientras tanto, como decÃ­a anteriormente, los liberaremos en plena naturaleza.\n"
+"SÃ© que esto os chocarÃ¡ a todos, y ademÃ¡s entiendo que algunos podrÃ­ais tener miedo. Ya sabemos lo que ocurriÃ³ en el pasadoâ€¦\n"
+"Pero este no es momento para tener miedo, ya que Omnichannel patrocinarÃ¡ la restauraciÃ³n de la antigua tradiciÃ³n conocida como El DesafÃ­o.\n"
+"Ahora, para aquellos que estÃ©is menos versados en la historia de la regiÃ³n de Fondent, hace cien aÃ±os habÃ­a una tradiciÃ³n en la que jÃ³venes hombres y mujeres capturaban y criaban Solamon.\n"
+"Ellos usaban esos Solamon para combatir con otros y ascender de rango en su pueblo, con el mejor Entrenador Solamon ganando estatus y poder.\n"
+"Vamos a crear una versiÃ³n de esto para los tiempos modernos. Formaremos Ã¡reas de batalla en mÃºltiples ciudades a lo largo de Fondent.\n"
+"Cada Ãrea de Batalla deberÃ¡ ser completada en orden, y el entrenador o los entrenadores mÃ¡s prometedores podrÃ¡n intentar el Campeonato.\n"
+"El Campeonato se realizarÃ¡ en lo alto de la Torre Omnichannel en Pueblo AlgodÃ³n, pero solo cuando un Entrenador Solamon haya superado todas las Ãreas de Batalla.\n"
+"El DesafÃ­o estÃ¡ diseÃ±ado como una forma de introducir poco a poco los Solamon en la vida pÃºblica y para fomentar los viajes a travÃ©s de la regiÃ³n.\n"
+"Â¿QuiÃ©nes mejor para demostrar esto que nuestros jÃ³venes?\n"
+"Â¡Cada Partido se retransmitirÃ¡ en directo en Omnichannel-T, el nuevo canal de televisiÃ³n dedicado en exclusiva a programaciÃ³n relacionada con los Solamon!\n"
+"No os preocupÃ©is, el aÃ±adido se reflejarÃ¡ en vuestras facturas.\n"
+"Oh, y una cosa mÃ¡s, a los Entrenadores Solamon no se les aplicarÃ¡ el toque de queda.\n"
+"Â¡Antes de esto, por supuesto, necesitarÃ©is un Solamon! Ahora, no todo el mundo tiene permitido ser un Entrenador Solamon. Â¡Eso serÃ­a puro caos!\n"
+"Primero, deberÃ©is registrar vuestro nombre con vuestro representante local de Omnichannel, y si sois seleccionados serÃ©is enviados al entrenamiento de Omnichannel.\n"
+"Â¡DespuÃ©s de completar con Ã©xito vuestro entrenamiento, se os proporcionarÃ¡ un Solamon y podrÃ©is empezar a participar en El DesafÃ­o!\n"
+"Â¡Estoy esperando encontrarme con todos vosotros! Â¡Creemos un nuevo mundo juntos!\n"
+"DespuÃ©s de todoâ€¦ Â¡SOMOS SEGURIDAD, SOMOS ORDEN, SOMOS OMNICHANNEL! Y ahora,\n"
+"Â¡SOMOS\n"
 "EL\n"
 "FUTURO!"
 
 msgid "spyder_leathercafe_sign"
-msgstr "Café al Aire Libre y Mercado"
+msgstr "CafÃ© al Aire Libre y Mercado"
 
 msgid "spyder_cottonhouse2_shopkeeper"
 msgstr ""
-"No tengo ningún problema con personas de otras regiones.\n"
-"Pero no me quites mi trabajo, ¿vale?"
+"No tengo ningÃºn problema con personas de otras regiones.\n"
+"Pero no me quites mi trabajo, Â¿vale?"
 
 msgid "spyder_cottonhouse2_magician"
 msgstr ""
 "Algunas condiciones reemplazan a otras.\n"
-"Aprender cómo interactúan las condiciones es clave para convertirse en un maestro de los combates Tuxemon."
+"Aprender cÃ³mo interactÃºan las condiciones es clave para convertirse en un maestro de los combates Solamon."
 
 msgid "spyder_cottonhouse1_homemaker"
 msgstr ""
-"Me siento más segura viendo a los Ejecutores alrededor. Nunca se es demasiado precavido.\n"
-"¡Los periódicos siempre están reportando crímenes terribles en esta misma región!"
+"Me siento mÃ¡s segura viendo a los Ejecutores alrededor. Nunca se es demasiado precavido.\n"
+"Â¡Los periÃ³dicos siempre estÃ¡n reportando crÃ­menes terribles en esta misma regiÃ³n!"
 
 msgid "spyder_route6_blair2"
 msgstr ""
-"He oído que expulsaron a todos los investigadores fuera del Cuartel General de Greenwash .\n"
-"¡Y ahora están confiscando Tuxemon y llevándoselos al Hospital!"
+"He oÃ­do que expulsaron a todos los investigadores fuera del Cuartel General de Greenwash .\n"
+"Â¡Y ahora estÃ¡n confiscando Solamon y llevÃ¡ndoselos al Hospital!"
 
 msgid "spyder_route6_blair1"
 msgstr "Algo me huele mal."
 
 msgid "spyder_route6_ping2"
 msgstr ""
-"No pararán ahí… al final confiscarán todos los Tuxemon si creen que pueden "
+"No pararÃ¡n ahÃ­â€¦ al final confiscarÃ¡n todos los Solamon si creen que pueden "
 "salirse con la suya."
 
 msgid "spyder_route6_ping1"
 msgstr ""
-"Psst, ¿has oído? Los Ejecutores están confiscando Tuxemon de todo el mundo "
+"Psst, Â¿has oÃ­do? Los Ejecutores estÃ¡n confiscando Solamon de todo el mundo "
 "en Pueblo Caramelo."
 
 msgid "spyder_route6_orion2"
-msgstr "¡Espero poder volver antes de que mi experimento se desintegre!"
+msgstr "Â¡Espero poder volver antes de que mi experimento se desintegre!"
 
 msgid "spyder_route6_orion1"
 msgstr "Estaba en medio de un experimento muy importante."
 
 msgid "spyder_route3_qqq1"
-msgstr "¡Ah, se suponía que los Ejecutores no debían dejar salir a nadie!"
+msgstr "Â¡Ah, se suponÃ­a que los Ejecutores no debÃ­an dejar salir a nadie!"
 
 msgid "spyder_route3_surat1"
 msgstr ""
-" Lo llaman la \"arteria oscura\": la sangre y huesos fosilizados de un Tuxemon antiguo bajo la tierra.\n"
-"¡Y vamos a excavarlo!"
+" Lo llaman la \"arteria oscura\": la sangre y huesos fosilizados de un Solamon antiguo bajo la tierra.\n"
+"Â¡Y vamos a excavarlo!"
 
 msgid "spyder_route3_surat3"
-msgstr "¡Largo! Estás interponiéndote en nuestro camino."
+msgstr "Â¡Largo! EstÃ¡s interponiÃ©ndote en nuestro camino."
 
 msgid "spyder_flower_teach1"
-msgstr "Oh, ¿dónde se ha metido mi otro estudiante?"
+msgstr "Oh, Â¿dÃ³nde se ha metido mi otro estudiante?"
 
 msgid "spyder_flowerhouse1_firefighter"
 msgstr ""
-"Los cinco Pilares son las únicas grandes empresas en esta región. Tienen "
+"Los cinco Pilares son las Ãºnicas grandes empresas en esta regiÃ³n. Tienen "
 "mucha influencia."
 
 msgid "spyder_flower_sandy_notweesher"
@@ -3479,19 +3479,19 @@ msgid "spyder_route2_graf2"
 msgstr "El tenis se me da mejor..."
 
 msgid "spyder_wayfarer1_bismuth2"
-msgstr "¡Qué mala suerte!"
+msgstr "Â¡QuÃ© mala suerte!"
 
 msgid "spyder_route2_roddick2"
-msgstr "Oye, ¡no parecías asustado en absoluto!"
+msgstr "Oye, Â¡no parecÃ­as asustado en absoluto!"
 
 msgid "menu_down_key"
 msgstr "Abajo"
 
 msgid "menu_secondary_select_key"
-msgstr "Botón Cancelar"
+msgstr "BotÃ³n Cancelar"
 
 msgid "spyder_route4_wulf2"
-msgstr "Ooh, ¡me siento tan débil!"
+msgstr "Ooh, Â¡me siento tan dÃ©bil!"
 
 msgid "menu_left_key"
 msgstr "Izquierda"
@@ -3500,7 +3500,7 @@ msgid "dark_robo"
 msgstr "Robot Oscuro"
 
 msgid "spyder_citypark_maniac"
-msgstr "Puf, ¡la hemos cagado!"
+msgstr "Puf, Â¡la hemos cagado!"
 
 msgid "dodge_increased"
 msgstr "{stat} de {user} ha aumentado."
@@ -3512,10 +3512,10 @@ msgid "menu_right_key"
 msgstr "Derecha"
 
 msgid "menu_primary_select_key"
-msgstr "Botón Acción"
+msgstr "BotÃ³n AcciÃ³n"
 
 msgid "menu_back_key"
-msgstr "Botón Retorno"
+msgstr "BotÃ³n Retorno"
 
 msgid "options_new_input_key0"
 msgstr "Pulsa una tecla para establecerla como nuevo valor de la entrada."
@@ -3524,14 +3524,14 @@ msgid "options_new_input_key1"
 msgstr "Reinicia el juego para que los cambios surtan efecto."
 
 msgid "xeon"
-msgstr "Xeón"
+msgstr "XeÃ³n"
 
 msgid "spyder_route4_wulf1"
 msgstr "Ah, solo estaba recogiendo algunos suplementos medicinales."
 
 msgid "spyder_wayfarer1_bismuth1"
 msgstr ""
-"¡Espero que no esté relacionado con aquellos Tuxemon enfermos en las granjas"
+"Â¡Espero que no estÃ© relacionado con aquellos Solamon enfermos en las granjas"
 " Scoop!"
 
 msgid "hp_restored"
@@ -3547,37 +3547,37 @@ msgid "spyder_papertown_myfirstmon1"
 msgstr "(Rebusca en la basura) "
 
 msgid "spyder_route3_weaver1"
-msgstr "¡Hey, saca tu culo de aquí! ¡Esta mina pertenece a Shaft!"
+msgstr "Â¡Hey, saca tu culo de aquÃ­! Â¡Esta mina pertenece a Shaft!"
 
 msgid "spyder_flower_petshopkeeper3"
-msgstr "¿Has conseguido que Vivipere se transforme?"
+msgstr "Â¿Has conseguido que Vivipere se transforme?"
 
 msgid "spyder_nimrod_thatcher2"
 msgstr "Sin comentarios. "
 
 msgid "spyder_scoop_berys2"
-msgstr "¡Scoop no propagó la enfermedad! Te lo prometo. "
+msgstr "Â¡Scoop no propagÃ³ la enfermedad! Te lo prometo. "
 
 msgid "spyder_nimrod_archer2"
-msgstr "Mantén tu boca cerrada, ¿de acuerdo?"
+msgstr "MantÃ©n tu boca cerrada, Â¿de acuerdo?"
 
 # Default mod names on selection menu
 msgid "xero_campaign"
-msgstr "Tuxemon: Xero"
+msgstr "Solamon: Xero"
 
 msgid "spyder_campaign"
-msgstr "Tuxemon: Spyder y la Catedral"
+msgstr "Solamon: Spyder y la Catedral"
 
 msgid "spyder_route6_mungo1"
 msgstr ""
-"No puedo creer que nos encerraran fuera de la sede de Greenwash. ¡Me estaba "
+"No puedo creer que nos encerraran fuera de la sede de Greenwash. Â¡Me estaba "
 "acercando tanto a la cura del virus!"
 
 msgid "combat_state_overfeed_get"
-msgstr "{user} sobrealimentó a {target}."
+msgstr "{user} sobrealimentÃ³ a {target}."
 
 msgid "combat_levitate_get"
-msgstr "{user} se alzó alto en el aire."
+msgstr "{user} se alzÃ³ alto en el aire."
 
 msgid "coproblight"
 msgstr "Coproblight"
@@ -3587,44 +3587,44 @@ msgstr "Pilthropus"
 
 msgid "spyder_citypark_frances1"
 msgstr ""
-"Tengo los jardines más magníficos de toda la tierra. Por eso esos Shybulb "
+"Tengo los jardines mÃ¡s magnÃ­ficos de toda la tierra. Por eso esos Shybulb "
 "siguen apareciendo."
 
 msgid "spyder_route3_roxby2"
-msgstr "¡Largo! "
+msgstr "Â¡Largo! "
 
 msgid "spyder_route3_roxby1"
 msgstr ""
-"¡Trae ese martinete aquí y que sea rápido! Espera... tú no pareces un "
+"Â¡Trae ese martinete aquÃ­ y que sea rÃ¡pido! Espera... tÃº no pareces un "
 "minero. "
 
 msgid "spyder_flower_petshopkeeper2"
 msgstr ""
-"¿Sabes qué? ¿Por qué no te doy uno y así luego puedes volver y decirme en "
-"qué se transforma?"
+"Â¿Sabes quÃ©? Â¿Por quÃ© no te doy uno y asÃ­ luego puedes volver y decirme en "
+"quÃ© se transforma?"
 
 msgid "spyder_leatherhouse1_florist"
 msgstr ""
-"Solía haber varios canales de televisión y emisoras de radio, pero Omnichannel los sacó del negocio.\n"
-"Ahora no tenemos que preocuparnos de que los distintos periodistas se contradigan entre sí."
+"SolÃ­a haber varios canales de televisiÃ³n y emisoras de radio, pero Omnichannel los sacÃ³ del negocio.\n"
+"Ahora no tenemos que preocuparnos de que los distintos periodistas se contradigan entre sÃ­."
 
 msgid "spyder_leatherhouse2_scientist"
 msgstr ""
 "Trabajo para Shaft.\n"
 "...\n"
-"¿Que dónde está mi casco? No necesito uno, controlo el camión de forma remota desde nuestras oficinas.\n"
-"Muy pronto, la mayoría de trabajos en las minas serán automatizados. "
+"Â¿Que dÃ³nde estÃ¡ mi casco? No necesito uno, controlo el camiÃ³n de forma remota desde nuestras oficinas.\n"
+"Muy pronto, la mayorÃ­a de trabajos en las minas serÃ¡n automatizados. "
 
 msgid "spyder_leatherhouse2_miner"
 msgstr ""
-"No creerías lo que están excavando en la Ruta 3.\n"
+"No creerÃ­as lo que estÃ¡n excavando en la Ruta 3.\n"
 "Nunca he visto un huevo tan grande.\n"
 "Upps, he dicho demasiado. "
 
 msgid "spyder_nimrod_dirk1"
 msgstr ""
-"¿Estás aquí para la presentación de los accionistas?\n"
-"Las acciones de Nimrod son una buena inversión: ¡los ejércitos siempre necesitan armas!"
+"Â¿EstÃ¡s aquÃ­ para la presentaciÃ³n de los accionistas?\n"
+"Las acciones de Nimrod son una buena inversiÃ³n: Â¡los ejÃ©rcitos siempre necesitan armas!"
 
 msgid "spyder_nimrod_rebel2"
 msgstr ""
@@ -3632,20 +3632,20 @@ msgstr ""
 "peluche."
 
 msgid "spyder_nimrod_mace1"
-msgstr "Quiero dejar mi trabajo y hacerme músico."
+msgstr "Quiero dejar mi trabajo y hacerme mÃºsico."
 
 msgid "spyder_nimrod_argon2"
-msgstr "Sabía que no sería capaz de convencerte."
+msgstr "SabÃ­a que no serÃ­a capaz de convencerte."
 
 msgid "spyder_nimrod_zircon2"
-msgstr "Desearía haber reemplazado a mis Tuxemon por robots. "
+msgstr "DesearÃ­a haber reemplazado a mis Solamon por robots. "
 
 msgid "spyder_nimrod_bowie2"
-msgstr "Lo del hardware militar era hipotético, ¿de acuerdo?"
+msgstr "Lo del hardware militar era hipotÃ©tico, Â¿de acuerdo?"
 
 msgid "spyder_nimrod_tru2"
 msgstr ""
-"Guardia, recupera los prototipos en la sala de pruebas. ¡Al menos podemos "
+"Guardia, recupera los prototipos en la sala de pruebas. Â¡Al menos podemos "
 "salvar algo! "
 
 msgid "spyder_route6_gunner1"
@@ -3654,11 +3654,11 @@ msgstr ""
 "permanecer fuera de la ciudad."
 
 msgid "spyder_route6_gunner2"
-msgstr "¿Que no eres un empleado de Greenwash? ¡Eso ya lo he oído antes!"
+msgstr "Â¿Que no eres un empleado de Greenwash? Â¡Eso ya lo he oÃ­do antes!"
 
 msgid "spyder_flower_muse2"
 msgstr ""
-"¿Qué? ¡Tienes una pintura! Ohh, ¿me dejarías comprarla? Tengo "
+"Â¿QuÃ©? Â¡Tienes una pintura! Ohh, Â¿me dejarÃ­as comprarla? Tengo "
 "2.000${{currency}}."
 
 msgid "speed_halved"
@@ -3666,71 +3666,71 @@ msgstr "La velocidad de {user} se redujo a la mitad."
 
 msgid "coproblight_description"
 msgstr ""
-"Nacido de las heces de Tuxemon prehistóricos, usa los fragmentos de hueso de"
+"Nacido de las heces de Solamon prehistÃ³ricos, usa los fragmentos de hueso de"
 " su interior como defensa."
 
 msgid "pilthropus_description"
 msgstr ""
-"Encontrándose junto a Tuxemon como RHINCUS, PILTHROPUS era uno de los "
-"Tuxemon más antiguos capaz de crear sus propias herramientas."
+"EncontrÃ¡ndose junto a Solamon como RHINCUS, PILTHROPUS era uno de los "
+"Solamon mÃ¡s antiguos capaz de crear sus propias herramientas."
 
 msgid "spyder_route3_drag1"
 msgstr ""
-"AGENTE: ¿Qué ha pasado con la excavación?\n"
-"JEFE DE SHAFT: Fuimos... interrumpidos. Por... un niño.\n"
-"AGENTE: ¡¿Un niño?!\n"
+"AGENTE: Â¿QuÃ© ha pasado con la excavaciÃ³n?\n"
+"JEFE DE SHAFT: Fuimos... interrumpidos. Por... un niÃ±o.\n"
+"AGENTE: Â¡Â¿Un niÃ±o?!\n"
 "JEFE DE SHAFT: Pero conseguimos recuperar un...\n"
-"AGENTE: ¡Chist! Sabes que eso es alto secreto. ¡Bien, dámelo y lárgate!\n"
-"JEFE DE SHAFT: De acuerdo, aquí... ¡uh!"
+"AGENTE: Â¡Chist! Sabes que eso es alto secreto. Â¡Bien, dÃ¡melo y lÃ¡rgate!\n"
+"JEFE DE SHAFT: De acuerdo, aquÃ­... Â¡uh!"
 
 msgid "spyder_flower_petshopkeeper1"
 msgstr ""
-"¡Encontré estos huevos en una rama de un árbol, y los he incubado!\n"
-"Parecen ser de un Tuxemon desconocido hasta ahora.\n"
-"¡Lo llamo Vivipere! Me pregunto en qué se transformarán."
+"Â¡EncontrÃ© estos huevos en una rama de un Ã¡rbol, y los he incubado!\n"
+"Parecen ser de un Solamon desconocido hasta ahora.\n"
+"Â¡Lo llamo Vivipere! Me pregunto en quÃ© se transformarÃ¡n."
 
 msgid "spyder_flower_petshopkeeper4"
 msgstr ""
-"¿Lograste que se transformara?\n"
+"Â¿Lograste que se transformara?\n"
 "...\n"
-"¿Y lo hiciste de esa forma?\n"
-"Ya veo. Hmmm, no me termina de gustar el aspecto de esa transformación.\n"
-"Si te doy otro Vivipere, ¿podrías traerlo de vuelta si se transforma en algo diferente?"
+"Â¿Y lo hiciste de esa forma?\n"
+"Ya veo. Hmmm, no me termina de gustar el aspecto de esa transformaciÃ³n.\n"
+"Si te doy otro Vivipere, Â¿podrÃ­as traerlo de vuelta si se transforma en algo diferente?"
 
 msgid "spyder_flowerhouse2_soldier"
 msgstr ""
-"Trabajé para Nimrod durante la guerra.\n"
+"TrabajÃ© para Nimrod durante la guerra.\n"
 "Tampoco es que me dieran una medalla. O un desfile.\n"
 "No conceden esas cosas a los mercenarios."
 
 msgid "spyder_nimrod_rebel1"
 msgstr ""
-"¿Te envía la Catedral para ese nuevo cargamento de...?\n"
-"¿No?\n"
+"Â¿Te envÃ­a la Catedral para ese nuevo cargamento de...?\n"
+"Â¿No?\n"
 "Oh."
 
 msgid "spyder_nimrod_mace2"
-msgstr "Llamaré a mi banda, \"Los colegas de la Ametralladora\"."
+msgstr "LlamarÃ© a mi banda, \"Los colegas de la Ametralladora\"."
 
 msgid "spyder_nimrod_zircon1"
 msgstr ""
-"Si de verdad amaras a los Tuxemon, apoyarías que los reemplacemos en la "
+"Si de verdad amaras a los Solamon, apoyarÃ­as que los reemplacemos en la "
 "guerra por robots."
 
 msgid "spyder_nimrod_tru1"
 msgstr ""
 "Mis armas han ganado guerras y subyugado revueltas en cada punta del mundo, "
-"¿y crees que tienes alguna oportunidad contra mí?"
+"Â¿y crees que tienes alguna oportunidad contra mÃ­?"
 
 msgid "spyder_scoop_berys1"
 msgstr ""
-"Notarás que ninguno de los Tuxemon de aquí están enfermos. Todos esos se "
+"NotarÃ¡s que ninguno de los Solamon de aquÃ­ estÃ¡n enfermos. Todos esos se "
 "guardan en la unidad de confinamiento."
 
 msgid "spyder_flower_muse1"
 msgstr ""
 "Es muy duro consigo mismo, nunca contento con algo que haya pintado. Y muy "
-"olvidadizo, también. Quizás yo pueda comprar una pintura. "
+"olvidadizo, tambiÃ©n. QuizÃ¡s yo pueda comprar una pintura. "
 
 msgid "routea"
 msgstr "Ruta A"
@@ -3757,14 +3757,14 @@ msgstr ""
 "Norte: ${{north}} / Sur: ${{south}} / Oeste: ${{west}} / Este: ${{east}}"
 
 msgid "spyder_greenwash_gregor1"
-msgstr "Paso todo el día mirando mi CATEYE - ¡voy a atraparlo parpadeando!"
+msgstr "Paso todo el dÃ­a mirando mi CATEYE - Â¡voy a atraparlo parpadeando!"
 
 msgid "spyder_greenwash_gregor2"
-msgstr "¡Uf, ni siquiera parpadeó cuando se desmayó!"
+msgstr "Â¡Uf, ni siquiera parpadeÃ³ cuando se desmayÃ³!"
 
 msgid "tuxemon_stat1"
 msgstr ""
-"ID {txmn}, {type}, hace {doc} días\n"
+"ID {txmn}, {type}, hace {doc} dÃ­as\n"
 "{exp}xp, {exp_lv}xp a Lv {lv}\n"
 "Cuerpo: {weight} {unit_weight} {height} {unit_height}"
 
@@ -3817,7 +3817,7 @@ msgid "pyraminx"
 msgstr "Pyraminx"
 
 msgid "spyder_greenwash_guard"
-msgstr "Muy bien, muy bien, nada que ver aquí."
+msgstr "Muy bien, muy bien, nada que ver aquÃ­."
 
 msgid "b_ver_1"
 msgstr "B-Ver.1"
@@ -3876,10 +3876,10 @@ msgstr ""
 
 msgid "evolution_confirmation"
 msgstr ""
-"{name} está tratando de evolucionar en {evolve}."
+"{name} estÃ¡ tratando de evolucionar en {evolve}."
 
 msgid "allow_evolution"
-msgstr "¿Permitir la evolución?"
+msgstr "Â¿Permitir la evoluciÃ³n?"
 
 msgid "tuxemon_stat2"
 msgstr "{desc}"
@@ -4151,24 +4151,24 @@ msgid "rhincus"
 msgstr "Rhincus"
 
 msgid "spyder_greenwash_chip1"
-msgstr "¡He desarrollado una potencia informática inigualable!"
+msgstr "Â¡He desarrollado una potencia informÃ¡tica inigualable!"
 
 msgid "spyder_greenwash_clarence1"
-msgstr "¡Mis tuxemon son imparables a la luz del sol!"
+msgstr "Â¡Mis solamon son imparables a la luz del sol!"
 
 msgid "spyder_greenwash_chip2"
-msgstr "¡Necesita más potencia!"
+msgstr "Â¡Necesita mÃ¡s potencia!"
 
 msgid "spyder_greenwash_clarence2"
-msgstr "¡Había una nube!"
+msgstr "Â¡HabÃ­a una nube!"
 
 msgid "spyder_greenwash_louis1"
 msgstr ""
-"Las reglas de esta batalla son las simples leyes de la selección natural: "
-"¡sólo los fuertes sobreviven!"
+"Las reglas de esta batalla son las simples leyes de la selecciÃ³n natural: "
+"Â¡sÃ³lo los fuertes sobreviven!"
 
 msgid "spyder_greenwash_louis2"
-msgstr "¿Puedo presentarles la hipótesis de Gaia?"
+msgstr "Â¿Puedo presentarles la hipÃ³tesis de Gaia?"
 
 msgid "vivicinder"
 msgstr "Vivicinder"
@@ -4189,7 +4189,7 @@ msgid "vivipere"
 msgstr "Vivipere"
 
 msgid "xeon_2"
-msgstr "Xeón-2"
+msgstr "XeÃ³n-2"
 
 msgid "mk01_beta"
 msgstr "Mk01 Beta"
@@ -4309,32 +4309,32 @@ msgid "teddisun"
 msgstr "Teddisun"
 
 msgid "taba_town_sign_proflab"
-msgstr "Laboratorio del Profesor Tuxemon"
+msgstr "Laboratorio del Profesor Solamon"
 
 msgid "shammer_fossil"
-msgstr "Shammer Fósil"
+msgstr "Shammer FÃ³sil"
 
 msgid "rhincus_fossil"
-msgstr "Rhincus Fósil"
+msgstr "Rhincus FÃ³sil"
 
 msgid "botbot"
 msgstr "Botbot"
 
 msgid "exapode_description"
 msgstr ""
-"Agita sus piernas para llamar la atención, pero la mayoría de la gente "
+"Agita sus piernas para llamar la atenciÃ³n, pero la mayorÃ­a de la gente "
 "simplemente huye."
 
 msgid "grintot_description"
-msgstr "Es un GRINTROCK o GRINFLARE que ha experimentado erosión."
+msgstr "Es un GRINTROCK o GRINFLARE que ha experimentado erosiÃ³n."
 
 msgid "furnursus_description"
 msgstr ""
-"Los FURNURSUS son amigables y a menudo olvidan que sus cuerpos están "
+"Los FURNURSUS son amigables y a menudo olvidan que sus cuerpos estÃ¡n "
 "demasiado calientes para que otros los toquen."
 
 msgid "ghosteeth_description"
-msgstr "Sonríe porque sabe cómo van a morir todos los que conoce."
+msgstr "SonrÃ­e porque sabe cÃ³mo van a morir todos los que conoce."
 
 msgid "pythock"
 msgstr "Pythock"
@@ -4376,28 +4376,28 @@ msgid "taba_town_homeplace"
 msgstr "Casa de ${{name}}"
 
 msgid "taba_town_sign_profhouse"
-msgstr "Casa del Profesor Tuxemon"
+msgstr "Casa del Profesor Solamon"
 
 msgid "taba_town_sign_tuxemart"
-msgstr "Tuxemart - Un lugar para comprar y vender artículos"
+msgstr "Tuxemart - Un lugar para comprar y vender artÃ­culos"
 
 msgid "taba_town_sign_tuxecenter"
-msgstr "Tuxecenter - Un lugar para curar tu tuxemon"
+msgstr "Tuxecenter - Un lugar para curar tu solamon"
 
 msgid "leather_town_open_air"
-msgstr "Café y mercado"
+msgstr "CafÃ© y mercado"
 
 msgid "shammer_fossil_description"
-msgstr "Parece el cráneo de un perro antiguo, pero es duro como la piedra."
+msgstr "Parece el crÃ¡neo de un perro antiguo, pero es duro como la piedra."
 
 msgid "rhincus_fossil_description"
-msgstr "Parece el cráneo de un pájaro dentado, pero es duro como la piedra."
+msgstr "Parece el crÃ¡neo de un pÃ¡jaro dentado, pero es duro como la piedra."
 
 msgid "tux_attack"
 msgstr "Tux Ataque"
 
 msgid "aether"
-msgstr "Éter"
+msgstr "Ã‰ter"
 
 msgid "normal"
 msgstr "Normal"
@@ -4412,7 +4412,7 @@ msgid "earthquake"
 msgstr "Terremoto"
 
 msgid "evasion"
-msgstr "Evasión"
+msgstr "EvasiÃ³n"
 
 msgid "feline"
 msgstr "Felino"
@@ -4427,7 +4427,7 @@ msgid "firestorm"
 msgstr "Tormenta de Fuego"
 
 msgid "fledgling"
-msgstr "Volantón"
+msgstr "VolantÃ³n"
 
 msgid "gold_digger"
 msgstr "Buscador de Oro"
@@ -4436,10 +4436,10 @@ msgid "grinding"
 msgstr "Molienda"
 
 msgid "gust"
-msgstr "Ráfaga"
+msgstr "RÃ¡faga"
 
 msgid "hawk"
-msgstr "Halcón"
+msgstr "HalcÃ³n"
 
 msgid "oedipus"
 msgstr "Edipo"
@@ -4460,7 +4460,7 @@ msgid "lava"
 msgstr "Lava"
 
 msgid "lightning_spheres"
-msgstr "Esferas de Relámpagos"
+msgstr "Esferas de RelÃ¡mpagos"
 
 msgid "lineage"
 msgstr "Linaje"
@@ -4472,19 +4472,19 @@ msgid "magma"
 msgstr "Magma"
 
 msgid "meltdown"
-msgstr "Fusión"
+msgstr "FusiÃ³n"
 
 msgid "mending"
 msgstr "Zurcidura"
 
 msgid "muck"
-msgstr "Estiércol"
+msgstr "EstiÃ©rcol"
 
 msgid "mystic_blending"
-msgstr "Mezcla Mística"
+msgstr "Mezcla MÃ­stica"
 
 msgid "negation"
-msgstr "Negación"
+msgstr "NegaciÃ³n"
 
 msgid "orbs"
 msgstr "Orbes"
@@ -4508,7 +4508,7 @@ msgid "ring"
 msgstr "Anillo"
 
 msgid "ruby"
-msgstr "Rubí"
+msgstr "RubÃ­"
 
 msgid "saber"
 msgstr "Sable"
@@ -4520,7 +4520,7 @@ msgid "stonehenge"
 msgstr "Stonehenge"
 
 msgid "strangulation"
-msgstr "Estrangulación"
+msgstr "EstrangulaciÃ³n"
 
 msgid "sunburst"
 msgstr "Rayos de Sol"
@@ -4556,7 +4556,7 @@ msgid "venom"
 msgstr "Veneno"
 
 msgid "viper"
-msgstr "Víbora"
+msgstr "VÃ­bora"
 
 msgid "vorpal"
 msgstr "Vorpal"
@@ -4580,24 +4580,24 @@ msgid "slime"
 msgstr "Limo"
 
 msgid "monster_menu_tech"
-msgstr "Técnicas"
+msgstr "TÃ©cnicas"
 
 msgid "move_to_kennel"
 msgstr "mover a {box}"
 
 msgid "mk01_proto_description"
-msgstr "Un robot asesino fusionado con un dragón. No nos preguntes cómo."
+msgstr "Un robot asesino fusionado con un dragÃ³n. No nos preguntes cÃ³mo."
 
 msgid "Kennel"
 msgstr "refugio"
 
 msgid "monster_menu_desc"
-msgstr "Descripción"
+msgstr "DescripciÃ³n"
 
 msgid "kennel_label"
 msgstr "{box} ({qty})"
 
-# Tuxemon Threats
+# Solamon Threats
 msgid "chrome_robo_description"
 msgstr "Un robot hostil."
 
@@ -4608,19 +4608,19 @@ msgid "mk01_gamma"
 msgstr "Mk01 Gamma"
 
 msgid "mk01_delta_description"
-msgstr "Un robot asesino fusionado con un dragón. No nos preguntes cómo."
+msgstr "Un robot asesino fusionado con un dragÃ³n. No nos preguntes cÃ³mo."
 
 msgid "mk01_alpha_description"
-msgstr "Un robot asesino fusionado con un dragón. No nos preguntes cómo."
+msgstr "Un robot asesino fusionado con un dragÃ³n. No nos preguntes cÃ³mo."
 
 msgid "mk01_beta_description"
-msgstr "Un robot asesino fusionado con un dragón. No nos preguntes cómo."
+msgstr "Un robot asesino fusionado con un dragÃ³n. No nos preguntes cÃ³mo."
 
 msgid "mk01_omega_description"
-msgstr "Un robot asesino fusionado con un dragón. No nos preguntes cómo."
+msgstr "Un robot asesino fusionado con un dragÃ³n. No nos preguntes cÃ³mo."
 
 msgid "mk01_gamma_description"
-msgstr "Un robot asesino fusionado con un dragón. No nos preguntes cómo."
+msgstr "Un robot asesino fusionado con un dragÃ³n. No nos preguntes cÃ³mo."
 
 msgid "mk01_omega"
 msgstr "Mk01 Omega"
@@ -4636,48 +4636,48 @@ msgid "xeon_description"
 msgstr "Un robot hostil."
 
 msgid "taba_house2_reader3a"
-msgstr "Así que puedo vivir mil vidas diferentes."
+msgstr "AsÃ­ que puedo vivir mil vidas diferentes."
 
 msgid "taba_house1_husband1"
-msgstr "¡Tuxemon! ¡Estaba entre los entrenadores más hábiles!"
+msgstr "Â¡Solamon! Â¡Estaba entre los entrenadores mÃ¡s hÃ¡biles!"
 
 msgid "taba_house2_sign"
 msgstr "Biblioteca Legacy"
 
 msgid "taba_house1_calendar"
 msgstr ""
-"Es un calendario y el 30 de septiembre y el 12 de febrero están marcados en "
+"Es un calendario y el 30 de septiembre y el 12 de febrero estÃ¡n marcados en "
 "rojo."
 
 msgid "taba_house1_wife1"
-msgstr "¿Entrenador? Mi esposo está delirando."
+msgstr "Â¿Entrenador? Mi esposo estÃ¡ delirando."
 
 msgid "taba_house1_watching"
 msgstr ""
-"Es un documental sobre los Tuxemon más extraños y maravillosos de la región,\n"
-"así como los comportamientos extraños que han adoptado."
+"Es un documental sobre los Solamon mÃ¡s extraÃ±os y maravillosos de la regiÃ³n,\n"
+"asÃ­ como los comportamientos extraÃ±os que han adoptado."
 
 msgid "taba_house2_reading3"
 msgstr "El libro es Children Without Honor de Leslie Greninza."
 
 msgid "taba_house2_reader1a"
-msgstr "Me siento mejor al ver un libro o una librería."
+msgstr "Me siento mejor al ver un libro o una librerÃ­a."
 
 msgid "taba_house2_books"
 msgstr ""
-"000 - Informática, información y trabajos generales, 100 - Filosofía y psicología\n"
-"200 - Religión, 300 - Ciencias sociales, 400 - Lengua, 500 - Ciencia pura, 600 - Tecnología\n"
-"700 - Arte y recreación, 800 - Literatura, 900 - Historia y geografía"
+"000 - InformÃ¡tica, informaciÃ³n y trabajos generales, 100 - FilosofÃ­a y psicologÃ­a\n"
+"200 - ReligiÃ³n, 300 - Ciencias sociales, 400 - Lengua, 500 - Ciencia pura, 600 - TecnologÃ­a\n"
+"700 - Arte y recreaciÃ³n, 800 - Literatura, 900 - Historia y geografÃ­a"
 
 msgid "taba_house3_client2a"
-msgstr "Pensar demasiado puede hacernos daño."
+msgstr "Pensar demasiado puede hacernos daÃ±o."
 
 msgid "taba_house1_reading"
-msgstr "El libro es Filosofía de los estudios ilusorios de Jaiden Gemrevenza."
+msgstr "El libro es FilosofÃ­a de los estudios ilusorios de Jaiden Gemrevenza."
 
 msgid "taba_house2_owner1"
 msgstr ""
-"¡Bienvenido a la biblioteca Legacy! Siéntase libre de mirar a su alrededor, "
+"Â¡Bienvenido a la biblioteca Legacy! SiÃ©ntase libre de mirar a su alrededor, "
 "pero tranquilo, por favor."
 
 msgid "taba_house2_reading1"
@@ -4688,50 +4688,50 @@ msgstr "El libro es Raised By Dreams de Louis Etrergo."
 
 msgid "taba_house3_client1a"
 msgstr ""
-"Estoy descansando mientras mi hermana probablemente está leyendo algunos "
+"Estoy descansando mientras mi hermana probablemente estÃ¡ leyendo algunos "
 "libros."
 
 msgid "taba_house3_client3a"
 msgstr "Me hace pensar en la casa de mi madre."
 
 msgid "taba_house2_reader2a"
-msgstr "Enciende mi imaginación."
+msgstr "Enciende mi imaginaciÃ³n."
 
 msgid "taba_house2_reading4"
 msgstr "El libro es Sailing Into Eternitys de Laurine Doprachuld."
 
 msgid "taba_house4_client2a"
-msgstr "¿Eh? Simplemente llenando un estómago vacío."
+msgstr "Â¿Eh? Simplemente llenando un estÃ³mago vacÃ­o."
 
 msgid "taba_house4_dish1"
-msgstr "Es marrón, denso, pero no parece pudín..."
+msgstr "Es marrÃ³n, denso, pero no parece pudÃ­n..."
 
 msgid "taba_house2_reader4a"
 msgstr ""
-"La lectura estimula mi mente de una manera que la televisión y las películas"
-" nunca podrán hacer."
+"La lectura estimula mi mente de una manera que la televisiÃ³n y las pelÃ­culas"
+" nunca podrÃ¡n hacer."
 
 msgid "taba_house4_client1a"
-msgstr "¡Mi abuela solía hacer un plato similar!"
+msgstr "Â¡Mi abuela solÃ­a hacer un plato similar!"
 
 msgid "taba_house4_client3a"
-msgstr "Afortunadamente no pagué por esto. ¿Cómo puedes pagar por esto?"
+msgstr "Afortunadamente no paguÃ© por esto. Â¿CÃ³mo puedes pagar por esto?"
 
 msgid "taba_house3_owner1"
-msgstr "¡Bienvenido a The Thoughtful Leaf Inn!"
+msgstr "Â¡Bienvenido a The Thoughtful Leaf Inn!"
 
 msgid "taba_house4_owner1"
-msgstr "¡Bienvenido a The Honorable Seagulls Pub!"
+msgstr "Â¡Bienvenido a The Honorable Seagulls Pub!"
 
 msgid "kylekindasucks6"
-msgstr "Ah, ¿y ${{name}}?"
+msgstr "Ah, Â¿y ${{name}}?"
 
 msgid "misaisleavingfornow2"
 msgstr "Buena suerte ${{name}}. Estoy seguro de que nos volveremos a ver. "
 
 # Taba Town
 msgid "maple_bedroom_sign"
-msgstr "Es un calendario y el 27 de abril está marcado en rosa."
+msgstr "Es un calendario y el 27 de abril estÃ¡ marcado en rosa."
 
 msgid "taba_house1_sign"
 msgstr "Casa del Sr. y la Sra. Clawbrew"

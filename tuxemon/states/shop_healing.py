@@ -10,6 +10,8 @@ from typing import TYPE_CHECKING, Any, ClassVar, Literal
 from pydantic import BaseModel, Field
 from pygame.surface import Surface
 
+from tuxemon.chain.autosave import auto_save_chain_currency_transfer
+from tuxemon.chain.fees import require_player_sol_for_chain
 from tuxemon.constants import paths
 from tuxemon.database.yaml_utils import load_yaml
 from tuxemon.locale.locale import T
@@ -161,9 +163,28 @@ class ShopHealingMenuState(ShopMenuState[Monster]):
             if monster.current_hp == 0:
                 cost += self.config.revive_cost
             if quantity > 0 and cost <= available_money:
+                if not require_player_sol_for_chain(
+                    local_session,
+                    f"paid healing {monster.slug}",
+                ):
+                    return
+                previous_money = self.seller_manager.get_money()
+                previous_hp = monster.current_hp
+                previous_status = list(monster.status.get_statuses())
                 self.seller_manager.remove_money(cost)
                 monster.current_hp += quantity
                 monster.status.clear_status(local_session)
+                monster.status.status.clear()
+                saved = auto_save_chain_currency_transfer(
+                    local_session,
+                    f"paid healing {monster.slug}",
+                    direction="spend",
+                    amount=cost,
+                )
+                if not saved:
+                    self.seller_manager.set_money(previous_money)
+                    monster.current_hp = previous_hp
+                    monster.status.status = previous_status
                 self.reload_shop()
 
         return {
@@ -196,6 +217,7 @@ class ShopHealingMenuState(ShopMenuState[Monster]):
             quantity=1,
             shrink_to_items=True,
             cost=0,  # ignored, overridden by calculate_total
+            close_before_callback=True,
             label=lambda q: T.format(
                 "shop_heal_to", {"hp": min(monster.current_hp + q, monster.hp)}
             ),

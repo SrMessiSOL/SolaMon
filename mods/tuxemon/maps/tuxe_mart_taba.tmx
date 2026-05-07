@@ -121,8 +121,7 @@
    <properties>
     <property name="act10" value="pathfind player, 6,7"/>
     <property name="act20" value="translated_dialog professorexists2"/>
-    <property name="act21" value="add_item potion"/>
-    <property name="act22" value="add_item potion"/>
+    <property name="act21" value="add_item potion,2"/>
     <property name="act23" value="play_sound sound_confirm"/>
     <property name="act30" value="wait 0.7"/>
     <property name="act40" value="translated_dialog potions2"/>

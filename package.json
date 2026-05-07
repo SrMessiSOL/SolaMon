@@ -1,0 +1,19 @@
+{
+  "name": "solamon-authority",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "authority:dev": "node tools/solana/authority-server.mjs",
+    "authority:check": "node --check tools/solana/authority-server.mjs"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@metaplex-foundation/umi": "^1.2.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.2.0",
+    "@solana/web3.js": "^1.98.4"
+  },
+  "devDependencies": {
+    "vercel": "^48.6.0"
+  }
+}

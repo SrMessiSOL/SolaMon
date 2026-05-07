@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from typing import final
 
 from tuxemon.event.eventaction import EventAction
+from tuxemon.chain.autosave import auto_save_chain_state
 from tuxemon.save_system.save_manager import SaveManager
 from tuxemon.save_system.save_slots import AUTOSAVE_SLOT
 from tuxemon.session import Session
@@ -35,9 +36,14 @@ class AutosaveAction(EventAction):
     """
 
     name = "autosave"
+    reason: str | None = None
 
     def start(self, session: Session) -> None:
         try:
+            if session.client.config.chain_enabled:
+                auto_save_chain_state(session, self.reason or "script autosave")
+                logger.info("Chain autosave complete.")
+                return
             SaveManager.save(session, AUTOSAVE_SLOT)
             logger.info("Autosave complete.")
         except Exception as e:

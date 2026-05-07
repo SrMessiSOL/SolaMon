@@ -10,6 +10,8 @@ from typing import TYPE_CHECKING, Any, ClassVar, Literal
 from pydantic import BaseModel, Field
 from pygame.surface import Surface
 
+from tuxemon.chain.autosave import auto_save_chain_currency_transfer
+from tuxemon.chain.fees import require_player_sol_for_chain
 from tuxemon.constants import paths
 from tuxemon.database.rules import config_monster
 from tuxemon.database.yaml_utils import load_yaml
@@ -17,6 +19,7 @@ from tuxemon.locale.locale import T
 from tuxemon.menu.interface import MenuItem
 from tuxemon.monster.monster import Monster
 from tuxemon.monster.renderer import MonsterRenderer
+from tuxemon.session import local_session
 from tuxemon.states.quantity import QuantityPickerState
 from tuxemon.states.shop_base import ShopMenuState
 
@@ -144,8 +147,19 @@ class ShopTrainingMenuState(ShopMenuState[Monster]):
             )
             cost = self._calculate_total_training_cost(monster, quantity)
             if quantity > 0 and cost <= available_money:
+                if not require_player_sol_for_chain(
+                    local_session,
+                    f"paid training {monster.slug}",
+                ):
+                    return
                 self.seller_manager.remove_money(cost)
                 monster.set_level(monster.level + quantity, monster.level)
+                auto_save_chain_currency_transfer(
+                    local_session,
+                    f"paid training {monster.slug}",
+                    direction="spend",
+                    amount=cost,
+                )
                 self.reload_shop()
 
         base_cost = self._calculate_training_cost(monster)
@@ -200,6 +214,7 @@ class ShopTrainingMenuState(ShopMenuState[Monster]):
             quantity=1,
             shrink_to_items=True,
             cost=0,  # ignored
+            close_before_callback=True,
             label=lambda q: T.format(
                 "shop_train_to", {"level": monster.level + q}
             ),

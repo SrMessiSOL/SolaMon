@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="40" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="339">
  <properties>
   <property name="east" value="citypark"/>
@@ -221,7 +221,7 @@
     <property name="cond1" value="not char_exists spyder_leather_eula"/>
    </properties>
   </object>
-  <object id="276" name="Heal Tuxemon" type="event" x="112" y="160" width="16" height="16">
+  <object id="276" name="Heal Solamon" type="event" x="112" y="160" width="16" height="16">
    <properties>
     <property name="act10" value="set_monster_health"/>
     <property name="act11" value="set_monster_status"/>
@@ -552,3 +552,4 @@
   </object>
  </objectgroup>
 </map>
+

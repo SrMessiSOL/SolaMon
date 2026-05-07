@@ -850,6 +850,11 @@ class CombatState(CombatAnimations):
                 self.monsters_leftover_xp[data.winner.slug] = (
                     data.winner.experience_progress_percent
                 )
+                setattr(
+                    self.client,
+                    "_solamon_pending_battle_nft_sync",
+                    True,
+                )
 
         # Update combat state with rewards
         self.combat_session.add_prize(rewards.prize)
@@ -906,7 +911,10 @@ class CombatState(CombatAnimations):
                 if hud:
                     self.task(
                         partial(
-                            self._update_hud_details, winner, hud, hud.player
+                            self._update_hud_details_and_bars,
+                            winner,
+                            hud,
+                            hud.player,
                         ),
                         interval=4.0,
                     )
@@ -1180,6 +1188,10 @@ class CombatState(CombatAnimations):
         if is_captured:
             owner = monster.get_owner()
             self._captured_mon = monster
+            if getattr(self.client, "_solamon_pending_battle_chain_action", None):
+                from tuxemon.chain.autosave import auto_save_chain_state
+
+                auto_save_chain_state(self.session, "battle capture")
 
             if owner:
                 self.combat_session.field_monsters.remove_npc(owner)

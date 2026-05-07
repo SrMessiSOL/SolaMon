@@ -228,8 +228,9 @@ class CharacterState(PygameMenuState):
         ):
             self.client.replace_state("PartyState", party=self.char.party)
         if (
-            event.button in (buttons.BACK, buttons.B, buttons.A)
+            event.button in (buttons.BACK, buttons.B)
             and event.pressed
         ):
             self.client.pop_state()
-        return None
+            return None
+        return super().process_event(event)

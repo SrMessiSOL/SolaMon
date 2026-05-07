@@ -37,6 +37,7 @@ class QuantityPickerState(PygameMenuState):
         cost: int | None = None,
         wallet_money: int | None = None,
         escape_key_exits: bool | None = None,
+        close_before_callback: bool = False,
         currency_formatter: CurrencyFormatter | None = None,
         quantity_formatter: QuantityFormatter | None = None,
         **kwargs: Any,
@@ -51,6 +52,7 @@ class QuantityPickerState(PygameMenuState):
         self.price = price
         self.cost = cost
         self.wallet_money = wallet_money
+        self.close_before_callback = close_before_callback
 
         self.currency = currency_formatter or CurrencyFormatter()
         self.quantity = quantity_formatter or QuantityFormatter()
@@ -159,8 +161,14 @@ class QuantityPickerState(PygameMenuState):
             self._update_labels()
 
     def _confirm(self) -> None:
+        if self.close_before_callback:
+            value = self.current_value
+            self.client.pop_state(self)
+            self.callback(value)
+            return
+
         self.callback(self.current_value)
-        self.client.pop_state()
+        self.client.pop_state(self)
 
     def process_event(self, event: PlayerInput) -> PlayerInput | None:
         # RIGHT = increment

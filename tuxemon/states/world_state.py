@@ -23,11 +23,13 @@ from tuxemon.event.eventmiddleware import (
     WorldCommandMiddleware,
 )
 from tuxemon.faction.manager import FactionManager
+from tuxemon.platform.const import events
 from tuxemon.platform.events import PlayerInput
 from tuxemon.prepare import DEV_TOOLS
 from tuxemon.save_system.save_state import WorldSave
 from tuxemon.session import Session
 from tuxemon.state.state import State
+from tuxemon.chain.fees import show_pending_chain_fee_block
 from tuxemon.world.manager import WorldMenuManager
 from tuxemon.world.transition import WorldTransition
 
@@ -72,6 +74,7 @@ class WorldState(State):
             self.player, self.client.boundary, self.client.context
         )
         self.client.camera_manager.add_camera(self.player.slug, self.camera)
+        self.client.camera_manager.set_active_camera(self.player.slug)
         self.faction_manager = FactionManager(self.client.event_bus)
         self.client.map_transition.change_map(map_name, yaml_name)
         self.client.reset_renderer()
@@ -146,10 +149,28 @@ class WorldState(State):
 
     def update(self, dt: float) -> None:
         super().update(dt)
+        self._check_initial_chain_balance()
         self.faction_manager.update(dt, self.session)
         self.client.npc_manager.update_npcs(dt, self.client)
         self.client.npc_manager.update_npcs_off_map(dt, self.client)
         self.client.map_renderer.update(dt)
+        show_pending_chain_fee_block(self.session)
+
+    def _check_initial_chain_balance(self) -> None:
+        if not self.client.config.chain_enabled:
+            return
+        if getattr(self.client, "_solamon_initial_balance_checked", False):
+            return
+        chain_session = self.client.chain_session
+        if not chain_session.wallet or not chain_session.character:
+            return
+        setattr(self.client, "_solamon_initial_balance_checked", True)
+        from tuxemon.chain.fees import block_if_player_sol_low_after_chain
+
+        block_if_player_sol_low_after_chain(
+            self.session,
+            "wallet balance check",
+        )
 
     def draw(self, surface: Surface) -> None:
         """Draw the game world to the screen."""
@@ -180,6 +201,13 @@ class WorldState(State):
             otherwise.
         """
         if self.player is None:
+            return None
+        if (
+            event.pressed
+            and event.button == events.CHAT
+            and self.client.network_manager.is_client()
+        ):
+            self.client.push_state("ChatInputState")
             return None
         return event
 

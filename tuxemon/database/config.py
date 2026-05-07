@@ -98,5 +98,5 @@ class ModMetadata(BaseModel):
         description="Initial player position as (x, y) coordinates.",
     )
     starting_money: tuple[int, int] = Field(
-        default=(500, 500), description="Starting money range as (min, max)."
+        default=(0, 0), description="Starting money range as (min, max)."
     )

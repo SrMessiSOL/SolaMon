@@ -85,7 +85,12 @@ def handle_push_self(self: EventDispatcher, event_data: EventData) -> None:
     )
     update_client(sprite, event_data.char_dict, self.game)
 
-    logger.info(f"Processed PUSH_SELF event for client {cuuid}.")
+    logger.info(
+        "Processed PUSH_SELF event for client %s map=%s tile=%s.",
+        cuuid,
+        event_data.map_name,
+        event_data.char_dict.tile_pos if event_data.char_dict else None,
+    )
 
 
 @EventDispatcher.handler(EventType.CLIENT_MOVE_START)
@@ -105,6 +110,32 @@ def handle_client_move_start(
             sprite.direction[d] = d == direction
 
     logger.info(f"Client {cuuid} started moving {direction}.")
+
+
+@EventDispatcher.handler(EventType.CLIENT_MAP_UPDATE)
+def handle_client_map_update(
+    self: EventDispatcher, event_data: EventData
+) -> None:
+    cuuid = event_data.cuuid
+    if cuuid is None or event_data.char_dict is None:
+        logger.warning("Missing data in CLIENT_MAP_UPDATE event")
+        return
+
+    entry = self.client.registry.get(cuuid)
+    if not entry:
+        logger.warning("Unknown client %s in CLIENT_MAP_UPDATE", cuuid)
+        return
+    entry["map_name"] = event_data.map_name
+    sprite = entry.get("sprite")
+    if sprite:
+        update_client(sprite, event_data.char_dict, self.game)
+
+    logger.info(
+        "Client %s updated map presence map=%s tile=%s.",
+        cuuid,
+        event_data.map_name,
+        event_data.char_dict.tile_pos if event_data.char_dict else None,
+    )
 
 
 @EventDispatcher.handler(EventType.CLIENT_MOVE_COMPLETE)
@@ -199,3 +230,34 @@ def handle_client_start_battle(
             sprite.direction[d] = False
 
     logger.info(f"Client {cuuid} started a battle.")
+
+
+@EventDispatcher.handler(EventType.CLIENT_CHAT)
+def handle_client_chat(self: EventDispatcher, event_data: EventData) -> None:
+    cuuid = event_data.cuuid
+    if cuuid is None or event_data.char_dict is None:
+        logger.warning("Missing data in CLIENT_CHAT event")
+        return
+    if event_data.map_name != self.game.get_map_name():
+        return
+
+    entry = self.client.registry.get(cuuid)
+    if not entry:
+        sprite = populate_client(
+            cuuid, event_data, self.game, self.client.registry
+        )
+    else:
+        sprite = entry.get("sprite")
+    if sprite is None:
+        return
+
+    update_client(sprite, event_data.char_dict, self.game)
+    message = str(event_data.message or "").strip()
+    if not message:
+        return
+    self.game.map_renderer.bubble_manager.add_text_bubble(
+        sprite,
+        message,
+        ttl=5.0,
+    )
+    logger.info("Client %s chat: %s", cuuid, message)

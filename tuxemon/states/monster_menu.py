@@ -318,8 +318,29 @@ class MonsterMenuHandler:
 
     def positive_answer(self, monster: Monster) -> None:
         """Handles monster release."""
+        from tuxemon.chain.fees import require_player_sol_for_chain
+        from tuxemon.session import local_session
+
+        if not require_player_sol_for_chain(
+            local_session,
+            f"monster released {monster.slug}",
+        ):
+            return
+
         success = self.party.release_monster(monster)
         if success:
+            from tuxemon.chain.autosave import auto_save_chain_state
+            from tuxemon.chain.burn import burn_asset_for_session
+
+            burn_asset_for_session(
+                local_session,
+                kind="monster",
+                instance_id=str(monster.instance_id),
+            )
+            auto_save_chain_state(
+                local_session,
+                f"monster released {monster.slug}",
+            )
             self.client.remove_state_by_name("ChoiceState")
             self.client.remove_state_by_name("DialogState")
             params = {"name": monster.name.upper()}

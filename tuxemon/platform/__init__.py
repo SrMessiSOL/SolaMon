@@ -243,6 +243,10 @@ class UserStorage:
         self.android = android
 
     def user_dir(self) -> Path:
+        override = os.environ.get("SOLAMON_USER_DIR")
+        if override:
+            return Path(override).expanduser().resolve()
+
         fallback = Path.home() / ".tuxemon"
 
         if self.android is None:

@@ -116,6 +116,8 @@ class KeyBindingRules:
         pg.K_ESCAPE,
         pg.K_RETURN,
         pg.K_BACKSPACE,
+        pg.K_LCTRL,
+        pg.K_RCTRL,
         pg.K_LSHIFT,
         pg.K_RSHIFT,
         pg.K_UP,
@@ -314,6 +316,8 @@ class PygameKeyboardInput(PygameEventHandler):
         pg.K_LSHIFT: buttons.B,
         pg.K_ESCAPE: buttons.BACK,
         pg.K_BACKSPACE: events.BACKSPACE,
+        pg.K_LCTRL: events.CHAT,
+        pg.K_RCTRL: events.CHAT,
         None: events.UNICODE,
     }
 

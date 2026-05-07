@@ -14,6 +14,7 @@ from uuid import UUID
 from tuxemon.audio import MusicPlayerState, SoundManager
 from tuxemon.boundary import BoundaryChecker
 from tuxemon.camera.camera import CameraManager
+from tuxemon.chain.session import ChainSession
 from tuxemon.cli.processor import CommandProcessor
 from tuxemon.combat.session import CombatSession
 from tuxemon.constants import paths
@@ -88,6 +89,7 @@ class BaseClient(ABC):
         self.context = context
         self.screen = context.screen
         self.active_effect_manager = ActiveEffectManager()
+        self.chain_session = ChainSession()
 
         self.event_bus = get_event_bus()
         self.state_repository = StateRepository.from_loader(

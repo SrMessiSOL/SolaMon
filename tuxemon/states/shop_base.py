@@ -100,6 +100,11 @@ class ShopMenuState(Menu[T], Generic[T], ABC):
             self.buyer_manager, self.seller_manager, self.client.shop_manager
         )
 
+    def shutdown(self) -> None:
+        super().shutdown()
+        if not _has_active_shop_state(self.client):
+            self.client.event_engine.resume()
+
     def calc_internal_rect(self) -> Rect:
         return calc_internal_rect(self.rect)
 
@@ -240,3 +245,11 @@ class ShopMenuState(Menu[T], Generic[T], ABC):
             cost=params["cost"],
             wallet_money=params.get("wallet_money"),
         )
+
+
+def _has_active_shop_state(client: BaseClient) -> bool:
+    return any(
+        getattr(state, "name", "").startswith("Shop")
+        or getattr(state, "name", "") in {"QuantityPickerState", "HealingCostPicker", "TrainingCostPicker"}
+        for state in client.active_states
+    )

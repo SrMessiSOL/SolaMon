@@ -66,7 +66,6 @@ class RandomEncounterAction(EventAction):
             logger.info(f"Repellent active, skipping encounter.")
             self.stop()
             return
-
         if not encounter.load_zone(self.encounter_slug):
             self.stop()
             return

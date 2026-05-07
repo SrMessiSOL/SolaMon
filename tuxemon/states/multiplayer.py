@@ -55,7 +55,7 @@ class MultiplayerMenu(PygameMenuState):
             )
             return
 
-        self.network.server.listening = True
+        self.network.server.start_listening()
         self.network.client.connect_to_host(
             "127.0.0.1",
             self.network.server.server_port,

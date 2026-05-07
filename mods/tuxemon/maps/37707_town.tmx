@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="git" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="48" height="32" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="212">
  <properties>
   <property name="edges" value="clamped"/>
@@ -139,7 +139,7 @@
     <property name="cond20" value="is char_at player"/>
    </properties>
   </object>
-  <object id="185" name="Give Tuxemon" type="event" x="368" y="400" width="16" height="16">
+  <object id="185" name="Give Solamon" type="event" x="368" y="400" width="16" height="16">
    <properties>
     <property name="act10" value="translated_dialog 37707_town01"/>
     <property name="act20" value="add_monster fruitera,10"/>
@@ -325,3 +325,4 @@
   </object>
  </objectgroup>
 </map>
+

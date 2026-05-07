@@ -74,11 +74,7 @@
   <object id="23" name="Devices, no explain" type="event" x="96" y="96" width="16" height="16">
    <properties>
     <property name="act1" value="translated_dialog spyder_cottonscoop_devicenoexplan"/>
-    <property name="act10" value="add_item tuxeball"/>
-    <property name="act11" value="add_item tuxeball"/>
-    <property name="act12" value="add_item tuxeball"/>
-    <property name="act13" value="add_item tuxeball"/>
-    <property name="act14" value="add_item tuxeball"/>
+    <property name="act10" value="add_item tuxeball,5"/>
     <property name="act2" value="pathfind spyder_shopkeeper,1,6"/>
     <property name="act3" value="set_variable heardcapture:null"/>
     <property name="act30" value="translated_dialog tuxeball,,center,center,center"/>
@@ -93,11 +89,7 @@
     <property name="act20" value="char_face spyder_shopassistant,player"/>
     <property name="act21" value="char_face player,spyder_shopassistant"/>
     <property name="act22" value="translated_dialog spyder_cottonscoop_deviceexplan2"/>
-    <property name="act23" value="add_item tuxeball"/>
-    <property name="act24" value="add_item tuxeball"/>
-    <property name="act25" value="add_item tuxeball"/>
-    <property name="act26" value="add_item tuxeball"/>
-    <property name="act27" value="add_item tuxeball"/>
+    <property name="act23" value="add_item tuxeball,5"/>
     <property name="act28" value="translated_dialog tuxeball,,center,center,center"/>
     <property name="act30" value="set_variable heardcapture:null"/>
     <property name="cond1" value="is variable_set heardcapture:no"/>

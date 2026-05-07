@@ -49,6 +49,17 @@ class RenamePlayerAction(EventAction):
             self.stop()
             return
 
+        if self.character == "player":
+            chain_character = getattr(
+                session.client.chain_session,
+                "character",
+                None,
+            )
+            if chain_character is not None:
+                character.name = chain_character.name
+                self.stop()
+                return
+
         session.client.push_state(
             "InputMenu",
             prompt=T.translate("input_name"),

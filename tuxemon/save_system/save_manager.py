@@ -53,12 +53,12 @@ class SaveManager:
             return False
 
     @staticmethod
-    def save(session: Session, slot: int) -> None:
+    def save(session: Session, slot: int) -> SaveData:
         """
         Save both index and slot as the same number.
         This matches how save_state() is used in the engine.
         """
-        session.save_state(index=slot, slot=slot)
+        return session.save_state(index=slot, slot=slot)
 
     @staticmethod
     def has_autosave() -> bool:

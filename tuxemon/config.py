@@ -41,7 +41,7 @@ class DisplayConfig(BaseModel):
     scaling: bool = True
     collision_map: bool = False
     large_gui: bool = False
-    window_caption: str = "Tuxemon"
+    window_caption: str = "Solamon"
 
 
 class GameConfig(BaseModel):
@@ -51,14 +51,48 @@ class GameConfig(BaseModel):
     cli_enabled: bool = False
     net_controller_enabled: bool = False
     dev_tools: bool = False
-    recompile_translations: bool = True
+    recompile_translations: bool = False
     skip_titlescreen: bool = False
+    chain_enabled: bool = True
+    solana_rpc_url: str = "https://api.devnet.solana.com"
+    solana_wallet_path: str | None = None
+    solamon_program_id: str | None = (
+        "EvrG6acfhGmsDPK5gkwcbV5J5yR4Nqz4gGm3jG24Kq1d"
+    )
+    solana_submit_saves: bool = True
+    spl_currency_mint: str | None = (
+        "4D1AJNsxG6DjDWB1tpexmokzCxTnD7kwdPVqg3haafAa"
+    )
+    spl_currency_decimals: int = 6
+    spl_currency_symbol: str = "SLMN"
+    multiplayer_enabled: bool = True
+    multiplayer_auto_connect: bool = True
+    multiplayer_server_host: str = "127.0.0.1"
+    multiplayer_server_port: int = 40081
+    spl_treasury_owner: str | None = (
+        "9S8GZ6gVYiBARWLCeWdoPqMdHGVHg9sMR3hYXzrTZtnY"
+    )
+    spl_treasury_token_account: str | None = (
+        "Aqx7tjLDnGrPS47LrdBDzk6FiPKHroHThTSNq4huRfjF"
+    )
+    character_nft_collection_mint: str | None = (
+        "2rUgg3y4V4fEuPaE2YmDApNPWqynDVy5m8MwfUTCSqtg"
+    )
+    item_nft_collection_mint: str | None = (
+        "EFCEsCf6iWjjYmpyCVfmWgEbhHGB7RcQTYYQ7VUTo5fe"
+    )
+    monster_nft_collection_mint: str | None = (
+        "2N6yfq5fv67bS8vgKD6EqrqcPb9QQgfT42nmyHjZdg9h"
+    )
+    badge_nft_collection_mint: str | None = (
+        "F88WpN9P5EoB1ZeZzsmr8SrtXQqs7AVR8dSPBpVdsffp"
+    )
     compress_save: str | None = None
     save_prefix: str = "slot"
     save_extension: str = "save"
     save_method: str = "json"
-    save_slots: int = 6
-    save_slots_per_page: int = 3
+    save_slots: int = 1
+    save_slots_per_page: int = 1
     locale: str = "en_US"
     translation_mode: str = "none"
     font_file: str = "PressStart2P.ttf"
@@ -105,6 +139,7 @@ class ControlsConfig(BaseModel):
     b: str = "rshift, lshift"
     back: str = "escape"
     backspace: str = "backspace"
+    chat: str = "lctrl, rctrl"
 
 
 class ControllerConfigModel(BaseModel):
@@ -244,6 +279,78 @@ class TuxemonConfig:
     @property
     def compress_save(self) -> str | None:
         return self.config_model.game.compress_save
+
+    @property
+    def chain_enabled(self) -> bool:
+        return self.config_model.game.chain_enabled
+
+    @property
+    def solana_rpc_url(self) -> str:
+        return self.config_model.game.solana_rpc_url
+
+    @property
+    def solana_wallet_path(self) -> str | None:
+        return self.config_model.game.solana_wallet_path
+
+    @property
+    def solamon_program_id(self) -> str | None:
+        return self.config_model.game.solamon_program_id
+
+    @property
+    def solana_submit_saves(self) -> bool:
+        return self.config_model.game.solana_submit_saves
+
+    @property
+    def multiplayer_enabled(self) -> bool:
+        return self.config_model.game.multiplayer_enabled
+
+    @property
+    def multiplayer_auto_connect(self) -> bool:
+        return self.config_model.game.multiplayer_auto_connect
+
+    @property
+    def multiplayer_server_host(self) -> str:
+        return self.config_model.game.multiplayer_server_host
+
+    @property
+    def multiplayer_server_port(self) -> int:
+        return self.config_model.game.multiplayer_server_port
+
+    @property
+    def spl_currency_mint(self) -> str | None:
+        return self.config_model.game.spl_currency_mint
+
+    @property
+    def spl_currency_decimals(self) -> int:
+        return self.config_model.game.spl_currency_decimals
+
+    @property
+    def spl_currency_symbol(self) -> str:
+        return self.config_model.game.spl_currency_symbol
+
+    @property
+    def spl_treasury_owner(self) -> str | None:
+        return self.config_model.game.spl_treasury_owner
+
+    @property
+    def spl_treasury_token_account(self) -> str | None:
+        return self.config_model.game.spl_treasury_token_account
+
+    @property
+    def character_nft_collection_mint(self) -> str | None:
+        return self.config_model.game.character_nft_collection_mint
+
+    @property
+    def item_nft_collection_mint(self) -> str | None:
+        return self.config_model.game.item_nft_collection_mint
+
+    @property
+    def monster_nft_collection_mint(self) -> str | None:
+        return self.config_model.game.monster_nft_collection_mint
+
+    @property
+    def badge_nft_collection_mint(self) -> str | None:
+        return self.config_model.game.badge_nft_collection_mint
 
     @property
     def save_prefix(self) -> str:

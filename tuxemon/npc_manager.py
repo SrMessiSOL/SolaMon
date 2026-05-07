@@ -8,7 +8,6 @@ from typing import TYPE_CHECKING, Any
 from uuid import UUID
 
 from tuxemon.entity.npc import NPC
-from tuxemon.network.networking import CharData, update_client
 
 if TYPE_CHECKING:
     from tuxemon.base_client import BaseClient
@@ -131,14 +130,6 @@ class NPCManager:
             if not entity.update_location:
                 continue
 
-            char_dict = CharData(
-                tile_pos=entity._last_tile_pos,
-                name=entity.name,
-                facing=entity.facing,
-                monsters=[],
-                inventory=[],
-            )
-            update_client(entity, char_dict, client)
             entity.update_location = False
 
     def update_npcs(self, dt: float, client: BaseClient) -> None:
@@ -237,8 +228,6 @@ class NPCManager:
     def add_clients_to_map(
         self, registry: dict[str, Any], current_map: str
     ) -> None:
-        self.clear_npcs()
-
         for client in registry.values():
             if "sprite" not in client:
                 continue

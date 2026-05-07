@@ -7,11 +7,22 @@ from dataclasses import dataclass
 from typing import final
 
 from tuxemon.database.runtime import db
+from tuxemon.chain.autosave import auto_save_chain_state
+from tuxemon.chain.fees import require_player_sol_for_chain
 from tuxemon.event.eventaction import EventAction
 from tuxemon.item.item import Item
 from tuxemon.session import Session
 
 logger = logging.getLogger(__name__)
+
+DEFERRED_STATE_ONLY_ITEMS = frozenset(
+    {
+        "nu_phone",
+        "app_banking",
+        "app_map",
+        "app_tuxepedia",
+    }
+)
 
 
 @final
@@ -55,24 +66,48 @@ class AddItemAction(EventAction):
 
         bag = trainer.bag
         existing = bag.find_item(item_id)
-
         qty = self.quantity if self.quantity is not None else 1
+        if trainer.is_player and qty != 0:
+            if (
+                not session.chain_autosave_suppressed
+                and not require_player_sol_for_chain(
+                    session,
+                    f"item change {item_id} x{qty}",
+                )
+            ):
+                self.stop()
+                return
 
+        changed = False
         if existing:
             if qty > 0:
                 existing.increase_quantity(qty)
+                changed = True
             elif qty < 0:
-                bag.remove_item(existing, abs(qty))
-            # qty == 0 → do nothing
-            self.stop()
-            return
-
-        # No existing item
-        if qty > 0:
+                changed = bag.remove_item(existing, abs(qty))
+        elif qty > 0:
             itm = Item.create(item_id)
-            success = bag.add_item(itm, qty)
-            if not success:
+            changed = bag.add_item(itm, qty)
+            if not changed:
                 logger.warning(
                     f"AddItemAction: Ignored invalid quantity {qty} for item '{item_id}' "
                     f"when adding to NPC '{trainer.slug}'."
                 )
+
+        if changed:
+            _auto_save_chain_item_change(session, item_id, qty)
+        self.stop()
+
+
+def _auto_save_chain_item_change(
+    session: Session,
+    item_id: str,
+    quantity: int,
+) -> None:
+    if item_id in DEFERRED_STATE_ONLY_ITEMS:
+        logger.info(
+            "Deferred Solamon chain save for state-only utility item %s.",
+            item_id,
+        )
+        return
+    auto_save_chain_state(session, f"item change {item_id} x{quantity}")

@@ -4,8 +4,10 @@ from __future__ import annotations
 
 from collections.abc import Callable, Generator
 from functools import partial
+import subprocess
 from typing import TYPE_CHECKING, Any, ClassVar
 
+import pygame
 from pygame.rect import Rect
 
 from tuxemon.locale.locale import T
@@ -179,6 +181,13 @@ class InputMenu(Menu[InputMenuObj]):
                 InputMenuObj(self.pick_random),
             )
 
+        yield MenuItem(
+            self.shadow_text("PASTE"),
+            None,
+            None,
+            InputMenuObj(self.paste_clipboard),
+        )
+
     def process_event(self, event: PlayerInput) -> PlayerInput | None:
         if event.button in (buttons.A, intentions.SELECT):
             self._handle_select_event(event)
@@ -257,6 +266,23 @@ class InputMenu(Menu[InputMenuObj]):
         self.update_text_area()
         self.update_char_counter()
 
+    def paste_clipboard(self) -> None:
+        """Paste text from the OS clipboard into the input field."""
+        text = _read_clipboard_text()
+        if not text:
+            return
+        cleaned = "".join(
+            char
+            for char in text.strip()
+            if char.isprintable() and char not in "\r\n\t"
+        )
+        if not cleaned:
+            return
+        current = self.input_controller.current_string
+        self.input_controller.set_string(current + cleaned)
+        self.update_text_area()
+        self.update_char_counter()
+
     def _create_empty_item(self) -> MenuItem[InputMenuObj]:
         """Create a disabled menu item representing an empty key."""
         empty = MenuItem(
@@ -314,5 +340,35 @@ class InputMenu(Menu[InputMenuObj]):
 
     def _handle_unicode_event(self, char: str) -> None:
         """Handle unicode character input event."""
+        if char == "\x16" or (
+            char.lower() == "v"
+            and pygame.key.get_mods() & (pygame.KMOD_CTRL | pygame.KMOD_META)
+        ):
+            self.paste_clipboard()
+            return
         if self.char_manager.is_valid_input_char(char):
             self.add_input_char(char)
+
+
+def _read_clipboard_text() -> str:
+    try:
+        if not pygame.scrap.get_init():
+            pygame.scrap.init()
+        raw = pygame.scrap.get(pygame.SCRAP_TEXT)
+        if raw:
+            return raw.decode("utf-8", errors="ignore").rstrip("\x00")
+    except Exception:
+        pass
+
+    try:
+        result = subprocess.run(
+            ["powershell", "-NoProfile", "-Command", "Get-Clipboard -Raw"],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode == 0:
+            return result.stdout
+    except Exception:
+        pass
+    return ""

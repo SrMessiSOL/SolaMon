@@ -1,7 +1,7 @@
-Tuxemon
+﻿Solamon
 ==============
 
-Tuxemon is a free, open source monster-fighting RPG. It's in constant
+Solamon is a free, open source monster-fighting RPG. It's in constant
 development and improving all the time! Contributors of all skill and
 level are welcome to join.
 
@@ -11,7 +11,7 @@ level are welcome to join.
 
 [![Discord](https://img.shields.io/badge/Discord-join-blue?logo=discord&logoColor=white)](https://discord.gg/3ZffZwz)
 [![Website](https://img.shields.io/badge/website-tuxemon.org-blue)](https://www.tuxemon.org)
-[![Reddit](https://img.shields.io/reddit/subreddit-subscribers/Tuxemon?style=social)](https://www.reddit.com/r/tuxemon)
+[![Reddit](https://img.shields.io/reddit/subreddit-subscribers/Solamon?style=social)](https://www.reddit.com/r/tuxemon)
 [![YouTube](https://img.shields.io/youtube/channel/subscribers/UC6BJ6H7dB2Dpb8wzcYhDU3w?style=social)](https://www.youtube.com/channel/UC6BJ6H7dB2Dpb8wzcYhDU3w)
 
 ![screenshot](https://www.tuxemon.org/images/featurette-01.png)
@@ -104,7 +104,7 @@ These are meant to be run from the project root directory, for example,
 to build the portable pypy build:
 
 ```shell
-[user@localhost Tuxemon]$ buildconfig/build_pypy_portable_linux.sh
+[user@localhost Solamon]$ buildconfig/build_pypy_portable_linux.sh
 ```
 
 There will be a new directory called build, which will have the package
@@ -130,15 +130,16 @@ This software is distributed under the GNU General Public Licence as
 published by the Free Software Foundation, either version 3 of the
 License, or (at your option) any later version.  See the file
 [LICENSE](LICENSE) for the conditions under which this software is made
-available.  Tuxemon also contains code from other sources.
+available.  Solamon also contains code from other sources.
 
 
 External links
 --------------
 
 * Official website: [tuxemon.org](https://www.tuxemon.org)
-* Matrix: [Tuxemon](https://matrix.to/#/!ktrcrHpgkDOGCQOlxX:matrix.org)
-* Discord: [Tuxemon](https://discord.gg/3ZffZwz)
-* Reddit: [/r/Tuxemon](https://www.reddit.com/r/tuxemon)
-* YouTube: [Tuxemon](https://www.youtube.com/channel/UC6BJ6H7dB2Dpb8wzcYhDU3w)
+* Matrix: [Solamon](https://matrix.to/#/!ktrcrHpgkDOGCQOlxX:matrix.org)
+* Discord: [Solamon](https://discord.gg/3ZffZwz)
+* Reddit: [/r/Solamon](https://www.reddit.com/r/tuxemon)
+* YouTube: [Solamon](https://www.youtube.com/channel/UC6BJ6H7dB2Dpb8wzcYhDU3w)
 * Readthedocs: https://tuxemon.readthedocs.io/en/latest/
+

@@ -7,12 +7,15 @@ from typing import TYPE_CHECKING, Any, ClassVar
 
 from pygame.surface import Surface
 
+from tuxemon.chain.autosave import auto_save_chain_currency_transfer
+from tuxemon.chain.fees import require_player_sol_for_chain
 from tuxemon.item.shop_utils import (
     generate_label,
 )
 from tuxemon.menu.interface import MenuItem
 from tuxemon.monster.monster import Monster
 from tuxemon.monster.renderer import MonsterRenderer
+from tuxemon.session import local_session
 from tuxemon.states.shop_base import ShopMenuState
 
 if TYPE_CHECKING:
@@ -148,10 +151,28 @@ class ShopMonsterBuyMenuState(ShopMonsterMenuState):
             price = self.economy.calculate_price(monster, quantity)
             if price.final_price > self.buyer_manager.get_money():
                 return
+            if not require_player_sol_for_chain(
+                local_session,
+                f"buy monster {monster.slug}",
+            ):
+                return
 
+            previous_buyer_money = self.buyer_manager.get_money()
+            previous_seller_money = self.seller_manager.get_money()
             self.transaction_manager.buy_monster(
                 self.buyer, monster, quantity, label, price.final_price
             )
+            saved = auto_save_chain_currency_transfer(
+                local_session,
+                f"buy monster {monster.slug}",
+                direction="spend",
+                amount=price.final_price,
+            )
+            if not saved:
+                self.buyer.party.remove_monster(monster)
+                self.client.shop_manager.increase_stock(label, quantity)
+                self.buyer_manager.set_money(previous_buyer_money)
+                self.seller_manager.set_money(previous_seller_money)
             self.reload_items()
             if (
                 self.seller.shop_inventory
@@ -173,6 +194,7 @@ class ShopMonsterBuyMenuState(ShopMonsterMenuState):
             callback=partial(buy_monster),
             price=price,
             wallet_money=self.buyer_manager.get_money(),
+            close_before_callback=True,
         )
 
 
@@ -204,8 +226,19 @@ class ShopMonsterSellMenuState(ShopMonsterMenuState):
             price = self.economy.calculate_price(
                 monster, quantity, seller_mode=True
             )
+            if not require_player_sol_for_chain(
+                local_session,
+                f"sell monster {monster.slug}",
+            ):
+                return
             self.transaction_manager.sell_monster(
                 self.seller, monster, price.final_price, label
+            )
+            auto_save_chain_currency_transfer(
+                local_session,
+                f"sell monster {monster.slug}",
+                direction="reward",
+                amount=price.final_price,
             )
             self.reload_items()
             if not self.seller.party.has_monster(monster):
@@ -221,4 +254,5 @@ class ShopMonsterSellMenuState(ShopMonsterMenuState):
             callback=partial(sell_monster),
             cost=cost,
             wallet_money=self.seller_manager.get_money(),
+            close_before_callback=True,
         )

@@ -11,6 +11,10 @@ import logging
 from collections.abc import Sequence
 from typing import TYPE_CHECKING
 
+from tuxemon.chain.autosave import (
+    auto_save_chain_currency_transfer,
+    auto_save_chain_state,
+)
 from tuxemon.combat.combat_context import CombatType
 from tuxemon.db import BattleMusicModel, OutputBattle
 from tuxemon.locale.locale import T
@@ -182,9 +186,36 @@ def _handle_win(
         if winner.is_player:
             set_var(session, "battle_last_result", OutputBattle.WON.value)
             set_var(session, "battle_last_winner", "player")
+            battle_id = _current_trainer_battle_id(session)
+            reward_key = (
+                f"trainer_battle_rewarded_{battle_id}" if battle_id else None
+            )
+            completed_key = (
+                f"trainer_battle_completed_{battle_id}" if battle_id else None
+            )
+            if reward_key and session.player.game_variables.get(reward_key) == "yes":
+                logger.warning(
+                    "Skipping duplicate trainer reward for battle %s.",
+                    battle_id,
+                )
+                if completed_key:
+                    session.player.game_variables.set(completed_key, "yes")
+                _clear_current_trainer_battle(session)
+                return T.format("combat_victory", info)
             money_manager = winner.money_controller.money_manager
             remaining = money_manager.apply_all_battle_shares(prize)
+            if battle_id and reward_key and completed_key:
+                session.player.game_variables.set(completed_key, "yes")
+                session.player.game_variables.set(reward_key, "yes")
             money_manager.add_money(remaining)
+            saved = _auto_save_chain_battle_reward(session, remaining)
+            if battle_id and not saved:
+                money_manager.remove_money(remaining)
+                session.player.game_variables.remove(reward_key)
+                if completed_key:
+                    session.player.game_variables.remove(completed_key)
+            else:
+                _clear_current_trainer_battle(session)
 
             if remaining > 0:
                 formatter = CurrencyFormatter()
@@ -198,6 +229,8 @@ def _handle_win(
             set_var(session, "battle_last_trainer", winner.slug)
             return T.format("combat_victory", info)
     else:
+        if winner.is_player:
+            auto_save_chain_state(session, "wild battle win")
         if winner.monsters[0].wild:
             info["name"] = winner.monsters[0].name.upper()
         return T.format("combat_victory", info)
@@ -218,6 +251,7 @@ def _handle_loss(
         if loser.is_player:
             set_var(session, "battle_last_result", OutputBattle.LOST.value)
             set_var(session, "battle_last_loser", "player")
+            _clear_current_trainer_battle(session)
         else:
             set_var(session, "battle_last_loser", loser.slug)
             set_var(session, "battle_last_trainer", loser.slug)
@@ -247,6 +281,7 @@ def _handle_draw(
 
     if combat_type == CombatType.TRAINER:
         set_var(session, "battle_last_result", OutputBattle.DRAW.value)
+        _clear_current_trainer_battle(session)
         for player_defeated in defeat:
             set_var(session, "battle_last_trainer", player_defeated.slug)
             player.battle_handler.record_battle(
@@ -255,6 +290,8 @@ def _handle_draw(
                 location=location,
                 turns=turns,
             )
+    if player.is_player:
+        auto_save_chain_state(session, "battle draw")
     return T.translate("combat_draw")
 
 
@@ -270,6 +307,25 @@ def set_var(session: Session, key: str, value: str) -> None:
     client = session.client.event_engine
     var = f"{key}:{value}"
     client.execute_action("set_variable", [var], True)
+
+
+def _auto_save_chain_battle_reward(session: Session, amount: int) -> bool:
+    return auto_save_chain_currency_transfer(
+        session,
+        "battle reward",
+        direction="reward",
+        amount=amount,
+    )
+
+
+def _current_trainer_battle_id(session: Session) -> str | None:
+    battle_id = session.player.game_variables.get("battle_current_id")
+    return str(battle_id) if battle_id else None
+
+
+def _clear_current_trainer_battle(session: Session) -> None:
+    session.player.game_variables.remove("battle_current_id")
+    session.player.game_variables.remove("battle_current_trainer")
 
 
 def build_hud_text(
