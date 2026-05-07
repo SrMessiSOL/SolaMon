@@ -12,11 +12,12 @@ from pathlib import Path
 
 from cx_Freeze import Executable, setup
 
-from tuxemon.database.yaml_utils import load_yaml
-
 # Ensure tuxemon package is discoverable when run from buildconfig/
 BASE_DIR = Path(__file__).resolve().parent
-sys.path.append(str(BASE_DIR))
+ROOT_DIR = BASE_DIR.parent
+sys.path.insert(0, str(ROOT_DIR))
+
+from tuxemon.database.yaml_utils import load_yaml
 
 logger = logging.getLogger(__name__)
 
@@ -39,6 +40,7 @@ def load_config(config_file: str = "build_config.yaml"):
 
 if __name__ == "__main__":
     config = load_config()
+    base = "gui" if str(config["base"]).lower() == "win32gui" else config["base"]
 
     build_exe_options = {
         "packages": config["packages"],
@@ -55,7 +57,7 @@ if __name__ == "__main__":
         executables=[
             Executable(
                 config["executable"],  # run_tuxemon.py
-                base=config["base"],
+                base=base,
                 icon=config["icon"],
                 # No target_name → cx_Freeze outputs run_tuxemon.exe
             )
