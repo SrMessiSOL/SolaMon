@@ -33,10 +33,10 @@ python tools/multiplayer/presence_server.py --host 0.0.0.0 --port $PORT
 ```
 
 Set `SOLAMON_RPC_URL` in Render to the same Solana RPC URL used by Vercel.
-The public multiplayer URL should be:
+Current devnet multiplayer deployment:
 
 ```text
-wss://YOUR-RENDER-SERVICE.onrender.com
+wss://solamon-presence.onrender.com
 ```
 
 ## Tester Client
@@ -46,7 +46,7 @@ For local testing without freezing:
 ```powershell
 .\scripts\run-production-client.ps1 `
   -AuthorityUrl "https://YOUR-VERCEL-PROJECT.vercel.app/api" `
-  -MultiplayerUrl "wss://YOUR-RENDER-SERVICE.onrender.com" `
+  -MultiplayerUrl "wss://solamon-presence.onrender.com" `
   -RpcUrl "https://api.devnet.solana.com"
 ```
 
@@ -55,7 +55,7 @@ For a Windows zip:
 ```powershell
 .\scripts\build-windows-tester.ps1 `
   -AuthorityUrl "https://YOUR-VERCEL-PROJECT.vercel.app/api" `
-  -MultiplayerUrl "wss://YOUR-RENDER-SERVICE.onrender.com" `
+  -MultiplayerUrl "wss://solamon-presence.onrender.com" `
   -RpcUrl "https://api.devnet.solana.com"
 ```
 
