@@ -220,6 +220,7 @@ class BaseClient(ABC):
 
     def perform_cleanup(self) -> None:
         """Handles necessary cleanup before shutting down."""
+        self.network_manager.shutdown()
         self.map_loader.clear_cache()
         self.current_music.stop()
         self.event_bus.reset_all_events()

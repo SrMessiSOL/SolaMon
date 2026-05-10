@@ -10,7 +10,14 @@ from tuxemon.constants.asset_loader import fetch_asset
 from tuxemon.entity.npc import NPC
 from tuxemon.event.eventaction import EventAction
 from tuxemon.platform.const.sizes import PLAYER_NPC
-from tuxemon.chain.slots import chain_slot_is_loadable, load_onchain_save_data
+from tuxemon.chain.loading import show_blockchain_loading
+from tuxemon.chain.slots import (
+    chain_slot_is_loadable,
+    load_onchain_save_data,
+    projection_path_for_slot,
+    read_onchain_player_state,
+)
+from tuxemon.chain.submitter import upload_save_blob_devnet
 from tuxemon.save_system.save_manager import SaveManager
 from tuxemon.save_system.save_slots import resolve_save_index
 from tuxemon.session import Session
@@ -58,20 +65,28 @@ class LoadGameAction(EventAction):
 
         client.map_loader.clear_cache()
         logger.info("Loading!")
-
-        if client.config.chain_enabled and not chain_slot_is_loadable(
-            slot,
-            client.chain_session.character,
-        ):
-            logger.error("Refusing to load slot %s: not current on-chain state.", slot)
-            self.stop()
-            return
+        client.network_manager.reset_presence_for_game_load()
 
         if client.config.chain_enabled:
+            show_blockchain_loading(client)
+            if not chain_slot_is_loadable(
+                slot,
+                client.chain_session.character,
+            ):
+                logger.error(
+                    "Refusing to load slot %s: not current on-chain state.",
+                    slot,
+                )
+                self.stop()
+                return
             save_data = load_onchain_save_data(client.chain_session.character)
+            if save_data is None and self._repair_missing_onchain_blob(session, slot):
+                show_blockchain_loading(client)
+                save_data = load_onchain_save_data(client.chain_session.character)
         else:
             save_data = SaveManager.load(slot)
         if not save_data:
+            logger.error("Unable to load save data for slot %s.", slot)
             self.stop()
             return
         session.set_current_slot(slot)
@@ -130,6 +145,49 @@ class LoadGameAction(EventAction):
         )
         client.current_music.stop()
         client.movement_manager.unlock_controls(session.player)
+
+    def _repair_missing_onchain_blob(self, session: Session, slot: int) -> bool:
+        client = session.client
+        chain_session = client.chain_session
+        character = chain_session.character
+        wallet = chain_session.wallet
+        if character is None or wallet is None:
+            return False
+        onchain = read_onchain_player_state(character)
+        if onchain is None:
+            return False
+        save_hash = str(onchain.get("saveHash") or "")
+        if not save_hash or save_hash == "0" * 64:
+            return False
+        save_uri = str(onchain.get("saveUri") or "")
+        if save_uri.startswith("compact:"):
+            return False
+        blob_path = (
+            projection_path_for_slot(slot).parent
+            / "blobs"
+            / f"{save_hash}.json"
+        )
+        if not blob_path.exists():
+            logger.error(
+                "On-chain save blob %s is missing and no local blob cache exists at %s.",
+                save_hash,
+                blob_path,
+            )
+            return False
+        try:
+            logger.warning(
+                "Repairing missing on-chain save blob %s from local blob cache.",
+                save_hash,
+            )
+            upload_save_blob_devnet(wallet, character, save_hash, blob_path)
+            return True
+        except Exception:
+            logger.error(
+                "Unable to repair missing on-chain save blob %s.",
+                save_hash,
+                exc_info=True,
+            )
+            return False
 
 
 def _normalize_loaded_party(session: Session) -> None:

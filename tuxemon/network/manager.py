@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import os
 from typing import TYPE_CHECKING
 
 from tuxemon.network.client import TuxemonClient
@@ -75,10 +76,14 @@ class NetworkManager:
         ):
             return
 
-        self.client.connect_to_host(
-            config.multiplayer_server_host,
-            config.multiplayer_server_port,
-        )
+        multiplayer_url = os.environ.get("SOLAMON_MULTIPLAYER_URL", "").strip()
+        if multiplayer_url:
+            self.client.connect_to_host(multiplayer_url, 0)
+        else:
+            self.client.connect_to_host(
+                config.multiplayer_server_host,
+                config.multiplayer_server_port,
+            )
         self._auto_connect_started = True
 
     def shutdown(self) -> None:
@@ -98,6 +103,19 @@ class NetworkManager:
         self.server = None
         self.client = None
         logger.info("NetworkManager: All networking systems shut down.")
+
+    def reset_presence_for_game_load(self) -> None:
+        """
+        Leave live presence while the world/session is being replaced.
+
+        Loading a save temporarily destroys and recreates the local player and
+        map. Treat that as leaving the live Render room, then allow the normal
+        auto-connect path to publish fresh presence once the new world exists.
+        """
+        if self.client and self.client.listening:
+            self.client.disconnect()
+            logger.info("NetworkManager: Presence reset for game load.")
+        self._auto_connect_started = False
 
     def is_host(self) -> bool:
         return self.server is not None and self.server.listening
