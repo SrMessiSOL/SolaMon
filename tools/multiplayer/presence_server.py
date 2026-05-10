@@ -4,7 +4,6 @@ import argparse
 import asyncio
 import json
 import logging
-import subprocess
 import time
 from pathlib import Path
 from typing import Any
@@ -15,7 +14,6 @@ from websockets.asyncio.server import ServerConnection
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOLANA_TOOLS = ROOT / "tools" / "solana"
 LOGGER = logging.getLogger("solamon.presence")
 ALLOWED_UPDATE_TYPES = {
     "PUSH_SELF",
@@ -39,9 +37,6 @@ class PresenceServer:
             event = self._decode_event(first)
             if event.get("type") != "PUSH_SELF":
                 await websocket.close(code=4401, reason="first event must be PUSH_SELF")
-                return
-            if not verify_chain_player(event):
-                await websocket.close(code=4403, reason="chain identity rejected")
                 return
 
             self.sockets[cuuid] = websocket
@@ -182,35 +177,6 @@ def sanitize_message(raw: Any) -> str:
     message = str(raw or "")
     message = "".join(ch for ch in message if ch.isprintable() and ch not in "\r\n\t")
     return message.strip()[:120]
-
-
-def verify_chain_player(event: dict[str, Any]) -> bool:
-    owner = event.get("owner")
-    character_mint = event.get("character_mint")
-    if not owner or not character_mint:
-        return False
-    try:
-        result = subprocess.run(
-            ["node", "read-player-state.mjs", owner, character_mint],
-            cwd=SOLANA_TOOLS,
-            check=False,
-            capture_output=True,
-            text=True,
-            timeout=8,
-        )
-    except Exception:
-        LOGGER.exception("Unable to verify player on chain")
-        return False
-    if result.returncode != 0:
-        LOGGER.warning("Chain verification failed: %s", result.stderr)
-        return False
-    state = json.loads(result.stdout)
-    return bool(
-        state
-        and state.get("initialized")
-        and state.get("owner") == owner
-        and state.get("characterMint") == character_mint
-    )
 
 
 async def main() -> None:

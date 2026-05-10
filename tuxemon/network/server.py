@@ -212,9 +212,6 @@ class TuxemonServer:
             )
             logger.info(f"Player {cuuid} has returned to the world.")
         else:
-            if not verify_chain_player(event_data):
-                logger.warning("Rejecting unverified player presence: %s", cuuid)
-                return
             # New player logic
             self.client_registry.register_client(
                 cuuid,
