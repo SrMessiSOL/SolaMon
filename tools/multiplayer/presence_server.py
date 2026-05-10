@@ -33,11 +33,7 @@ class PresenceServer:
     async def handler(self, websocket: ServerConnection) -> None:
         cuuid = str(uuid4())
         try:
-            first = await asyncio.wait_for(websocket.recv(), timeout=8.0)
-            event = self._decode_event(first)
-            if event.get("type") != "PUSH_SELF":
-                await websocket.close(code=4401, reason="first event must be PUSH_SELF")
-                return
+            event = await self._wait_for_initial_presence(websocket)
 
             self.sockets[cuuid] = websocket
             self.presence[cuuid] = self._presence_from_event(cuuid, event)
@@ -85,6 +81,26 @@ class PresenceServer:
                         "cuuid": cuuid,
                     },
                 )
+
+    async def _wait_for_initial_presence(
+        self,
+        websocket: ServerConnection,
+    ) -> dict[str, Any]:
+        deadline = time.monotonic() + 45.0
+        while True:
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                await websocket.close(code=4401, reason="initial presence timed out")
+                raise TimeoutError("initial presence timed out")
+            raw = await asyncio.wait_for(websocket.recv(), timeout=remaining)
+            event = self._decode_event(raw)
+            event_type = event.get("type")
+            if event_type == "PUSH_SELF":
+                return event
+            if event_type == "PING":
+                continue
+            await websocket.close(code=4401, reason="first presence event must be PUSH_SELF")
+            raise ValueError(f"first presence event was {event_type!r}")
 
     def _decode_event(self, raw: str | bytes) -> dict[str, Any]:
         data = json.loads(raw)
