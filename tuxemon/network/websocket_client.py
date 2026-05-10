@@ -16,6 +16,17 @@ from websockets.asyncio.client import ClientConnection
 logger = logging.getLogger(__name__)
 
 
+def websocket_uri(ip: str, port: int) -> str:
+    endpoint = str(ip).strip()
+    if endpoint.startswith(("ws://", "wss://")):
+        return endpoint
+    if endpoint.startswith("https://"):
+        return f"wss://{endpoint[len('https://'):]}"
+    if endpoint.startswith("http://"):
+        return f"ws://{endpoint[len('http://'):]}"
+    return f"ws://{endpoint}:{port}"
+
+
 class ConnectionState(Enum):
     DISCONNECTED = auto()
     CONNECTING = auto()
@@ -150,7 +161,7 @@ class WebsocketClientWrapper:
 
     def _schedule_connect(self) -> None:
         loop = self._loop
-        if loop is not None and loop.is_running() and self._ip and self._port:
+        if loop is not None and loop.is_running() and self._ip and self._port is not None:
             loop.call_soon_threadsafe(
                 loop.create_task,
                 self._connect_and_listen(self._ip, self._port),
@@ -168,7 +179,7 @@ class WebsocketClientWrapper:
         self._loop = loop
         asyncio.set_event_loop(loop)
 
-        if self._ip and self._port:
+        if self._ip and self._port is not None:
             loop.create_task(self._connect_and_listen(self._ip, self._port))
 
         try:
@@ -204,7 +215,7 @@ class WebsocketClientWrapper:
         if not self._running.is_set():
             return
 
-        uri = f"ws://{ip}:{port}"
+        uri = websocket_uri(ip, port)
         self._set_state(ConnectionState.CONNECTING)
         logger.info(f"Attempting connection to {uri}...")
 
@@ -237,6 +248,11 @@ class WebsocketClientWrapper:
             self._registered = False
             self._set_state(ConnectionState.DISCONNECTED)
             logger.info("Connection closed.")
+            if self._running.is_set():
+                await asyncio.sleep(3.0)
+                if self._running.is_set():
+                    loop = asyncio.get_running_loop()
+                    loop.create_task(self._connect_and_listen(ip, port))
 
     async def _receive_loop(self, websocket: ClientConnection) -> None:
         """Continuously listens for messages from the server."""

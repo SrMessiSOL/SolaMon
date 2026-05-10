@@ -22,6 +22,7 @@ ALLOWED_UPDATE_TYPES = {
     "CLIENT_MOVE_COMPLETE",
     "CLIENT_FACING",
     "CLIENT_CHAT",
+    "PING",
 }
 
 
@@ -51,6 +52,10 @@ class PresenceServer:
             async for raw in websocket:
                 event = self._decode_event(raw)
                 if event.get("type") not in ALLOWED_UPDATE_TYPES:
+                    continue
+                if event.get("type") == "PING":
+                    if cuuid in self.presence:
+                        self.presence[cuuid]["updated_at"] = time.time()
                     continue
                 if not self._identity_matches(cuuid, event):
                     LOGGER.warning("Ignoring spoofed update from %s", cuuid)
@@ -153,6 +158,7 @@ class PresenceServer:
     async def _broadcast(self, exclude: str, event: dict[str, Any]) -> None:
         message = json.dumps(event)
         sent = 0
+        failed: list[str] = []
         for cuuid, websocket in list(self.sockets.items()):
             if cuuid == exclude:
                 continue
@@ -161,7 +167,27 @@ class PresenceServer:
                 sent += 1
             except Exception:
                 LOGGER.warning("Failed to broadcast to %s", cuuid)
+                failed.append(cuuid)
+        for cuuid in failed:
+            await self._drop_stale_client(cuuid)
         LOGGER.info("broadcast type=%s from=%s to=%s clients", event.get("type"), exclude, sent)
+
+    async def _drop_stale_client(self, cuuid: str) -> None:
+        websocket = self.sockets.pop(cuuid, None)
+        self.presence.pop(cuuid, None)
+        if websocket is not None:
+            try:
+                await websocket.close(code=1011, reason="stale presence socket")
+            except Exception:
+                pass
+        await self._broadcast(
+            cuuid,
+            {
+                "type": "CLIENT_DISCONNECTED",
+                "event_number": int(time.time() * 1000),
+                "cuuid": cuuid,
+            },
+        )
 
 
 def sanitize_char(raw: Any) -> dict[str, Any]:

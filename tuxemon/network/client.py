@@ -220,13 +220,17 @@ class InputEventTranslator:
 
         if event_type == "CLIENT_FACING":
             if self.client.game.network_manager.is_connected():
+                try:
+                    player = local_session.player
+                except ValueError:
+                    return None
                 character = self.client.game.chain_session.character
                 event_data_dict.update(
                     {
                         "map_name": self.client.game.get_map_name(),
                         "char_dict": {
-                            "tile_pos": local_session.player.tile_pos,
-                            "name": local_session.player.name,
+                            "tile_pos": player.tile_pos,
+                            "name": player.name,
                             "facing": kb_key,
                             "skin": current_player_skin(),
                         },
@@ -287,11 +291,12 @@ class PlayerSyncManager:
         if map_name is None:
             return
         player_data = local_session.player.__dict__
+        facing = _facing_value(local_session.player.facing)
 
         char_dict = {
             "tile_pos": local_session.player.tile_pos,
             "name": player_data.get("name", "Unnamed Player"),
-            "facing": local_session.player.facing.value,
+            "facing": facing,
             "skin": current_player_skin(),
         }
         character = self.game.chain_session.character
@@ -316,7 +321,7 @@ class PlayerSyncManager:
         char_dict = {
             "tile_pos": local_session.player.tile_pos,
             "name": local_session.player.name,
-            "facing": local_session.player.facing.value,
+            "facing": _facing_value(local_session.player.facing),
             "skin": current_player_skin(),
         }
         character = self.game.chain_session.character
@@ -339,7 +344,11 @@ class PlayerSyncManager:
             map_name = self.game.get_map_name()
         except ValueError:
             return
-        tile_pos = local_session.player.tile_pos
+        try:
+            player = local_session.player
+        except ValueError:
+            return
+        tile_pos = player.tile_pos
         now = time.monotonic()
         snapshot = (map_name, tile_pos)
         if snapshot == self.client._last_presence_snapshot and (
@@ -349,7 +358,7 @@ class PlayerSyncManager:
         self.client._last_presence_snapshot = snapshot
         self.client._last_presence_sent_at = now
         self.update_player(
-            local_session.player.facing.value,
+            _facing_value(player.facing),
             event_type="CLIENT_MAP_UPDATE",
         )
 
@@ -368,11 +377,11 @@ class PlayerSyncManager:
         self._send_event(
             "CLIENT_CHAT",
             map_name=map_name,
-            direction=local_session.player.facing.value,
+            direction=_facing_value(local_session.player.facing),
             char_dict={
                 "tile_pos": local_session.player.tile_pos,
                 "name": local_session.player.name,
-                "facing": local_session.player.facing.value,
+                "facing": _facing_value(local_session.player.facing),
                 "skin": current_player_skin(),
             },
             owner=character.owner if character else None,
@@ -464,7 +473,7 @@ class InteractionManager:
             "char_dict": {
                 "tile_pos": local_session.player.tile_pos,
                 "name": local_session.player.name,
-                "facing": local_session.player.facing.value,
+                "facing": _facing_value(local_session.player.facing),
                 "skin": current_player_skin(),
             },
         }
@@ -494,8 +503,18 @@ class ConnectionManager:
         if self.state is ConnState.DISCONNECTED:
             return
 
+        if not self.client.client.registered:
+            if self.state is ConnState.READY:
+                logger.info("Multiplayer connection dropped; waiting to reconnect.")
+                self.client.populated = False
+                self.client.registry.clear()
+                self.client._last_presence_snapshot = None
+                self.client._last_presence_sent_at = 0.0
+                self.state = ConnState.REGISTERING
+            return
+
         if self.state is ConnState.REGISTERING:
-            if self.client.client.registered and not self.client.populated:
+            if not self.client.populated:
                 try:
                     self.client.sync_manager.populate_player()
                 except ValueError:
@@ -519,5 +538,17 @@ class ConnectionManager:
 
 
 def current_player_skin() -> str:
-    player = local_session.player
-    return str(player.appearance_manager.state.sprite_name or "adventurer")
+    try:
+        player = local_session.player
+        appearance_manager = getattr(player, "appearance_manager", None)
+        state = getattr(appearance_manager, "state", None)
+        sprite_name = getattr(state, "sprite_name", None)
+    except (AttributeError, ValueError):
+        return "adventurer"
+    if isinstance(sprite_name, str) and sprite_name:
+        return sprite_name
+    return "adventurer"
+
+
+def _facing_value(facing: object) -> str:
+    return str(getattr(facing, "value", facing))
