@@ -59,7 +59,9 @@ For a Windows zip:
   -RpcUrl "https://api.devnet.solana.com"
 ```
 
-The output is `dist\SolamonTester.zip`.
+The output is `dist\SolamonTester-0.1.0.zip` with a matching
+`.sha256` checksum file. Testers should extract the full ZIP and launch
+`Run Solamon.bat`.
 
 ## First Test
 

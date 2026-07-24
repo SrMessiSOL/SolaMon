@@ -3,6 +3,10 @@
 Solamon multiplayer uses a standalone WebSocket presence server. The server is
 not a save authority and must not store gameplay state.
 
+The initial presence packet is signed by the unlocked owner wallet. The server
+checks the signature, rejects replayed authentication nonces, and verifies that
+the owner/character pair has an initialized Solamon player account on devnet.
+
 ## Server Responsibilities
 
 - Verify the player owner and character NFT against the Solamon devnet program.

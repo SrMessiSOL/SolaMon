@@ -5,6 +5,7 @@ services:
     plan: free
     buildCommand: pip install -r requirements.txt && cd tools/solana && npm install --omit=dev
     startCommand: python tools/multiplayer/presence_server.py --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
     envVars:
       - key: SOLAMON_RPC_URL
         sync: false

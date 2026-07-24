@@ -2,7 +2,10 @@
 # Copyright (c) 2014-2026 William Edwards <shadowapex@gmail.com>, Benjamin Bean <superman2k5@gmail.com>
 from __future__ import annotations
 
+import base64
+import json
 import logging
+import secrets
 import time
 from enum import Enum, auto
 from itertools import count
@@ -21,6 +24,7 @@ if TYPE_CHECKING:
     from tuxemon.base_client import BaseClient
 
 logger = logging.getLogger(__name__)
+PRESENCE_AUTH_DOMAIN = b"solamon-presence-v1:"
 
 
 class GameEntry(TypedDict):
@@ -300,6 +304,33 @@ class PlayerSyncManager:
             "skin": current_player_skin(),
         }
         character = self.game.chain_session.character
+        wallet = self.game.chain_session.wallet
+        presence_auth = None
+        if (
+            event_type == "PUSH_SELF"
+            and character is not None
+            and wallet is not None
+            and wallet.public_key == character.owner
+        ):
+            request = {
+                "version": 1,
+                "owner": character.owner,
+                "characterMint": character.character_mint,
+                "timestamp": int(time.time() * 1000),
+                "nonce": secrets.token_urlsafe(24),
+            }
+            message = PRESENCE_AUTH_DOMAIN + json.dumps(
+                request,
+                sort_keys=True,
+                separators=(",", ":"),
+                ensure_ascii=True,
+            ).encode("utf-8")
+            presence_auth = {
+                "request": request,
+                "signature": base64.b64encode(
+                    wallet.sign_message(message)
+                ).decode("ascii"),
+            }
 
         self._send_event(
             event_type,
@@ -307,6 +338,7 @@ class PlayerSyncManager:
             char_dict=char_dict,
             owner=character.owner if character else None,
             character_mint=character.character_mint if character else None,
+            presence_auth=presence_auth,
         )
         self.client.populated = True
 

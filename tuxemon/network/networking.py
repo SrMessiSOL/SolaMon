@@ -108,6 +108,7 @@ class EventData:
     )
     owner: str | None = None
     character_mint: str | None = None
+    presence_auth: dict[str, Any] | None = None
     response: Any | None = (
         None  # Optional response payload (e.g., dialogue result, battle outcome)
     )
@@ -130,6 +131,7 @@ class EventData:
             "response": self.response,
             "owner": self.owner,
             "character_mint": self.character_mint,
+            "presence_auth": self.presence_auth,
             "message": self.message,
         }
 
@@ -152,6 +154,7 @@ class EventData:
             response=data.get("response"),
             owner=data.get("owner"),
             character_mint=data.get("character_mint"),
+            presence_auth=data.get("presence_auth"),
             message=data.get("message"),
         )
 
