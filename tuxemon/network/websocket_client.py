@@ -71,6 +71,7 @@ class WebsocketClientWrapper:
         self._port: int | None = None
 
         self._ping_interval = ping_interval
+        self._reconnect_blocked = False
 
     @property
     def registered(self) -> bool:
@@ -98,6 +99,7 @@ class WebsocketClientWrapper:
         self._ip = ip
         self._port = port if port is not None else self.port
 
+        self._reconnect_blocked = False
         self._running.set()
         self._net_thread = threading.Thread(
             target=self._run_loop_thread,
@@ -248,9 +250,9 @@ class WebsocketClientWrapper:
             self._registered = False
             self._set_state(ConnectionState.DISCONNECTED)
             logger.info("Connection closed.")
-            if self._running.is_set():
+            if self._running.is_set() and not self._reconnect_blocked:
                 await asyncio.sleep(3.0)
-                if self._running.is_set():
+                if self._running.is_set() and not self._reconnect_blocked:
                     loop = asyncio.get_running_loop()
                     loop.create_task(self._connect_and_listen(ip, port))
 
@@ -269,6 +271,12 @@ class WebsocketClientWrapper:
                 logger.info("Websocket closed normally by server.")
                 break
             except websockets.exceptions.ConnectionClosedError as e:
+                if e.code == 4409:
+                    self._reconnect_blocked = True
+                    logger.warning(
+                        "Multiplayer disabled for this client because the "
+                        "same player is already connected."
+                    )
                 logger.error(f"Websocket closed with error: {e}")
                 break
             except Exception as e:

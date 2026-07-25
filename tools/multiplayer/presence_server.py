@@ -42,14 +42,13 @@ class PresenceServer:
     def __init__(self) -> None:
         self.sockets: dict[str, ServerConnection] = {}
         self.presence: dict[str, dict[str, Any]] = {}
+        self.identity_clients: dict[tuple[str, str], str] = {}
         self.used_nonces: dict[str, float] = {}
+        self._registration_lock = asyncio.Lock()
 
     async def handler(self, websocket: ServerConnection) -> None:
         cuuid = str(uuid4())
         try:
-            if len(self.sockets) >= MAX_CLIENTS:
-                await websocket.close(code=4429, reason="presence server full")
-                return
             event = await self._wait_for_initial_presence(websocket)
             if not verify_presence_event(
                 event,
@@ -58,8 +57,20 @@ class PresenceServer:
                 await websocket.close(code=4403, reason="invalid player identity")
                 return
 
-            self.sockets[cuuid] = websocket
-            self.presence[cuuid] = self._presence_from_event(cuuid, event)
+            registration = await self._register_presence(
+                cuuid,
+                websocket,
+                event,
+            )
+            if registration == "duplicate":
+                await websocket.close(
+                    code=4409,
+                    reason="player already connected",
+                )
+                return
+            if registration == "full":
+                await websocket.close(code=4429, reason="presence server full")
+                return
             event_times: deque[float] = deque()
             LOGGER.info(
                 "accepted %s owner=%s character=%s map=%s tile=%s",
@@ -105,17 +116,41 @@ class PresenceServer:
         except Exception:
             LOGGER.exception("Presence client failed")
         finally:
-            self.sockets.pop(cuuid, None)
-            if cuuid in self.presence:
-                self.presence.pop(cuuid, None)
-                await self._broadcast(
+            await self._remove_client(cuuid)
+
+    async def _register_presence(
+        self,
+        cuuid: str,
+        websocket: ServerConnection,
+        event: dict[str, Any],
+    ) -> str:
+        identity = self._identity_from_event(event)
+        async with self._registration_lock:
+            existing = self.identity_clients.get(identity)
+            if existing is not None and existing != cuuid:
+                LOGGER.info(
+                    "rejecting duplicate player connection existing=%s new=%s "
+                    "owner=%s character=%s",
+                    existing,
                     cuuid,
-                    {
-                        "type": "CLIENT_DISCONNECTED",
-                        "event_number": int(time.time() * 1000),
-                        "cuuid": cuuid,
-                    },
+                    identity[0],
+                    identity[1],
                 )
+                return "duplicate"
+            if len(self.sockets) >= MAX_CLIENTS:
+                return "full"
+
+            self.sockets[cuuid] = websocket
+            self.presence[cuuid] = self._presence_from_event(cuuid, event)
+            self.identity_clients[identity] = cuuid
+            return "accepted"
+
+    @staticmethod
+    def _identity_from_event(event: dict[str, Any]) -> tuple[str, str]:
+        return (
+            str(event.get("owner") or ""),
+            str(event.get("character_mint") or ""),
+        )
 
     async def _wait_for_initial_presence(
         self,
@@ -203,21 +238,39 @@ class PresenceServer:
         LOGGER.info("broadcast type=%s from=%s to=%s clients", event.get("type"), exclude, sent)
 
     async def _drop_stale_client(self, cuuid: str) -> None:
+        await self._remove_client(
+            cuuid,
+            close_code=1011,
+            reason="stale presence socket",
+        )
+
+    async def _remove_client(
+        self,
+        cuuid: str,
+        *,
+        close_code: int | None = None,
+        reason: str = "",
+    ) -> None:
         websocket = self.sockets.pop(cuuid, None)
-        self.presence.pop(cuuid, None)
-        if websocket is not None:
+        entry = self.presence.pop(cuuid, None)
+        if entry is not None:
+            identity = self._identity_from_event(entry)
+            if self.identity_clients.get(identity) == cuuid:
+                self.identity_clients.pop(identity, None)
+        if websocket is not None and close_code is not None:
             try:
-                await websocket.close(code=1011, reason="stale presence socket")
+                await websocket.close(code=close_code, reason=reason)
             except Exception:
                 pass
-        await self._broadcast(
-            cuuid,
-            {
-                "type": "CLIENT_DISCONNECTED",
-                "event_number": int(time.time() * 1000),
-                "cuuid": cuuid,
-            },
-        )
+        if entry is not None:
+            await self._broadcast(
+                cuuid,
+                {
+                    "type": "CLIENT_DISCONNECTED",
+                    "event_number": int(time.time() * 1000),
+                    "cuuid": cuuid,
+                },
+            )
 
 
 def sanitize_char(raw: Any) -> dict[str, Any]:

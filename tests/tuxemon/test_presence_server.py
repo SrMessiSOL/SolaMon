@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import asyncio
 import base64
 import json
+from typing import Any
 
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
@@ -10,6 +12,7 @@ from websockets.http11 import Request
 
 from tools.multiplayer.presence_server import (
     PRESENCE_AUTH_DOMAIN,
+    PresenceServer,
     health_response,
     verify_presence_event,
 )
@@ -115,3 +118,92 @@ def test_health_endpoint_is_http_only() -> None:
     assert json.loads(response.body)["ok"] is True
     websocket_headers = Headers([("Upgrade", "websocket")])
     assert health_response(object(), Request("/", websocket_headers)) is None
+
+
+class _FakeConnection:
+    def __init__(self) -> None:
+        self.closed: list[tuple[int, str]] = []
+        self.messages: list[dict[str, Any]] = []
+
+    async def close(self, *, code: int, reason: str) -> None:
+        self.closed.append((code, reason))
+
+    async def send(self, raw: str) -> None:
+        self.messages.append(json.loads(raw))
+
+
+def _presence_event(owner: str, character_mint: str) -> dict[str, Any]:
+    return {
+        "type": "PUSH_SELF",
+        "owner": owner,
+        "character_mint": character_mint,
+        "map_name": "spyder_paper_town.tmx",
+        "char_dict": {
+            "tile_pos": [10, 7],
+            "name": "Duplicate Player",
+            "facing": "down",
+            "skin": "adventurer",
+        },
+    }
+
+
+def test_duplicate_player_identity_is_rejected() -> None:
+    async def scenario() -> None:
+        server = PresenceServer()
+        observer = _FakeConnection()
+        first = _FakeConnection()
+        second = _FakeConnection()
+        observer_event = _presence_event(
+            "observer-owner",
+            "observer-character",
+        )
+        duplicate_event = _presence_event("same-owner", "same-character")
+
+        assert await server._register_presence(
+            "observer",
+            observer,  # type: ignore[arg-type]
+            observer_event,
+        ) == "accepted"
+        assert await server._register_presence(
+            "first",
+            first,  # type: ignore[arg-type]
+            duplicate_event,
+        ) == "accepted"
+        assert await server._register_presence(
+            "second",
+            second,  # type: ignore[arg-type]
+            duplicate_event,
+        ) == "duplicate"
+
+        identity = ("same-owner", "same-character")
+        assert not first.closed
+        assert server.sockets["first"] is first
+        assert "second" not in server.sockets
+        assert "second" not in server.presence
+        assert server.identity_clients[identity] == "first"
+        assert not observer.messages
+
+    asyncio.run(scenario())
+
+
+def test_same_wallet_can_use_distinct_character_identities() -> None:
+    async def scenario() -> None:
+        server = PresenceServer()
+        first = _FakeConnection()
+        second = _FakeConnection()
+
+        assert await server._register_presence(
+            "first",
+            first,  # type: ignore[arg-type]
+            _presence_event("same-owner", "character-one"),
+        ) == "accepted"
+        assert await server._register_presence(
+            "second",
+            second,  # type: ignore[arg-type]
+            _presence_event("same-owner", "character-two"),
+        ) == "accepted"
+
+        assert not first.closed
+        assert set(server.sockets) == {"first", "second"}
+
+    asyncio.run(scenario())
